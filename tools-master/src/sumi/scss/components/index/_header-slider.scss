@@ -1,0 +1,76 @@
+.header-slider{
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    ol{
+        display: flex;
+        align-items: center;
+        bottom: 13vh;
+        left: auto;
+        margin-right: 10vw;
+        li{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 25px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        li.active{
+            width: 10px;
+            height: 10px;
+            background: transparent;
+            border: 1px solid #ffffff;
+            margin-bottom: 0;
+        }
+    }
+    .carousel-inner{
+        .carousel-item{
+            height: 100vh;
+            width: 100vw;
+        }
+        .firstSlide{
+            background: url("../images/thumb/home-hero-1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .secondSlide{
+            background: url("../images/thumb/home-hero-2.jpg.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .thirdSlide{
+            background: url("../images/thumb/home-hero-3.jpg.webp");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .content-headerSlide{
+        text-align: right;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        color: #fff;
+        padding-right: 10vw;
+        box-shadow:  0 51px 38px -22px rgb(26, 26, 26) inset, 0 -98px 47px -22px rgb(26, 26, 26) inset;
+        .title{
+            margin-bottom: .35em;
+            font-size: calc(10rem + (200vw - 1200px)/840);
+            visibility: visible;
+            letter-spacing: 0;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            font-feature-settings: "palt";
+            vertical-align: baseline;
+            font-weight: 300;
+        }
+    }
+}

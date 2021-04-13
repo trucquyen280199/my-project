@@ -1,0 +1,97 @@
+.story{
+    padding: 20vh 10vw;
+    height: 160vh;
+    .story-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 120vh;
+        padding-left: 15vw;
+        .theme{
+            font-size: 14px;
+            color: #868686;
+            margin-bottom: 1em;
+        }
+        .title{
+            position: relative;
+            margin-bottom: 1em;
+            font-size: calc(2.5rem + (200vw - 1200px)/840);
+            line-height: 1.2;
+            font-weight: 200;
+        }
+        .content{
+            position: relative;
+            margin-bottom: 3rem;
+            font-size: 1rem;
+            line-height: 1.8;
+            max-width: 340px;
+            letter-spacing: .015em;
+            color: #fff;
+        }
+        .link-read{
+            font-size: 14px;
+            &:hover {
+                .circle::before{
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translate3d(0,15px,0) scale(.75,1.75);
+                    transition: transform .65s cubic-bezier(.645,.045,.355,1) 0s,opacity .65s cubic-bezier(.645,.045,.355,1) 0s,visibility .65s cubic-bezier(.645,.045,.355,1) 0s,-webkit-transform .65s cubic-bezier(.645,.045,.355,1) 0s;
+                }
+                .circle::after{
+                    opacity: 1;
+                    transform:  translateZ(0) scale(1);
+                    transition: transform .55s cubic-bezier(.645,.045,.355,1) .1s,opacity .55s cubic-bezier(.645,.045,.355,1) .1s,visibility .55s cubic-bezier(.645,.045,.355,1) .1s,-webkit-transform .55s cubic-bezier(.645,.045,.355,1) .1s;
+                }
+            }
+            .circle{
+                position: relative;
+                display: inline-block;
+                margin-top: 1px;
+                width: 7px;
+                height: 7px;
+                margin-right: 15px;
+                &::before, &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background: #fff;
+                }
+                &::after{
+                    opacity: 0;
+                    transform: translate3d(0,-20px,0) scale(.75,1.75);
+                }
+            }
+        }
+    }
+    .story-right{
+        position: relative;
+        width: calc(50% - 70px);
+        height: auto;
+        height: 120vh;
+        .img-detail{
+            position: absolute;
+            top: 25%;
+            right: -25%;
+            display: block;
+            width: 50%;
+            z-index: 1;
+            img{
+                width: 100%;
+            }
+        }
+        .content{
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                margin-left: auto;
+                object-position: top left;
+            }
+        }
+    }
+}

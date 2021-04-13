@@ -1,0 +1,96 @@
+<section class="productsConcept" cursor3-class="arrow">
+    <div class="productsConcept-mourse next-slider3 " >
+        <div class="cursor3">
+            <div class="cursor__circle3"></div>
+        </div>
+        <div class="next-slider" id="nxt"  cursor3-class="arrow"></div>
+        <div class="next-link-inner">
+            <div class="d-flex justify-content-between">
+                <div class="hgroup">
+                    <p>Furniture</p>
+                </div>
+                <div class="label-wrap d-flex align-items-center">
+                    <span class="line"></span>
+                    <p class="label">Products</p>
+                </div>
+            </div>
+        </div>
+        <a href="" class="next-link"></a>
+    </div>
+</section>
+
+<script>
+    $(function(){
+        var cursor = $('.cursor3');
+        var cursorCircle = cursor.find('.cursor__circle3');
+        var mouse = { x: -100, y: -100 }; 
+        var pos = { x: 0, y: 0 }; 
+        var speed = 0.1; 
+
+        function updateCoordinates(e) {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        }
+
+        window.addEventListener('mousemove', updateCoordinates);
+
+
+        function getAngle(diffX, diffY) {
+            return Math.atan2(diffY, diffX) * 180 / Math.PI;
+        }
+
+        function getSqueeze(diffX, diffY) {
+            var distance = Math.sqrt(
+                Math.pow(diffX, 2) + Math.pow(diffY, 2)
+            );
+            var maxSqueeze = 0.15;
+            var accelerator = 1000;
+            return Math.min(distance / accelerator, maxSqueeze);
+        }
+
+
+        function updateCursor(){
+            var diffX = Math.round(mouse.x - pos.x);
+            var diffY = Math.round(mouse.y - pos.y);
+
+            pos.x += diffX * speed;
+            pos.y += diffY * speed;
+
+            var angle = getAngle(diffX, diffY);
+            var squeeze = getSqueeze(diffX, diffY);
+            
+            var scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+            var rotate = 'rotate(' + angle +'deg)';
+            $(cursor).css({
+                    "transform": "translate3d(" + pos.x + "px," + pos.y  + "px, 0)"
+                });
+            $(cursorCircle).css({
+                "transform" : rotate + scale
+            })
+            // $(cursor).style.transform = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+            //  = translate ;
+            // cursorCircle.style.transform = rotate + scale;
+        };
+
+        function loop() {
+            updateCursor();
+            requestAnimationFrame(loop);
+        }
+
+        requestAnimationFrame(loop);
+        var cursorModifiers = document.querySelectorAll('[cursor3-class]');
+
+        cursorModifiers.forEach(curosrModifier => {
+            curosrModifier.addEventListener('mouseenter', function() {
+                var className = this.getAttribute('cursor3-class');
+                $(cursor).addClass(className);
+            });
+            
+            curosrModifier.addEventListener('mouseleave', function() {
+                var className = this.getAttribute('cursor3-class');
+                $(cursor).removeClass(className);
+            });
+        });
+    })
+</script>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+    <title>Homepage</title>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.js"></script>
+
+</head>
+
+<body class="min-h-screen">
+    <div id="app" class="flex flex-col min-h-screen">
+        <header id="header" class="w-full">
+            <div class="relative w-full h-full">
+                <div class="container d-flex justify-between xl:px-0 xl:pr-3 py-3 sm:px-3 px-30px">
+                    <div id="logo">
+                        <a href="./index.html" class="block">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <aside id="aside" class="xl:pr-5px">
+                        <div class="lg:hidden flex justify-between items-center">
+                            <a href="./index.html">
+                                <img src="./assets/images/logo.png" alt="" style="width: 119px;">
+                            </a>
+                            <a href="#" id="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <g id="close" data-name="close" transform="translate(-0.556 -0.724)">
+                                        <path id="Rectangle_43" data-name="Rectangle 43" d="M.006,1.622A1.5,1.5,0,0,1,1.5.131L22.382.007a1.291,1.291,0,0,1,1.243,1.235h0a1.315,1.315,0,0,1-1.257,1.25L1.243,2.618A1.291,1.291,0,0,1,0,1.382Z" transform="translate(1.219 17.425) rotate(-45)" fill="#1dba99" />
+                                        <path id="Rectangle_43_Copy_2" data-name="Rectangle 43 Copy 2" d="M.009,1.518A1.5,1.5,0,0,1,1.518.009l21,.123a1.312,1.312,0,0,1,1.254,1.261h0a1.288,1.288,0,0,1-1.239,1.246L1.268,2.515A1.312,1.312,0,0,1,.015,1.254Z" transform="translate(2.246 1.334) rotate(40)" fill="#1dba99" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <ul class="lg:my-0 my-48px d-flex items-end h-full">
+                            <li>
+                                <a href="#" class="active">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">SERVICE</a>
+                            </li>
+                            <li class="position-relative">
+
+                                <a href="#" class="menu-parent">PROJECTS</a>
+                                <div class="sub-menu position-absolute active">
+                                    <div class="flex justify-between">
+                                        <div class="inline-block ">
+                                            <p class="text-16px font-bold text-white border-b-2 border-black w-auto">FILTER PROJECT</p>
+                                        </div>
+                                        <button type="button" class="text-20px tex-white border-0">&#10005;</button>
+                                    </div>
+                                    <div class="mt-50px">
+                                        <h4 class="text-16px font-bold text-black">PROJECT CATEGORY</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" /> Khách sạn & khu nghỉ dưỡng</li>
+                                            <li class="text-16px"><input type="checkbox" />Căn hộ cao cấp & văn phòng</li>
+                                            <li class="text-16px"><input type="checkbox" />Công trình dân dụng</li>
+                                            <li class="text-16px"><input type="checkbox" />Spa, nhà hàng, trung tâm thương mại</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <h4 class="text-16px font-bold text-black">COUNTRY</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" />Việt Nam</li>
+                                            <li class="text-16px"><input type="checkbox" />USA</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <h4 class="text-16px font-bold text-black">YEAR</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" />2019</li>
+                                            <li class="text-16px"><input type="checkbox" />2018</li>
+                                            <li class="text-16px"><input type="checkbox" />2017</li>
+                                            <li class="text-16px"><input type="checkbox" />2016</li>
+                                            <li class="text-16px"><input type="checkbox" />2015</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <button class="border border-white text-14px text-white py-10px px-36px mb-10px" type="button">Reset filters</button><br />
+                                        <button class="border border-black text-14px text-white bg-black py-10px px-36px" type="button">Apply filters</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="">CAREER</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">CONTACT</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </header>
+        <script>
+            $(document).ready(function() {
+                var menuparent = $('.menu-parent');
+                var submenu = $('.sub-menu');
+                $(menuparent).click(function() {
+                    if ($(submenu).hasClass("hidden")) {
+                        $(submenu).removeClass("hidden");
+                        $(submenu).addClass("active")
+                    } else {
+                        $(submenu).removeClass("active");
+                        $(submenu).addClass("hidden")
+                    }
+                })
+            })
+        </script>
+        <main class="flex-grow">
+
+            <section class="service">
+                <div class="tabs-service position-relative">
+                    <div class="tabs position-absolute w-1-2">
+                        <nav class=" flex flex-col sm:flex-row w-100 h-100">
+                            <button data-target="panel-1" class="tab active md:w-1-2 w-100 swiper-slide flex justify-center items-center font-bold text-white">What we do?</button>
+                            <button data-target="panel-2" class="tab md:w-1-2 w-100 swiper-slide flex justify-center items-center font-bold text-white">Approach</button>
+                        </nav>
+                    </div>
+
+                    <div id="panels">
+                        <div class="panel-1 tab-content active ">
+                            <div class="banner h-screen bg-cover">
+                                <div class="bg-content h-full w-full flex flex-column justify-center px-150px">
+                                    <h1 class="text-70px font-bold text-white">WHAT WE DO?</h1>
+                                    <div class="w-90px h-2px bg-orange-1"></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap">
+                                <div class="md:w-1-2 w-full flex flex-column items-center justify-between pt-90px pb-50px px-90px">
+                                    <div class="item">
+                                        <h4 class="font-bold ">1. ARCHITECTURE CONSULTING</h4>
+                                        <p class="mt-20px">Tại The Modern Touch/Phong Cách Mới, kiến trúc là một trong những nền tảng chính để biến thế giới thành nơi tốt đẹp hơn. Chúng tôi tin rằng thiết kế kiến trúc vượt bậc chính là sự kết hợp giữa công năng hiệu quả và vẻ đẹp trường tồn. Mỗi ngày, các kiến trúc sư pha trộn những kỹ năng thiết kế đặc biệt, khả năng quản lý dự án vượt trội và tầm nhìn sáng tạo để tạo ra các công trình đáp ứng từng nhu cầu riêng biệt của khách hàng; đồng thời tạo ra tác động kinh tế, xã hội và môi trường tích cực lâu dài.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="font-bold ">2. INTERIOR DESIGN</h4>
+                                        <p class="mt-20px">Khi phát triển thiết kế nội thất, chúng tôi đảm bảo các chi tiết hoàn thiện bổ sung cho nhau, tạo ra các không gian lôi cuốn ánh nhìn và cảm xúc của người sử dụng. Thiết kế nội thất có một trọng tâm khác với kiến trúc bên ngoài, đó chính là chúng bổ sung cho nhau. Sự chuyển tiếp từ các vật liệu hoàn thiện nội thất cho phép chúng tôi phát triển nhiều ý tưởng táo bạo giao hòa và thấm nhuần cảm giác vui vẻ đầy cá tính.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="font-bold ">3. PHÂN TÍCH & KHẢO SÁT MẶT BẰNG</h4>
+                                        <p class="mt-20px">Một mặt bằng tổng thể thành công được nhận định và chắt lọc từ những nghiên cứu phức tạp và tinh vi trong khuôn khổ văn hóa, xã hội, thể chất và kinh tế nhằm phát triển tổng thể dựa trên các bộ phận. Hơn nữa, mặt bằng tổng thể tuyệt vời tạo ra môi trường độc đáo, trong đó con người và thiên nhiên hòa hợp cùng nhau phát triển giữa bối cảnh thành thị hoặc nông thôn. Chúng tôi xem xét để đảm bảo rằng bất kỳ công trình hiện có nào đều sẽ được sử dụng hết tiềm năng. Khảo sát và phân tích giúp chúng tôi và khách hàng hiểu làm thế nào để sử dụng tốt nhất các cơ sở hiện có.</p>
+                                    </div>
+                                </div>
+                                <div class="md:w-1-2 w-full pb-200px" style="background: #F2F2F2;">
+                                    <div class="md:pl-150px mt-90px">
+                                        <img src="./assets/images/service-1.jpg" class="w-100 h-100">
+                                    </div>
+                                    <div class="flex flex-wrap mt-50px">
+                                        <div class="md:w-1-2 md:pl-50px">
+                                            <img src="./assets/images/service-2.jpg" class="w-100 h-100">
+                                        </div>
+                                        <div class="md:w-1-2 flex flex-wrap items-stretch md:pr-50px">
+                                            <img src="./assets/images/service-3.jpg" class="w-1-2 self-start">
+                                            <img src="./assets/images/service-4.jpg" class="w-1-2 self-end ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap px-90px my-70px">
+                                <div class="item md:w-1-2 md:pr-90px">
+                                    <h4 class="font-bold ">4. CUNG CẤP NGUỒN NHÂN LỰC</h4>
+                                    <p class=" mt-20px">Chúng tôi cung cấp nhân sự chất lượng trong ngành kiến trúc nội thất - linh hoạt về thời gian, đảm bảo công việc thực hiện hiệu quả, giúp tiết kiệm chi phí, thời gian và nguồn lực cho các doanh nghiệp.</p>
+                                </div>
+                                <div class="item md:w-1-2 md:pr-90px">
+                                    <h4 class="font-bold ">5. QUẢN LÝ CHẤT LƯỢNG</h4>
+                                    <p class=" mt-20px">Chúng tôi kiểm tra chất lượng các mặt hàng theo quy trình và hệ thống chuẩn, đảm bảo đầy đủ các tiêu chí kiểm hàng, xử lý lỗi và đưa ra hướng giải quyết tốt nhất nhằm đáp ứng nhu cầu tối đa của khách hàng một cách hiệu quả.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-2 tab-content">
+                            <div class="banner h-screen bg-cover">
+                                <div class="bg-content h-full w-full flex flex-column justify-center px-150px">
+                                    <h1 class="text-70px font-bold text-white">APPROACH</h1>
+                                    <div class="w-90px h-2px bg-orange-1"></div>
+                                </div>
+                            </div>
+                            <div class="content-approach py-110px px-90px" style="background: #EDEDED;">
+                                <div class="w-110px h-2px bg-orange-1 mb-110px ml-10px"></div>
+                                <div class="items flex flex-wrap justify-between">
+                                    <div class="item w-1-3 position-relative">
+                                        <img src="./assets/images/approach-1.jpg" />
+                                        <div class="position-absolute flex items-center justify-center">
+                                            <p class="text-white text-16px text-center">TIÊN PHONG <br />
+                                                TRONG CÔNG NGHỆ</p>
+                                        </div>
+                                    </div>
+                                    <div class="item w-1-3 position-relative">
+                                        <img src="./assets/images/approach-2.jpg" />
+                                        <div class="position-absolute flex items-center justify-center">
+                                            <p class="text-white text-16px text-center">TẬN TÂM <br />
+                                                TRONG TỪNG CÔNG TRÌNH</p>
+                                        </div>
+                                    </div>
+                                    <div class="item w-1-3 position-relative">
+                                        <img src="./assets/images/approach-3.jpg" />
+                                        <div class="position-absolute flex items-center justify-center">
+                                            <p class="text-white text-16px text-center">SỞ HỮU <br />
+                                                TRANG THIẾT BỊ HIỆN ĐẠI</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <script>
+                const tabs = document.querySelectorAll(".tabs");
+                const tab = document.querySelectorAll(".tab");
+                const panel = document.querySelectorAll(".tab-content");
+
+                function onTabClick(event) {
+                    // deactivate existing active tabs and panel
+                    for (let i = 0; i < tab.length; i++) {
+                        tab[i].classList.remove("active");
+                    }
+
+                    for (let i = 0; i < panel.length; i++) {
+                        panel[i].classList.remove("active");
+                    }
+
+                    // activate new tabs and panel
+                    event.target.classList.add('active');
+                    let classString = event.target.getAttribute('data-target');
+                    console.log(classString);
+                    document.getElementById('panels').getElementsByClassName(classString)[0].classList.add("active");
+                }
+
+                for (let i = 0; i < tab.length; i++) {
+                    tab[i].addEventListener('click', onTabClick, false);
+                }
+            </script>
+            <!-- <section id="introduce" class="flex items-center ">
+    <div class="swiper-main gallery-thumbs" style="width: 25%;">
+        <div class="swiper-wrapper block">
+            <div class="swiper-slide" >About us</div>
+            <div class="swiper-slide" > What we do</div>
+            <div class="swiper-slide" >Our team</div>
+            <div class="swiper-slide" >What makes us different</div>
+        </div>
+        <div class="swiper-button-next d-none"></div>
+        <div class="swiper-button-prev d-none"></div>
+    </div>
+
+    <div class="swiper-main gallery-top" >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide panel-1 py-5">
+                <div class="flex flex-col justify-center items-center">
+                    <h5>HELLO!</h5>
+                    <div class="line"></div>
+                    <div class="content">
+                        <p>Thành lập tại Việt Nam năm 2013, Công ty TNHH Xây dựng và Thiết kế Phong Cách Mới (The Modern Touch) được dẫn dắt
+                            bởi kiến trúc sư người Mỹ gốc Việt Lê Quang Linh. Ông từng sinh sống, làm việc tại Hawaii và được biết đến là 
+                            kiến trúc sư có hơn 20 năm kinh nghiệm phát triển nhiều dự án lớn như: khu dân cư, khu phức hợp thương mại, 
+                            dự án cộng đồng, giáo dục, spa và khu nghỉ dưỡng cao cấp… tại Mỹ, Hồng Kông, Việt Nam… Điểm đặc biệt nổi trội 
+                            của các công trình này là được thiết kế đạt chuẩn về công năng, tái tạo năng lượng và thân thiện với môi trường 
+                            (LEED®AP).</p>
+                        <p>Hiện tại, The Modern Touch/Phong Cách Mới có hơn 50 kiến trúc sư, kỹ sư, thiết kế, quản lý dự án…, 
+                            tham gia nhiều dự án lớn tại các nước với nhiều vai trò: tư vấn thiết kế kiến trúc, triển khai, giám sát, 
+                            quản lý dự án, xây dựng, quy hoạch, tái cấu trúc… Mỗi thành viên, dù ở vị trí nào, cũng đều tham gia vào toàn 
+                            bộ quá trình xây dựng dự án, phát huy tốt nhất thế mạnh của mình để cùng tạo nên giá trị lớn hơn cho tập thể.
+                        </p>
+                        <p> Với thị trường trong nước, The Modern Touch/Phong Cách Mới muốn mang đến cho khách hàng hơi thở kiến trúc hiện đại 
+                            nhưng vẫn tôn vinh những giá trị tinh thần truyền thống và dấu ấn thương hiệu, cá nhân riêng biệt. Điều này được 
+                            thể hiện rất rõ qua các công trình dân dụng nổi bật mà The Modern Touch/Phong Cách Mới đã thực hiện như: 
+                            TMS Hotel & Spa Đà Nẵng, Tri Việt Hội An Resort, Victoria Villa, Duplex và Penthouse, hệ thống Saigon Smile Spa, 
+                            khách sạn Grand Mercure mở rộng, Anantara Resort, Saipan Resort, Super Villa Đà Nẵng… Tất cả đều nhận được sự hài lòng 
+                            và tin tưởng tuyệt đối của khách hàng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide panel-2 py-5">
+                <div class="flex flex-col justify-center items-center">
+                    <h5>What <br/>we do</h5>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="swiper-what-we-do">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <p class="text-22px font-bold text-center mb-3">1. Architectural consulting</p>
+                                    <p class="text-14px text-center">Tại The Modern Touch/Phong Cách Mới, kiến trúc là một trong những nền tảng chính để biến thế giới thành nơi tốt đẹp hơn. Chúng tôi tin rằng thiết kế kiến trúc vượt bậc chính là sự kết hợp giữa công năng hiệu quả và vẻ đẹp trường tồn. Mỗi ngày, các kiến trúc sư pha trộn những kỹ năng thiết kế đặc biệt, khả năng quản lý dự án vượt trội và tầm nhìn sáng tạo để tạo ra các công trình đáp ứng từng nhu cầu riêng biệt của khách hàng; đồng thời tạo ra tác động kinh tế, xã hội và môi trường tích cực lâu dài.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="text-22px font-bold text-center mb-3">2. Interior design</p>
+                                    <p class="text-14px text-center">Khi phát triển thiết kế nội thất, chúng tôi đảm bảo các chi tiết hoàn thiện bổ sung cho nhau, tạo ra các không gian lôi cuốn ánh nhìn và cảm xúc của người sử dụng. Thiết kế nội thất có một trọng tâm khác với kiến trúc bên ngoài, đó chính là chúng bổ sung cho nhau. Sự chuyển tiếp từ các vật liệu hoàn thiện nội thất cho phép chúng tôi phát triển nhiều ý tưởng táo bạo giao hòa và thấm nhuần cảm giác vui vẻ đầy cá tính.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="text-22px font-bold text-center mb-3">3. Phân tích và khảo sát mặt bằng</p>
+                                    <p class="text-14px text-center">Một mặt bằng tổng thể thành công được nhận định và chắt lọc từ những nghiên cứu phức tạp và tinh vi trong khuôn khổ văn hóa, xã hội, thể chất và kinh tế nhằm phát triển tổng thể dựa trên các bộ phận. Hơn nữa, mặt bằng tổng thể tuyệt vời tạo ra môi trường độc đáo, trong đó con người và thiên nhiên hòa hợp cùng nhau phát triển giữa bối cảnh thành thị hoặc nông thôn. Chúng tôi xem xét để đảm bảo rằng bất kỳ công trình hiện có nào đều sẽ được sử dụng hết tiềm năng. Khảo sát và phân tích giúp chúng tôi và khách hàng hiểu làm thế nào để sử dụng tốt nhất các cơ sở hiện có.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="text-22px font-bold text-center mb-3">4. Cung cấp nguồn nhân lực</p>
+                                    <p class="text-14px text-center">Chúng tôi cung cấp nhân sự chất lượng trong ngành kiến trúc nội thất - linh hoạt về thời gian, đảm bảo công việc thực hiện hiệu quả, giúp tiết kiệm chi phí, thời gian và nguồn lực cho các doanh nghiệp.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="text-22px font-bold text-center mb-3">5. Quản lý chất lượng</p>
+                                    <p class="text-14px text-center">Chúng tôi kiểm tra chất lượng các mặt hàng theo quy trình và hệ thống chuẩn, đảm bảo đầy đủ các tiêu chí kiểm hàng, xử lý lỗi và đưa ra hướng giải quyết tốt nhất nhằm đáp ứng nhu cầu tối đa của khách hàng một cách hiệu quả.</p>
+                                </div>
+                            </div>
+                            <div class="flex position-absolute " style="width: 100%;">
+                                <div class="group mx-auto">
+                                    <div class="btn-wwd-prev text-40px">&#8592;</div>
+                                    <div class="swiper-pagination mx-50px"></div>
+                                    <div class="btn-wwd-next text-40px">&#8594;</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide panel-3 py-5 pl-70px">
+                <div class="flex flex-col justify-center">
+                    <h5>OUR TEAM</h5>
+                    <div class="line"></div>
+                    <div class="content mt-5" >
+                        <div class="swiper-our-team">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" >
+                                    <div class="flex items-end w-9-12">
+                                        <img src="./assets/images/Rectangle -1.jpg" width="100%" height="100%" />
+                                        <div class="flex flex-col justify-center ml-50px">
+                                            <p class="text-14px">Tiến sĩ,  Kiến trúc sư</p>
+                                            <p class="text-20px" style="color: #F36F21;">LÊ QUANG LINH</p>
+                                            <div class="content-item text-14px mt-5">
+                                                <p>-Giám đốc điều hành Công ty Xây dựng và thiết kế Phong Cách Mới (The Modern Touch), một trong những công ty tiên phong về Revit trong khai triển thiết kế không chỉ ở Việt Nam mà cả khu vực châu Á.</p>
+                                                <p>- Từng sinh sống và làm việc tại Hawaii, Mỹ.</p>
+                                                <p>- Hơn 20 năm kinh nghiệm phát triển các dự án lớn, bao gồm: khu dân cư, khu phức hợp thương mại, dự án cộng đồng, giáo dục, spa và khu nghỉ dưỡng cao cấp tại Mỹ, Hồng Kông, Việt Nam… với nhiều vai trò: tư vấn thiết kế kiến trúc, triển khai, giám sát, quản lý dự án, xây dựng, quy hoạch, tái cấu trúc… - Kiến trúc sư duy nhất ở Việt Nam hiện nay có chứng chỉ về “Kiến trúc xanh” tại Mỹ.</p>
+                                                <p>- Một số công trình tiêu biểu đã tham gia: TMS Hotel & Spa Đà Nẵng, Tri Việt Hội An Resort, Victoria Villa, Duplex và Penhouse, hệ thống Saigon Smile Spa, khách sạn Grand Mercure mở rộng…</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="flex flex-wrap ">
+                                        <div class="item md:w-1-4 w-full px-2">
+                                            <img src="./assets/images/Rectangle -2.jpg" class="w-4-5" />
+                                            <div class="content-item text-14px">
+                                                <p>Giám đốc chi nhánh</p>
+                                                <p class="text-20px mb-20px" style="color: #F36F21;">Đoàn Cao Sơn</p>
+                                                <b>Kinh nghiệm:</b>
+                                                <p>10 năm quản lý dự án<br/>
+                                                    10 năm chuyên viên thiết kế</p>
+                                                <b>Kỹ năng:</b>
+                                                <p>Quản lý dự án, 3Dxmas, Autocad, Photoshop, Microsoft Office</p>
+                                            </div>
+                                        </div>
+                                        <div class="item md:w-1-4 w-full px-2">
+                                            <img src="./assets/images/Rectangle -3.jpg" class="w-4-5" />
+                                            <div class="content-item text-14px">
+                                                <p>Giám đốc nhân sự</p>
+                                                <p class="text-20px mb-20px" style="color: #F36F21;">Nguyễn Vũ Nguyệt Minh</p>
+                                                <b>Kinh nghiệm:</b>
+                                                <p>Hơn 10 năm làm công tác Quản trị nhân sự với các vị trí: Ee Relations, Senior HR, HR manager</p>
+                                                <b>Kỹ năng:</b>
+                                                <p>Tổ chức và giám sát; quản lý và lập kế hoạch; giao tiếp tốt và cực kỳ kiên nhẫn.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item md:w-1-4 w-full px-2">
+                                            <img src="./assets/images/Rectangle -4.jpg" class="w-4-5" />
+                                            <div class="content-item text-14px">
+                                                <p>Quản lý dự án</p>
+                                                <p class="text-20px mb-20px" style="color: #F36F21;">Cao Lữ Thanh Phong</p>
+                                                <b>Kinh nghiệm:</b>
+                                                <p>5 năm Quản lý dự án (The Modern Touch)<br/>
+                                                    4 năm Trưởng nhóm dự án (Atlas Industries)
+                                                </p>
+                                                <b>Kỹ năng:</b>
+                                                <p>Quản lý dự án, Autodesk Software (Revit, Autocad…), Microsoft Office.</p>
+                                            </div>
+                                        </div>
+                                        <div class="item md:w-1-4 w-full px-2">
+                                            <img src="./assets/images/Rectangle -5.jpg" class="w-4-5" />
+                                            <div class="content-item text-14px">
+                                                <p>Quản lý dự án</p>
+                                                <p class="text-20px mb-20px" style="color: #F36F21;">Hoàng Thanh Linh</p>
+                                                <b>Kinh nghiệm:</b>
+                                                <p class="">15 năm quản lý dự án, quản lý thiết kế, giám sát công trình.</p>
+                                                <b>Kỹ năng:</b>
+                                                <p>Quản lý dự án, lãnh đạo, tư duy phản biện, Autodesk Software (Revit, Autocad…), Microsoft Office.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex position-absolute mt-40px" style="width: 100%;">
+                                <div class="group mx-auto flex">
+                                    <div class="btn-ot-prev position-relative text-40px text-black mr-40px">&#8592;</div>
+                                    <div class="btn-ot-next position-relative text-40px text-black ml-40px">&#8594;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide panel-4 py-5">
+                other info
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+
+
+    var swiper = new Swiper('.swiper-what-we-do', {
+        // effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 100,
+        navigation: {
+            nextEl: '.btn-wwd-next',
+            prevEl: '.btn-wwd-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+    });
+    var swiper = new Swiper('.swiper-our-team', {
+        // grabCursor: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        navigation: {
+            nextEl: '.btn-ot-next',
+            prevEl: '.btn-ot-prev',
+        },
+    });
+</script>
+    <section id="feature-project">
+    <div class="content-top">
+        <p class="mr-4" style="color: rgba(0, 0, 0, 0.5);">Các công trình đã thực hiện</p>
+        <div class="line"></div>
+    </div>
+    <div class="projects-slide-main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-main">
+                <div class="tay-ho-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-2.jpg" class="w-100 h-100"  />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-3.jpg" class="w-100 h-100"  />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="flex items-center justify-end">
+                    <p class="text-14px text-gray-500" >FEATURE PROJECT</p>
+                    <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                    <p class="text-14px">All projects</p>
+                    <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                </div>
+                <div class="flex flex-wrap px-70px mt-50px">
+                    <div class="w-1-3 flex items-stretch">
+                        <div class="w-1-2">
+                            <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">TAY HO</h4>
+                            <p class="text-30px mb-30px">OFFICE</p>
+                            <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s" >See more</a>
+                        </div>
+                        <div class="w-px bg-gray-500 mx-auto"></div>
+                        
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>KHÁCH HÀNG:</b> NDH Company</p>
+                            <p><b>ĐỊA ĐIỂM:</b> Tây Hồ, Hà Nội</p>
+                            <p><b>PHONG CÁCH: </b> Hiện đại, Á Đông đương đại</p>
+                        </div>
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 1.441 m2</p>
+                            <p><b>DIỆN TÍCH XÂY DỰNG:</b> 1.105 m2</p>
+                            <p><b>KHU CÔNG CỘNG/HỒ BƠI:  </b> 148 m2 </p>
+                            <p><b>CHIỀU CAO: </b> 9,3 m</p>
+                            <p><b>SỐ TẦNG: </b> 2 tầng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-main">
+                <div class="sala-slider">
+                    <div class="swiper-wrapper flex items-stretch">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/salla-1.jpg" class="w-100 h-100" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100"  />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/salla-2.jpg" class="w-100 h-100"  />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="flex items-center justify-end">
+                    <p class="text-14px text-gray-500" >FEATURE PROJECT</p>
+                    <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                    <p class="text-14px">All projects</p>
+                    <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                </div>
+                <div class="flex flex-wrap px-70px mt-50px">
+                    <div class="w-1-3 flex items-stretch">
+                        <div class="w-1-2">
+                            <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">SALA</h4>
+                            <p class="text-30px mb-30px">VILLA</p>
+                            <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s" >See more</a>
+                        </div>
+                        <div class="w-px bg-gray-500 mx-auto"></div>
+                        
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>KHÁCH HÀNG:</b> Ms. Võ Ngọc Thúy</p>
+                            <p><b>ĐỊA ĐIỂM:</b> Quận 2, Tp  Hồ Chí Minh</p>
+                            <p><b>PHONG CÁCH: </b> Hiện đại</p>
+                        </div>
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 331.13 m2</p>
+                            <p><b>DIỆN TÍCH XÂY DỰNG:</b> 733.581 m2</p>
+                            <p><b>CHIỀU CAO: </b> 15 m</p>
+                            <p><b>SỐ TẦNG: </b> 4 tầng, 1 tầng hầm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide-main">
+                <div class="risemout-slider">
+                    <div class="swiper-wrapper flex items-stretch">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-2.jpg" class="w-100 h-100"  />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/feature-project-3.jpg" class="w-100 h-100"  />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="flex items-center justify-end">
+                    <p class="text-14px text-gray-500" >FEATURE PROJECT</p>
+                    <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                    <p class="text-14px">All projects</p>
+                    <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                </div>
+                <div class="flex flex-wrap px-70px mt-50px">
+                    <div class="w-1-3 flex items-stretch">
+                        <div class="w-1-2">
+                            <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">RISEMOUT</h4>
+                            <p class="text-30px mb-30px">PENHOUSE</p>
+                            <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s" >See more</a>
+                        </div>
+                        <div class="w-px bg-gray-500 mx-auto"></div>
+                        
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>KHÁCH HÀNG:</b> Vicoland Group</p>
+                            <p><b>ĐỊA ĐIỂM:</b> Hải Châu, Đà Nẵng</p>
+                            <p><b>PHONG CÁCH: </b> Tân cổ điển</p>
+                        </div>
+                    </div>
+                    <div class="w-1-3">
+                        <div class="w-50px h-2px bg-orange-1"></div>
+                        <div class="text-16px mt-20px">
+                            <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 407 m2</p>
+                            <p><b>CHIỀU CAO: </b> 4,5 m</p>
+                            <p><b>SỐ TẦNG: </b> 1 tầng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-absolute w-auto flex items-center ml-70px mt-50px" >
+            <div class="btn-main-prev position-relative w-auto text-50px ">&#8592;</div>
+            <div class="fraction-main position-relative w-auto text-26px mx-25px" style="bottom: 0;"></div>
+            <div class="btn-main-next position-relative w-auto text-50px">&#8594;</div>
+        </div>
+    </div>
+</section>
+<script>
+
+    var slideMain = new Swiper('.projects-slide-main', {
+       
+        // cssMode: true,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.btn-main-next',
+            prevEl: '.btn-main-prev',
+        },
+        pagination: {
+            el: '.fraction-main',
+            type: 'fraction',
+        },
+        // mousewheel: true,
+        // keyboard: true
+    });
+
+    var tayHoSlider = new Swiper('.tay-ho-slider', {
+        cssMode: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        grabCursor: true,
+    });
+
+    var salaSlider = new Swiper('.sala-slider', {
+        cssMode: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        grabCursor: true,
+    });
+
+    var risemoutSlider = new Swiper('.risemout-slider', {
+        cssMode: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+        grabCursor: true,
+    });
+  </script>
+    <section> 
+    <div class="content-top min-h-screen bg-cover flex flex-column justify-center items-center" style="background: url('./assets/images/Group -1.jpg');">
+        <p class="text-36px text-white text-center font-bold">“ÁP LỰC KHÔNG PHẢI ĐỂ<br/>
+             THÀNH CÔNG,<br/>
+            MÀ ĐỂ CÓ GIÁ TRỊ.”</p>
+        <div class="w-90px bg-orange-1 h-2px"></div>
+    </div>
+    
+</section> -->
+
+        </main>
+        <section>
+            <div class="flex flex-column justify-center items-center py-90px" style="background: #EDEDED;">
+                <p class="text-14px">Stay in a loop, subcribe to our</p>
+                <h3 class="text-36px text-orange-1 font-bold mt-10px mb-50px">NEWSLETTER</h3>
+                <input type="text" class="w-1-3 border-b border-black bg-transparent h-40px text-center text-16px" placeholder="Your name" />
+                <input type="email" class="w-1-3 border-b border-black bg-transparent h-40px text-center text-16px mt-40px" placeholder="Your email address" />
+                <button type="button" class="px-30px py-10px mt-30px text-16px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white">Send</button>
+            </div>
+        </section>
+        <footer id="footer" class="py-150px">
+            <div class="container d-flex flex-wrap mb-20px">
+                <div class="col-md-4 col-12 pl-0">
+                    <h4 class="title mb-20px">Contact us</h4>
+                    <div class="headquarters text-14px mb-20px">
+                        <p>Trụ sở</p>
+                        <p>Số 21, ngách 71/466 Ngô Gia Tự, P. Đức Giang, Q. Long Biên, Hà Nội, Việt Nam</p>
+                    </div>
+                    <div class="representative-office text-14px">
+                        <p>Văn phòng đại diện: </p>
+                        <ul>
+                            <li>
+                                <p><b>TP.HCM:</b> Lầu 5, tòa nhà Qunimex, 28 Nguyễn Thị Diệu, P.6, Q3, TP.HCM, Việt Nam</p>
+                            </li>
+                            <li>
+                                <p><b>Đà Nẵng:</b> 72C Nguyễn Hữu Thọ, P. Hòa Thuận Tây, Q. Hải Châu, TP. Đà Nẵng, Việt Nam</p>
+                            </li>
+                            <li>
+                                <p><b>Hawaii:</b> 91-1034 Nahawele, Ewa Beach, HI96706, Mỹ</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column justify-between pr-0">
+                    <h4 class="text-30px ">HOTLINE</h4>
+                    <h4 class="text-36px">+84 2839305018</h4>
+                    <p class=" ">Email </p>
+                    <p> Ingo@themoderntouch.com</p>
+                    <div class="icons d-flex">
+                        <a href="#" class="facebook mr-30px text-50px leading-none">
+                            <i class="fab fa-facebook-square "></i>
+                        </a>
+                        <a href="#" class="instagram text-50px leading-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column justify-center px-0">
+                    <ul class="text-14px">
+                        <li class="mb-15px">Sitemap</li>
+                        <li class="mb-15px">Terms & Conditions</li>
+                        <li class="mb-15px">Privacy Policy</li>
+                        <li class="mb-15px">TMT@2019</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container d-flex flex-wrap mt-50px">
+                <div class="col-md-4 col-12">
+                    <a href="#" class="contact-us">
+                        CONTACT US
+                    </a>
+                </div>
+                <div class="col-md-8 col-12 menu-bottom">
+                    <ul class="d-flex flex-wrap">
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">SERVICE</a>
+                        </li>
+                        <li>
+                            <a href="">PROJECTS</a>
+                        </li>
+                        <li>
+                            <a href="">APPROACH</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="./assets/js/jquery.min.js?v=1"></script>
+    <script src="./assets/js/popper.min.js?v=1"></script>
+    <script src="./assets/js/bootstrap.min.js?v=1"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+</body>
+
+</html>

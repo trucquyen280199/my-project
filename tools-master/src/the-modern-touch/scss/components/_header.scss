@@ -1,0 +1,78 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#header{
+    .container{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    ul {
+        margin-right: 40px;
+        li{
+            margin-left: 20px;
+            font-size: 20px;
+            a:hover{
+                color: #F36F21;
+            }
+            a.active{
+                color: #F36F21;
+                border-bottom: 2px solid black;
+                font-weight: 600;
+            }
+            .sub-menu{
+                z-index: 999;
+                background: rgba(243, 111, 33, 0.8);
+                width: auto;
+                padding: 30px;
+                left: 0;
+                top: calc(100% + 13px) ;
+                ul{
+                    li{
+                        margin-left: 20px;
+                        padding-left: 10px;
+                        height: 33px;
+                        position: relative;
+                        white-space: nowrap;
+                        display: flex;
+                        align-items: center;
+                        input[type='checkbox']{
+                            -webkit-appearance:none;
+                            width: 25px;
+                            height: 25px;
+                            display: inline-block;
+                            background: #F36F21;
+                            border: 1px solid #F36F21;
+                            border-radius: 50%;
+                            transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+                            margin-right: 5px;
+                            &:focus,&:active {
+                                outline: none;
+                            }
+                            &:checked::after {
+                                content: "";
+                                display: inline-block;
+                                position: relative;
+                                margin-top: 4px;
+                                left: 4px;
+                                width: 15px;
+                                height: 15px;
+                                color: white;
+                                background: black;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            .hidden{
+                display: none;
+                transition: display 0.5s;
+            }
+            .active{
+                display: block;
+                transition: display 0.5s;
+            }
+        }
+    }
+}

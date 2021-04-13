@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="preload" href="./assets/fonts/MaisonNeue-Light.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./assets/fonts/MaisonNeue-Light.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./assets/fonts/MaisonNeue-LightItalic.woff" as="font" type="font/woff" crossorigin="">
+    <link rel="preload" href="./assets/fonts/MaisonNeue-LightItalic.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./assets/fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./assets/fonts/Roboto-Light.woff" as="font" type="font/woff" crossorigin="">
+    <title>FIL - SUMI LIMITED</title>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Roboto Light'),
+                url(./assets/font/roboto/Roboto-Light.woff2) format('woff2'),
+                url(./assets/font/roboto/Roboto-Light.woff) format('woff');
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            font-style: italic;
+            font-weight: 400;
+            src: local('Maison Neue Light Italic'),
+                url(./assets/font/maison-neue/MaisonNeue-LightItalic.woff2) format('woff2'),
+                url(./assets/font/maison-neue/MaisonNeue-LightItalic.woff) format('woff');
+        }
+
+        @font-face {
+            font-family: 'Maison Neue';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Maison Neue Light'),
+                url(./assets/font/maison-neue/MaisonNeue-Light.woff2) format('woff2'),
+                url(./assets/font/maison-neue/MaisonNeue-Light.woff) format('woff');
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <div id="app" class="flex flex-col min-h-screen">
+        <header id="header">
+            <div class="header-inner d-flex align-content-center justify-content-between align-items-center">
+                <h1 class="header-logo d-flex">
+                    <svg class="svg-logo" version="1.1" viewBox="0 0 88 30">
+                        <g>
+                            <polygon class="logo-f" points="-0.5,30 3.8,30 3.8,17.8 13.6,17.8 13.6,13.5 3.8,13.5 3.8,5.7 17.1,5.7 17.1,1.4 -0.5,1.4 -0.5,15.7 "></polygon>
+                            <polygon class="logo-i" points="56.2,1.4 51.9,1.4 51.9,15.7 51.9,30 66.2,30 66.2,25.7 56.2,25.7 56.2,15.7 "></polygon>
+                            <polygon class="logo-l" points="29.9,30 34.2,30 34.2,15.7 34.2,1.4 29.9,1.4 29.9,15.7 "></polygon>
+                            <polygon class="logo-t" points="74.3,1.1 76,1.1 76,7.3 76.8,7.3 76.8,1.1 78.5,1.1 78.5,0.4 74.3,0.4 "></polygon>
+                            <polygon class="logo-m" points="86.1,0 83.6,5.8 81.1,0 79.7,7.3 80.5,7.3 81.4,2.6 81.4,2.6 83.6,7.6 85.8,2.6 85.9,2.6 86.7,7.3 87.5,7.3 "></polygon>
+                        </g>
+                    </svg>
+                    <div class="header-logo-limited">SUMI LIMITED</div>
+                    <a href="https://sumi.fillinglife.co/en" class="header-logo-link">FIL SUMI Limited</a>
+                </h1>
+                <nav class="header-nav">
+                    <ul class="header-nav-lists d-flex">
+                        <li class="header-nav-list">
+                            <a href="./index.html" class="header-nav-link">Home</a>
+                        </li>
+                        <li class="header-nav-list">
+                            <a href="./concept.html" class="header-nav-link">Concept</a>
+                        </li>
+                        <li class="header-nav-list">
+                            <a href="./products.html" class="header-nav-link">Products</a>
+                        </li>
+                        <li class="header-nav-list">
+                            <a href="https://sumi.fillinglife.co/en/story" class="header-nav-link">Story</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-shadow">
+                <div class="header-shadow-body"></div>
+            </div>
+        </header>
+        <div class="g-menu-btn">
+            <div class="dots-wrap d-flex">
+                <div class="dot-row _1">
+                    <div class="dot _1"><span></span></div>
+                    <div class="dot _2"><span></span></div>
+                    <div class="dot _3"><span></span></div>
+                </div>
+                <div class="dot-row _2">
+                    <div class="dot _1"><span></span></div>
+                    <div class="dot _2"><span></span></div>
+                    <div class="dot _3"><span></span></div>
+                </div>
+                <div class="dot-row _3">
+                    <div class="dot _1"><span></span></div>
+                    <div class="dot _2"><span></span></div>
+                    <div class="dot _3"><span></span></div>
+                </div>
+            </div>
+            <!-- <div class="menu-loading" > 
+        <svg class="circular" viewBox="25 25 50 50"> 
+            <circle class="path" cx="50" cy="50" r="24" style="transform-origin: 0px 0px;" data-svg-origin="26 26"> </circle>
+        </svg>
+    </div> -->
+        </div>
+        <main class="flex-grow">
+
+            <section class="header-concept">
+                <div class="content d-flex align-items-center">
+                    <div class="col-md-6 px-0">
+                        <h1 class="title">Furniture</h1>
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <span class="line"></span>
+                            <span class="text">Products</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <span class="t" style="transform: translate(0px, 0%);">
+                        <span class="b">Scroll</span>
+                        <span class="c">Scroll</span>
+                    </span>
+                </div>
+            </section>
+            <section class="products-list" style="padding: 10vw;">
+                <div class="home-products-body">
+                    <div class="home-products-drag-wrap">
+                        <div class="home-products-drag-inner">
+                            <div id="cursor" class="cursor">
+                                <div class="cursor__circle"></div>
+                            </div>
+                            <ul class="d-flex flex-wrap ">
+                                <li class="products-item d-flex flex-column pl-md-0" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s1-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series Dining Chair</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                                <li class="products-item d-flex flex-column" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s2-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series Lounge Chair</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                                <li class="products-item d-flex flex-column pr-md-0" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s3-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series 900 Coffee Table</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                                <li class="products-item d-flex flex-column" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s4-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series 4leg Stool</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                                <li class="products-item d-flex flex-column" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s5-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series Handle Stool</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                                <li class="products-item d-flex flex-column" cursor-class="arrow">
+                                    <div class="products-img">
+                                        <div class="products-img-body">
+                                            <img src="./assets/images/thumb/s6-item-dw.jpg.webp">
+                                        </div>
+                                    </div>
+                                    <div class="products-ttl">
+                                        <h4>MASS Series Coathanger</h4>
+                                    </div>
+                                    <a href="" class="products-link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script>
+                var cursor = $('.cursor');
+                var cursorCircle = cursor.find('.cursor__circle');
+                var mouse = {
+                    x: -100,
+                    y: -100
+                }; // mouse pointer's coordinates
+                var pos = {
+                    x: 0,
+                    y: 0
+                }; // cursor's coordinates
+                var speed = 0.1; // between 0 and 1
+
+                function updateCoordinates(e) {
+                    mouse.x = e.clientX;
+                    mouse.y = e.clientY;
+                }
+
+                window.addEventListener('mousemove', updateCoordinates);
+
+
+                function getAngle(diffX, diffY) {
+                    return Math.atan2(diffY, diffX) * 180 / Math.PI;
+                }
+
+                function getSqueeze(diffX, diffY) {
+                    var distance = Math.sqrt(
+                        Math.pow(diffX, 2) + Math.pow(diffY, 2)
+                    );
+                    var maxSqueeze = 0.15;
+                    var accelerator = 1000;
+                    return Math.min(distance / accelerator, maxSqueeze);
+                }
+
+
+                function updateCursor() {
+                    var diffX = Math.round(mouse.x - pos.x);
+                    var diffY = Math.round(mouse.y - pos.y);
+
+                    pos.x += diffX * speed;
+                    pos.y += diffY * speed;
+
+                    var angle = getAngle(diffX, diffY);
+                    var squeeze = getSqueeze(diffX, diffY);
+
+                    var scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) + ')';
+                    var rotate = 'rotate(' + angle + 'deg)';
+                    $(cursor).css({
+                        "transform": "translate3d(" + pos.x + "px," + pos.y + "px, 0)"
+                    });
+                    $(cursorCircle).css({
+                        "transform": rotate + scale
+                    })
+                    // $(cursor).style.transform = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+                    //  = translate ;
+                    // cursorCircle.style.transform = rotate + scale;
+                };
+
+                function loop() {
+                    updateCursor();
+                    requestAnimationFrame(loop);
+                }
+
+                requestAnimationFrame(loop);
+                var cursorModifiers = document.querySelectorAll('[cursor-class]');
+
+                cursorModifiers.forEach(curosrModifier => {
+                    curosrModifier.addEventListener('mouseenter', function() {
+                        var className = this.getAttribute('cursor-class');
+                        $(cursor).addClass(className);
+                    });
+
+                    curosrModifier.addEventListener('mouseleave', function() {
+                        var className = this.getAttribute('cursor-class');
+                        $(cursor).removeClass(className);
+                    });
+                });
+
+
+                const slider = document.querySelector('.scrolling-wrapper');
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                slider.addEventListener('mousedown', (e) => {
+                    let rect = slider.getBoundingClientRect();
+                    isDown = true;
+                    slider.classList.add('active');
+                    startX = e.pageX - rect.left;
+                    scrollLeft = slider.scrollLeft;
+                });
+
+                slider.addEventListener('mouseleave', () => {
+                    isDown = false;
+                    slider.dataset.dragging = false;
+                    slider.classList.remove('active');
+                });
+
+                slider.addEventListener('mouseup', () => {
+                    isDown = false;
+                    slider.dataset.dragging = false;
+                    slider.classList.remove('active');
+                });
+
+                slider.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    let rect = slider.getBoundingClientRect();
+                    e.preventDefault();
+                    slider.dataset.dragging = true;
+                    const x = e.pageX - rect.left;
+                    const walk = (x - startX);
+                    slider.scrollLeft = scrollLeft - walk;
+                });
+            </script>
+            <section class="productsConcept">
+                <div id="cursor" class="cursor">
+                    <div class="cursor__circle"></div>
+                </div>
+                <div class="next-link-inner">
+                    <div class="d-flex justify-content-between">
+                        <div class="hgroup">
+                            <p>Why we do</p>
+                        </div>
+                        <div class="label-wrap d-flex align-items-center">
+                            <span class="line"></span>
+                            <p class="label">Story</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="next-link"></a>
+            </section>
+
+            <script>
+                var cursor = $('.cursor');
+                var cursorCircle = cursor.find('.cursor__circle');
+                var mouse = {
+                    x: -100,
+                    y: -100
+                }; // mouse pointer's coordinates
+                var pos = {
+                    x: 0,
+                    y: 0
+                }; // cursor's coordinates
+                var speed = 0.1; // between 0 and 1
+
+                function updateCoordinates(e) {
+                    mouse.x = e.clientX;
+                    mouse.y = e.clientY;
+                }
+
+                window.addEventListener('mousemove', updateCoordinates);
+
+
+                function getAngle(diffX, diffY) {
+                    return Math.atan2(diffY, diffX) * 180 / Math.PI;
+                }
+
+                function getSqueeze(diffX, diffY) {
+                    var distance = Math.sqrt(
+                        Math.pow(diffX, 2) + Math.pow(diffY, 2)
+                    );
+                    var maxSqueeze = 0.15;
+                    var accelerator = 1000;
+                    return Math.min(distance / accelerator, maxSqueeze);
+                }
+
+
+                function updateCursor() {
+                    var diffX = Math.round(mouse.x - pos.x);
+                    var diffY = Math.round(mouse.y - pos.y);
+
+                    pos.x += diffX * speed;
+                    pos.y += diffY * speed;
+
+                    var angle = getAngle(diffX, diffY);
+                    var squeeze = getSqueeze(diffX, diffY);
+
+                    var scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) + ')';
+                    var rotate = 'rotate(' + angle + 'deg)';
+                    $(cursor).css({
+                        "transform": "translate3d(" + pos.x + "px," + pos.y + "px, 0)"
+                    });
+                    $(cursorCircle).css({
+                        "transform": rotate + scale
+                    })
+                    // $(cursor).style.transform = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+                    //  = translate ;
+                    // cursorCircle.style.transform = rotate + scale;
+                };
+
+                function loop() {
+                    updateCursor();
+                    requestAnimationFrame(loop);
+                }
+
+                requestAnimationFrame(loop);
+                var cursorModifiers = document.querySelectorAll('[cursor-class]');
+
+                cursorModifiers.forEach(curosrModifier => {
+                    curosrModifier.addEventListener('mouseenter', function() {
+                        var className = this.getAttribute('cursor-class');
+                        $(cursor).addClass(className);
+                    });
+
+                    curosrModifier.addEventListener('mouseleave', function() {
+                        var className = this.getAttribute('cursor-class');
+                        $(cursor).removeClass(className);
+                    });
+                });
+            </script>
+
+
+        </main>
+        <footer id="footer">
+            <div class="d-flex align-items-center">
+                <div class="col-md-6 footer-left p-0">
+                    <div class="d-flex">
+                        <div class="px-0 ">
+                            <svg class="svg-logo" version="1.1" viewBox="0 0 88 30">
+                                <g>
+                                    <polygon id="f" points="-0.5,30 3.8,30 3.8,17.8 13.6,17.8 13.6,13.5 3.8,13.5 3.8,5.7 17.1,5.7 17.1,1.4 -0.5,1.4 -0.5,15.7 " />
+                                    <polygon id="i" points="56.2,1.4 51.9,1.4 51.9,15.7 51.9,30 66.2,30 66.2,25.7 56.2,25.7 56.2,15.7 " />
+                                    <polygon id="l" points="29.9,30 34.2,30 34.2,15.7 34.2,1.4 29.9,1.4 29.9,15.7 " />
+                                    <polygon id="t" points="74.3,1.1 76,1.1 76,7.3 76.8,7.3 76.8,1.1 78.5,1.1 78.5,0.4 74.3,0.4 " />
+                                    <polygon id="m" points="86.1,0 83.6,5.8 81.1,0 79.7,7.3 80.5,7.3 81.4,2.6 81.4,2.6 83.6,7.6 85.8,2.6 85.9,2.6 86.7,7.3 87.5,7.3 " />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="d-flex footer-nav">
+                            <ul class="footer-nav-lists px-0">
+                                <li class="px-0">
+                                    <a href="#">Concept</a>
+                                </li>
+                                <li class="px-0">
+                                    <a href="#">Products</a>
+                                </li>
+                                <li class="px-0">
+                                    <a href="#">Story</a>
+                                </li>
+                            </ul>
+                            <ul class="footer-contact-list px-0">
+                                <li class="px-0">
+                                    <a href="#">Twitter</a>
+                                </li>
+                                <li class="px-0">
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li class="px-0">
+                                    <a href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 footer-right p-0">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <small class="copyright">© 2020 FIL</small>
+                        <a href="#">Brand Site</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <!-- <script src="./assets/js/home/cursor-circle.js"></script> -->
+
+</body>
+
+</html>

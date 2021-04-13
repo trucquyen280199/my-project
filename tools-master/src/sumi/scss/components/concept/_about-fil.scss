@@ -1,0 +1,203 @@
+.about-fil{
+    height: 100%;
+    margin-bottom: 20vh;
+    .next-slider{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        // background: rgba(0, 0, 0, 0.7);
+        z-index: 90;
+    }
+    .slider-feature{
+        position: relative;
+        cursor: pointer;
+        .label{
+            font-size: 14px;
+            color: #868686;
+            margin-bottom: 1em;
+            position: absolute;
+            top: -30px;
+        }
+        .cursor2 {
+            position: fixed;
+            z-index: 99;
+            left: 0;
+            top: -15px;
+            pointer-events: none;
+            .cursor__circle {
+                width: 10px;
+                height: 10px;
+                margin-top: -50%;
+                margin-left: -50%;
+                border-radius: 50%;
+                transition: opacity 2s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 1s cubic-bezier(0.25, 1, 0.5, 1),
+                width 1s cubic-bezier(0.25, 1, 0.5, 1),
+                height 1s cubic-bezier(0.25, 1, 0.5, 1);
+    
+            }
+        }
+        .cursor2.arrow .cursor__circle{
+            width: 110px;
+            height: 110px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .cursor2.arrow::after{
+            content: 'Next';
+            position: absolute;
+            font-size: 14px;
+            left: -50%;
+            top: -50%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            // pointer-events: all;
+        }
+        
+        .cursor2.subtle .cursor__circle{
+            opacity: 0.5;
+        }
+        
+        .cursor2.overlay .cursor__circle{
+            width: 48px;
+            height: 48px;
+            background-color: rgba(227, 222, 193, 0.08);
+            border-color: transparent;
+        }
+        .next{
+            border: 1px solid red;
+            z-index: 999;
+            height: 100px;
+            width: 100px;
+            background: #868686;
+        }
+    }
+    .s{
+        height: 100vh;
+        list-style: none;
+        width: 100%;
+        margin: 60px 0;	
+        text-align: center;
+        position: relative;
+        padding: 0;
+        
+        li.item {
+            transition: all 0.2s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            z-index: 0;
+            text-align: center;
+            padding: 0;
+            transition: all 0.2s ease-in;
+            opacity: 0;
+            visibility: hidden;
+            &.active {
+                display: block;
+                position: relative;
+                top: unset;
+                left: unset;
+                right: unset;
+                z-index: 1;
+                opacity: 1;
+                visibility: visible;			
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .content{
+                height: auto;
+                width: 30vw;
+                height: 455px;
+                opacity: 10;
+                position: absolute;
+                right: 10vw;
+                bottom: -70px;
+                width: calc(26.66667vw - 23.5px);
+                max-width: 360px;
+                cursor: default;
+                background: white;
+                padding: 40px 35px 70px;
+                .content-txt{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100%;
+                }
+                .title{
+                    transform: translate(0);
+                    transition: transform .65s cubic-bezier(.165,.84,.44,1) .2s,opacity .65s cubic-bezier(.39,.575,.565,1) .2s,visibility .65s cubic-bezier(.39,.575,.565,1) .2s,-webkit-transform .65s cubic-bezier(.165,.84,.44,1) .2s;
+                    font-size: 1.6rem;
+                    margin-bottom: .5rem;
+                    line-height: 1.16 !important;
+                    vertical-align: baseline;
+                    text-align: left !important;
+                    font-weight: 200;
+                    width: 100%;
+                    color: #111;
+                }
+                .txt{
+                    font-size: 14px;
+                    line-height: 1.8;
+                    letter-spacing: .015em;
+                    max-height: 280px;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                    text-align: left;
+                    color: #444;
+                }
+            }		
+        }
+    }
+    .dots {
+        list-style: none;
+        padding: 0 35px;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 10vw;
+        z-index: 12;
+        bottom: -50px;
+        width: calc(26.66667vw - 23.5px);
+        max-width: 360px;
+        li {
+            width: 5px;
+            height: 5px;
+            margin-right: 20px;
+            background: silver;        
+            display: inline-block;
+            border-radius: 75px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform .35s cubic-bezier(.26,1,.48,1) .35s,background .35s cubic-bezier(.39,.575,.565,1) 0s,-webkit-transform .35s cubic-bezier(.26,1,.48,1) .35s;
+            &:hover{
+                background: black;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &.active {
+                width: 11px;
+                height: 11px;
+                background-color:transparent;
+                border: 1px solid #444;
+                // transform: scale(0);
+                transition: transform .35s cubic-bezier(.76,0,.24,1) 0s,-webkit-transform .35s cubic-bezier(.76,0,.24,1) 0s;
+            }
+
+        } 
+    }
+    
+}

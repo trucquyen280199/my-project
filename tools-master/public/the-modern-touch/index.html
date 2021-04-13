@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
+    <title>Homepage</title>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/swiper-bundle.js"></script>
+
+</head>
+
+<body class="min-h-screen">
+    <div id="app" class="flex flex-col min-h-screen">
+        <header id="header" class="w-full">
+            <div class="relative w-full h-full">
+                <div class="container d-flex justify-between xl:px-0 xl:pr-3 py-3 sm:px-3 px-30px">
+                    <div id="logo">
+                        <a href="./index.html" class="block">
+                            <img src="./assets/images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <aside id="aside" class="xl:pr-5px">
+                        <div class="lg:hidden flex justify-between items-center">
+                            <a href="./index.html">
+                                <img src="./assets/images/logo.png" alt="" style="width: 119px;">
+                            </a>
+                            <a href="#" id="close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <g id="close" data-name="close" transform="translate(-0.556 -0.724)">
+                                        <path id="Rectangle_43" data-name="Rectangle 43" d="M.006,1.622A1.5,1.5,0,0,1,1.5.131L22.382.007a1.291,1.291,0,0,1,1.243,1.235h0a1.315,1.315,0,0,1-1.257,1.25L1.243,2.618A1.291,1.291,0,0,1,0,1.382Z" transform="translate(1.219 17.425) rotate(-45)" fill="#1dba99" />
+                                        <path id="Rectangle_43_Copy_2" data-name="Rectangle 43 Copy 2" d="M.009,1.518A1.5,1.5,0,0,1,1.518.009l21,.123a1.312,1.312,0,0,1,1.254,1.261h0a1.288,1.288,0,0,1-1.239,1.246L1.268,2.515A1.312,1.312,0,0,1,.015,1.254Z" transform="translate(2.246 1.334) rotate(40)" fill="#1dba99" />
+                                    </g>
+                                </svg>
+
+                            </a>
+                        </div>
+                        <ul class="lg:my-0 my-48px d-flex items-end h-full">
+                            <li>
+                                <a href="#" class="active">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">SERVICE</a>
+                            </li>
+                            <li class="position-relative">
+
+                                <a href="#" class="menu-parent">PROJECTS</a>
+                                <div class="sub-menu position-absolute active">
+                                    <div class="flex justify-between">
+                                        <div class="inline-block ">
+                                            <p class="text-16px font-bold text-white border-b-2 border-black w-auto">FILTER PROJECT</p>
+                                        </div>
+                                        <button type="button" class="text-20px tex-white border-0">&#10005;</button>
+                                    </div>
+                                    <div class="mt-50px">
+                                        <h4 class="text-16px font-bold text-black">PROJECT CATEGORY</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" /> Khách sạn & khu nghỉ dưỡng</li>
+                                            <li class="text-16px"><input type="checkbox" />Căn hộ cao cấp & văn phòng</li>
+                                            <li class="text-16px"><input type="checkbox" />Công trình dân dụng</li>
+                                            <li class="text-16px"><input type="checkbox" />Spa, nhà hàng, trung tâm thương mại</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <h4 class="text-16px font-bold text-black">COUNTRY</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" />Việt Nam</li>
+                                            <li class="text-16px"><input type="checkbox" />USA</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <h4 class="text-16px font-bold text-black">YEAR</h4>
+                                        <ul class="mx-0 px-0 inline-block text-white mt-10px">
+                                            <li class="text-16px"><input type="checkbox" />2019</li>
+                                            <li class="text-16px"><input type="checkbox" />2018</li>
+                                            <li class="text-16px"><input type="checkbox" />2017</li>
+                                            <li class="text-16px"><input type="checkbox" />2016</li>
+                                            <li class="text-16px"><input type="checkbox" />2015</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mt-20px">
+                                        <button class="border border-white text-14px text-white py-10px px-36px mb-10px" type="button">Reset filters</button><br />
+                                        <button class="border border-black text-14px text-white bg-black py-10px px-36px" type="button">Apply filters</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="">CAREER</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">CONTACT</a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </header>
+        <script>
+            $(document).ready(function() {
+                var menuparent = $('.menu-parent');
+                var submenu = $('.sub-menu');
+                $(menuparent).click(function() {
+                    if ($(submenu).hasClass("hidden")) {
+                        $(submenu).removeClass("hidden");
+                        $(submenu).addClass("active")
+                    } else {
+                        $(submenu).removeClass("active");
+                        $(submenu).addClass("hidden")
+                    }
+                })
+            })
+        </script>
+        <main class="flex-grow">
+
+            <section class="newest-project">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="content-project">
+                                <div class="title-project ">
+                                    <p class="tit">3 NEWEST PROJECT</p>
+                                    <span class="tit-project">BASON</span>
+                                    <p class="type-project text-right mt-10px"><span class="line"></span>VILLA</p>
+                                </div>
+                                <div class="information">
+                                    <p><b>CLIENT:</b> Mr. Dương Huy Linh</p>
+                                    <p><b>LOCATION:</b> Dist, TP.HCM</p>
+                                    <p><b>STYLE:</b> Semiclassical</p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/slider-home-1.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-project">
+                                <div class="title-project ">
+                                    <p class="tit">3 NEWEST PROJECT</p>
+                                    <span class="tit-project">ANANTARA </span>
+                                    <p class="type-project text-right mt-10px"><span class="line"></span>RESORT</p>
+                                </div>
+                                <div class="information">
+                                    <p><b>CLIENT:</b> Mr. Dương Huy Linh</p>
+                                    <p><b>LOCATION:</b> Dist, TP.HCM</p>
+                                    <p><b>STYLE:</b> Semiclassical</p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/slider-home-2.jpg">
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="content-project">
+                                <div class="title-project ">
+                                    <p class="tit">3 NEWEST PROJECT</p>
+                                    <span class="tit-project">ANANTARA</span>
+                                    <p class="type-project text-right mt-10px"><span class="line"></span>RESORT</p>
+                                </div>
+                                <div class="information">
+                                    <p><b>CLIENT:</b> AB Corporation</p>
+                                    <p><b>LOCATION:</b> Phan Thiết, Bình Thuận</p>
+                                    <p><b>STYLE:</b> Bản địa</p>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./assets/images/slider-home-3.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination fraction d-none"></div>
+                    <!-- Add Arrows -->
+                    <div class="group-btn">
+                        <div class="swiper-button-prev">&#8592;</div>
+                        <div class="swiper-button-next">&#8594;</div>
+                    </div>
+
+
+                </div>
+                <div class="number-project">
+                    <span class="mr-10px">PROJECT </span>
+                    <span class="fraction"></span>
+                    <span>/</span>
+                    <span class="total"></span>
+                </div>
+
+                <div class="group-button position-absolute">
+                    <a href="#" class="mb-20px">See more</a>
+                    <a href="#">View on map
+                        <svg class="ml-10px" xmlns="http://www.w3.org/2000/svg" width="58.35" height="31.378" viewBox="0 0 58.35 31.378">
+                            <g id="Group_52" data-name="Group 52" transform="translate(1578.885 836.753)">
+                                <path id="Path_51" data-name="Path 51" d="M-1160.61-819.1c.117.024,2.132.519,2.149.448.271.162.575-.052.83.148.193.152,2.3.012,2.549.183a11.956,11.956,0,0,1,2.721.454,8.6,8.6,0,0,0,1.231-.022c.135,0,3.47,1.321,3.711,1.448,0,.028-1,1.592-.973,1.611-.045.435-.214.921-.276.861-.278-.266-.591-.5-.847-.78a8.922,8.922,0,0,1-.309-1.53,22.322,22.322,0,0,0-2.819.773c-.1.259-.072.848.071.878-.013-.062,1.433,1.914,1.321,2.431-.035.161-.661.25-.71.411s-.093.353-.15.574c.134.112.348.269.534.453.228.225.228.523.022.61-.1.043-.993.865-.953,1.048.206.037.2.221.089.446-.187.373-.2.837-.569,1.115a1.217,1.217,0,0,1-.3.181,2.009,2.009,0,0,0-1.01.553c-.118-.181-.208-.432-.495-.212a.524.524,0,0,0-.172.757.787.787,0,0,0,.228.277,1.087,1.087,0,0,1,.52,1.114c0,.04.012.1-.01.118-.272.227-.548.448-.879.715l.021-.3-.974-.832a1.653,1.653,0,0,0-.022,1.042,1.267,1.267,0,0,0,.5.619.806.806,0,0,1,.326.687,1.35,1.35,0,0,0,.184.461c-.563-.012-.74-.4-.842-.847-.063-.278-.1-.556-.42-.687-.061-.025-.113-.189-.094-.274a2.933,2.933,0,0,0-.312-1.685.249.249,0,0,0-.073-.085l-.556.207c.055-.728-.511-1.064-.717-1.511-.241.047-.436.081-.63.124a.353.353,0,0,0-.186.08c-.292.342-.57.7-.866,1.035a3.443,3.443,0,0,1-.369.332c-.05.489-.1.933-.139,1.377a.444.444,0,0,0,.021.119l.009-.008-.516.316c-.341-1.083-1.73-3.44-1.674-3.477a3.433,3.433,0,0,1-.595-.366c-.256-.285-.552-.2-.859-.205a6.733,6.733,0,0,1-1.112-.131c-.079-.015-.13-.184-.193-.281a.9.9,0,0,1-1.155-.341c-.1-.162-.141-.394-.406-.364a1.592,1.592,0,0,0-.283.1c.148.2.832.922.842.956.033.118.061.237.09.355a4,4,0,0,1,1.336.083c.114.036.28.273.253.32-.081.141.039.41-.244.433a.123.123,0,0,0-.081.079c-.1.417-.423.583-.775.751-.325.155-.61.391-.926.568a4.856,4.856,0,0,1-.848.394.252.252,0,0,1-.353-.223c-.022-.217-.067-.433-.109-.648a.468.468,0,0,0-.077-.192c-.206-.269-.426-.528-.625-.8a.9.9,0,0,1-.1-.3c-.03-.114-.01-.279-.082-.337a4.508,4.508,0,0,1-.687-.966.419.419,0,0,0-.141-.108c-.152-.083-.307-.16-.394-.205l1.536,3.267.08-.215.893,1.251,1.311-.287a1.214,1.214,0,0,1-.005.346c-.094.32-.2.637-.327.946a1.987,1.987,0,0,1-.669.805,4.25,4.25,0,0,0-.813.878,6.6,6.6,0,0,0-.51.978,1.329,1.329,0,0,0,.218,1.252c.021.021.064.041.063.061a7.858,7.858,0,0,1-.038.93c-.014.1-.158.194-.252.28-.3.279-.616.548-.91.835-.045.044-.022.168-.015.253s.039.2.05.3a.6.6,0,0,1-.4.709c-.131.052-.165.153-.17.34-.005.221,0,.553-.336.684-.116.046-.181.21-.284.3-.267.242-.54.477-.814.71a.276.276,0,0,1-.166.071,2.312,2.312,0,0,0-.9.162c-.3.113-.466-.185-.467-.521a2.975,2.975,0,0,0-.267-.816c-.138-.427-.267-.856-.4-1.284a1.958,1.958,0,0,0-.168-.5,1.935,1.935,0,0,1-.089-2.2c.025-.043.065-.095.059-.136a4.105,4.105,0,0,0-.182-1.019,12.1,12.1,0,0,0-.73-1.262.315.315,0,0,1-.06-.191c.05-.241.112-.481.183-.716a.319.319,0,0,0-.236-.446c-.114-.037-.247-.021-.358-.064a1.718,1.718,0,0,1-.318-.2c-.124-.084-.257-.254-.368-.241a8,8,0,0,0-.953.234c-.1.025-.22.073-.3.037a.638.638,0,0,0-.713.075.345.345,0,0,1-.457.014,3.366,3.366,0,0,1-1.412-1.566c-.055-.132-.176-.237-.231-.368a.771.771,0,0,1,.015-.741.5.5,0,0,0,.026-.3,2.578,2.578,0,0,1,.5-1.97,1.314,1.314,0,0,1,.561-.5.808.808,0,0,0,.319-.481,1.209,1.209,0,0,1,.418-.7c.205-.152.123-.874-.03-.908-.044-.15-.081-.262-.108-.376a.342.342,0,0,1,0-.142c.058-.291,1.051-2.034,1-2.094a9.233,9.233,0,0,0,1.93-2.5c-.068-.435.083-.606.56-.807a2.254,2.254,0,0,0,.577-.473c.157-.145.479-.567.594-.58.029,0,.059.01.069-.06.161-.052.321-.107.483-.154a3.629,3.629,0,0,1,.56-.142,6.083,6.083,0,0,1,.753-.029c.165,0,2.069.8,2.437.9-.081-.192.866-.431,1.192-.543a3.529,3.529,0,0,0,1.085,0,9.749,9.749,0,0,0,.979-.828c.166.048.816.507.61.341l.167-.157c.23.113.406.152.272.125l-.013-.1c.159-.029.431-.172.369-.265.278-.017.7-.139.6-.215.453-.133,1.565-.328,1.7-.389m-10.957,7.678a1.671,1.671,0,0,1-.042.477,2.455,2.455,0,0,1-.32.445l-.454-.258.032-.072a.4.4,0,0,0,.141.009c.172-.054.34-.118.51-.179a4.444,4.444,0,0,0-.29-.423c-.054-.063-.167-.071-.233-.128a4.5,4.5,0,0,1-.553-.527c-.132-.162-.218-.26-.435-.117a1.28,1.28,0,0,1-.487.154,2.7,2.7,0,0,1-.446.005l.066.108c-.089.114-.154.279-.27.333-.254.118-.424.238-.405.561a.47.47,0,0,1-.235.339,5.262,5.262,0,0,1-.6.19.968.968,0,0,0-.235.192c.094.056.194.169.279.159a2.819,2.819,0,0,0,.791-.182c.259-.114.477-.293.79-.155.078.035.207-.057.315-.074.272-.042.545-.081.818-.1.037,0,.125.1.117.144-.043.2.171.437-.083.609-.02.014,0,.084,0,.19l.144-.151c.25.119.469.208.674.324.239.135.418.38.728.383.013,0,.022.036.038.045.08.047.163.091.245.136a1.042,1.042,0,0,0,.13-.271c.052-.332.287-.434.588-.305a2.052,2.052,0,0,0,.8.31,1.3,1.3,0,0,0,.63-.013.433.433,0,0,1,.273.026c.285.091.447.031.53-.258.1-.334.156-.679.241-1.06a1.25,1.25,0,0,0-.251.042c-.236.111-.467.251-.7-.008-.016-.017-.1.017-.15.043a.5.5,0,0,1-.636-.2c-.083-.189-.154-.384-.247-.617.2-.086.527-.013.694-.28.007-.011.058.013.087.009a.669.669,0,0,0,.251-.053.72.72,0,0,1,.775-.024,1.461,1.461,0,0,0,.813.131c.077,0,.193-.129.208-.214.012-.068-.091-.169-.162-.236a.872.872,0,0,0-.222-.136c-.312-.156-.58-.485-1-.236a.292.292,0,0,1-.254-.113c-.052-.225-.235-.26-.446-.381a9.929,9.929,0,0,0-.51.929c-.031.071.128.224.251.422-.266,0-.491,0-.715,0a.412.412,0,0,0-.156.063c-.083.042-.163.089-.3.163l.281.386a.755.755,0,0,1-.891-.565.563.563,0,0,0-.312-.44c-.311-.221-.614-.454-.983-.728-.016.113-.078.252-.035.3a4.572,4.572,0,0,0,.566.567c.182.154.39.278.586.415l-.052.069Z" transform="translate(-374.61 -16.497)" />
+                                <path id="Path_52" data-name="Path 52" d="M-1562.17-809.631c-.1,0-.2-.007-.3,0-.125.011-.248.036-.371.056l.119.377c-.177.326-.617.206-1.03.3l.506.39c-.248.4-.6.112-.908.169l.183-.247a5.5,5.5,0,0,0-.986.264,12.282,12.282,0,0,0-1.188.711c-.261.161-.145.4-.085.6.024.078.2.109.309.161a6.967,6.967,0,0,0,.635.3,2.7,2.7,0,0,0,.5.082l-.287.64.242.4c.16-.282.282-.517.424-.74a.972.972,0,0,1,.263-.278c.141-.1.316-.143.453-.243s.276-.245.138-.46c-.024-.038,0-.134.038-.18.14-.189.3-.363.438-.555a.319.319,0,0,1,.407-.16c.1.031.215-.024.323-.015a.53.53,0,0,1,.259.079,3.6,3.6,0,0,1,.342.316c-.1.11-.318.293.048.51l.736-.449a3.22,3.22,0,0,1,.176.456.664.664,0,0,1-.034.309c-.052.183-.03.27.186.347.19.068.333.268.558.463-.157.125-.29.239-.432.341-.073.053-.168.075-.24.13a.248.248,0,0,0-.107.162c0,.041.089.09.146.115.163.068.289.538.163.653a.293.293,0,0,1-.158.048c-.161-.36-.5-.17-.752-.252-.038-.012-.074-.029-.175-.068l.355-.442a.6.6,0,0,0-.752.17.22.22,0,0,1-.215-.015c-.15-.182-.289-.112-.45-.024a4.056,4.056,0,0,0-.691.416c.2-.085.4-.175.6-.252a.6.6,0,0,1,.266-.047,1.013,1.013,0,0,1,.258.1l-.188.2.028.177.331.214c0,.042-.009.083-.014.125a3.83,3.83,0,0,1-.773.433l-.057-.077.513-.411a1.959,1.959,0,0,0-.453.064c-.318.141-.627.3-.937.461-.181.092-.249.224-.112.408a3.63,3.63,0,0,1-.612.137c-.244.013-.336.181-.46.336a.21.21,0,0,1-.2.072l-.153.41-.058-.01-.035-.275-.042-.006a.687.687,0,0,0-.066.247c.07.511-.3.672-.649.874a4.349,4.349,0,0,0-.784.576c-.225.21-.164.5-.112.776a.878.878,0,0,1-.234.876c-.084-.34-.134-.623-.23-.889a.6.6,0,0,0-.278-.329,3.646,3.646,0,0,0-.615-.132c-.366-.087-.415-.058-.463.323-.064,0-.142.023-.2,0a1.428,1.428,0,0,0-1.336.158.676.676,0,0,0-.281.34,6.878,6.878,0,0,0-.2.729,1.039,1.039,0,0,0,.123.985c.044.056.032.155.045.225a.629.629,0,0,1,.249,0,.914.914,0,0,0,.949-.213c.006-.008.02-.016.019-.023-.054-.555.4-.329.646-.419a2.227,2.227,0,0,1,.27-.061c-.121.243-.229.468-.344.69s-.242.458-.379.717c.19.017.432.116.578.037.308-.165.466.018.637.144a7.213,7.213,0,0,0-.178.841.492.492,0,0,0,.741.522c.305-.157.491-.055.67.3a1.816,1.816,0,0,1,1.187-.975c-.011.193-.022.387-.033.588l.463-.646c.377.618.961.45,1.426.424l.629.55a1.317,1.317,0,0,1,.293.269.566.566,0,0,0,.61.325.9.9,0,0,1,1,.534c.1.23.408.394.25.717-.009.018.064.07.09.112.065.106.125.215.2.343.105-.075.231-.342.486-.146.16.124.311.26.483.405a1.871,1.871,0,0,1,1.538.44.243.243,0,0,0,.072.056c.208.088.406.172.407.458a1.059,1.059,0,0,1-.29.947,1.256,1.256,0,0,0-.214.32c-.016.025-.013.072-.033.083-.4.22-.168.6-.239.9-.107.462-.23.921-.354,1.38a.266.266,0,0,1-.122.165,8.148,8.148,0,0,1-.835.3c-.326.092-.519.259-.48.578a1,1,0,0,1-.342,1c-.067.034-.176.053-.194.1-.06.171-.078.356-.129.53-.1.327-.25.418-.589.357-.125-.023-.247-.063-.4-.1a1.506,1.506,0,0,0,.3.332c.159.092.213.214.124.344a.786.786,0,0,1-.352.273,2.57,2.57,0,0,1-.526.087c0,.586,0,.586-.53.559l.4.32c-.058.149-.108.3-.172.438a.8.8,0,0,1-.116.148c-.052.067-.161.163-.145.2a.413.413,0,0,0,.215.187c.333.118.326.106.151.4a3.676,3.676,0,0,0-.2.526l.28.307-.223.026.986.525a.678.678,0,0,1-.747.088,2.761,2.761,0,0,1-1.122-.618c-.242-.25-.31-.6-.583-.812-.034-.027.032-.183.059-.315l-.3-.218a.834.834,0,0,0,.064-1.038c-.06-.061-.207-.036-.378-.059a.917.917,0,0,0,.048-.263,1.34,1.34,0,0,0-.092-.486.771.771,0,0,1-.042-.544,1.994,1.994,0,0,0,.008-.9,9.7,9.7,0,0,1-.176-2.36c-.014-.512-.028-1.06-.621-1.3a2.449,2.449,0,0,1-1.369-1.54,1.328,1.328,0,0,0-.78-.914c.038-.291-.172-.638.243-.813a.62.62,0,0,1,.023-.893c.157-.165.311-.333.459-.506a1.4,1.4,0,0,0-.023-1.018.317.317,0,0,1,.013-.291l-.288-.183-.26.456c-.22-.19-.523-.275-.792-.46-.376-.258-.269-.748-.643-.913l-.383-.1a1.751,1.751,0,0,1-.367-.1.727.727,0,0,1-.273-.237c-.2-.318-.281-.347-.643-.214a.407.407,0,0,1-.261.016c-.29-.112-.572-.243-.856-.369a4.254,4.254,0,0,0-.4-.178.558.558,0,0,1-.395-.671.864.864,0,0,0-.093-.5,9.961,9.961,0,0,0-.66-1.043,1.35,1.35,0,0,1-.316-.844c0-.053-.074-.108-.2-.165a.967.967,0,0,0-.059.333,3.277,3.277,0,0,0,.176.516c.131.354.264.706.4,1.06l-.121.066-.648-1.011a3.008,3.008,0,0,0,0-.419,2.449,2.449,0,0,0-.133-.59,3.215,3.215,0,0,0-.338-.553c-.049-.072-.181-.123-.183-.187-.014-.445-.228-.9.028-1.333.32-.539.66-1.067.962-1.552.127-.009.244.017.284-.027.237-.262-.047-.5-.046-.778l.237-.1c-.777-.142-.48-.587-.305-1.015l-.332.033c0-.052,0-.112,0-.171.021-.6.015-.607-.576-.757a1.608,1.608,0,0,1-.253-.1c-.046-.02-.086-.053-.13-.078-.294-.166-.544.164-.765.11-.269-.065-.474-.146-.735.024a7.273,7.273,0,0,1-2.315.95l-.029-.073,1.168-.439-.02-.078-.417-.037.077-.275c-.282-.23-.278-.353.051-.472s.657-.171.981-.272c.2-.061.382-.158.573-.24l-.042-.132a4.429,4.429,0,0,1-.512.05c-.079,0-.158-.067-.237-.1.068-.058.133-.16.205-.165.229-.018.46.005.691,0a.621.621,0,0,0,.281-.049c.026-.014.006-.165-.03-.234-.085-.163-.043-.25.129-.286a17.327,17.327,0,0,1,1.9-.379,9.313,9.313,0,0,1,1.589.089,3.436,3.436,0,0,1,.838.112,1.211,1.211,0,0,0,.924.06c.4.367.683-.079,1.024-.134a1.738,1.738,0,0,1,.457.069c.474.06.95.116,1.512.184l-.254.214.019.075.78-.1.033.226c.234-.31.478-.445.845-.25a1.784,1.784,0,0,0,.539.071.372.372,0,0,0,.428-.188c.151-.239.728.038.816-.231a1.512,1.512,0,0,1,1.388-.75,2.763,2.763,0,0,0-.651.3,2.007,2.007,0,0,0-.324.529c.213.028.243.378.26.4.207-.062.348-.556.232-.585v-.053l.229-.054c-.076-.035.51-.31.392-.209.963-.338.963-.338.935-.035a1.492,1.492,0,0,0,.158.03.187.187,0,0,0,.153-.06l-.208-.094c.01-.03.012-.077.029-.083a.418.418,0,0,1,.5.168c.1.109.167.307.425.225.105-.033.28.152.423.238l-.22.318.767.369c-.185.094-.36.167-.518.267-.307.194-.207-.319-.514-.2a1.934,1.934,0,0,1,.058.337,4,4,0,0,1-.046.46c-.192-.09-.544-1.086-.726-1.267-.12-.12-.246-.235-.369-.353Z" transform="translate(0 -24.789)" />
+                                <path id="Path_53" data-name="Path 53" d="M-752.058-496.133a6.324,6.324,0,0,1,.448-.539c.168-.164.356-.324.583-.044.108.133.262.106.3-.065.077-.367.39-.494.642-.684.04-.03.134.007.2.018l.734.113c-.05.087-.1.189-.166.284-.266.4-.26.427.142.659a1.194,1.194,0,0,1,.192.148c.289.258.429.239.566-.134s.219-.746.328-1.119a1.485,1.485,0,0,1,.115-.2c.045.182.081.29.1.4.032.214.027.413.26.567.11.073.11.351.113.537,0,.286.01.552.327.684.031.013.05.059.068.094.165.314.338.625.49.946a.8.8,0,0,1,.095.4,2.161,2.161,0,0,1-.819,1.6,9.056,9.056,0,0,0-.768.816,3.155,3.155,0,0,1-.522.368c-.075.048-.181.052-.249.1-.182.142-.33.142-.461-.094-.193.32-.427.112-.615.041-.1-.036-.143-.239-.181-.375a3.322,3.322,0,0,1-.077-.478c-.014-.1-.018-.21-.027-.323l-.475.381a1.48,1.48,0,0,1-.05-.193c-.043-.421-.2-.609-.618-.547a2.862,2.862,0,0,0-1.568.48.313.313,0,0,1-.226.06,1.5,1.5,0,0,0-.976.248c-.216.118-.351,0-.474-.136a.217.217,0,0,1,.006-.208c.331-.211.272-.54.267-.848,0-.161-.059-.322-.055-.482a5.266,5.266,0,0,1,.073-1.013c.09-.4.5-.5.813-.659a2.545,2.545,0,0,1,.612-.135.671.671,0,0,0,.505-.512C-752.36-496.142-752.3-496.337-752.058-496.133Z" transform="translate(-774.014 -318.395)" />
+                                <path id="Path_54" data-name="Path 54" d="M-1321.183-834.351l-.466.083-.038-.114.449-.268-.338-.037c.049-.126.138-.243.129-.353-.041-.5-.373-.666-1.01-.5a.367.367,0,0,1-.48-.169l.583-.079v-.051h-.629l-.006-.08,1.256-.207-.114-.184a4.57,4.57,0,0,0-1.148.252c-.317.155-.735.083-.973.434-.05.074-.248.068-.378.066-.415,0-.83-.025-1.245-.031a.951.951,0,0,0-.256.1c.491.185.968-.19,1.466.131a5.387,5.387,0,0,1-1.853.079l.172-.245c-.136-.1-.4.141-.417-.211a1.824,1.824,0,0,0,1.607-.19c-.34,0-.721.244-.849-.269a1,1,0,0,1,1.214.023v-.14l-.206-.144a15.692,15.692,0,0,1,3.812-.1c-.1.041-.152.069-.209.087a.237.237,0,0,0-.164.1,3.369,3.369,0,0,1,.341-.069q.435-.045.871-.073c.362-.023.727-.019,1.086-.06a9.2,9.2,0,0,1,2.711-.1c.088.016.162.105.242.16l-.034.1h1.09l-1.214.452.27.322h-.392c.2.269.106.531-.226.646-.168.058-.179.184-.2.35a.478.478,0,0,1-.3.3c-.438.137-.89.231-1.334.349-.1.027-.2.088-.3.124-.292.106-.585.211-.88.308-.209.069-.433.1-.525.349a.266.266,0,0,1-.116.117,2.1,2.1,0,0,0-.586.634c-.052.069-.209.155-.226.138-.238-.231-.735-.149-.765-.631-.017-.27-.08-.539-.072-.807a.363.363,0,0,1,.382-.375,1,1,0,0,0,.318-.137Z" transform="translate(-237.028)" />
+                                <path id="Path_55" data-name="Path 55" d="M-802.653-557.013a7.309,7.309,0,0,1-.605-.7c-.189-.281-.3-.612-.49-.894a5.987,5.987,0,0,0-.569-.654c-.118-.131-.242-.258-.363-.387l.061-.053.582.125a3.708,3.708,0,0,0,1.233,1.1l-.062.142a3.353,3.353,0,0,1,.509.769A.391.391,0,0,1-802.653-557.013Z" transform="translate(-727.036 -260.172)" />
+                                <path id="Path_56" data-name="Path 56" d="M-856.337-573.685c.156-.085.272-.09.355.11.193.467.2.464-.2.672-.052-.279-.1-.534-.148-.79Z" transform="translate(-678.527 -246.989)" />
+                                <path id="Path_57" data-name="Path 57" d="M-1095.273-695.309c-.389.1-.187.337-.214.523C-1095.132-694.853-1095.267-695.085-1095.273-695.309Z" transform="translate(-453.92 -132.827)" fill="#fff" />
+                                <path id="Path_58" data-name="Path 58" d="M-1095.273-695.309c.006.224.141.456-.214.523C-1095.46-694.972-1095.662-695.214-1095.273-695.309Z" transform="translate(-453.92 -132.827)" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <script>
+                $(document).ready(function() {
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'fade',
+                        // loop: true,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            type: 'progressbar',
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+
+                    var counter = $('.fraction');
+                    var currentCount = $('<span class="count">1<span/>');
+                    var total = document.querySelectorAll('.swiper-slide').length;
+                    var numberTotal = $('.total');
+                    numberTotal.append(total);
+                    counter.append(currentCount);
+
+                    swiper.on('transitionStart', function() {
+                        var index = this.activeIndex + 1,
+                            $current = $(".photo-slide").eq(index),
+                            $c_cur = $("#count_cur"),
+                            $c_next = $("#count_next"),
+                            dur = 0.8;
+
+                        var prevCount = $('.count');
+                        currentCount = $('<span class="count next">' + index + '<span/>');
+                        counter.html(currentCount);
+                    });
+                });
+            </script>
+            <section id="introduce" class="flex items-center ">
+                <div class="swiper-main gallery-thumbs" style="width: 25%;">
+                    <div class="swiper-wrapper block">
+                        <div class="swiper-slide">About us</div>
+                        <div class="swiper-slide"> What we do</div>
+                        <div class="swiper-slide">Our team</div>
+                        <div class="swiper-slide">What makes us different</div>
+                    </div>
+                    <div class="swiper-button-next d-none"></div>
+                    <div class="swiper-button-prev d-none"></div>
+                </div>
+
+                <div class="swiper-main gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide panel-1 py-5">
+                            <div class="flex flex-col justify-center items-center">
+                                <h5>HELLO!</h5>
+                                <div class="line"></div>
+                                <div class="content">
+                                    <p>Thành lập tại Việt Nam năm 2013, Công ty TNHH Xây dựng và Thiết kế Phong Cách Mới (The Modern Touch) được dẫn dắt
+                                        bởi kiến trúc sư người Mỹ gốc Việt Lê Quang Linh. Ông từng sinh sống, làm việc tại Hawaii và được biết đến là
+                                        kiến trúc sư có hơn 20 năm kinh nghiệm phát triển nhiều dự án lớn như: khu dân cư, khu phức hợp thương mại,
+                                        dự án cộng đồng, giáo dục, spa và khu nghỉ dưỡng cao cấp… tại Mỹ, Hồng Kông, Việt Nam… Điểm đặc biệt nổi trội
+                                        của các công trình này là được thiết kế đạt chuẩn về công năng, tái tạo năng lượng và thân thiện với môi trường
+                                        (LEED®AP).</p>
+                                    <p>Hiện tại, The Modern Touch/Phong Cách Mới có hơn 50 kiến trúc sư, kỹ sư, thiết kế, quản lý dự án…,
+                                        tham gia nhiều dự án lớn tại các nước với nhiều vai trò: tư vấn thiết kế kiến trúc, triển khai, giám sát,
+                                        quản lý dự án, xây dựng, quy hoạch, tái cấu trúc… Mỗi thành viên, dù ở vị trí nào, cũng đều tham gia vào toàn
+                                        bộ quá trình xây dựng dự án, phát huy tốt nhất thế mạnh của mình để cùng tạo nên giá trị lớn hơn cho tập thể.
+                                    </p>
+                                    <p> Với thị trường trong nước, The Modern Touch/Phong Cách Mới muốn mang đến cho khách hàng hơi thở kiến trúc hiện đại
+                                        nhưng vẫn tôn vinh những giá trị tinh thần truyền thống và dấu ấn thương hiệu, cá nhân riêng biệt. Điều này được
+                                        thể hiện rất rõ qua các công trình dân dụng nổi bật mà The Modern Touch/Phong Cách Mới đã thực hiện như:
+                                        TMS Hotel & Spa Đà Nẵng, Tri Việt Hội An Resort, Victoria Villa, Duplex và Penthouse, hệ thống Saigon Smile Spa,
+                                        khách sạn Grand Mercure mở rộng, Anantara Resort, Saipan Resort, Super Villa Đà Nẵng… Tất cả đều nhận được sự hài lòng
+                                        và tin tưởng tuyệt đối của khách hàng.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide panel-2 py-5">
+                            <div class="flex flex-col justify-center items-center">
+                                <h5>What <br />we do</h5>
+                                <div class="line"></div>
+                                <div class="content">
+                                    <div class="swiper-what-we-do">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p class="text-22px font-bold text-center mb-3">1. Architectural consulting</p>
+                                                <p class="text-14px text-center">Tại The Modern Touch/Phong Cách Mới, kiến trúc là một trong những nền tảng chính để biến thế giới thành nơi tốt đẹp hơn. Chúng tôi tin rằng thiết kế kiến trúc vượt bậc chính là sự kết hợp giữa công năng hiệu quả và vẻ đẹp trường tồn. Mỗi ngày, các kiến trúc sư pha trộn những kỹ năng thiết kế đặc biệt, khả năng quản lý dự án vượt trội và tầm nhìn sáng tạo để tạo ra các công trình đáp ứng từng nhu cầu riêng biệt của khách hàng; đồng thời tạo ra tác động kinh tế, xã hội và môi trường tích cực lâu dài.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text-22px font-bold text-center mb-3">2. Interior design</p>
+                                                <p class="text-14px text-center">Khi phát triển thiết kế nội thất, chúng tôi đảm bảo các chi tiết hoàn thiện bổ sung cho nhau, tạo ra các không gian lôi cuốn ánh nhìn và cảm xúc của người sử dụng. Thiết kế nội thất có một trọng tâm khác với kiến trúc bên ngoài, đó chính là chúng bổ sung cho nhau. Sự chuyển tiếp từ các vật liệu hoàn thiện nội thất cho phép chúng tôi phát triển nhiều ý tưởng táo bạo giao hòa và thấm nhuần cảm giác vui vẻ đầy cá tính.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text-22px font-bold text-center mb-3">3. Phân tích và khảo sát mặt bằng</p>
+                                                <p class="text-14px text-center">Một mặt bằng tổng thể thành công được nhận định và chắt lọc từ những nghiên cứu phức tạp và tinh vi trong khuôn khổ văn hóa, xã hội, thể chất và kinh tế nhằm phát triển tổng thể dựa trên các bộ phận. Hơn nữa, mặt bằng tổng thể tuyệt vời tạo ra môi trường độc đáo, trong đó con người và thiên nhiên hòa hợp cùng nhau phát triển giữa bối cảnh thành thị hoặc nông thôn. Chúng tôi xem xét để đảm bảo rằng bất kỳ công trình hiện có nào đều sẽ được sử dụng hết tiềm năng. Khảo sát và phân tích giúp chúng tôi và khách hàng hiểu làm thế nào để sử dụng tốt nhất các cơ sở hiện có.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text-22px font-bold text-center mb-3">4. Cung cấp nguồn nhân lực</p>
+                                                <p class="text-14px text-center">Chúng tôi cung cấp nhân sự chất lượng trong ngành kiến trúc nội thất - linh hoạt về thời gian, đảm bảo công việc thực hiện hiệu quả, giúp tiết kiệm chi phí, thời gian và nguồn lực cho các doanh nghiệp.</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text-22px font-bold text-center mb-3">5. Quản lý chất lượng</p>
+                                                <p class="text-14px text-center">Chúng tôi kiểm tra chất lượng các mặt hàng theo quy trình và hệ thống chuẩn, đảm bảo đầy đủ các tiêu chí kiểm hàng, xử lý lỗi và đưa ra hướng giải quyết tốt nhất nhằm đáp ứng nhu cầu tối đa của khách hàng một cách hiệu quả.</p>
+                                            </div>
+                                        </div>
+                                        <div class="flex position-absolute " style="width: 100%;">
+                                            <div class="group mx-auto">
+                                                <div class="btn-wwd-prev text-40px">&#8592;</div>
+                                                <div class="swiper-pagination mx-50px"></div>
+                                                <div class="btn-wwd-next text-40px">&#8594;</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide panel-3 py-5 pl-70px">
+                            <div class="flex flex-col justify-center">
+                                <h5>OUR TEAM</h5>
+                                <div class="line"></div>
+                                <div class="content mt-5">
+                                    <div class="swiper-our-team">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="flex items-end w-9-12">
+                                                    <img src="./assets/images/Rectangle -1.jpg" width="100%" height="100%" />
+                                                    <div class="flex flex-col justify-center ml-50px">
+                                                        <p class="text-14px">Tiến sĩ, Kiến trúc sư</p>
+                                                        <p class="text-20px" style="color: #F36F21;">LÊ QUANG LINH</p>
+                                                        <div class="content-item text-14px mt-5">
+                                                            <p>-Giám đốc điều hành Công ty Xây dựng và thiết kế Phong Cách Mới (The Modern Touch), một trong những công ty tiên phong về Revit trong khai triển thiết kế không chỉ ở Việt Nam mà cả khu vực châu Á.</p>
+                                                            <p>- Từng sinh sống và làm việc tại Hawaii, Mỹ.</p>
+                                                            <p>- Hơn 20 năm kinh nghiệm phát triển các dự án lớn, bao gồm: khu dân cư, khu phức hợp thương mại, dự án cộng đồng, giáo dục, spa và khu nghỉ dưỡng cao cấp tại Mỹ, Hồng Kông, Việt Nam… với nhiều vai trò: tư vấn thiết kế kiến trúc, triển khai, giám sát, quản lý dự án, xây dựng, quy hoạch, tái cấu trúc… - Kiến trúc sư duy nhất ở Việt Nam hiện nay có chứng chỉ về “Kiến trúc xanh” tại Mỹ.</p>
+                                                            <p>- Một số công trình tiêu biểu đã tham gia: TMS Hotel & Spa Đà Nẵng, Tri Việt Hội An Resort, Victoria Villa, Duplex và Penhouse, hệ thống Saigon Smile Spa, khách sạn Grand Mercure mở rộng…</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-wrap ">
+                                                    <div class="item md:w-1-4 w-full px-2">
+                                                        <img src="./assets/images/Rectangle -2.jpg" class="w-4-5" />
+                                                        <div class="content-item text-14px">
+                                                            <p>Giám đốc chi nhánh</p>
+                                                            <p class="text-20px mb-20px" style="color: #F36F21;">Đoàn Cao Sơn</p>
+                                                            <b>Kinh nghiệm:</b>
+                                                            <p>10 năm quản lý dự án<br />
+                                                                10 năm chuyên viên thiết kế</p>
+                                                            <b>Kỹ năng:</b>
+                                                            <p>Quản lý dự án, 3Dxmas, Autocad, Photoshop, Microsoft Office</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item md:w-1-4 w-full px-2">
+                                                        <img src="./assets/images/Rectangle -3.jpg" class="w-4-5" />
+                                                        <div class="content-item text-14px">
+                                                            <p>Giám đốc nhân sự</p>
+                                                            <p class="text-20px mb-20px" style="color: #F36F21;">Nguyễn Vũ Nguyệt Minh</p>
+                                                            <b>Kinh nghiệm:</b>
+                                                            <p>Hơn 10 năm làm công tác Quản trị nhân sự với các vị trí: Ee Relations, Senior HR, HR manager</p>
+                                                            <b>Kỹ năng:</b>
+                                                            <p>Tổ chức và giám sát; quản lý và lập kế hoạch; giao tiếp tốt và cực kỳ kiên nhẫn.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item md:w-1-4 w-full px-2">
+                                                        <img src="./assets/images/Rectangle -4.jpg" class="w-4-5" />
+                                                        <div class="content-item text-14px">
+                                                            <p>Quản lý dự án</p>
+                                                            <p class="text-20px mb-20px" style="color: #F36F21;">Cao Lữ Thanh Phong</p>
+                                                            <b>Kinh nghiệm:</b>
+                                                            <p>5 năm Quản lý dự án (The Modern Touch)<br />
+                                                                4 năm Trưởng nhóm dự án (Atlas Industries)
+                                                            </p>
+                                                            <b>Kỹ năng:</b>
+                                                            <p>Quản lý dự án, Autodesk Software (Revit, Autocad…), Microsoft Office.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item md:w-1-4 w-full px-2">
+                                                        <img src="./assets/images/Rectangle -5.jpg" class="w-4-5" />
+                                                        <div class="content-item text-14px">
+                                                            <p>Quản lý dự án</p>
+                                                            <p class="text-20px mb-20px" style="color: #F36F21;">Hoàng Thanh Linh</p>
+                                                            <b>Kinh nghiệm:</b>
+                                                            <p class="">15 năm quản lý dự án, quản lý thiết kế, giám sát công trình.</p>
+                                                            <b>Kỹ năng:</b>
+                                                            <p>Quản lý dự án, lãnh đạo, tư duy phản biện, Autodesk Software (Revit, Autocad…), Microsoft Office.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex position-absolute mt-40px" style="width: 100%;">
+                                            <div class="group mx-auto flex">
+                                                <div class="btn-ot-prev position-relative text-40px text-black mr-40px">&#8592;</div>
+                                                <div class="btn-ot-next position-relative text-40px text-black ml-40px">&#8594;</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide panel-4 py-5">
+                            other info
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                var galleryThumbs = new Swiper('.gallery-thumbs', {
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesVisibility: true,
+                    watchSlidesProgress: true,
+                });
+
+                var galleryTop = new Swiper('.gallery-top', {
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    thumbs: {
+                        swiper: galleryThumbs
+                    }
+                });
+
+
+                var swiper = new Swiper('.swiper-what-we-do', {
+                    // effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    spaceBetween: 100,
+                    navigation: {
+                        nextEl: '.btn-wwd-next',
+                        prevEl: '.btn-wwd-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'fraction',
+                    },
+                });
+                var swiper = new Swiper('.swiper-our-team', {
+                    // grabCursor: true,
+                    loop: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    navigation: {
+                        nextEl: '.btn-ot-next',
+                        prevEl: '.btn-ot-prev',
+                    },
+                });
+            </script>
+            <section id="feature-project">
+                <div class="content-top">
+                    <p class="mr-4" style="color: rgba(0, 0, 0, 0.5);">Các công trình đã thực hiện</p>
+                    <div class="line"></div>
+                </div>
+                <div class="projects-slide-main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-main">
+                            <div class="tay-ho-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-2.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-3.jpg" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <p class="text-14px text-gray-500">FEATURE PROJECT</p>
+                                <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                                <p class="text-14px">All projects</p>
+                                <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                            </div>
+                            <div class="flex flex-wrap px-70px mt-50px">
+                                <div class="w-1-3 flex items-stretch">
+                                    <div class="w-1-2">
+                                        <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">TAY HO</h4>
+                                        <p class="text-30px mb-30px">OFFICE</p>
+                                        <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s">See more</a>
+                                    </div>
+                                    <div class="w-px bg-gray-500 mx-auto"></div>
+
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>KHÁCH HÀNG:</b> NDH Company</p>
+                                        <p><b>ĐỊA ĐIỂM:</b> Tây Hồ, Hà Nội</p>
+                                        <p><b>PHONG CÁCH: </b> Hiện đại, Á Đông đương đại</p>
+                                    </div>
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 1.441 m2</p>
+                                        <p><b>DIỆN TÍCH XÂY DỰNG:</b> 1.105 m2</p>
+                                        <p><b>KHU CÔNG CỘNG/HỒ BƠI: </b> 148 m2 </p>
+                                        <p><b>CHIỀU CAO: </b> 9,3 m</p>
+                                        <p><b>SỐ TẦNG: </b> 2 tầng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-main">
+                            <div class="sala-slider">
+                                <div class="swiper-wrapper flex items-stretch">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/salla-1.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/salla-2.jpg" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <p class="text-14px text-gray-500">FEATURE PROJECT</p>
+                                <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                                <p class="text-14px">All projects</p>
+                                <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                            </div>
+                            <div class="flex flex-wrap px-70px mt-50px">
+                                <div class="w-1-3 flex items-stretch">
+                                    <div class="w-1-2">
+                                        <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">SALA</h4>
+                                        <p class="text-30px mb-30px">VILLA</p>
+                                        <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s">See more</a>
+                                    </div>
+                                    <div class="w-px bg-gray-500 mx-auto"></div>
+
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>KHÁCH HÀNG:</b> Ms. Võ Ngọc Thúy</p>
+                                        <p><b>ĐỊA ĐIỂM:</b> Quận 2, Tp Hồ Chí Minh</p>
+                                        <p><b>PHONG CÁCH: </b> Hiện đại</p>
+                                    </div>
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 331.13 m2</p>
+                                        <p><b>DIỆN TÍCH XÂY DỰNG:</b> 733.581 m2</p>
+                                        <p><b>CHIỀU CAO: </b> 15 m</p>
+                                        <p><b>SỐ TẦNG: </b> 4 tầng, 1 tầng hầm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-main">
+                            <div class="risemout-slider">
+                                <div class="swiper-wrapper flex items-stretch">
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-1.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-2.jpg" class="w-100 h-100" />
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./assets/images/feature-project-3.jpg" class="w-100 h-100" />
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <p class="text-14px text-gray-500">FEATURE PROJECT</p>
+                                <div class="line bg-black mx-30px" style="width: 1px; height: 13px;"></div>
+                                <p class="text-14px">All projects</p>
+                                <a href="#" class="all-project bg-black ml-30px" style="width: 40px; height: 40px;"></a>
+                            </div>
+                            <div class="flex flex-wrap px-70px mt-50px">
+                                <div class="w-1-3 flex items-stretch">
+                                    <div class="w-1-2">
+                                        <h4 class="text-40px font-bold border-b-2 border-orange-1 w-auto inline-block">RISEMOUT</h4>
+                                        <p class="text-30px mb-30px">PENHOUSE</p>
+                                        <a href="#" class="px-50px py-15px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white" style="transition: all 0.2s">See more</a>
+                                    </div>
+                                    <div class="w-px bg-gray-500 mx-auto"></div>
+
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>KHÁCH HÀNG:</b> Vicoland Group</p>
+                                        <p><b>ĐỊA ĐIỂM:</b> Hải Châu, Đà Nẵng</p>
+                                        <p><b>PHONG CÁCH: </b> Tân cổ điển</p>
+                                    </div>
+                                </div>
+                                <div class="w-1-3">
+                                    <div class="w-50px h-2px bg-orange-1"></div>
+                                    <div class="text-16px mt-20px">
+                                        <p><b>DIỆN TÍCH LÔ ĐẤT: </b> 407 m2</p>
+                                        <p><b>CHIỀU CAO: </b> 4,5 m</p>
+                                        <p><b>SỐ TẦNG: </b> 1 tầng</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-absolute w-auto flex items-center ml-70px mt-50px">
+                        <div class="btn-main-prev position-relative w-auto text-50px ">&#8592;</div>
+                        <div class="fraction-main position-relative w-auto text-26px mx-25px" style="bottom: 0;"></div>
+                        <div class="btn-main-next position-relative w-auto text-50px">&#8594;</div>
+                    </div>
+                </div>
+            </section>
+            <script>
+                var slideMain = new Swiper('.projects-slide-main', {
+
+                    // cssMode: true,
+                    effect: 'fade',
+                    navigation: {
+                        nextEl: '.btn-main-next',
+                        prevEl: '.btn-main-prev',
+                    },
+                    pagination: {
+                        el: '.fraction-main',
+                        type: 'fraction',
+                    },
+                    // mousewheel: true,
+                    // keyboard: true
+                });
+
+                var tayHoSlider = new Swiper('.tay-ho-slider', {
+                    cssMode: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar',
+                    },
+                    grabCursor: true,
+                });
+
+                var salaSlider = new Swiper('.sala-slider', {
+                    cssMode: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar',
+                    },
+                    grabCursor: true,
+                });
+
+                var risemoutSlider = new Swiper('.risemout-slider', {
+                    cssMode: true,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar',
+                    },
+                    grabCursor: true,
+                });
+            </script>
+            <section>
+                <div class="content-top min-h-screen bg-cover flex flex-column justify-center items-center" style="background: url('./assets/images/Group -1.jpg');">
+                    <p class="text-36px text-white text-center font-bold">“ÁP LỰC KHÔNG PHẢI ĐỂ<br />
+                        THÀNH CÔNG,<br />
+                        MÀ ĐỂ CÓ GIÁ TRỊ.”</p>
+                    <div class="w-90px bg-orange-1 h-2px"></div>
+                </div>
+
+            </section>
+
+        </main>
+        <section>
+            <div class="flex flex-column justify-center items-center py-90px" style="background: #EDEDED;">
+                <p class="text-14px">Stay in a loop, subcribe to our</p>
+                <h3 class="text-36px text-orange-1 font-bold mt-10px mb-50px">NEWSLETTER</h3>
+                <input type="text" class="w-1-3 border-b border-black bg-transparent h-40px text-center text-16px" placeholder="Your name" />
+                <input type="email" class="w-1-3 border-b border-black bg-transparent h-40px text-center text-16px mt-40px" placeholder="Your email address" />
+                <button type="button" class="px-30px py-10px mt-30px text-16px border border-black hover:border-orange-1 hover:bg-orange-1 hover:text-white">Send</button>
+            </div>
+        </section>
+        <footer id="footer" class="py-150px">
+            <div class="container d-flex flex-wrap mb-20px">
+                <div class="col-md-4 col-12 pl-0">
+                    <h4 class="title mb-20px">Contact us</h4>
+                    <div class="headquarters text-14px mb-20px">
+                        <p>Trụ sở</p>
+                        <p>Số 21, ngách 71/466 Ngô Gia Tự, P. Đức Giang, Q. Long Biên, Hà Nội, Việt Nam</p>
+                    </div>
+                    <div class="representative-office text-14px">
+                        <p>Văn phòng đại diện: </p>
+                        <ul>
+                            <li>
+                                <p><b>TP.HCM:</b> Lầu 5, tòa nhà Qunimex, 28 Nguyễn Thị Diệu, P.6, Q3, TP.HCM, Việt Nam</p>
+                            </li>
+                            <li>
+                                <p><b>Đà Nẵng:</b> 72C Nguyễn Hữu Thọ, P. Hòa Thuận Tây, Q. Hải Châu, TP. Đà Nẵng, Việt Nam</p>
+                            </li>
+                            <li>
+                                <p><b>Hawaii:</b> 91-1034 Nahawele, Ewa Beach, HI96706, Mỹ</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column justify-between pr-0">
+                    <h4 class="text-30px ">HOTLINE</h4>
+                    <h4 class="text-36px">+84 2839305018</h4>
+                    <p class=" ">Email </p>
+                    <p> Ingo@themoderntouch.com</p>
+                    <div class="icons d-flex">
+                        <a href="#" class="facebook mr-30px text-50px leading-none">
+                            <i class="fab fa-facebook-square "></i>
+                        </a>
+                        <a href="#" class="instagram text-50px leading-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column justify-center px-0">
+                    <ul class="text-14px">
+                        <li class="mb-15px">Sitemap</li>
+                        <li class="mb-15px">Terms & Conditions</li>
+                        <li class="mb-15px">Privacy Policy</li>
+                        <li class="mb-15px">TMT@2019</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container d-flex flex-wrap mt-50px">
+                <div class="col-md-4 col-12">
+                    <a href="#" class="contact-us">
+                        CONTACT US
+                    </a>
+                </div>
+                <div class="col-md-8 col-12 menu-bottom">
+                    <ul class="d-flex flex-wrap">
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">SERVICE</a>
+                        </li>
+                        <li>
+                            <a href="">PROJECTS</a>
+                        </li>
+                        <li>
+                            <a href="">APPROACH</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="./assets/js/jquery.min.js?v=1"></script>
+    <script src="./assets/js/popper.min.js?v=1"></script>
+    <script src="./assets/js/bootstrap.min.js?v=1"></script> -->
+    <!-- <script src="./assets/js/app.js"></script> -->
+</body>
+
+</html>

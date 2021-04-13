@@ -1,0 +1,32 @@
+.our-team{
+    .concept-team-body{
+        position: relative;
+        padding: 0 15vw;
+        .title{
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .team-lists{
+            width: 100%;
+            background: #000;
+            .team-list{
+                border-left: 1px solid #1a1a1a;
+                border-top: 1px solid #1a1a1a;
+                height: 223px;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                }
+                img{
+                    max-width: 280px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .concept-team-img{
+        margin-top: -223px;
+    }
+}
