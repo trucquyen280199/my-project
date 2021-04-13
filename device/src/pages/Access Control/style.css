@@ -23,10 +23,11 @@
         font-weight: 500;
     }
     .toc {
+        order: 2;
         position: sticky;
         top: 0;
         padding: 1em 1em 1em 0;
-        width: 20%;
+        width: 24%;
         line-height: 1.6; 
     }
     .toc div.menu-main{

@@ -4478,6 +4478,18 @@ header .header-inner .header-nav ul li a {
 .products-concept {
   padding: 100px 0 100px 10vw;
   height: 100vh;
+  position: relative;
+}
+
+.products-concept .bg-move {
+  content: "The Meaning of Tradition";
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  color: aliceblue;
 }
 
 .products-concept .content-image img {
