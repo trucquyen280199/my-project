@@ -6,9 +6,9 @@ function DeviceInOut(props) {
             <nav className="toc">
                 <ul className="menu-main">
                     <li className="link"><a href="#guide-device">Hình hướng dẫn khai báo thiết bị ra vào</a></li>
-                    <li className="link"><a href="#add-device">Thêm hệ số tăng ca</a> </li>
-                    <li className="link"> <a href="#edit-device">Sửa thông tin kiểu vắng</a> </li>
-                    <li className="link"> <a href="#delete-device">Xóa thông tin kiểu vắng</a> </li>
+                    <li className="link"><a href="#add-device">Thêm thiết bị ra vào</a> </li>
+                    <li className="link"> <a href="#edit-device">Sửa thiết bị ra vào</a> </li>
+                    <li className="link"> <a href="#delete-device">Xóa thiết bị ra vào</a> </li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
