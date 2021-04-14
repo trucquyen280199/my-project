@@ -4482,14 +4482,28 @@ header .header-inner .header-nav ul li a {
 }
 
 .products-concept .bg-move {
-  content: "The Meaning of Tradition";
-  font-size: 60px;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: auto;
-  width: 100%;
-  color: aliceblue;
+  left: 0;
+  white-space: nowrap;
+  width: auto;
+  font-size: 300px;
+  font-weight: 400;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #a9aaac;
 }
 
 .products-concept .content-image img {
