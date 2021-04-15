@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+// import "../../../style.css";
 function Schedule(props) {
     return(
         <div className="pages pageTest d-flex align-items-start"> 

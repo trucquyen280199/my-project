@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+// import "../../../style.css";
 function GroupCard(props) {
     return(
         <div className="pages pageTest groupCard d-flex align-items-start">

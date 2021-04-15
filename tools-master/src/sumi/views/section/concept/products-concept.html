@@ -28,10 +28,10 @@
         $(".bg-static").each(function() {
             var windowTop = $(window).scrollTop();
             var elementTop = $(this).offset().top;
-            var leftPosition = windowTop - elementTop ;
+            var leftPosition = windowTop - elementTop;
             $(this)
                 .find(".bg-move")
-                .css({ right: leftPosition });
+                .css({ left:leftPosition });
         });
     });
 </script>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Access Control/style.css";
+// import "../Access Control/style.css";
 
 function Visitor(props) {
     return(

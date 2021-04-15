@@ -120,8 +120,8 @@ function CoreCategory(props) {
                             <p>
                             Lưu ý:
                             <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span>
-                            <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span>
-                            <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span>
+                            <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span><br/>
+                            <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -140,11 +140,11 @@ function CoreCategory(props) {
                             B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
                             <p>
-                                Lưu ý:
-                                <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang cập nhật</span>
-                                <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span>
-                                <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span>
-                                <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
+                                Lưu ý:<br/>
+                                <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang cập nhật</span><br/>
+                                <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span><br/>
+                                <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
                                 <span className="ml-3">-	Nếu cập nhật phòng ban có cấp cao nhất thì sẽ không thể chọn phòng ban cha (vì mặc định nó là phòng ban cha)</span>
                             </p>
                             <img src="./images/core-category-update-department.png" className="w-75 my-3 " />
@@ -205,7 +205,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -280,8 +280,8 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span>
-                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span>
+                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
+                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
                             <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -301,8 +301,8 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span>
-                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span>
+                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
+                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
                             <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -358,7 +358,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> dân tộc <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã</b> dân tộc <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -378,7 +378,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã </b> dân tộc <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã </b> dân tộc <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -433,7 +433,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> chức vụ  <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã</b> chức vụ  <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã chức vụ </b> là <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -452,7 +452,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã </b> chức vụ <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã </b> chức vụ <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã chức vụ </b> là <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -510,7 +510,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> kỹ năng  <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã</b> kỹ năng  <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã kỹ năng </b> là <b>duy nhất</b></span>
                             </p>
                         </div>
@@ -529,7 +529,7 @@ function CoreCategory(props) {
                             </p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã </b> kỹ năng <b>bắt buộc</b></span>
+                            <span className="ml-3">-	<b>Tên và mã </b> kỹ năng <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã kỹ năng </b> là <b>duy nhất</b></span>
                             </p>
                         </div>

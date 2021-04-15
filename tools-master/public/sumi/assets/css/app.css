@@ -4485,7 +4485,7 @@ header .header-inner .header-nav ul li a {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 100px;
   white-space: nowrap;
   width: auto;
   font-size: 300px;

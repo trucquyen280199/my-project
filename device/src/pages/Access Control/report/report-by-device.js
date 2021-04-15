@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+// import "../style.css";
 function ReportByDevice(props) {
     return(
         <div className="pages pageTest p-3">

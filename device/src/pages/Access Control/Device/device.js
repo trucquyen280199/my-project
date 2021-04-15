@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+// import "../../../style.css";
 function Device(props) {
     return(
         <div className="pages pageTest device d-flex align-items-start">

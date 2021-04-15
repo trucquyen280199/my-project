@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+// import "./style.css";
 function Door(props) {
     return(
         <div className="pages d-flex align-items-start pageTest">

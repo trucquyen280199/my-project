@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.css";
+// import "../../../style.css";
 function Singnal(props) {
     return(
         <div className="pages pageTest importFiles d-flex align-items-start">
@@ -16,7 +16,8 @@ function Singnal(props) {
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/schedule-1.png" className="w-75 mb-3" /> 
+                            <img src="./images/singnal-1-1.png" className="w-25 mb-3" /> 
+                            <img src="./images/singnal-1-2.png" className="w-100 mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -50,7 +51,7 @@ function Singnal(props) {
                     <div id="add-edit">
                         <h2>1.	Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <img src="./images/singnal-2.png" className="w-75 mb-3" />  
+                            <img src="./images/singnal-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

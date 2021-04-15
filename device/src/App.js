@@ -5,10 +5,14 @@ import PublicRoute from './base/PublicRoute';
 import MainModule from './common/MainModule';
 import Loading from "./common/Loading";
 
-import User from './pages/Access Control/user/user';
-import UserGroup from './pages/Access Control/user-group';
+import User from './pages/core/user';
+import UserGroup from './pages/core/user-group';
+import ImportFiles from './pages/core/importFiles';
+import Module from './pages/core/setting/module';
+import CoreCategory from './pages/core/setting/core-category';
+import Mail from './pages/core/setting/mail';
+import SMS from './pages/core/setting/sms';
 import Dashboard from './pages/Access Control/dashboard/dashboard';
-import ImportFiles from './pages/Access Control/importFiles/importFiles';
 import Device from './pages/Access Control/Device/device';
 import Door from './pages/Access Control/door';
 import Elevator from './pages/Access Control/elevator';
@@ -23,15 +27,13 @@ import Singnal from './pages/Access Control/generalSetting/singnal';
 import Card from './pages/Access Control/generalSetting/card';
 import GroupCard from './pages/Access Control/generalSetting/group-card';
 import TriggerAction from './pages/Access Control/generalSetting/trigger-action';
-import CoreCategory from './pages/Access Control/generalSetting/core-category';
-import Module from './pages/Access Control/generalSetting/module';
 import ModuleConfig from './pages/Access Control/generalSetting/module-config';
 import AuditTrail from './pages/Access Control/audit-trail';
 import Visitor from './pages/visitor/visitor';
 import AccessGroup from "./pages/Access Control/access-control/access-group";
 import AccessLevel from "./pages/Access Control/access-control/access-level";
 import FloorLevel from "./pages/Access Control/access-control/floor-level";
-
+import './pages/style.css';
 
 function App() {
     const loadingRef = React.createRef()
@@ -50,6 +52,10 @@ function App() {
         {view: <User  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/User"},
         {view: <UserGroup  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/UserGroup"},
         {view: <ImportFiles  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ImportFiles"},
+        {view: <Module showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Module"},
+        {view: <CoreCategory showLoading={showLoading} hideLoading={hideLoading}/>, path: "/CoreCategory"},
+        {view: <Mail showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Mail"},
+        {view: <SMS showLoading={showLoading} hideLoading={hideLoading}/>, path: "/SMS"},
         {view: <Device showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Device"},
         {view: <Door showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Door"},
         {view: <Elevator showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Elevator"},
@@ -64,8 +70,6 @@ function App() {
         {view: <Card showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Card"},
         {view: <GroupCard showLoading={showLoading} hideLoading={hideLoading}/>, path: "/GroupCard"},
         {view: <TriggerAction showLoading={showLoading} hideLoading={hideLoading}/>, path: "/TriggerAction"},
-        {view: <CoreCategory showLoading={showLoading} hideLoading={hideLoading}/>, path: "/CoreCategory"},
-        {view: <Module showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Module"},
         {view: <ModuleConfig showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ModuleConfig"},
         {view: <AuditTrail showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AuditTrail"},
         {view: <Visitor showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Visitor"},

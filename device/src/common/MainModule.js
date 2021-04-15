@@ -12,6 +12,7 @@ class MainModule extends React.Component {
             currentCommand: "/Dashboard",
             menuList: [
                 {
+                    name: "core",
                     linkTo: "/Dashboard",
                     menuName: "Dashboard",
                     isSingle: true
@@ -30,6 +31,28 @@ class MainModule extends React.Component {
                     linkTo: "/ImportFiles",
                     menuName: "Import Files",
                     isSingle: true
+                },
+                {
+                    menuName: "Setting Core",
+                    isSingle: false,
+                    subList: [
+                        {
+                            linkTo: "/Module",
+                            menuName: "Module",
+                        },
+                        {
+                            linkTo: "/CoreCategory",
+                            menuName: "Core Category",
+                        },
+                        {
+                            linkTo: "/Mail",
+                            menuName: "Mail",
+                        },
+                        {
+                            linkTo: "/SMS",
+                            menuName: "SMS",
+                        },
+                    ]
                 },
                 {
                     linkTo: "/Device",
