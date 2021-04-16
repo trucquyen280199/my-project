@@ -14,13 +14,13 @@ function Door(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-               <h2 className="text-center">Door</h2>
+               <h2 className="text-center">Cửa</h2>
                 <section>
                     <div id="screen-main">
-                        <p className="font-italic mb-3">Lưu ý: Cần phải thêm thiết bị trước khi thực hiện chức năng này.</p>
+                        <p className="font-italic font-weight-bold mb-3">Lưu ý: Cần phải thêm thiết bị trước khi thực hiện chức năng này.</p>
                         <p>
-                        Bạn có thể sử dụng menu DOOR để thêm thông tin về cửa kết nối với thiết bị.<br />
-                        Bạn có thể định cấu hình cài đặt chuyển tiếp, xác thực kép, chống trả về, bắt buộc mở và giữ cài đặt cảnh báo mở của thiết bị. Thông tin cửa sau đó được sử dụng như một thành phần của các cấp độ truy cập.
+                            Bạn có thể sử dụng menu Cửa để thêm thông tin về cửa kết nối với thiết bị.<br />
+                            Bạn có thể định cấu hình cài đặt chuyển tiếp, xác thực kép, chống trả về, bắt buộc mở và giữ cài đặt cảnh báo mở của thiết bị. Thông tin cửa sau đó được sử dụng như một thành phần của các cấp độ truy cập.
                         </p>
                         <img src="./images/door-1.png" className="w-75" />
                         <p className="font-weight-bold">Ghi chú:</p>
@@ -48,7 +48,7 @@ function Door(props) {
                         </table>
                         <p>
                             Sau khi chọn cửa, bạn có thể thực hiện các thao tác sau:<br/>
-                            <span className="font-weight-bold">▪	Xóa </span>: Xóa cửa đã chọn khỏi danh sách.
+                            <b>▪	Xóa </b>: Xóa cửa đã chọn khỏi danh sách.
                         </p>
                     </div>
                     <div id="add-edit-door">
@@ -61,32 +61,38 @@ function Door(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Tên</td>
-                                        <td>6</td>
-                                        <td>Nút nhấn lối ra</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Mô tả</td>
                                         <td>7</td>
                                         <td>Công tắc cho nút nhấn lối ra</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Thiết bị lỗi vào</td>
+                                        <td>2</td>
+                                        <td>Mô tả</td>
                                         <td>8</td>
                                         <td>Cảm biến cửa</td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
-                                        <td>Thiết bị lối ra</td>
+                                        <td>3</td>
+                                        <td>Thiết bị lỗi vào</td>
                                         <td>9</td>
                                         <td>Công tắc cho cảm biến cửa</td>
                                     </tr>
                                     <tr>
-                                        <td>5</td>
-                                        <td>Rơ-le cửa</td>
+                                        <td>4</td>
+                                        <td>Thiết bị lối ra</td>
                                         <td>10</td>
                                         <td>Thời gian mở (giá trị hợp lệ từ 0 đến 900)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Rơ-le cửa</td>
+                                        <td>11</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Nút nhấn lối ra</td>
+                                        <td>12</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>

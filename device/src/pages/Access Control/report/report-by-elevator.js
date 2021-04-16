@@ -12,11 +12,12 @@ function ReportByElevator(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Report By Elevator</h2>
+            <h2 className="text-center">Báo cáo thang máy</h2>
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/report-by-elevator-1.png" className="w-75 mb-3" />   
+                            <img src="./images/report-by-elevator-1.png" className="w-25" />   
+                            <img src="./images/report-by-elevator-1-2.png" className="w-100" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -58,7 +59,7 @@ function ReportByElevator(props) {
                     <div id="report-by-elevator">
                         <h2>1. Danh sách chi tiết</h2>
                         <div className="content-item" >
-                            <img src="./images/report-by-elevator-2.png" className="w-75 mb-3" />  
+                            <img src="./images/report-by-elevator-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

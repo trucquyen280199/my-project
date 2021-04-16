@@ -1,5 +1,4 @@
 import React from "react";
-// import "../style.css";
 function ReportByDoor(props) {
     return(
         <div className="pages pageTest importFiles d-flex align-items-start">
@@ -12,11 +11,12 @@ function ReportByDoor(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Report By Door</h2>
+            <h2 className="text-center">Báo cáo cửa</h2>
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/report-by-door-1.png" className="w-75 mb-3" />   
+                            <img src="./images/report-by-door-1.png" className="w-25" />   
+                            <img src="./images/report-by-door-1-2.png" className="w-100" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>

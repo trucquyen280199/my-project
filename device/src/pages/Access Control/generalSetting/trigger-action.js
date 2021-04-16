@@ -1,5 +1,4 @@
 import React from "react";
-// import "../../../style.css";
 function TriggerAction(props) {
     return(
         <div className="pages pageTest groupCard d-flex align-items-start">
@@ -16,7 +15,8 @@ function TriggerAction(props) {
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/trigger-action-1.png" className="w-75 mb-3" /> 
+                            <img src="./images/trigger-action-1.png" className="w-25 mb-3" /> 
+                            <img src="./images/trigger-action-1-2.png" className="w-100 mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -50,27 +50,93 @@ function TriggerAction(props) {
                     <div id="add-edit">
                         <h2>1. Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <img src="./images/trigger-action-2.png" className="w-75 mb-3" />  
+                            <img src="./images/trigger-action-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>Tên</td>
-                                        <td>4</td>
-                                        <td>Chọn sự kiện trigger</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Schedule</td>
                                         <td>5</td>
                                         <td>Chọn thiết bị action</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Chọn loại trigger (Thiết bị/ Cửa/ Zone)</td>
+                                        <td>2</td>
+                                        <td>Schedule</td>
                                         <td>6</td>
                                         <td>Chọn các tham số action</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Chọn loại trigger (Thiết bị/ Cửa/ Zone)</td>
+                                        <td>7</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Chọn sự kiện trigger</td>
+                                        <td>8</td>
+                                        <td>Lưu</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <img src="./images/trigger-action-3.png" className="w-100" />
+                            <p>Ghi chú:</p>
+                            <table className="table table-list d-flex w-100 mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Tên</td>
+                                        <td>2</td>
+                                        <td>Schedule</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Chọn loại trigger (Thiết bị/ Cửa/ Zone)</td>
+                                        <td>4</td>
+                                        <td>Chọn sự kiện trigger</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Chọn phần mềm</td>
+                                        <td>6</td>
+                                        <td>Cấu hình nội dung email, sms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Thêm email</td>
+                                        <td>8</td>
+                                        <td>Xóa email</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Nhập email</td>
+                                        <td>10</td>
+                                        <td>Lưu email</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Hủy email</td>
+                                        <td>12</td>
+                                        <td>Số điện thoại sms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Xóa số điện thoại sms</td>
+                                        <td>14</td>
+                                        <td>Nhập số điện thoại sms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Lưu số điện thoại sms</td>
+                                        <td>16</td>
+                                        <td>Hủy số điện thoại sms</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Đóng cửa sổ</td>
+                                        <td>18</td>
+                                        <td>Lưu</td>
                                     </tr>
                                 </tbody>
                             </table>

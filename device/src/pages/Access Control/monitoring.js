@@ -1,15 +1,15 @@
 import React from "react";
-// import "./style.css";
 function Monitoring(props) {
     return(
         <div className="pages pageTest importFiles d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#log-real-time">Log real time</a></li>
-                    <li className="link"><a href="#door-status">Door status</a></li>
-                    <li className="link"><a href="#elevator-status">Elevator status</a></li>
-                    <li className="link"><a href="#zone-status">Zone status</a></li>
-                    <li className="link"><a href="#graphic-view">Graphic view</a></li>
+                    <li className="link"><a href="#log-list"> Danh sách nhật ký</a></li>
+                    <li className="link"><a href="#log-real-time">Nhật ký thời gian thực</a></li>
+                    <li className="link"><a href="#door-status">Trạng thái cửa</a></li>
+                    <li className="link"><a href="#elevator-status">trạng thái thang máy</a></li>
+                    <li className="link"><a href="#zone-status">Trạng thái Zone</a></li>
+                    <li className="link"><a href="#graphic-view">Bản đồ</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -17,14 +17,41 @@ function Monitoring(props) {
             </nav>
             <article className="contents" id="contents">
             <h2 className="text-center">Monitoring</h2>
-                <p>Bạn có thể sử dụng menu Monitoring để xem danh sách các sự kiện kiểm soát ra vào, trạng thái thiết bị và cửa, trạng thái khu vực và lịch sử cảnh báo.
+                <p>Bạn có thể sử dụng menu <b>Giám sát</b> để xem danh sách các sự kiện kiểm soát ra vào, trạng thái thiết bị và cửa, trạng thái khu vực và lịch sử cảnh báo.
                    <br/> Bạn có thể xem và kiểm soát trạng thái của các cửa trong thời gian thực trong đồ họa nếu bạn thêm bản đồ đồ họa.
-                    </p>
+                </p>
+                <section>
+                    <div id="log-list">
+                        <h2>1.	Danh sách nhật ký</h2>
+                        <div className="content-item" >
+                            <img src='./images/log-list-1.png' className="mb-3 w-25" />
+                            <img src='./images/log-list-2.png' className="mb-3 w-100" />
+                            <p className="font-weight-bold">Ghi chú:</p>
+                            <table className="table table-list d-flex w-100 mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Ngày bắt đầu</td>
+                                        <td>2</td>
+                                        <td>Ngày kết thúc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Tìm kiếm</td>
+                                        <td>4</td>
+                                        <td>Danh sách</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
                 <section>
                     <div id="log-real-time">
-                        <h2>1.	Log real time</h2>
+                        <h2>2.	Nhật ký thời gian thực</h2>
                         <div className="content-item" >
-                            <img src='./images/log-real-time.png' className="mb-3 w-75" />
+                            <img src='./images/log-real-time.png' className="mb-3 w-25" />
+                            <img src='./images/log-real-time-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table " >
                                 <tbody>
@@ -34,7 +61,7 @@ function Monitoring(props) {
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Xóa danh sách log hiện tại</td>
+                                        <td>Danh sách log hiện tại</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -47,9 +74,10 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="door-status">
-                        <h2>2.	Door status</h2>
+                        <h2>2.	Trạng thái cửa</h2>
                         <div className="content-item" >
-                            <img src='./images/door-status.png' className="mb-3 w-75" />
+                            <img src='./images/door-status.png' className="mb-3 w-25" />
+                            <img src='./images/door-status-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -92,9 +120,10 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="elevator-status">
-                        <h2>3.	Elevator status</h2>
+                        <h2>3.	Trạng thái thang máy</h2>
                         <div className="content-item" >
-                            <img src='./images/elevator-status.png' className="mb-3 w-75" />
+                            <img src='./images/elevator-status.png' className="mb-3 w-25" />
+                            <img src='./images/elevator-status-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -129,23 +158,30 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="zone-status">
-                        <h2>4.	Zone status</h2>
+                        <h2>4. Trạng thái Zone</h2>
                         <div className="content-item" >
-                            <img src='./images/zone-status.png' className="mb-3 w-75" />
+                            <img src='./images/zone-status.png' className="mb-3 w-25" />
+                            <img src='./images/zone-status-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Xóa cảnh báo</td>
-                                        <td>3</td>
-                                        <td>Danh sách zone</td>
+                                        <td>Xóa APB</td>
+                                        <td>4</td>
+                                        <td>Chọn zone</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Chọn zone</td>
-                                        <td>4</td>
+                                        <td>Xóa cảnh báo</td>
+                                        <td>5</td>
+                                        <td>Danh sách zone</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
                                         <td>Tìm kiếm trong danh sách hiện tại</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -158,9 +194,10 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="graphic-view">
-                        <h2>5.	Graphic view</h2>
+                        <h2>5.	Bản đồ</h2>
                         <div className="content-item" >
-                            <img src='./images/graphic-view.png' className="mb-3 w-75" />
+                            <img src='./images/graphic-view.png' className="mb-3 w-25" />
+                            <img src='./images/graphic-view-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

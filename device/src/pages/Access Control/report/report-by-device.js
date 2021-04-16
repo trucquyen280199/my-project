@@ -10,8 +10,9 @@ function ReportByDevice(props) {
                 </svg>
                 </div>
             </nav>
-            <h2 className="text-center">Report By Device</h2>
-            <img src="./images/report-by-elevator-1.png" className="w-75 mb-3" /><br/>   
+            <h2 className="text-center">Báo cáo thiết bị</h2>
+            <img src="./images/report-by-device-1.png" className="w-25" /><br/>   
+            <img src="./images/report-by-device-1-2.png" className="w-100" /><br/>   
             <table className="table mt-3" >
                 <tbody>
                     <tr>

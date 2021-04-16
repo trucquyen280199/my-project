@@ -1,5 +1,4 @@
 import React from "react";
-// import "../../../style.css";
 function Singnal(props) {
     return(
         <div className="pages pageTest importFiles d-flex align-items-start">
@@ -16,8 +15,8 @@ function Singnal(props) {
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/singnal-1-1.png" className="w-25 mb-3" /> 
-                            <img src="./images/singnal-1-2.png" className="w-100 mb-3" /> 
+                            <img src="./images/singnal-1-1.png" className="w-25" /> 
+                            <img src="./images/singnal-1-2.png" className="w-100" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>

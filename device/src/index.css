@@ -36,9 +36,9 @@ p{
     margin-bottom: 0;
 }
 img{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     display: flex;
-    margin: 10px auto;
+    /* margin: 10px auto; */
 }
 .pages{
     margin: 10px 0 10px 10px;

@@ -30,9 +30,9 @@ import TriggerAction from './pages/Access Control/generalSetting/trigger-action'
 import ModuleConfig from './pages/Access Control/generalSetting/module-config';
 import AuditTrail from './pages/Access Control/audit-trail';
 import Visitor from './pages/visitor/visitor';
-import AccessGroup from "./pages/Access Control/access-control/access-group";
-import AccessLevel from "./pages/Access Control/access-control/access-level";
-import FloorLevel from "./pages/Access Control/access-control/floor-level";
+import AccessControl from "./pages/Access Control/access-control";
+import SystemConfig from "./pages/Access Control/generalSetting/system-configuration";
+import WiegandFormat from "./pages/Access Control/generalSetting/wiegand-format";
 import './pages/style.css';
 
 function App() {
@@ -73,9 +73,9 @@ function App() {
         {view: <ModuleConfig showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ModuleConfig"},
         {view: <AuditTrail showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AuditTrail"},
         {view: <Visitor showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Visitor"},
-        {view: <AccessGroup showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AccessGroup"},
-        {view: <AccessLevel showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AccessLevel"},
-        {view: <FloorLevel showLoading={showLoading} hideLoading={hideLoading}/>, path: "/FloorLevel"},
+        {view: <AccessControl showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AccessControl"},
+        {view: <SystemConfig showLoading={showLoading} hideLoading={hideLoading}/>, path: "/SystemConfig"},
+        {view: <WiegandFormat showLoading={showLoading} hideLoading={hideLoading}/>, path: "/WiegandFormat"},
     ];
 
     const system = () => {

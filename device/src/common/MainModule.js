@@ -70,22 +70,9 @@ class MainModule extends React.Component {
                     isSingle: true
                 },
                 {
+                    linkTo: "/AccessControl",
                     menuName: "Access Control",
-                    isSingle: false,
-                    subList: [
-                        {
-                            linkTo: "/AccessGroup",
-                            menuName: "Access Group",
-                        },
-                        {
-                            linkTo: "/AccessLevel",
-                            menuName: "Access Level",
-                        },
-                        {
-                            linkTo: "/FloorLevel",
-                            menuName: "Floor Level",
-                        },
-                    ]
+                    isSingle: true,
                 },
                 {
                     linkTo: "/Monitoring",
@@ -145,16 +132,20 @@ class MainModule extends React.Component {
                             menuName: "Trigger Action",
                         },
                         {
-                            linkTo: "/CoreCategory",
-                            menuName: "Core Category",
+                            linkTo: "/ModuleConfig",
+                            menuName: "Module Config",
+                        },
+                        {
+                            linkTo: "/SystemConfig",
+                            menuName: "System Configuration",
+                        },
+                        {
+                            linkTo: "/WiegandFormat",
+                            menuName: "Wiegand Format",
                         },
                         {
                             linkTo: "/Module",
                             menuName: "Module",
-                        },
-                        {
-                            linkTo: "/ModuleConfig",
-                            menuName: "Module Config",
                         },
                     ]
                 },

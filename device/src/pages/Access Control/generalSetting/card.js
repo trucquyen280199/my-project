@@ -16,7 +16,8 @@ function Card(props) {
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/card-1.png" className="w-75 mb-3" /> 
+                            <img src="./images/card-1.png" className="w-25 mb-3" /> 
+                            <img src="./images/card-1-2.png" className="w-100 mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>

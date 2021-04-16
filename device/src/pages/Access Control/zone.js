@@ -1,16 +1,15 @@
 import React from "react";
-// import "./style.css";
 function Zone(props) {
     return(
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
                     <li className="link"><a href="#anti-passback-zone">Anti-passback Zone</a></li>
-                    <li className="link"><a href="#fire-alarm-zone">Fire Alarm Zone</a></li>
-                    <li className="link"><a href="#scheduled-lock-zone">Scheduled Lock Zone</a></li>
-                    <li className="link"><a href="#scheduled-unlock-zone">Scheduled Unlock Zone</a></li>
-                    <li className="link"><a href="#intrusion-alarm-zone">Intrusion Alarm Zone</a></li>
-                    <li className="link"><a href="#interlock-zone">Interlock Zone</a></li>
+                    <li className="link"><a href="#fire-alarm-zone">Cảnh báo cháy</a></li>
+                    <li className="link"><a href="#scheduled-lock-zone">Khóa theo lịch trình</a></li>
+                    <li className="link"><a href="#scheduled-unlock-zone">Mở khóa theo lịch trình</a></li>
+                    {/* <li className="link"><a href="#intrusion-alarm-zone">Intrusion Alarm Zone</a></li> */}
+                    <li className="link"><a href="#interlock-zone">Khóa liên động</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -18,13 +17,14 @@ function Zone(props) {
             </nav>
             <article className="contents" id="contents">
             <h2 className="text-center">Zone</h2>
-                <p>Trên trang <span className="font-weight-bold">ZONE</span> , bạn có thể thêm tính năng chống trả về, báo cháy, khóa lịch và lập lịch vùng mở khóa cũng như định cấu hình cài đặt.</p>
+                <p>Trên trang <b>ZONE</b> , bạn có thể thêm tính năng chống trả về, báo cháy, khóa lịch và lập lịch vùng mở khóa cũng như định cấu hình cài đặt.</p>
                 <section>
                     <div id="anti-passback-zone">
-                        <h2>1.	Anti-passback Zone</h2>
+                        <h2>1.	Anti-passback</h2>
                         <div className="content-item" >
-                            <img src='./images/anti-passback-zone.png' className="mb-3 w-75" />
-                            <p className="font-weight-bold">Ghi chú:</p>
+                            <img src='./images/anti-passback-zone.png' className="mb-3 w-25" />
+                            <img src='./images/anti-passback-zone-1-2.png' className="mb-3 w-100" />
+                            <b>Ghi chú:</b>
                             <table className="table table-list ">
                                 <tbody>
                                     <tr>
@@ -55,11 +55,10 @@ function Zone(props) {
                             </table>
                             <p>
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
-                                <span className="font-weight-bold ml-3">-	Xóa </span>: Xóa zone đã chọn khỏi danh sách.<br/>
-                                <span className="font-weight-bold ml-3">-	Hoạt động</span>: Thay đổi trạng thái của zone<br/>
-                                <span className="font-weight-bold ml-3">-	Không hoạt động</span>: Thay đổi trạng thái của zone<br/>
+                                <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
+                                <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
                                 •	Thêm hoặc sửa zone
-
                             </p>
                             <img src='./images/anti-passback-zone-2.png' className="mb-3 w-75" />
                             <p className="font-weight-bold">Ghi chú:</p>
@@ -117,8 +116,8 @@ function Zone(props) {
                                     <tr>
                                         <td>13</td>
                                         <td>Chọn cấp độ truy cập. Người dùng có cấp độ truy cập sẽ không bị giới hạn bởi quy tắc chống trả về.</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>14, 15</td>
+                                        <td>Đóng cửa sổ/ Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -127,9 +126,10 @@ function Zone(props) {
                 </section>
                 <section>
                     <div id="fire-alarm-zone">
-                        <h2>2.	Fire Alarm Zone</h2>
+                        <h2>2.	Cảnh báo cháy</h2>
                         <div className="content-item" >
-                            <img src='./images/fire-alarm-zone-1.png' className="mb-3 w-75" />
+                            <img src='./images/fire-alarm-zone-1.png' className="mb-3 w-25" />
+                            <img src='./images/fire-alarm-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -167,7 +167,7 @@ function Zone(props) {
                                 -	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/fire-alarm-zone-2.png' className="mb-3 w-75" />
+                            <img src='./images/fire-alarm-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -211,6 +211,12 @@ function Zone(props) {
                                         <td>12</td>
                                         <td>Xóa cảnh báo</td>
                                     </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Đóng cửa sổ</td>
+                                        <td>14</td>
+                                        <td>Đồng ý</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -218,9 +224,10 @@ function Zone(props) {
                 </section>
                 <section>
                     <div id="scheduled-lock-zone">
-                        <h2>3.	Scheduled Lock Zone</h2>
+                        <h2>3.	Khóa theo lịch trình</h2>
                         <div className="content-item" >
-                            <img src='./images/scheduled-lock-zone-1.png' className="mb-3 w-75" />
+                            <img src='./images/scheduled-lock-zone-1.png' className="mb-3 w-25" />
+                            <img src='./images/scheduled-lock-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -287,10 +294,16 @@ function Zone(props) {
                                         <td>Sửa cảnh báo</td>
                                     </tr>
                                     <tr>
-                                        <td>10</td>
-                                        <td><p><b>Bỏ qua khóa theo lịch trình</b>: Chọn cấp độ truy cập. Người dùng có cấp độ truy cập sẽ không bị giới hạn bởi quy tắc khóa theo lịch trình.</p></td>
                                         <td>9</td>
                                         <td>Xóa cảnh báo</td>
+                                        <td>10</td>
+                                        <td><p><b>Bỏ qua khóa theo lịch trình</b>: Chọn cấp độ truy cập. Người dùng có cấp độ truy cập sẽ không bị giới hạn bởi quy tắc khóa theo lịch trình.</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Đóng cửa sổ</td>
+                                        <td>12</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -301,7 +314,8 @@ function Zone(props) {
                     <div id="scheduled-unlock-zone">
                         <h2>4.	Scheduled Unlock Zone</h2>
                         <div className="content-item" >
-                            <img src='./images/scheduled-unlock-zone-1.png' className="mb-3 w-75" />
+                            <img src='./images/scheduled-unlock-zone-1.png' className="mb-3 w-25" />
+                            <img src='./images/scheduled-unlock-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -339,7 +353,7 @@ function Zone(props) {
                                 •	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/scheduled-unlock-zone-2.png' className="mb-3 w-75" />
+                            <img src='./images/scheduled-unlock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -370,133 +384,20 @@ function Zone(props) {
                                     <tr>
                                         <td>4</td>
                                         <td><p><b>Cửa / Thang máy</b> : Bạn có thể đặt cửa hoặc thang máy làm khu vực mở khóa theo lịch trình</p></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>8, 9</td>
+                                        <td>Đóng cửa sổ/ Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div id="intrusion-alarm-zone">
-                        <h2>5.	Intrusion Alarm Zone</h2>
-                        <div className="content-item" >
-                            <img src='./images/intrusion-alarm-zone-1.png' className="mb-3 w-75" />
-                            <p className="font-weight-bold">Ghi chú:</p>
-                            <table className="table table-list d-flex w-100 mt-3">
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Thêm mới</td>
-                                        <td>5</td>
-                                        <td>Chọn danh sách zone</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Hoạt động</td>
-                                        <td>6</td>
-                                        <td>Click xem chi tiết hoặc thay đổi thông tin</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Không hoạt động</td>
-                                        <td>7</td>
-                                        <td>Danh sách đã thêm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Xóa</td>
-                                        <td>8</td>
-                                        <td>Tìm kiếm trong danh sách hiện tại</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            
-                            <p>
-                                Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
-                                <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
-                                <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                •	Thêm hoặc sửa zone
-
-                            </p>
-                            <img src='./images/intrusion-alarm-zone-2.png' className="mb-3 w-75" />
-                            <p className="font-weight-bold">Ghi chú:</p>
-                            <table className="table table-list d-flex w-100 mt-3">
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Tên</td>
-                                        <td>2</td>
-                                        <td>Loại</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td><p><b>Chế độ</b> : Bạn có thể kiểm tra phạm vi ứng dụng của khu vực. Chỉ hỗ trợ chế độ <b>Cục bộ</b> cho vùng
-                                         báo động xâm nhập và chỉ có thể đặt vùng này với các thiết bị được kết nối với thiết bị xâm nhập và RS-485.</p></td>
-                                        <td>4</td>
-                                        <td><p><b>Hoạt động / Không hoạt động</b> : Bạn có thể vô hiệu hóa vùng báo động xâm
-                                            nhập. Chọn <b>Hoạt động</b> để kích hoạt nó</p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>
-                                        <p><b>Hoạt động / Không hoạt động </b>: Bạn có thể vô hiệu hóa vùng báo động xâm nhập. Chọn <b>Hoạt động</b> để kích hoạt nó</p>
-                                        </td>
-                                        <td>6</td>
-                                        <td><p>
-                                        <b> Cài đặt Arm / Disarm</b>: Bạn có thể thêm cài đặt xác thực cho vũ khí và vũ khí.<br/>
-                                        <b> ▪ Thời gian trễ</b> : Bạn có thể đặt thời gian trễ để kích hoạt hoặc giải trừ vũ khí. 
-                                            <b>Arm</b> là thời gian trễ từ khi xác thực đến cánh tay, và <b>Disarm</b> là thời gian trễ
-                                            từ khi phát hiện xâm nhập đến khi xảy ra cảnh báo.
-                                            <b>▪ Thẻ truy cập</b> : Bạn có thể thêm thẻ có quyền sử dụng hoặc tước vũ khí. Bạn có
-                                            thể đăng ký tối đa 128 thẻ truy cập.<br/>
-                                            <b>▪ Nhóm truy cập</b> : Bạn có thể thêm một nhóm truy cập có quyền sử dụng vũ khí
-                                            hoặc tước vũ khí. Bạn có thể đăng ký tối đa 128 nhóm truy cập.<br/>
-                                            <b>▪ Cài đặt vũ khí / giải giáp</b>: Bạn có thể cài đặt vũ khí và giải giáp bằng thiết bị hoặc
-                                            tín hiệu đầu vào. Nhấp vào <b>+ Thêm</b> và đặt từng mục.<br/><br/>
-                                            <b>Thêm arm và disarm bằng thiết bị</b><br/>
-                                            Nhấp vào <b>Thiết bị</b> để chọn thiết bị kiểm soát vùng báo động đột nhập trong số các
-                                            thiết bị ra vào của cửa và chọn <b>Loại arm</b>.<br/>
-                                            Có thể chọn <b>Thẻ</b> , <b>Chìa khóa</b> và <b>Thẻ</b> hoặc <b>Chìa khóa</b> cho kiểu <b>Đầu vào</b> . 
-                                            Chỉ có <b>Thẻ</b> làm loại đầu vào cho thiết bị không có màn hình LCD.<br/></p>
-
-                                            <img src="./images/intrusion-alarm-zone-3.png" className="w-100 ml-0" /><br/>
-                                            <p><b>Thêm arm và disarm bằng tín hiệu đầu vào</b><br/>
-                                                Bấm <b>Thiết bị</b> để chọn thiết bị điều khiển vùng báo động xâm nhập. <br/>
-                                                Nhấp vào <b>Port</b> và chọn một cổng đầu vào của thiết bị đã chọn.<br/>
-                                                Chọn <b>Loại arm</b> và đặt loại công tắc và thời lượng tín hiệu.<br/></p>
-
-                                            <img src="./images/intrusion-alarm-zone-4.png" className="w-100 ml-0" /><br/>
-                                            (Nó chỉ được kích hoạt khi <b>Cửa</b> được đặt từ <b>Cấu hình</b>)
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td><p>
-                                            <b>Cài đặt xâm nhập</b>: Bạn có thể đặt tín hiệu phát hiện xâm nhập. 
-                                            Khi bạn nhấp vào <b>+ Thêm</b> và thiết lập như trong màn hình bên dưới, 
-                                            thiết bị sẽ nhận dạng phát hiện xâm nhập nếu cảm biến N / O kết nối với cổng đầu vào 0 của BioStation L2 gửi tín hiệu trong 100 (mili giây).<br/>
-                                            <img src="./images/intrusion-alarm-zone-5.png" className="w-100 ml-0" /><br/>
-                                            (Nó chỉ được kích hoạt khi <b>Cửa</b> được đặt từ <b>Cấu hình</b>)</p>
-                                        </td>
-                                        <td></td>
-                                        <td><p><b>Cảnh báo</b>: Đặt hành động báo động để thực hiện khi một sự kiện cụ thể xảy ra tại vùng báo động xâm nhập.
-                                            (Nó chỉ được kích hoạt khi <b>Cửa</b> được đặt từ <b>Cấu hình</b>)</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </section>
-                <section>
+               <section>
                     <div id="interlock-zone">
-                        <h2>6.	Interlock Zone</h2>
+                        <h2>5.	Khóa liên động</h2>
                         <div className="content-item" >
-                            <p>Vùng khóa liên động giám sát trạng thái của hai hoặc nhiều cửa bằng cảm biến cửa và trạng thái rơ le để kiểm soát rằng một cửa không thể mở hoặc đóng nếu các cửa khác đang mở hoặc không khóa. Bạn cũng có thể vô hiệu hóa quyền truy cập nếu người dùng ở trong khu vực.</p>
+                            <p>Vùng khóa liên động giám sát trạng thái của hai hoặc nhiều cửa bằng cảm biến cửa và trạng thái rơ le để kiểm soát rằng một cửa không thể mở hoặc đóng nếu các cửa khác đang mở hoặc không khóa. 
+                                Bạn cũng có thể vô hiệu hóa quyền truy cập nếu người dùng ở trong khu vực.</p>
                            
                             <p className="font-weight-bold">Ghi chú:</p>
                             <p>
@@ -507,15 +408,7 @@ function Zone(props) {
 
                             </p>
                             <img src='./images/interlock-zone-1.png' className="mb-3 w-25" />
-                            <img src='./images/interlock-zone-2.png' className="mb-3 w-75" />
-                            <p>
-                                Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
-                                <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
-                                <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                •	Thêm hoặc sửa zone
-
-                            </p>
+                            <img src='./images/interlock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -545,7 +438,16 @@ function Zone(props) {
                                     </tr>
                                 </tbody>
                             </table>
-                            <img src='./images/interlock-zone-3.png' className="mb-3 w-75" />
+                            <p>
+                                Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
+                                <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
+                                <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                •	Thêm hoặc sửa zone
+
+                            </p>
+                            
+                            <img src='./images/interlock-zone-3.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -583,8 +485,8 @@ function Zone(props) {
                                     <tr>
                                         <td>11</td>
                                         <td>Xóa cảnh báo</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>12, 13</td>
+                                        <td>Đóng cửa sổ/ Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>

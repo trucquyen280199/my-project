@@ -1,5 +1,4 @@
 import React from "react";
-// import "../style.css";
 function ModuleConfig(props) {
     return(
         <div className="pages pageTest groupCard d-flex align-items-start" style={{overflowY: "scroll",height: "calc(100vh - 48px)"}}>
@@ -12,12 +11,13 @@ function ModuleConfig(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents" >  
-                <h2 className="text-center">Module Config</h2> 
+                <h2 className="text-center">Cấu hình mô-đun</h2> 
                 <section >
                     <div >
                         <div className="content-item" >
                             <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
-                            <img src="./images/module-config-1.png" className="w-75 mb-3" /> 
+                            <img src="./images/module-config-1.png" className="w-25" /> 
+                            <img src="./images/module-config-1-2.png" className="w-100" /> 
                             <p>Ghi chú:</p>
                             <table className="table ">
                                 <tbody>
@@ -40,7 +40,7 @@ function ModuleConfig(props) {
                     <div id="configuration-device">
                         <h2>1. Cấu hình thiết bị cho module</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
+                            {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
                             <img src="./images/module-config-2.png" className="w-75 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
@@ -48,24 +48,30 @@ function ModuleConfig(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Danh sách thiết bị chưa được cấu hình</td>
-                                        <td>5</td>
-                                        <td>Di chuyển tất cả thiết bị qua phải</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Danh sách thiết bị đã được cấu hình</td>
                                         <td>6</td>
                                         <td>Di chuyển 1 thiết bị qua trái</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Chức năng di chuyển vị trí</td>
+                                        <td>2</td>
+                                        <td>Danh sách thiết bị đã được cấu hình</td>
                                         <td>7</td>
                                         <td>Di chuyển tất cả thiết bị qua trái</td>
                                     </tr>
                                     <tr>
+                                        <td>3</td>
+                                        <td>Chức năng di chuyển vị trí</td>
+                                        <td>8</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
                                         <td>4</td>
                                         <td>Di chuyển 1 thiết bị qua phải</td>
+                                        <td>9</td>
+                                        <td>Đồng ý</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Di chuyển tất cả thiết bị qua phải</td>
                                         <td></td>
                                         <td></td>
                                     </tr>
