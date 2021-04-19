@@ -157,7 +157,7 @@ function AccessControl(props) {
                         <h2>3. Cấp độ tầng</h2>
                         <div className="content-item">
                             <img src="./images/floor-level-1.png" />
-                            <img src="./images/floor-level-1-2.png" />
+                            <img src="./images/floor-level-1-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -183,7 +183,7 @@ function AccessControl(props) {
                             </table>
                             
                             <h4> Thêm hoặc sửa cấp độ tầng</h4>
-                            <img src="./images/floor-level-2.png" />
+                            <img src="./images/floor-level-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

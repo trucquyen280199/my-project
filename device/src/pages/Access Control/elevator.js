@@ -11,7 +11,7 @@ function Elevator(props) {
                     </li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
@@ -22,7 +22,7 @@ function Elevator(props) {
                         <p>
                         Bạn có thể cấu hình thang máy để kiểm soát các tầng bằng thiết bị kiểm soát ra vào và OM-120 bằng cách sử dụng menu elevator.
                         </p>
-                        <img src="./images/elevator-1-1.png" className="w-25" />
+                        <img src="./images/elevator-1-1.png" className="" />
                         <img src="./images/elevator-1-2.png" className="w-100" />
                         <p className="font-weight-bold">Ghi chú:</p>
                         <table className="table table-list d-flex w-100 mt-3">
@@ -55,7 +55,7 @@ function Elevator(props) {
                     <div id="add-edit-elevator">
                         <h2>1. Thêm hoặc sửa thang máy</h2>
                         <div className="content-item">
-                            <img src="./images/elevator-2.png" className="w-75" />
+                            <img src="./images/elevator-2.png" className="w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

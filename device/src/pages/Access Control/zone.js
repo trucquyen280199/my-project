@@ -22,7 +22,7 @@ function Zone(props) {
                     <div id="anti-passback-zone">
                         <h2>1.	Anti-passback</h2>
                         <div className="content-item" >
-                            <img src='./images/anti-passback-zone.png' className="mb-3 w-25" />
+                            <img src='./images/anti-passback-zone.png' className="w-25" />
                             <img src='./images/anti-passback-zone-1-2.png' className="mb-3 w-100" />
                             <b>Ghi chú:</b>
                             <table className="table table-list ">
@@ -60,7 +60,7 @@ function Zone(props) {
                                 <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
                                 •	Thêm hoặc sửa zone
                             </p>
-                            <img src='./images/anti-passback-zone-2.png' className="mb-3 w-75" />
+                            <img src='./images/anti-passback-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table">
                                 <tbody>
@@ -265,7 +265,7 @@ function Zone(props) {
                                 •	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/scheduled-lock-zone-2.png' className="mb-3 w-75" />
+                            <img src='./images/scheduled-lock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

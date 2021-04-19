@@ -16,7 +16,7 @@ function Card(props) {
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/card-1.png" className="w-25 mb-3" /> 
+                            <img src="./images/card-1.png" className="w-25" /> 
                             <img src="./images/card-1-2.png" className="w-100 mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -51,7 +51,7 @@ function Card(props) {
                     <div id="add-edit">
                         <h2>1. Thêm thẻ</h2>
                         <div className="content-item" >
-                            <img src="./images/card-2.png" className="w-75 mb-3" />  
+                            <img src="./images/card-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table w-100 mt-3">
                                 <tbody>
@@ -62,6 +62,10 @@ function Card(props) {
                                     <tr>
                                         <td>2</td>
                                         <td>Quét: Gọi chức năng quét thẻ của thiết bị</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Đóng cửa sổ</td>
                                     </tr>
                                 </tbody>
                             </table> 

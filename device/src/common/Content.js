@@ -140,7 +140,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-        this.action("/ModuleConfig");
+        this.action("/IntrusionDoor");
     }
 
     render() {

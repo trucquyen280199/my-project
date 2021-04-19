@@ -12,12 +12,13 @@ function Module(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents" >
-            <h2 className="text-center">Module</h2>
+            <h2 className="text-center">MÔ-ĐUN</h2>
                 <section>
                     <div>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
-                            <img src="./images/module-1.png" className="w-75 mb-3" /> 
+                            {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
+                            <img src="./images/module-1.png" className=" mb-3" /> 
+                            <img src="./images/module-1-1.png" className="w-100 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -35,9 +36,9 @@ function Module(props) {
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Tìm kiếm trong danh sách hiên tại</td>
+                                        <td>Danh sách mô-đun</td>
                                         <td>6</td>
-                                        <td>Phân quyền</td>
+                                        <td>Tìm kiếm trong danh sách hiên tại</td>
                                     </tr>
                                 </tbody>
                             </table> 
@@ -46,28 +47,34 @@ function Module(props) {
                     <div>
                         <h2>1. Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
-                            <img src="./images/module-2.png" className="w-75 mb-3" /> 
+                            {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
+                            <img src="./images/module-2.png" className="w-100 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>ID module (giá trị hợp lệ từ 1 đến 2000 000 000)</td>
-                                        <td>4</td>
-                                        <td>Key bản quyền</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Tên module (sử dụng các key ngôn ngữ)</td>
                                         <td>5</td>
                                         <td>Trạng thái (nếu check là trạng thái được sử dụng)</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Đường dẫn của module</td>
+                                        <td>2</td>
+                                        <td>Tên module (sử dụng các key ngôn ngữ)</td>
                                         <td>6</td>
                                         <td>Chuyển hướng (nếu check khi chuyển hướng sẽ mở tab trình duyệt mới)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Đường dẫn của module</td>
+                                        <td>7</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Key bản quyền</td>
+                                        <td>8</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table> 

@@ -17,7 +17,7 @@ function Schedule(props) {
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/schedule-1.png" className="w-25 mb-3" />   
+                            <img src="./images/schedule-1.png" className="w-25" />   
                             <img src="./images/schedule-1-2.png" className="w-100 mb-3" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

@@ -104,8 +104,7 @@
         .contents .code-inline {
         background-color: #f9f9f9;
         padding: 4px; }
-        .contents h2
-        h3 {
+        .contents h2,h3 {
         padding-top: 1em; }
         /* .contents h2 {
         margin-top: 1.2em; } */

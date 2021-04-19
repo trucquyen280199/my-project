@@ -45,10 +45,10 @@ function Visitor(props) {
                             <img src="./images/visitor-1.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Loại khách đăng ký</b>.</p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-2.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-2.png" className="w-100 mb-3" />
                             <p>Bấm nút <b>Thêm</b> để tạo mới hoặc <b>bấm đúp chuột vào dòng</b> để cập nhật loại khách tương ứng.</p>
                             <p>B3: Cửa sổ sau sẽ xuất hiện, điền vào hoặc chỉnh sửa các thông tin cần thiết.</p>
-                            <img src="./images/visitor-3.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-3.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <thead>
                                     <tr>
@@ -98,8 +98,8 @@ function Visitor(props) {
                             <p>Lưu ý:</p>
                             <p>
                                 <span className="ml-3">-	<b>Trạng thái</b>: Nếu thẻ đang được sử dụng bởi khách hoặc nhân viên thì sẽ hiển thị
-                                mã của họ. Còn lại là thẻ chưa được sử dụng.</span>
-                                <span className="ml-3">-	<b>Ô tìm kiếm</b>: tìm kiếm theo <b>Mã thẻ</b> hoặc <b>Tên thẻ</b>.</span>
+                                mã của họ. Còn lại là thẻ chưa được sử dụng.</span><br/>
+                                <span className="ml-3">-	<b>Ô tìm kiếm</b>: tìm kiếm theo <b>Mã thẻ</b> hoặc <b>Tên thẻ</b>.</span><br/>
                                 <span className="ml-3">-	<b>Nút làm mới</b>: để tải lại danh sách thẻ.</span>
                             </p>
                         </div>
@@ -113,9 +113,9 @@ function Visitor(props) {
                             <img src="./images/visitor-4.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Cài đặt người dùng</b>.</p>
                             <p>B2: Trang sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-7.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-7.png" className="w-100 mb-3" />
                             <p>B3: Chọn phòng ban ở <b>Danh sách phòng ban</b> (nếu cần) để lọc nhân viên.</p>
-                            <img src="./images/visitor-8.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-8.png" className="w-100 mb-3" />
                             <p>B4: Chọn hoặc bỏ chọn nhân viên. </p>
                             <p>B5: Bấm nút <b>Lưu</b> để cập nhật.</p>
                             <p>Lưu ý:</p>
@@ -130,7 +130,7 @@ function Visitor(props) {
                         <h2>4.	Đăng ký khách (từ xa)</h2>
                         <div className="content-item" >
                             <p>B1: Mở trình duyệt và vào đường link: <a href="http://mobile.suprema.vn:8081/register">http://mobile.suprema.vn:8081/register</a>.</p>
-                            <img src="./images/visitor-9.png" className="w-75 mb-3" /> 
+                            <img src="./images/visitor-9.png" className="w-100 mb-3" /> 
                             <p>(Nút ở góc trái trên cùng để chọn ngôn ngữ)</p>
                             <p>B2: Nếu ghé thăm lần đầu, bấm nút <b>Ghé thăm lần đầu</b> (:D) và đi đến B3.</p>
                             <p>
@@ -138,9 +138,9 @@ function Visitor(props) {
                                 Cửa sổ thông báo sau sẽ xuất hiện nếu tìm thấy. <br/>
                                 Bấm <b>Đồng ý</b> để tiếp tục.
                             </p>
-                            <img src="./images/visitor-10.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-10.png" className="w-100 mb-3" />
                             <p>B3: Mẫu đăng ký sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-11.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-11.png" className="w-100 mb-3" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -183,7 +183,7 @@ function Visitor(props) {
                             </table>
                             <p>Điền các <b>thông tin bắt buộc</b>.</p>
                             <p>Nếu muốn gặp nhân viên nào đó, hoặc chọn nút phía dưới <b>Người gặp</b> để cập nhật.<br/> Cửa sổ sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-12.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-12.png" className="w-100 mb-3" />
                             <p>Chọn nhân viên cần gặp và bấm nút <b>Lưu</b> để cập nhật.<br/>
                             B4: Sau đó bấm <b>Đồng ý (Điều khoản dịch vụ)</b>.<br/>
                             B5: Bấm nút <b>Đăng ký</b> để hoàn thành.
@@ -203,18 +203,18 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-14.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-14.png" className="w-100 mb-3" />
                             <p>Bấm nút <b>Đăng ký</b>.</p>
                             <p>B3: Một tab mới sẽ xuất hiện.</p>
-                            <img src="./images/visitor-15.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-15.png" className="w-100 mb-3" />
                             <p>Điền các <b>thông tin bắt buộc</b>.</p>
                             <p>B4: <b>Lấy mẫu ảnh chân dung</b> bằng cách bấm vào nút <b>Khuôn mặt</b> hoặc <b>khung hình</b>.</p>
                             <p>
-                                Có 2 cách lấy:
+                                Có 2 cách lấy:<br/>
                                 -	Lấy thông qua <b>thiết bị Suprema</b>:
 
                             </p>
-                            <img src="./images/visitor-16.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-16.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                     <tr>
@@ -253,7 +253,7 @@ function Visitor(props) {
                                 <span className="ml-4">o	Bấm nút Lưu khi thực hiện xong.</span>
                             </p>
                             <p className="ml-4">-	Lấy thông qua <b>thiết bị USB</b>:</p>
-                            <img src="./images/visitor-17.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-17.png" className="w-100 mb-3" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -286,7 +286,7 @@ function Visitor(props) {
                                 B6: Bấm nút <b>Đăng ký</b> để hoàn thành.<br/>
                                 Nếu cần kiểm tra nhiệt độ của khách, bấm nút <b>Nhiệt độ</b> ở góc phải trên.
                             </p>
-                            <img src="./images/visitor-18.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-18.png" className="w-100 mb-3" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -317,10 +317,10 @@ function Visitor(props) {
                         <h2>6.	Xem danh sách khách chờ xử lý</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
+                            <img src="./images/visitor-13.png" className="mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-19.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-19.png" className="w-100 mb-3" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -356,7 +356,7 @@ function Visitor(props) {
                                 </tbody>
                             </table>
                             <p>Chú thích thông tin từng dòng của khách</p>
-                            <img src="./images/visitor-20.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-20.png" className="w-100 mb-3" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -408,7 +408,7 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-21.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-21.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                     <tr>
@@ -450,9 +450,9 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Bấm nút <b>Cập nhật</b> của khách cần cập nhật</p>
-                            <img src="./images/visitor-22.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-22.png" className="w-100 mb-3" />
                             <p>B3: Cửa số sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-23.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-23.png" className="w-100 mb-3" />
                             <p>Điều chỉnh khoảng thời gian hợp lý. </p>
                             <p>B4: Bấm nút <b>Lưu</b> để lưu thông tin mới.</p>
                         </div>
@@ -466,7 +466,7 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-24.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-24.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                 <tr>
@@ -492,7 +492,7 @@ function Visitor(props) {
                                 B3: Bấm nút <b>Xoá (4)</b> nếu chỉ từ chối 1 khách đó, hoặc bấm nút <b>Xoá (1)</b> nếu danh sách nhiều hơn 1.<br/>
                                 B4: Sau đó có cửa sổ xuất hiện, nhập <b>lý do</b> từ chối (nếu cần thiết).
                             </p>
-                            <img src="./images/visitor-25.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-25.png" className="w-100 mb-3" />
                             <p>B5: Bấm nút <b>Lưu</b> để hoàn thành.</p>
                         </div>
                     </div>
@@ -505,7 +505,7 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-26.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-26.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
                                 <tr>
@@ -709,7 +709,7 @@ function Visitor(props) {
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-34.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-34.png" className="w-100 mb-3" />
                             
                             <table className="table">
                                 <tbody>
@@ -833,7 +833,7 @@ function Visitor(props) {
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Báo cáo</b>.</p>
                             <img src="./images/visitor-37.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-38.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-38.png" className="w-100 mb-3" />
                             
                             <table className="table">
                                 <tbody>
@@ -929,7 +929,7 @@ function Visitor(props) {
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Thống kê khách</b>.</p>
                             <img src="./images/visitor-40.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-41.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-41.png" className="w-100 mb-3" />
                             
                             <table className="table">
                                 <tbody>
@@ -941,17 +941,17 @@ function Visitor(props) {
                                     <td>2</td>
                                     <td>
                                     Danh sách khách theo từng loại khách, bao gồm:<br/>
-                                    <span className="ml-3"></span>-	Hiện diện (ở sau tên loại khách).<br/>
-                                    <span className="ml-3"></span>-	Thực tế, Ra và Từ chối.
+                                    <span className="ml-3">-	Hiện diện (ở sau tên loại khách).</span><br/>
+                                    <span className="ml-3">-	Thực tế, Ra và Từ chối.</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>
                                     Bộ lọc xem Danh sách chi tiết:<br/>
-                                    <span className="ml-3"></span>-	Lọc theo 1 ngày, nhiều ngày.<br/>
-                                    <span className="ml-3"></span>-	Lọc theo tháng.<br/>
-                                    <span className="ml-3"></span>-	Lọc theo năm.
+                                        <span className="ml-3">-	Lọc theo 1 ngày, nhiều ngày.</span><br/>
+                                        <span className="ml-3">-	Lọc theo tháng.</span><br/>
+                                        <span className="ml-3">-	Lọc theo năm.</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -986,7 +986,7 @@ function Visitor(props) {
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Giám sát khách</b>.</p>
                             <img src="./images/visitor-42.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-43.png" className="w-75 mb-3" />
+                            <img src="./images/visitor-43.png" className="w-100 mb-3" />
                             
                             <table className="table">
                                 <tbody>
@@ -1002,8 +1002,8 @@ function Visitor(props) {
                                     <td>3</td>
                                     <td>
                                     Danh sách toàn bộ thiết bị đang kết nối:<br/>
-                                    <span className="ml-3"></span>-	Danh sách thiết bị vào – ra đã cài đặt<br/>
-                                    <span className="ml-3"></span>-	Các thiết bị còn lại
+                                    <span className="ml-3">-	Danh sách thiết bị vào – ra đã cài đặt</span><br/>
+                                    <span className="ml-3">-	Các thiết bị còn lại</span>
                                     </td>
                                 </tr>
                                 <tr>

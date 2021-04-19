@@ -51,7 +51,7 @@ function GroupCard(props) {
                     <div id="add-edit">
                         <h2>1. Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <img src="./images/group-card-2.png" className="w-75 mb-3" />  
+                            <img src="./images/group-card-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table w-100 mt-3">
                                 <tbody>
@@ -66,6 +66,14 @@ function GroupCard(props) {
                                     <tr>
                                         <td>3</td>
                                         <td>Mô tả</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table> 

@@ -17,12 +17,13 @@ function Device(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-                <h1 className="text-center">Device</h1>
+                <h1 className="text-center">THIẾT BỊ</h1>
                 <section>
                     <div id="device">
                         <div className="content-item" >
                             <p>Bạn có thể sử dụng menu Device để thêm, xóa hoặc chỉnh sửa các thiết bị đã đăng ký, tìm nạp thông tin người dùng đã đăng ký trong thiết bị vào máy chủ.</p>
-                            <img src='./images/device-1.png' className="mb-3 w-100" />
+                            <img src='./images/device-1.png' className="" />
+                            <img src='./images/device-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -40,35 +41,35 @@ function Device(props) {
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Kết nối lại thiết bị</td>
+                                        <td>Kết nối lại thiết bị </td>
                                         <td>11</td>
                                         <td>Tìm kiếm thiết bị slave</td>
                                     </tr>
-                                    <tr>
+                                    <tr>    
                                         <td>4</td>
                                         <td>Ngắt kết nối thiết bị (và xóa khỏi danh sách)</td>
                                         <td>12</td>
                                         <td>Quản lý người dùng trong thiết bị</td>
                                     </tr>
-                                    <tr>
+                                    <tr>    
                                         <td>5</td>
                                         <td>Chọn thiết bị đã kết nối</td>
                                         <td>13</td>
                                         <td>Khởi động lại thiết bị</td>
                                     </tr>
-                                    <tr>
+                                    <tr>    
                                         <td>6</td>
                                         <td>Click double vào từng dòng để xem chi tiết hoặc click chuột phải để mở các chức năng mở rộng</td>
                                         <td>14</td>
                                         <td>Xóa tất cả dữ liệu trên thiết bị (ngoại trừ người dùng)</td>
                                     </tr>
-                                    <tr>
+                                    <tr>    
                                         <td>7</td>
                                         <td>Danh sách thiết bị đã kết nối</td>
                                         <td>15</td>
                                         <td>Xóa tất cả dữ liệu trên thiết bị</td>
                                     </tr>
-                                    <tr>
+                                    <tr>    
                                         <td>8</td>
                                         <td>Tìm kiếm thiết bị đã kết nối</td>
                                         <td></td>
@@ -90,20 +91,26 @@ function Device(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Chọn thiết bị để kết nối</td>
-                                        <td>4</td>
-                                        <td>Danh sách thiết bị được tìm thấy</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Tìm kiếm thiết bị trong danh sách hiện tại</td>
                                         <td>5</td>
                                         <td>Trạng thái thiết bị đã kết nối tới IP server</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td>Tìm kiếm lại</td>
+                                        <td>2</td>
+                                        <td>Tìm kiếm thiết bị trong danh sách hiện tại</td>
                                         <td>6</td>
                                         <td>Trạng thái hiện tại của thiết bị</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Tìm kiếm lại</td>
+                                        <td>7</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Danh sách thiết bị được tìm thấy</td>
+                                        <td>6</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>

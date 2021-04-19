@@ -33,6 +33,8 @@ import Visitor from './pages/visitor/visitor';
 import AccessControl from "./pages/Access Control/access-control";
 import SystemConfig from "./pages/Access Control/generalSetting/system-configuration";
 import WiegandFormat from "./pages/Access Control/generalSetting/wiegand-format";
+import IntrusionAlarm from "./pages/Access Control/intrusion-alarm/intrusion-alarm";
+import IntrusionDoor from "./pages/Access Control/intrusion-alarm/intrusion-door";
 import './pages/style.css';
 
 function App() {
@@ -76,6 +78,8 @@ function App() {
         {view: <AccessControl showLoading={showLoading} hideLoading={hideLoading}/>, path: "/AccessControl"},
         {view: <SystemConfig showLoading={showLoading} hideLoading={hideLoading}/>, path: "/SystemConfig"},
         {view: <WiegandFormat showLoading={showLoading} hideLoading={hideLoading}/>, path: "/WiegandFormat"},
+        {view: <IntrusionAlarm showLoading={showLoading} hideLoading={hideLoading}/>, path: "/IntrusionAlarm"},
+        {view: <IntrusionDoor showLoading={showLoading} hideLoading={hideLoading}/>, path: "/IntrusionDoor"},
     ];
 
     const system = () => {

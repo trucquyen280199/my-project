@@ -155,6 +155,20 @@ class MainModule extends React.Component {
                     isSingle: true
                 },
                 {
+                    menuName: "Cảnh báo xâm nhập",
+                    isSingle: false,
+                    subList: [
+                        {
+                            linkTo: "/IntrusionAlarm",
+                            menuName: "Intrusion Alarm",
+                        },
+                        {
+                            linkTo: "/IntrusionDoor",
+                            menuName: "Cửa xâm nhập",
+                        },
+                    ]
+                },
+                {
                     linkTo: "/Visitor",
                     menuName: "Visitor",
                     isSingle: true

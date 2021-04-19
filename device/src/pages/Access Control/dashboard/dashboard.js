@@ -11,7 +11,8 @@ function Dashboard(props) {
                 </div>
             </nav>
             <h2 className="text-center">Dashboard</h2>
-            <img src="./images/dashboard.png" />
+            <img src="./images/dashboard.png" className="w-25" />
+            <img src="./images/dashboard-2.png" className="w-100" />
             <p className="font-weight-bold ml-4">Ghi chú:</p>
             <table className="table mt-3">
                 <tbody>
