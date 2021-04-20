@@ -44,6 +44,17 @@ div{
     padding:1rem
 }
 
+#layout .sidebar .content{
+    overflow-y: auto;
+    padding: 0 !important;
+}
+#layout .sidebar .content::-webkit-scrollbar {
+    width: 5px;
+}
+#layout .sidebar .content::-webkit-scrollbar-thumb {
+    background: rgb(194, 191, 191)
+}​
+
 #main{
     /* background:var(--bg-main); */
     background: #f8f9fa;
@@ -98,7 +109,7 @@ div{
 
 @media (orientation: landscape){
     #left .sidebar,#right .sidebar{
-        width:100%
+        width: 184px
     }
 }
 #left.closed .sidebar.closed .header .title{

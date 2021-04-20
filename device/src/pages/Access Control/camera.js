@@ -109,8 +109,8 @@ function Camera(props) {
                             </table>
                             <p>
                                 Ghi chú:<br/>
-                                Nếu cấu hình đủ thông tin trong mục <b>Cấu hình</b>, Khi <b>Sự kiện</b> của <b>Cửa</b> được thực hiện thì hệ thống camera sẽ kết nối và chụp lại hình ảnh tại thời điểm hiện tại.<br/>
-                                Cửa chi dùng cho một camera duy nhất
+                                - Nếu cấu hình đủ thông tin trong mục <b>Cấu hình</b>, Khi <b>Sự kiện</b> của <b>Cửa</b> được thực hiện thì hệ thống camera sẽ kết nối và chụp lại hình ảnh tại thời điểm hiện tại.<br/>
+                                - Cửa chi dùng cho một camera duy nhất
                             </p>
                         </div>
                     </div>

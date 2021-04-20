@@ -11,7 +11,7 @@ function TriggerAction(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Trigger Action</h2>
+            <h2 className="text-center">KÍCH HOẠT HÀNH ĐỘNG</h2>
                 <section>
                     <div>
                         <div className="content-item" >

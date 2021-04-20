@@ -16,7 +16,7 @@ function Monitoring(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-            <h2 className="text-center">Monitoring</h2>
+            <h2 className="text-center">Giám sát</h2>
                 <p>Bạn có thể sử dụng menu <b>Giám sát</b> để xem danh sách các sự kiện kiểm soát ra vào, trạng thái thiết bị và cửa, trạng thái khu vực và lịch sử cảnh báo.
                    <br/> Bạn có thể xem và kiểm soát trạng thái của các cửa trong thời gian thực trong đồ họa nếu bạn thêm bản đồ đồ họa.
                 </p>
@@ -74,7 +74,7 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="door-status">
-                        <h2>2.	Trạng thái cửa</h2>
+                        <h2>3.	Trạng thái cửa</h2>
                         <div className="content-item" >
                             <img src='./images/door-status.png' className="mb-3 w-25" />
                             <img src='./images/door-status-2.png' className="mb-3 w-100" />
@@ -120,7 +120,7 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="elevator-status">
-                        <h2>3.	Trạng thái thang máy</h2>
+                        <h2>4.	Trạng thái thang máy</h2>
                         <div className="content-item" >
                             <img src='./images/elevator-status.png' className="mb-3 w-25" />
                             <img src='./images/elevator-status-1-2.png' className="mb-3 w-100" />
@@ -158,7 +158,7 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="zone-status">
-                        <h2>4. Trạng thái Zone</h2>
+                        <h2>5. Trạng thái Zone</h2>
                         <div className="content-item" >
                             <img src='./images/zone-status.png' className="mb-3 w-25" />
                             <img src='./images/zone-status-2.png' className="mb-3 w-100" />
@@ -194,7 +194,7 @@ function Monitoring(props) {
                 </section>
                 <section>
                     <div id="graphic-view">
-                        <h2>5.	Bản đồ</h2>
+                        <h2>6.	Bản đồ</h2>
                         <div className="content-item" >
                             <img src='./images/graphic-view.png' className="mb-3 w-25" />
                             <img src='./images/graphic-view-2.png' className="mb-3 w-100" />

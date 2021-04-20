@@ -44,7 +44,7 @@ function IntrusionAlarm(props) {
                 <p>▪<b className="ml-2">Xóa:</b> Xóa zone đã chọn khỏi danh sách.</p>
                 <p>▪<b className="ml-2">Hoạt động:</b> Thay đổi trạng thái của zone</p>
                 <p>▪<b className="ml-2">Không hoạt động:</b> Thay đổi trạng thái của zone</p>
-                <p className="mt-3"> Thêm hoặc sửa zone</p>
+                <p className="mt-3">• Thêm hoặc sửa zone</p>
                 <img src="./images/intrusion-alarm-3.png" className="w-100" /> 
                 <p>Ghi chú:</p>
                 <table>

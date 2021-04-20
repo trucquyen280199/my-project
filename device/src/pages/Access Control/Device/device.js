@@ -21,7 +21,7 @@ function Device(props) {
                 <section>
                     <div id="device">
                         <div className="content-item" >
-                            <p>Bạn có thể sử dụng menu Device để thêm, xóa hoặc chỉnh sửa các thiết bị đã đăng ký, tìm nạp thông tin người dùng đã đăng ký trong thiết bị vào máy chủ.</p>
+                            <p>Bạn có thể sử dụng menu <b>Thiết bị</b> để thêm, xóa hoặc chỉnh sửa các thiết bị đã đăng ký, tìm nạp thông tin người dùng đã đăng ký trong thiết bị vào máy chủ.</p>
                             <img src='./images/device-1.png' className="" />
                             <img src='./images/device-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
@@ -212,7 +212,7 @@ function Device(props) {
                 </section>
                 <section>
                     <div id="device-group">
-                        <h2>4.	Nhóm thiết bị</h2>
+                        <h2>5.	Nhóm thiết bị</h2>
                         <div className="content-item" >
                             <p className="ml-4">Các thiết bị được cấu hình kết nối thiết bị đến server, nếu chưa kết nối sẽ được quản lý trong trang này</p>
                             <img src="./images/device-7.png" className="mb-3 w-25" />

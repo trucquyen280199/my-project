@@ -10,16 +10,25 @@ function Visitor(props) {
                     <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
                     <li className="link"><a href="#setting-card-list">Cài đặt danh sách thẻ dùng cho quản lý khách</a></li>
                     <li className="link"><a href="#setting-people-list">Cài đặt danh sách nhân viên mà khách có thể gặp</a></li>
+                    <li className="link"><a href="#setting-device">Cài đặt thiết bị vào – ra</a></li>
+                    <li className="link"><a href="#guest-management-system">Cài đặt hệ thống quản lý khách</a></li>
                     <li className="link"><a href="#degistered-visitor-afar">Đăng ký khách (từ xa)</a></li>
                     <li className="link"><a href="#degistered-visitor-place">Đăng ký khách (đăng ký tại chỗ)</a></li>
+                    <li className="link"><a href="#health-declaration">Khai báo y tế dành cho khách</a></li>
+
+
                     <li className="link"><a href="#view-list-visitor-pending">Xem danh sách khách chờ xử lý</a></li>
                     <li className="link"><a href="#approval-visitor">Phê duyệt khách</a></li>
-                    <li className="link"><a href="#update-period">Cập nhật khoảng thời gian gặp của khách</a></li>
+                    <li className="link"><a href="#update-guest-information">Cập nhật thông tin của khách</a></li>
                     <li className="link"><a href="#refuse-visitor">Từ chối khách</a></li>
                     <li className="link"><a href="#list-visitor-acceptance">Xem danh sách khách chấp thuận</a></li>
                     <li className="link"><a href="#degistered-fingerprint">Đăng ký mẫu vân tay cho khách</a></li>
                     <li className="link"><a href="#degistered-card">Đăng ký thẻ (hoặc xoá thẻ) cho khách</a></li>
                     <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>
+
+                    <li className="link"><a href="#update-validity-period">Cập nhật thời gian hiệu lực</a></li>
+                    <li className="link"><a href="#checkOut-settings">Thiết lập kiểm tra ra</a></li>
+
                     <li className="link"><a href="#visitor-list-expire">Xem danh sách khách hết hạn</a></li>
                     <li className="link"><a href="#view-report">Xem báo cáo</a></li>
                     <li className="link"><a href="#daily-visitor-statistics">Xem thống kê khách hàng ngày</a></li>
@@ -41,7 +50,7 @@ function Visitor(props) {
                     <div id="definitions-and-updates">
                         <h2>1.	Định nghĩa và cập nhật loại khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KIỂM SOÁT TRUY CẬP &gt; Cài đặt.</b></p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>Khách &gt; Cài đặt.</b></p>
                             <img src="./images/visitor-1.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Loại khách đăng ký</b>.</p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
@@ -63,20 +72,11 @@ function Visitor(props) {
                                     </tr>
                                     <tr>
                                         <td>Mã loại</td>
-                                        <td>
-                                        <span className="ml-3">-	Là mã số từ 1 đến 99999 (tối đa 5 chữ số).</span><br/>
-                                        <span className="ml-3">-	Là duy nhất.</span><br/>
-                                        <span className="ml-3">-	Chỉ hiển thị khi tạo mới.</span>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chứng chỉ</td>
-                                        <td>- Chưa cần thiết (đang phát triển).</td>
+                                        <td>- Là mã loại khách duy nhất</td>
                                     </tr>
                                     <tr>
                                         <td>Tổng thời gian ở lại</td>
-                                        <td>- Số giờ tối đa mà loại khách này được phép ở trong công ty (giá trị hợp lệ từ 0 ~ 24).</td>
+                                        <td>- Số <b>giờ</b> tối đa mà loại khách này được phép ở trong công ty (giá trị hợp lệ &gt; 0 ).</td>
                                     </tr>
                                 </tbody>
                             </table> 
@@ -88,7 +88,7 @@ function Visitor(props) {
                     <div id="setting-card-list">
                         <h2>2.	Cài đặt danh sách thẻ dùng cho quản lý khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH  &gt; Cài đặt.</b></p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH  &gt; Cài đặt.</b></p>
                             <img src="./images/visitor-4.png" className="w-25 mb-3" /> 
                             <p>Sau đó chọn <b>Cài đặt thẻ</b>.</p>
                             <p>B2: Trang sau sẽ xuất hiện.</p>
@@ -98,9 +98,9 @@ function Visitor(props) {
                             <p>Lưu ý:</p>
                             <p>
                                 <span className="ml-3">-	<b>Trạng thái</b>: Nếu thẻ đang được sử dụng bởi khách hoặc nhân viên thì sẽ hiển thị
-                                mã của họ. Còn lại là thẻ chưa được sử dụng.</span><br/>
+                                <b>mã trên thiết bị của họ</b>. Còn lại là thẻ chưa được sử dụng.</span><br/>
                                 <span className="ml-3">-	<b>Ô tìm kiếm</b>: tìm kiếm theo <b>Mã thẻ</b> hoặc <b>Tên thẻ</b>.</span><br/>
-                                <span className="ml-3">-	<b>Nút làm mới</b>: để tải lại danh sách thẻ.</span>
+                                <span className="ml-3">-	<b>Nút làm mới</b> (góc phải màn hình): để tải lại danh sách thẻ.</span>
                             </p>
                         </div>
                     </div>
@@ -109,12 +109,12 @@ function Visitor(props) {
                     <div id="setting-people-list">
                         <h2>3.	Cài đặt danh sách nhân viên mà khách có thể gặp</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH  &gt; Cài đặt.</b></p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH  &gt; Cài đặt.</b></p>
                             <img src="./images/visitor-4.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Cài đặt người dùng</b>.</p>
+                            <p>Sau đó chọn <b>Cài đặt người gặp</b>.</p>
                             <p>B2: Trang sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-7.png" className="w-100 mb-3" />
-                            <p>B3: Chọn phòng ban ở <b>Danh sách phòng ban</b> (nếu cần) để lọc nhân viên.</p>
+                            <p>B3: Chọn phòng ban ở <b>Danh sách công ty / phòng ban </b> (nếu cần) để lọc nhân viên.</p>
                             <img src="./images/visitor-8.png" className="w-100 mb-3" />
                             <p>B4: Chọn hoặc bỏ chọn nhân viên. </p>
                             <p>B5: Bấm nút <b>Lưu</b> để cập nhật.</p>
@@ -126,13 +126,70 @@ function Visitor(props) {
                     </div>
                 </section>
                 <section>
-                    <div id="degistered-visitor-afar">
-                        <h2>4.	Đăng ký khách (từ xa)</h2>
+                    <div id="setting-device">
+                        <h2>4.	Cài đặt thiết bị vào – ra</h2>
                         <div className="content-item" >
-                            <p>B1: Mở trình duyệt và vào đường link: <a href="http://mobile.suprema.vn:8081/register">http://mobile.suprema.vn:8081/register</a>.</p>
-                            <img src="./images/visitor-9.png" className="w-100 mb-3" /> 
+                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt</b>.</p>
+                            <img src="./images/visitor-4.png" className="w-25 mb-3" /> 
+                            <p>Sau đó chọn <b>Cài đặt thiết bị vào ra</b>.</p>
+                            <p>B2: Trang sau sẽ xuất hiện:</p>
+                            <img src="./images/visit-setting-device-1.png" className="w-100 mb-3" />
+                            <p>B3:  Cấu hình thiết bị ra – vào.</p>
+                            <p>B4: Bấm nút Lưu để cập nhật.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="guest-management-system">
+                        <h2>5.	Cài đặt hệ thống quản lý khách</h2>
+                        <div className="content-item" >
+                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt</b>.</p>
+                            <img src="./images/visitor-4.png" className="w-25 mb-3" /> 
+                            <p>Sau đó chọn <b>Cài đặt hệ thống</b>.</p>
+                            <p>B2: Trang sau sẽ xuất hiện:</p>
+                            <img src="./images/guest-management-system-1.png" className="w-100 mb-3" />
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nhận dạng khuôn mặt </td>
+                                        <td>Bật / tắt chức năng nhận diên khuôn mặt khi đăng ký khách</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Khai báo y tế</td>
+                                        <td>Bật / tắt chức năng khai báo y tế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Cho phép gặp nhân viên </td>
+                                        <td>Điều chỉnh số lượng nhân viên mà khách có thể gặp</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Điều khoản dịch vụ</td>
+                                        <td>Điều khoản, các quy định sẽ hiển thị ở trang đăng ký khách</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>B3: Điều chỉnh.</p>
+                            <p>B4: Bấm lưu để cập nhật.</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="degistered-visitor-afar">
+                        <h2>6.	Đăng ký khách (từ xa)</h2>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Đăng ký khách &gt; Đăng ký (từ xa)</b>.</p>
+                            <img src="./images/visitor-9.png" className="w-25 mb-3" /> 
+                            <p>Trình duyệt sẽ mở tab mới (với đường dẫn /register)</p>
+                            <p>Hoặc từ trình duyệt vào trang chủ của phần mềm thêm “/register” vào sau url (vd: abc.com/register)</p>
+                            <img src="./images/degistered-visitor-afar-1.png" className="w-100" />
                             <p>(Nút ở góc trái trên cùng để chọn ngôn ngữ)</p>
-                            <p>B2: Nếu ghé thăm lần đầu, bấm nút <b>Ghé thăm lần đầu</b> (:D) và đi đến B3.</p>
+
+
+                            <p className="my-2">B2: Nếu ghé thăm lần đầu, bấm nút <b>Ghé thăm lần đầu</b> (:D) và đi đến B3.</p>
                             <p>
                                 Nếu đã từng đăng ký, hãy tìm kiếm theo <b>Họ tên, Chứng minh nhân dân (CMND), Căn cước công dân (CCCD), Số điện thoại</b> hoặc <b>Email</b> và bấm nút <b>Tìm kiếm</b>.
                                 Cửa sổ thông báo sau sẽ xuất hiện nếu tìm thấy. <br/>
@@ -140,218 +197,157 @@ function Visitor(props) {
                             </p>
                             <img src="./images/visitor-10.png" className="w-100 mb-3" />
                             <p>B3: Mẫu đăng ký sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-11.png" className="w-100 mb-3" />
-                            <table className="table table-list d-flex w-100 mt-3">
+                            <img src="./images/degistered-visitor-afar-1.png" className="w-100 mb-3" />
+                            <p>Mục bên trái</p>
+
+                            <table className="table table-list d-flex w-100 ">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>Họ tên (bắt buộc).</td>
-                                        <td>7</td>
-                                        <td>Thời gian bắt đầu (bắt buộc).</td>
+                                        <td>6</td>
+                                        <td>Chọn loại khách</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Số tuổi (bắt buộc).</td>
-                                        <td>8</td>
-                                        <td>Thời gian kết thúc (bắt buộc).</td>
+                                        <td>7</td>
+                                        <td>Thời gian bắt đầu (bắt buộc).</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Chứng minh nhân dân (CMND) hoặc căn cước công dân (CCCD) (bắt buộc).</td>
-                                        <td>9</td>
-                                        <td>Chọn loại khách đăng ký (bắt buộc).</td>
+                                        <td>8</td>
+                                        <td>Thời gian kết thúc (bắt buộc).</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>Số điện thoại (bắt buộc).</td>
-                                        <td>10</td>
-                                        <td>Nút mở webcam để chụp hình khuôn mặt.</td>
+                                        <td>9</td>
+                                        <td>Khai báo y tế (nếu hiển thị nút là bắt buộc)</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>Email (bắt buộc).</td>
-                                        <td>11</td>
-                                        <td>Nút tải file hình khuôn mặt.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Chọn ngời cần gặp nếu cần thiết.</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>10</td>
+                                        <td>Chọn người gặp nếu cần thiết</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Điền các <b>thông tin bắt buộc</b>.</p>
-                            <p>Nếu muốn gặp nhân viên nào đó, hoặc chọn nút phía dưới <b>Người gặp</b> để cập nhật.<br/> Cửa sổ sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-12.png" className="w-100 mb-3" />
-                            <p>Chọn nhân viên cần gặp và bấm nút <b>Lưu</b> để cập nhật.<br/>
-                            B4: Sau đó bấm <b>Đồng ý (Điều khoản dịch vụ)</b>.<br/>
-                            B5: Bấm nút <b>Đăng ký</b> để hoàn thành.
-                            </p>
-                            <p>Lưu ý:</p>
-                            <p>
-                                <span className="ml-3">-	<b>Ô tìm kiếm</b>: tìm kiếm theo <b>Mã người dùng (Thiết bị)</b> hoặc <b>Họ tên</b>.</span>
-                            </p>
+                            <p>Mục bên phải</p>
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Chọn hình ảnh (<a href=""> giao diện upload</a>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Chọn hình ảnh cmnd/cccd mặt trước (<a href="">giao diện upload</a>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Chọn hình ảnh cmnd/cccd mặt sau (<a href="">giao diện upload</a>)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Giao diên upload</p>
+                            <p className="ml-3">- USB:</p>
+                            <img src="./images/upload-interface.png" className="w-100 mb-3" />
+                            <p>Danh sách thiết bị chụp ảnh của máy tính / điện thoại đang truy cập<br/>
+                                Chọn thiết bị và bấm Chụp</p>
+                            <p className="ml-3 mt-3">- Upload file:</p>
+                            <img src="./images/upload-interface-2.png" className="w-100 mb-3" />
+                            <p>Bấm vào khung để upload hình ảnh</p>
+                            <p>Điền các thông tin bắt buộc.<br/>
+                                Nếu muốn gặp nhân viên nào đó, hoặc chọn nút phía dưới Người gặp để cập nhật.<br/>
+                                Cửa sổ sau sẽ xuất hiện.</p>
+                            <img src="./images/upload-interface-3.png" className="w-100 mb-3" />
+                            <p>Chọn nhân viên cần gặp và bấm <b>Nút lưu</b> để cập nhật.</p>
+                            <p className="mt-3">B4: Nếu có mục khai báo y tế<br/>
+                                Bấm nút Khai báo y tế<br/>
+                                (<a href="">Xem hướng dẫn khai báo y tế</a>)</p>
+                            <p className="mt-3">B5: Sau đó bấm <b>Đồng ý</b> (<b>Điều khoản dịch vụ</b>).<br/>
+                                B6: Bấm nút <b>Đăng ký</b> để hoàn thành.</p>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="degistered-visitor-place">
-                        <h2>5.	Đăng ký khách (đăng ký tại chỗ)</h2>
+                        <h2>7.	Đăng ký khách (đăng ký tại chỗ)</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Đăng ký khách &gt; Đăng ký (từ xa)</b>.</p>
+                            <img src="./images/remote-registration-1.png" className="w-25 mb-3" />
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-14.png" className="w-100 mb-3" />
-                            <p>Bấm nút <b>Đăng ký</b>.</p>
-                            <p>B3: Một tab mới sẽ xuất hiện.</p>
-                            <img src="./images/visitor-15.png" className="w-100 mb-3" />
                             <p>Điền các <b>thông tin bắt buộc</b>.</p>
-                            <p>B4: <b>Lấy mẫu ảnh chân dung</b> bằng cách bấm vào nút <b>Khuôn mặt</b> hoặc <b>khung hình</b>.</p>
-                            <p>
-                                Có 2 cách lấy:<br/>
-                                -	Lấy thông qua <b>thiết bị Suprema</b>:
-
-                            </p>
-                            <img src="./images/visitor-16.png" className="w-100 mb-3" />
-                            <table className="table ">
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Nút để chọn kiểu lấy mẫu khuôn mặt bằng thiết bị Suprema.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Nút để chọn kiểu lấy mẫu khuôn mặt bằng thiết bị USB (webcam, …).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Nút để tải lại danh sách thiết bị Suprema khả dụng.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Danh sách các thiết bị (Face) có sẵn.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Nút để thực hiện lấy mẫu (chụp ảnh).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Hình ảnh sau khi thực hiện lấy mẫu.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Nút lưu hình ảnh hoặc huỷ bỏ.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>
-                                <span className="ml-4">o	Chọn thiết bị Face.</span><br/>
-                                <span className="ml-4">o	Bấm nút Lấy mẫu, sau khi thiết bị chụp xong sẽ hiển thị hinh ở ô 6.</span><br/>
-                                <span className="ml-4">o	Bấm nút Lưu khi thực hiện xong.</span>
-                            </p>
-                            <p className="ml-4">-	Lấy thông qua <b>thiết bị USB</b>:</p>
-                            <img src="./images/visitor-17.png" className="w-100 mb-3" />
-                            <table className="table table-list d-flex w-100 mt-3">
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Danh sách thiết bị USB hiện có trên thiết bị đang sử dụng.</td>
-                                        <td>4</td>
-                                        <td>Màn hình trực tiếp từ thiết bị USB (webcam, ...).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Nút để thực hiện lấy mẫu (chụp ảnh).</td>
-                                        <td>5</td>
-                                        <td>Nút lưu hình ảnh hoặc huỷ bỏ.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Hình ảnh sau khi lấy mẫu.</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p>
-                                <span className="ml-4">o	Chọn thiết bị USB</span><br/>
-                                <span className="ml-4">o	Bấm nút <b>Chụp</b> để lấy mẫu.</span><br/>
-                                <span className="ml-4">o	Bấm nút <b>Lưu</b> khi thực hiện xong.</span>
-                            </p>
-                            <p>
-                                B5: Chụp hình ảnh <b>CMND/CCCD</b> tương tự như trên. <br/>
-                                B6: Bấm nút <b>Đăng ký</b> để hoàn thành.<br/>
-                                Nếu cần kiểm tra nhiệt độ của khách, bấm nút <b>Nhiệt độ</b> ở góc phải trên.
-                            </p>
+                            <p>B3: <b> Lấy mẫu ảnh chân dung</b> bằng cách bấm vào <b>khung hình</b>.</p>
+                            <p> Có 3 cách lấy:</p>
+                            <p className="ml-3">- Lấy thông qua <b>thiết bị Suprema</b>:</p>
+                            <img src="./images/remote-registration-2.png" className="w-100 mb-3" />
+                            <p className="ml-5">o Chọn thiết bị Face trong danh sách thiết bị.</p>
+                            <p className="ml-5">o Bấm nút <b>Lấy mẫu</b>, sau khi thiết bị chụp xong sẽ hiển thị hinh ở mục hình ảnh.</p>
+                            <p className="ml-5">o Bấm nút <b>Lưu</b> khi thực hiện xong.</p>
+                            <p className="ml-3">Lấy thông qua <b>thiết bị USB</b>: (giao diện upload)</p>
+                            <p className="ml-3">Lấy thông qua upload file: (giao diện upload)</p>
+                            <p className="my-3">B4: Chụp hình ảnh <b>CMND/CCCD</b> tương tự như trên</p>
+                            <p>B5: Nếu có mục khai báo y tế<br/>
+                            Bấm nút Khai báo y tế<br/>
+                            (<a href=""> Xem hướng dẫn khai báo y tế</a>)</p>
+                            <p>B7: Bấm nút <b>Đăng ký</b> để hoàn thành.<br/>
+                                Nếu cần kiểm tra nhiệt độ của khách, bấm nút <b>Nhiệt độ</b> ở góc phải trên.</p>
                             <img src="./images/visitor-18.png" className="w-100 mb-3" />
-                            <table className="table table-list d-flex w-100 mt-3">
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Nút Nhiệt độ để mở cửa sổ kiểm tra nhiệt độ.</td>
-                                        <td>4</td>
-                                        <td>Danh sách thiết bị Suprema khả dụng.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Nút thực hiện quét nhiệt độ.</td>
-                                        <td>5</td>
-                                        <td>Kết quả hiển thị sau khi thực hiện quét nhiệt độ (đơn vị độ C).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Nút tải lại danh sách thiết bị Suprema.</td>
-                                        <td>6</td>
-                                        <td>Nút Đồng ý hoặc từ chối khách.</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <p>Chọn thiết bị và bấm Quét để đo nhiệt độ, hoặc bấm Cập nhật nhiệt độ để điều chỉnh thủ công</p>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="health-declaration">
+                        <h2>8.	Khai báo y tế dành cho khách</h2>
+                        <div className="content-item" >
+                            <p>B1: Nếu ở biểu mẫu đăng ký có nút Khai báo y tế. Bấm vào.</p>
+                            <img src="./images/health-declaration-1.png" className="w-100 mb-3" />
+                            <p>B2: Biểu mẫu sau sẽ xuất hiện:</p>
+                            <img src="./images/health-declaration-2.png" className="w-100 mb-3" />
+                            <p>Điền các thông tin bắt buộc.</p>
+                            <p>B3: Bấm lưu để cập nhật khai báo y tế.</p>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="view-list-visitor-pending">
-                        <h2>6.	Xem danh sách khách chờ xử lý</h2>
+                        <h2>9.	Xem danh sách khách chờ xử lý</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
+                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
+                            <img src="./images/waiting-list-for-processing-1.png" className="mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-19.png" className="w-100 mb-3" />
+                            <img src="./images/waiting-list-for-processing-2.png" className="mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Danh sách thiết bị Suprema (Face) khả dụng.</td>
-                                        <td>6</td>
-                                        <td>Nút làm mới lại danh sách khách chờ xử lý.</td>
+                                        <td>Nút phê duyệt</td>
+                                        <td>5</td>
+                                        <td>Tìm kiếm theo họ tên, cmnd/cccd.</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Nút phê duyệt (chỉ hiện thị khi chọn ít nhất 1 khách).</td>
-                                        <td>7</td>
-                                        <td>Nút lọc theo loại khách.</td>
+                                        <td>Nút từ chối</td>
+                                        <td>6</td>
+                                        <td>Nút làm mới trang.</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Nút từ chối (chỉ hiện thị khi chọn ít nhất 1 khách).</td>
-                                        <td>8</td>
-                                        <td>Nút tìm kiếm toàn bộ khách đang chờ xét duyệt theo bộ lọc.</td>
+                                        <td>Bộ lọc theo loại khách</td>
+                                        <td>7</td>
+                                        <td>Nút tìm kiếm theo bộ lọc</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>Bộ lọc theo thời gian từ ngày đến ngày.</td>
-                                        <td>9</td>
-                                        <td>Danh sách khách đang chờ xử lý.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Ô tìm kiếm theo <b>Họ tên, CMND/CCCD, Số điện thoại, Email</b>.</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>Bộ lọc khoảng thời gian (thời gian gặp và thời gian hiệu lực trên thiết bị của khách)</td>
+                                        <td>8</td>
+                                        <td>Danh sách khách chờ</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -362,38 +358,33 @@ function Visitor(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Trạng thái đang chọn khách này</td>
-                                        <td>7</td>
-                                        <td>Nút xem thông tin danh sách người gặp của khách (nếu có).</td>
+                                        <td>5</td>
+                                        <td>Loại khách đăng ký</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Mã và Họ tên khách.</td>
-                                        <td>8</td>
-                                        <td>Khoảng thời gian gặp của khách.</td>
+                                        <td>6</td>
+                                        <td>Thời gian hiệu lực trên thiết bị.</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Thông tin khác của khách.</td>
-                                        <td>9</td>
-                                        <td>Nút cập nhật khách (chỉ được cập nhật khoảng thời gian gặp).</td>
+                                        <td>7</td>
+                                        <td>Nút xem toàn bộ thông tin của khách</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>Loại khách.</td>
-                                        <td>10</td>
-                                        <td>Nút phê duyệt.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Hình ảnh của khách.</td>
-                                        <td>11</td>
-                                        <td>Nút từ chối.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Nút xem hình CMND/CCCD (nếu có).</td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>Thời gian gặp</td>
+                                        <td>8</td>
+                                        <td>
+                                            Từ trái sang phải:<br/>
+                                            <p className="ml-3">
+                                                1. Nút cập nhật thông tin khách
+                                                2. Nút phê duyệt khách
+                                                3. Nút từ chối khách
+                                            </p>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -402,22 +393,21 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="approval-visitor">
-                        <h2>7.	Phê duyệt khách</h2>
+                        <h2>10.	Phê duyệt khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
+                            <img src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-21.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Danh sách thiết bị Suprema (Face) khả dụng.</td>
+                                        <td>Nút phê duyệt <b>toàn bộ khách đang chọn</b>.</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Nút phê duyệt toàn bộ khách đang chọn.</td>
+                                        <td>Nút từ chối <b>toàn bộ khách đang chọn</b>.</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -429,7 +419,7 @@ function Visitor(props) {
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>Nút phê duyệt khách của dòng đó.</td>
+                                        <td>Nút phê duyệt khách của dòng đó. (Nút dấu cộng)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -437,54 +427,81 @@ function Visitor(props) {
                             <p>
                             B3: Chọn danh sách khách cần phê duyệt.<br/>
                             B4: Bấm nút <b>Phê duyệt (5)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút <b>Phê duyệt (2)</b>nếu danh sách nhiều hơn 1.<br/>
-                            B5: Danh sách được phê duyệt sẽ được chuyển qua <b>Danh sách chấp thuận</b>.
+                            B5: Cửa sổ sau sẽ xuất hiện:
                             </p>
+                            <img src="./images/approval-visitor-3.png" className="w-100 mb-3" />
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Số phút thêm/bớt so với thời gian gặp để lưu thành thời gian hiệu lực trên thiết bị</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Nhóm truy cập mà khách có thể đi (không bắt buộc)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Danh sách khách đang chọn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Nút bỏ khách khỏi danh sách đang chọn</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p className="my-3">Điều chỉnh thông tin nếu cần thiết và bấm nút Phê duyệt</p>
+                            <p>Danh sách được phê duyệt sẽ được chuyển qua <b>Danh sách chấp thuận</b>.</p>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div id="update-period">
-                        <h2>8.	Cập nhật khoảng thời gian gặp của khách</h2>
+                    <div id="update-guest-information">
+                        <h2>11.	Cập nhật thông tin của khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
-                            <p>B2: Bấm nút <b>Cập nhật</b> của khách cần cập nhật</p>
-                            <img src="./images/visitor-22.png" className="w-100 mb-3" />
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
+                            <img src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
+                            <p>B2: Bấm nút <b>Cập nhật</b> (hình cây bút chì) của khách cần cập nhật</p>
+                            <img src="./images/update-guest-information-1.png" className="w-100 mb-3" /> 
                             <p>B3: Cửa số sau sẽ xuất hiện.</p>
-                            <img src="./images/visitor-23.png" className="w-100 mb-3" />
-                            <p>Điều chỉnh khoảng thời gian hợp lý. </p>
-                            <p>B4: Bấm nút <b>Lưu</b> để lưu thông tin mới.</p>
+                            <img src="./images/update-guest-information-2.png" className="w-100 mb-3" /> 
+                            <p>Các mục có thể cập nhật:</p>
+                            <p className="ml-3">
+                            - Loại khách<br/>
+                            - Thời gian hiệu lực trên thiết bị<br/>
+                            - Nhiệt độ
+                            </p>
+                            <p>Điều chỉnh các thông tin</p>
+                            <p className="mt-3">B4: Bấm nút Lưu để lưu thông tin mới.</p>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="refuse-visitor">
-                        <h2>9.	Từ chối khách</h2>
+                        <h2>12.	Từ chối khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
                             <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chờ</b>. </p>
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-24.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Nút từ chối khách đang chọn.</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Nút chọn (huỷ chọn) toàn bộ khách (Lưu ý: chỉ chọn ở trang hiện tại).</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Nút chọn (huỷ chọn) theo từng khách.</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Nút từ chối khách của dòng đó.</td>
-                                </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nút từ chối khách đang chọn.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Nút chọn (huỷ chọn) toàn bộ khách (Lưu ý: chỉ chọn ở trang hiện tại).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Nút chọn (huỷ chọn) theo từng khách.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Nút từ chối khách của dòng đó (hình thùng rác).</td>
+                                    </tr>
                                 </tbody>
                             </table>
                             <p>Chọn danh sách khách cần từ chối.</p>
@@ -499,26 +516,25 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="list-visitor-acceptance">
-                        <h2>10.	Xem danh sách khách chấp thuận</h2>
+                        <h2>13.	Xem danh sách khách chấp thuận</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-26.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Nút đông bộ các uỷ quyền (là các mẫu vân tay, khuôn mặt và thẻ) tới thiết bị đang kết nối.</td>
+                                    <td>Nút đông bộ các uỷ quyền (là các mẫu vân tay, khuôn mặt và thẻ) tới nhóm truy cập đang chọn của <b>danh sách khách đang chọn</b>.</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Nút thiết lập kiểm tra ra.</td>
+                                    <td>Nút thiết lập kiểm tra ra của <b>danh sách khách đang chọn</b>.</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Danh sách khách đã được chập thuận theo bọ lọc.</td>
+                                    <td>Nút cập nhật thời gian hiệu lực trên thiết bị của <b>danh sách khách đang chọn</b>.</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -526,7 +542,7 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Ô tìm kiếm theo Họ tên, CMND/CCCD, Số điện thoạ và Email.</td>
+                                    <td>Ô tìm kiếm theo Họ tên, CMND/CCCD.</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -539,6 +555,14 @@ function Visitor(props) {
                                 <tr>
                                     <td>8</td>
                                     <td>Nút tìm kiếm toàn bộ khách được chấp thuận theo bộ lọc.</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Nút xem nhóm truy cập dành chọ khách</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Danh sách khách đã được chập thuận.</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -560,23 +584,23 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Loại khách.</td>
+                                    <td>Thời gian gặp.</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Hình ảnh của khách.</td>
+                                    <td>Loại khách.</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td>Nút xem hình CMND/CCCD (nếu có).</td>
+                                    <td>Thời gian hiệu lực trên thiết bị.</td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
-                                    <td>Nút xem thông tin danh sách người gặp của khách (nếu có).</td>
+                                    <td>Nút xem toàn bộ thông tin của khách.</td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
-                                    <td>Khoảng thời gian gặp của khách.</td>
+                                    <td>Thông tin thẻ của khách nếu có.</td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
@@ -588,11 +612,15 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>11</td>
-                                    <td>Nút đồng bộ (các mẫu vân tay, thẻ và khuôn mặt) đến thiết bị.</td>
+                                    <td>Nút đồng bộ (các mẫu vân tay, thẻ và khuôn mặt) đến nhóm truy cập đang chọn.</td>
                                 </tr>
                                 <tr>
                                     <td>12</td>
                                     <td>Nút thiết lập kiểm tra ra cho khách.</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Nút cập nhật thời gian hiệu lực trên thiết bị.</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -601,11 +629,10 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="degistered-fingerprint">
-                        <h2>11.	Đăng ký mẫu vân tay cho khách</h2>
+                        <h2>14.	Đăng ký mẫu vân tay cho khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
                             <p>B2: Bấm nút <b>Đăng ký vân tay</b> của khách</p>
                             <img src="./images/visitor-28.png" className="w-100 mb-3" />
                             <p>B3: Cửa sổ sau sẽ xuất hiện.</p>
@@ -622,15 +649,15 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Nút thêm 1 mẫu vân tay mới.</td>
+                                    <td>Nút đồng bộ đến nhóm truy cập.</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Danh sách mẫu vân tay hiện tại.</td>
+                                    <td>Nút thêm 1 mẫu vân tay mới.</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
-                                    <td>Hình ảnh của mẫu vân tay đang chọn.</td>
+                                    <td>Danh sách mẫu vân tay hiện tại.</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
@@ -644,12 +671,16 @@ function Visitor(props) {
                                     <td>8</td>
                                     <td>Nút lưu lại toàn bộ mẫu vân tay hiện tại.</td>
                                 </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Danh sách các vân tay</td>
+                                </tr>
                                 </tbody>
                             </table>
-                            <p>Chọn mẫu vân tay cần cập nhật ở <b>vùng (4)</b> hoặc bấm nút <b>Thêm (3)</b> để tạo mẫu mới.</p>
+                            <p>Chọn mẫu vân tay cần cập nhật ở <b>vùng (5)</b> hoặc bấm nút <b>Thêm (4)</b> để tạo mẫu mới.</p>
                             <p>
                                 B4: Chọn thiết bị thực hiện lấy mẫu.<br/>
-                                B5: Bấm nút <b>Quét (6)</b> để lấy mẫu, hình ảnh mẫu vân tay mới sau khi quét thành công sẽ hiện thỉ ở <b>vùng (5)</b>.<br/>
+                                B5: Bấm nút <b>Quét (6)</b> để lấy mẫu, hình ảnh mẫu vân tay mới sau khi quét thành công sẽ hiện thỉ ở <b>vùng (9)</b>.<br/>
                                 B6: Sau khi hoàn tất lấy mẫu mới, huỷ mẫu cũ, ... bấm nút <b>Đồng ý (8)</b> để cập nhật.<br/><br/>
 
                                 Cách xoá mẫu vân tay (không cần chọn thiết bị):<br/>
@@ -661,11 +692,10 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="degistered-card">
-                        <h2>12.	Đăng ký thẻ (hoặc xoá thẻ) cho khách</h2>
+                        <h2>15.	Đăng ký thẻ (hoặc xoá thẻ) cho khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
                             <p>B2: Bấm nút <b>Đăng ký vân thẻ</b> của khách (mỗi khách chỉ <b>tối đa 1 thẻ duy nhất</b>).</p>
                             <img src="./images/visitor-30.png" className="w-100 mb-3" />
                             <p>Trường hợp <b>đã có thẻ</b> thì sẽ hiển thị giống như hình dưới.</p>
@@ -682,13 +712,13 @@ function Visitor(props) {
                                     <td>2</td>
                                     <td>
                                     Trạng thái của từng thẻ:<br/>
-                                    <span className="ml-3">-	Nếu có người sử dụng sẽ hiển thị mãc của họ.</span><br/>
+                                    <span className="ml-3">-	Nếu có người sử dụng sẽ hiển thị mã của họ.</span><br/>
                                     <span className="ml-3">-	Nếu không sẽ hiển thị “OK”.</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Ô chọn thẻ cho khách.</td>
+                                    <td>Trạng thái thẻ đang chọn.</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -703,11 +733,10 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="synchronize-authorization">
-                        <h2>13.	Đồng bộ các uỷ quyền cho khách</h2>
+                        <h2>16.	Đồng bộ các uỷ quyền cho khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách chấp thuận</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" />  
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-34.png" className="w-100 mb-3" />
                             
@@ -719,33 +748,98 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Nút chọn (huỷ chọn) toàn bộ khách (Lưu ý: chỉ chọn ở trang hiện tại).</td>
+                                    <td>Nút chọn các nhóm truy cập khả dụng.</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Nút chọn (huỷ chọn) theo từng khách.</td>
+                                    <td>Nút chọn (huỷ chọn) toàn bộ khách (Lưu ý: chỉ chọn ở trang hiện tại).</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Nút đồng bộ các uỷ quyền cho khách ở dòng đó</td>
+                                    <td>Nút chọn (huỷ chọn) theo từng khách.</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Nút đồng bộ các uỷ quyền cho khách ở dòng đó.</td>
                                 </tr>
                                 </tbody>
                             </table>
+                            <p>B3: Chọn nhóm truy cập (2) cần đồng bộ (bắt buộc):</p>
+                            <img src="./images/synchronize-authorization-1.png" className="w-100 mb-3" />
+
                             <p>B3: Chọn danh sách khách cần đồng bộ.<br/>
-                                B4: Bấm nút <b>Đồng bộ các uỷ quyền (4)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút
-                                <b>Đồng bộ các uỷ quyền (2)</b> nếu danh sách nhiều hơn 1.<br/>
-                                Các <b>mẫu vân tay, thẻ</b> và <b>khuôn mặt</b> của khách sẽ được <b>đồng bộ</b> đến các <b>thiết bị đang được kết nối</b>.
+                                B4: Bấm nút <b>Đồng bộ các uỷ quyền (5)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút
+                                <b>Đồng bộ các uỷ quyền (1)</b> nếu danh sách nhiều hơn 1.<br/>
+                                Các <b>mẫu vân tay, thẻ</b> và <b>khuôn mặt</b> của khách sẽ được <b>đồng bộ</b> đến các <b>nhóm truy cập được chọn</b>.
                             </p>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div id="visitor-list-expire">
-                        <h2>14.	Xem danh sách khách hết hạn</h2>
+                    <div id="update-validity-period">
+                        <h2>17.	Cập nhật thời gian hiệu lực</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách</b>.</p>
-                            <img src="./images/visitor-13.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Danh sách hết hạn</b>. </p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" />  
+                            <p>B2: Màn hình sau sẽ xuất hiện.</p>
+                            <img src="./images/update-validity-period-2.png" className="w-100 mb-3" />
+                            <table className="table">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nút cập nhật thời gian hiệu lực cho danh sách khác đang chọn.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Nút cập nhật thời gian hiệu lực cho khách ở dòng đó.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Nút nhóm truy cập khả dụng.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p className="my-4">Chọn nhóm truy cập (bắt buộc).</p>
+                            <p>B3: Chọn danh sách khách cần đồng bộ.<br/>
+                                B4: Bấm nút (2) nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút (1) nếu danh sách nhiều hơn 1.<br/>
+                                Cửa sổ sau sẽ xuất hiện:</p>
+                            <img src="./images/update-validity-period-3.png" className="w-100 mb-3" />
+                            <p>B5: Chọn khoảng thời gian<br/>
+                            B6: Bấm lưu để cập nhật (tự động đồng bộ đến nhóm truy cập dang chọn)</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="checkOut-settings">
+                        <h2>18.	Thiết lập kiểm tra ra</h2>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận hoặc Danh sách hết hạn</b>.</p>
+                            <img src="./images/checkOut-settings-1.png" className="w-25 mb-3" /> 
+                            <p>B2: Chọn danh sách khách =&gt; Bấm nút Thiết lập kiểm tra ra ở trên cùng hoặc chọn Thiết lập kiểm tra ra ở từng khách</p>
+                            <img src="./images/checkOut-settings-2.png" className="w-100 mb-3" />
+                            <p>B3: Nếu khách chưa check-in =&gt; Thông báo: “Chưa có kiểm tra ra”<br/>
+                            Nếu lần cuối kiểm tra là loại <b>vào</b>:
+                            </p>
+                            <img src="./images/checkOut-settings-3.png" className="w-100 mb-3" />
+                            <p>Nếu lần cuối kiểm tra là khác <b>vào/ra</b>:</p>
+                            <img src="./images/checkOut-settings-4.png" className="w-100 mb-3" />
+                            <p>B4: Nhập lý do và thời gian (nếu có)<br/>
+                                B5: Bấm lưu để cập nhật</p>
+                            <p className="mt-3">Nếu có bảng sau xuất hiện sau khi bấm lưu là danh sách lỗi khi thiết lập kiểm tra ra:</p>
+                            <img src="./images/checkOut-settings-5.png" className="w-100 mb-3" />
+                            <p>Lưu ý: Thiết lập kiểm tra ra sẽ xoá thẻ của khách (nếu có).</p>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <section>
+                    <div id="visitor-list-expire">
+                        <h2>19.	Xem danh sách khách hết hạn</h2>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách &gt; Danh sách hết hạn</b>.</p>
+                            <img src="./images/visitor-list-expire-1.png" className="w-25 mb-3" />
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img src="./images/visitor-35.png" className="w-100 mb-3" />
                             
@@ -765,7 +859,7 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Ô tìm kiếm theo Họ tên, CMND/CCCD, Số điện thoại và Email.</td>
+                                    <td>Bộ lọc theo khoảng thời gian (thời gian gặp, hiêu lực trên thiết bị).</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -778,6 +872,10 @@ function Visitor(props) {
                                 <tr>
                                     <td>7</td>
                                     <td>Danh sách khách hết hạn theo bộ lọc.</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Ô tìm kiếm theo Họ tên, CMND/CCCD.</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -799,26 +897,30 @@ function Visitor(props) {
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>Hình ảnh của khách</td>
+                                        <td>Thời gian gặp</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>Nút xem hình CMND/CCCD (nếu có).</td>
+                                        <td>Loại khách đăng ký.</td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
-                                        <td>Khoảng thời gian gặp của khách.</td>
+                                        <td>Thời gian hiệu lực trên thiết bị.</td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
-                                        <td>Nút đăng ký lại cho khách.</td>
+                                        <td>Nút xem toàn bộ thông tin khách.</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
-                                        <td>Nút xoá (ẩn) khách.</td>
+                                        <td>Nút đăng ký lại cho khách.</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
+                                        <td>Nút xoá (ẩn) khách.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
                                         <td>Nút thiết lập kiểm tra ra.</td>
                                     </tr>
                                 </tbody>
@@ -828,7 +930,7 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="view-report">
-                        <h2>15.	Xem báo cáo</h2>
+                        <h2>20.	Xem báo cáo</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Báo cáo</b>.</p>
                             <img src="./images/visitor-37.png" className="w-25 mb-3" /> 
@@ -839,7 +941,7 @@ function Visitor(props) {
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Nút in báo cáo theo bọ lọc hiện tại.</td>
+                                    <td>Nút in báo cáo theo bộ lọc hiện tại.</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -847,11 +949,13 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Bộ lọc: danh sách thiết bị khả dụng.</td>
+                                    <td>Bộ lọc: danh sách khách đã được phê duyệt theo khoảng thời gian đã chọn.</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Bộ lọc: loại kiểm tra (<b>vào, ra</b> và <b>tất cả</b>).</td>
+                                    <td>Chọn kiểu báo cáo: xem theo toàn bộ danh sách và xem theo cặp ra – vào.
+                                        (Nếu chọn kiểu báo cáo theo <b>cặp ra – vào</b> thì không sử dụng được <b>bộ lọc 3
+                                        và 4</b>).</td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -871,17 +975,12 @@ function Visitor(props) {
                                 </tr>
                                 <tr>
                                     <td>9</td>
-                                    <td>Bộ lọc: danh sách khách đã được phế duyệt trong khoảng thời gian đã chọn.</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Chọn kiểu báo cáo: xem theo toàn bộ danh sách và xem theo <b>cặp ra – vào</b>.<br/>
-                                    (Nếu chọn kiểu báo cáo theo cặp ra – vào thì không sử dụng được <b>bộ lọc 3 và 4</b>)
-                                    </td>
+                                    <td>Bộ lọc: loại kiểm tra.</td>
                                 </tr>
                                 </tbody>
                             </table>
                             <p>Chú thích thông tin từng dòng của báo cáo.</p>
+
                             <img src="./images/visitor-39.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
@@ -895,11 +994,11 @@ function Visitor(props) {
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Thông tin thiiết bị lúc kiểm tra.</td>
+                                        <td>Thông tin thiết bị lúc kiểm tra.</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>Loại sự kiện lúc kiểm tra.</td>
+                                        <td>Loại sự kiện lúc kiểm tra kèm theo lý do nếu là loại kiểm tra ra bởi quản trị viên.</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
@@ -924,7 +1023,7 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="daily-visitor-statistics">
-                        <h2>16.	Xem thống kê khách hàng ngày</h2>
+                        <h2>21.	Xem thống kê khách hàng ngày</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Thống kê khách</b>.</p>
                             <img src="./images/visitor-40.png" className="w-25 mb-3" /> 
@@ -935,7 +1034,7 @@ function Visitor(props) {
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Danh sách toàn bộ khách trong ngày (có thể bấm vào để xem chi tiết).</td>
+                                    <td>Danh sách toàn bộ khách trong ngày hiện tại (có thể bấm vào để xem chi tiết).</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -981,7 +1080,7 @@ function Visitor(props) {
                 </section>
                 <section>
                     <div id="monitoring-visitor">
-                        <h2>17.	Giám sát khách</h2>
+                        <h2>22.	Giám sát khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Giám sát khách</b>.</p>
                             <img src="./images/visitor-42.png" className="w-25 mb-3" /> 
@@ -992,7 +1091,7 @@ function Visitor(props) {
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Nút kích hoạt/tạm dừng Giám sát khách.</td>
+                                    <td>Nút kích hoạt/tạm dừng <b>Giám sát khách</b>.</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -1021,6 +1120,10 @@ function Visitor(props) {
                                 <tr>
                                     <td>7</td>
                                     <td>Nút xem danh sách toàn bộ nhân viên và khách còn lại trong công ty.</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Nút làm mới lại trang.</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -1053,13 +1156,12 @@ function Visitor(props) {
                             </table>
                             <p>
                             B3:<br/>
-                                <span className="ml-3">-	Chọn Tự động vào: khi chọn, tất cả nhật ký từ thiết bị này sẽ mặc định là nhật ký Vào.</span><br/>
-                                <span className="ml-3">-	Chọn Tự động ra: khi chọn, tất cả nhật ký từ thiết bị này sẽ mặc định là nhật ký Ra.</span><br/>
-                                <span className="ml-3">-	Dừng: tất cả nhật ký khi này sẽ gán ra – vào cách thủ công, thông qua
-                                người giám sát điều khiển.</span>
+                                <span className="ml-3">-	Chọn <b>Tự động vào</b>: khi chọn, tất cả nhật ký từ thiết bị này sẽ mặc định là nhật ký <b>Vào</b>.</span><br/>
+                                <span className="ml-3">-	Chọn <b>Tự động ra</b>: khi chọn, tất cả nhật ký từ thiết bị này sẽ mặc định là nhật ký <b>Ra</b>.</span><br/>
+                                <span className="ml-3">-	<b>Dừng</b>: tất cả nhật ký khi này sẽ gán ra – vào cách <b>thủ công</b>, thông qua <b>người giám sát</b> điều khiển.</span>
                             </p><br/>
                             <p> 
-                                <b>Lưu ý</b>: <i>Nếu không mở màn hình (tab) giám sát thì các nhật ký từ các thiết bị 2 chức năng ra – vào sẽ mặc định gán loại Không xác định</i>.
+                                <b>Lưu ý</b>: <i>Nếu không mở màn hình (tab) giám sát thì các nhật ký từ các thiết bị 2 chức năng ra – vào sẽ mặc định gán loại <b>Không xác định</b></i>.
                             </p>
                         </div>
                     </div>
@@ -1075,12 +1177,9 @@ function Visitor(props) {
                                 B2: Sau khi chọn loại vào – ra.
                             </p>
                             <img src="./images/visitor-47.png" className="w-100 mb-3" />
-                            <p>Nếu có sai sót trong quá trình xác định loại kiểm tra, có thể bấm vào nút <b>Sửa sai</b>
-                                để đổi lại loại kiểm tra (từ <b>Vào</b> thành <b>Ra</b> và ngược lại).</p>
-                            <p>
-                            <b>Lưu ý</b>:<br/>
-                                <span className="ml-3">-	Chỉ có thể <b>điều chỉnh</b> nhật ký <b>gần nhất</b> đối với từng người, các nhật ký đã trôi qua sẽ <b>không thể</b> chỉnh sửa.</span><br/>
-                                <span className="ml-3">-	Khi ở màn hình giám sát, <b>Thẻ</b> của khách sẽ <b>bị xoá</b> nếu thiết lập <b>kiểm tra Ra</b>, bất kể là loại thiết bị <b>Ra</b> hay do người giám sát điều khiển (vân tay và khuôn mặt vẫn hoạt động bình thường).</span>
+                            <p>Nếu có sai sót trong quá trình xác định loại kiểm tra, có thể bấm vào nút <b>Sửa sai</b> để đổi lại loại kiểm tra (từ <b>Vào</b> thành <b>Ra</b> và ngược lại).</p>
+                            <p><b>Lưu ý</b>:<br/>
+                                <span className="ml-3">-	Chỉ có thể <b>điều chỉnh</b> nhật ký <b>gần nhất</b> đối với từng người, các nhật ký đã trôi qua sẽ <b>không thể</b> chỉnh sửa.</span>
                             </p>
                         </div>
                     </div>

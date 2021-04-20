@@ -43,6 +43,7 @@ function IntrusionDoor(props) {
                         <img src="./images/intrusion-door-3.png" className="w-100" /> 
                         <p>Ghi chú:</p>
                         <table className="table table-list d-flex w-100 mt-3">
+                            <tbody>
                             <tr>    
                                 <td>1</td>
                                 <td>Tên </td>
@@ -67,6 +68,7 @@ function IntrusionDoor(props) {
                                 <td>8</td>
                                 <td>Đồng ý</td>
                             </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

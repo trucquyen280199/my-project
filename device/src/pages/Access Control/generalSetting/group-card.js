@@ -12,7 +12,7 @@ function GroupCard(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Group Card</h2>
+            <h2 className="text-center">NHÓM THẺ</h2>
                 <section>
                     <div>
                         <div className="content-item" >
@@ -53,27 +53,25 @@ function GroupCard(props) {
                         <div className="content-item" >
                             <img src="./images/group-card-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
-                            <table className="table w-100 mt-3">
+                            <table className="table table-list d-flex w-100">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>Tên</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Danh sách thẻ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Mô tả</td>
-                                    </tr>
-                                    <tr>
                                         <td>4</td>
                                         <td>Đóng cửa sổ</td>
                                     </tr>
                                     <tr>
+                                        <td>2</td>
+                                        <td>Danh sách thẻ</td>
                                         <td>5</td>
                                         <td>Đồng ý</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Mô tả</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table> 

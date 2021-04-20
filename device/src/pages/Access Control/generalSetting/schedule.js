@@ -60,20 +60,26 @@ function Schedule(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Tên</td>
-                                        <td>4</td>
-                                        <td>Sao chép giá trị của ngày trước nó</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Mô ta</td>
                                         <td>5</td>
                                         <td>Sửa giá trị từng ngày</td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
-                                        <td><b>Loại</b>: Hàng tuần / Hàng ngày</td>
+                                        <td>2</td>
+                                        <td>Mô ta</td>
                                         <td>6</td>
                                         <td>Xóa ngày</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><b>Loại</b>: Hàng tuần / Hàng ngày</td>
+                                        <td>7</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Sao chép giá trị của ngày trước nó</td>
+                                        <td>8</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table> 
@@ -89,6 +95,14 @@ function Schedule(props) {
                                     <tr>
                                         <td>2</td>
                                         <td>Các trường nhập số phút (từ 0 đến 59)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Áp dụng</td>
                                     </tr>
                                 </tbody>
                             </table>

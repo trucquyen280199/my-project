@@ -6,7 +6,7 @@ function AccessControl(props) {
                 <ul className="menu-main">
                     <li className="link"><a href="#access-group">Nhóm truy cập</a></li>
                     <li className="link"><a href="#access-level">Cấp độ truy cập</a></li>
-                    <li className="link"><a href="#floor-waiting">Cấp độ tầng</a></li>
+                    <li className="link"><a href="#floor-level">Cấp độ tầng</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -30,25 +30,50 @@ function AccessControl(props) {
                                         <td>1</td>
                                         <td>Thêm mới</td>
                                         <td>2</td>
-                                        <td>Xóa </td>
+                                        <td>Nhập file </td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Tìm kiếm trong danh sách hiện tại</td>
+                                        <td>Xuất file</td>
                                         <td>4</td>
-                                        <td>Chọn danh sách cần xóa</td>
+                                        <td>Xóa </td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>Click xem chi tiết hoặc thay đổi thông tin</td>
+                                        <td>Tìm kiếm trong danh sách hiện tại</td>
                                         <td>6</td>
+                                        <td>Chọn danh sách cần xóa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Click xem chi tiết hoặc thay đổi thông tin</td>
+                                        <td>8</td>
                                         <td>Danh sách đã thêm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <b>* Nhập file: </b>
+                            <img src="./images/access-group-import-file.png" className="w-100" />
+                            <p>Ghi chú:</p>
+                            <table className="table table-list d-flex w-100 mt-3">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Đính kèm file import (.xlsx)</td>
+                                        <td>2</td>
+                                        <td>Tên file đang chọn</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Đóng cửa sổ</td>
+                                        <td>4</td>
+                                        <td>Đồng ý</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <p> Sau khi chọn nhóm, bạn có thể thực hiện các thao tác sau:</p>
                             <p className="ml-3"><b>Xóa</b> : Xóa nhóm đã chọn khỏi danh sách.</p>
-                            <h4 className="mt-3"> Thêm hoặc sửa nhóm truy cập</h4>
+                            <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa nhóm truy cập</p>
                             <img src="./images/access-group-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
@@ -118,7 +143,7 @@ function AccessControl(props) {
                                 </tbody>
                             </table>
                             
-                            <h4>Thêm hoặc sửa cấp độ truy cập</h4>
+                            <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa cấp độ truy cập</p>
                             <img src="./images/access-level-2.png" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
@@ -181,8 +206,7 @@ function AccessControl(props) {
                                     </tr>
                                 </tbody>
                             </table>
-                            
-                            <h4> Thêm hoặc sửa cấp độ tầng</h4>
+                            <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa cấp độ tầng</p>
                             <img src="./images/floor-level-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">

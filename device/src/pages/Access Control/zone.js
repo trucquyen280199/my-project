@@ -57,7 +57,7 @@ function Zone(props) {
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
                                 <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
                                 <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/><br/>
                                 •	Thêm hoặc sửa zone
                             </p>
                             <img src='./images/anti-passback-zone-2.png' className="mb-3 w-100" />
@@ -163,8 +163,8 @@ function Zone(props) {
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
                                 <b>-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
                                 <b>-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b>-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                -	Thêm hoặc sửa zone
+                                <b>-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/><br/>
+                                •	Thêm hoặc sửa zone
 
                             </p>
                             <img src='./images/fire-alarm-zone-2.png' className="mb-3 w-100" />
@@ -261,7 +261,7 @@ function Zone(props) {
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
                                 <span className="font-weight-bold ml-3">-	Xóa </span>: Xóa zone đã chọn khỏi danh sách.<br/>
                                 <span className="font-weight-bold ml-3">-	Hoạt động</span>: Thay đổi trạng thái của zone<br/>
-                                <span className="font-weight-bold ml-3">-	Không hoạt động</span>: Thay đổi trạng thái của zone<br/>
+                                <span className="font-weight-bold ml-3">-	Không hoạt động</span>: Thay đổi trạng thái của zone<br/><br/>
                                 •	Thêm hoặc sửa zone
 
                             </p>
@@ -349,7 +349,7 @@ function Zone(props) {
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
                                 <b>-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
                                 <b>-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b>-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                <b>-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/><br/>
                                 •	Thêm hoặc sửa zone
 
                             </p>
@@ -399,7 +399,7 @@ function Zone(props) {
                             <p>Vùng khóa liên động giám sát trạng thái của hai hoặc nhiều cửa bằng cảm biến cửa và trạng thái rơ le để kiểm soát rằng một cửa không thể mở hoặc đóng nếu các cửa khác đang mở hoặc không khóa. 
                                 Bạn cũng có thể vô hiệu hóa quyền truy cập nếu người dùng ở trong khu vực.</p>
                            
-                            <p className="font-weight-bold">Ghi chú:</p>
+                            <p className="font-weight-bold mt-3">Ghi chú:</p>
                             <p>
                             ▪ Một vùng khóa liên động có thể được cấu hình với tối đa 4 cửa.<br/>
                             ▪ Vùng khóa liên động chỉ có thể đặt các cửa có thiết bị kết nối với CoreStation.<br/>
@@ -442,7 +442,7 @@ function Zone(props) {
                                 Sau khi chọn zone, bạn có thể thực hiện các thao tác sau:<br/>
                                 <b className="ml-3">-	Xóa </b>: Xóa zone đã chọn khỏi danh sách.<br/>
                                 <b className="ml-3">-	Hoạt động</b>: Thay đổi trạng thái của zone<br/>
-                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/>
+                                <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/><br/>
                                 •	Thêm hoặc sửa zone
 
                             </p>

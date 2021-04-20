@@ -27,7 +27,12 @@ function User(props) {
                     <li className="link"><a href="#end-of-contract">Kết thúc hợp đồng</a></li>
                     <li className="link"><a href="#delete-hide-personnel">Xóa(Ẩn) nhân viên</a></li>
                     <li className="link"><a href="#re-activate-personnel">Kích hoạt lại nhân viên</a></li>
+                    <li className="link"><a href="#del-user">Xóa nhân viên</a></li>
                     <li className="link"><a href="#sync-to-device">Đồng bộ đến thiết bị</a></li>
+
+                    <li className="link"><a href="#employee-data-export">Xuất dữ liệu nhân viên</a></li>
+                    <li className="link"><a href="#transfer-work">Chuyển công tác</a></li>
+                    <li className="link"><a href="#health-declaration">Khai báo y tế dành cho nhân viên</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -60,8 +65,8 @@ function User(props) {
                                     <tr>
                                         <td>3</td>
                                         <td>Nút để thêm nhân viên mới.</td>
-                                        <td>6</td>
-                                        <td>Nút để xem danh sách bị xoá</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -124,7 +129,7 @@ function User(props) {
                     <div id="add-personnel">
                         <h2>2.	Thêm nhân viên mới</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Trang chủ &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png"/>
                             <p className="ml-4">B2: Bấm nút Thêm</p>
                             <img src="./images/5.png" className="w-100" />
@@ -137,12 +142,12 @@ function User(props) {
                     <div id="update-personnel">
                         <h2>3.	Cập nhật nhân viên</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Trang chủ &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p className="ml-4">B2: Bấm đúp chuột vào dòng nhân viên cần cập nhật</p>
-                            <img src="./images/5.png" className="w-100" />
+                            <img src="./images/5-1.png" className="w-100" />
                             <p className="ml-4">B3:  <a href="#screen-update">Ở cửa sổ mới</a>, điền các thông tin bắc buộc và thông tin cần thiết </p>
-                            <p className="ml-4">B4: Bấm nút Lưu để lưu thông tin nhân viên</p>
+                            <p className="ml-4">B4: Bấm nút <b>Lưu</b> để lưu thông tin nhân viên</p>
                         </div>
                     </div>
                 </section>
@@ -151,7 +156,7 @@ function User(props) {
                         <h2>4.	Đăng ký các chứng chỉ</h2>
                         <div className="content-item" >
                             <p className="ml-4" style={{fontWeight: "700"}}><span>Lưu ý:</span> chỉ có thể đăng ký chứng chỉ sau khi đã thêm nhân viên</p>
-                            <p className="ml-4">B1: Vào theo mục <b>Trang chủ &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p>B2: Bấm đúp chuột vào dòng nhân viên cần đăng ký</p>
                             <img src="./images/8.png" className="w-100" />
@@ -221,10 +226,10 @@ function User(props) {
                         <h2>5.	Kết thúc hợp đồng</h2>
                         <div className="content-item" >
                             <p className="ml-4" style={{fontWeight: "700"}}>Lưu ý: chỉ có thể huỷ hợp đồng nếu nhân viên có thông tin về hợp đồng (Ngày ký hợp đồng, thời hạn hợp đồng, ...)</p>
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p>B2: Bấm đúp chuột vào dòng nhân viên cần huỷ hợp đồng</p>
-                            <img src="./images/8.png" className="w-100" />
+                            <img src="./images/5-2.png" className="w-100" />
                             <p className="">B3: <a href="#screen-update">Ở cửa sổ mới</a>, tìm đến mục Thông tin hợp đồng</p>
                             <img src="./images/5.1.png" className="w-100" />
                             <p className="">B4: Bấm nút Kết thúc hợp đồng Cửa sổ sau sẽ xuất hiện</p>
@@ -247,10 +252,10 @@ function User(props) {
                     <div id="delete-hide-personnel">
                         <h2>6.	Xoá (ẩn) nhân viên</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p>B2: Chọn nhân viên </p>
-                            <p className="">B3: Bấm nút Xoá</p>
+                            <p className="">B3: Bấm nút <b>Vô hiệu hóa</b></p>
                             <img src="./images/6.1.png" className="w-100" />
                         </div>
                     </div>
@@ -259,9 +264,9 @@ function User(props) {
                     <div id="re-activate-personnel">
                         <h2>7.	Kích hoạt lại nhân viên</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
-                            <p>B2: Chọn Danh sách bị xoá</p>
+                            <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
                             <img src="./images/7.1.png" className="w-100" />
                             <p className="">B3: Chọn nhân viên</p>
                             <p className="">B4: Bấm nút Kích hoạt lại</p>
@@ -270,14 +275,71 @@ function User(props) {
                     </div>
                 </section>
                 <section>
-                    <div id="sync-to-device">
-                        <h2>8.	Đồng bộ đến thiết bị</h2>
+                    <div id="del-user">
+                        <h2>8.	Xóa nhân viên</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
+                            <img src="./images/4.png" />
+                            <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
+                            <img src="./images/del-user-1.png" className="w-100" />
+                            <p className="">B3: Chọn nhân viên</p>
+                            <p className="">B4: Bấm nút Xóa</p>
+                            <img src="./images/del-user-2.png" className="w-100" />
+                            <p>
+                            Sau khi xoá, danh sách này sẽ không xuất hiện. 
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="sync-to-device">
+                        <h2>9.	Đồng bộ đến thiết bị</h2>
+                        <div className="content-item" >
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p>B2: Chọn nhân viên</p>
                             <p className="">B3: Bấm nút Đồng bộ đến thiết bị</p>
                             <img src="./images/8.3.png" className="w-100" />
+                            <p>B4: Nếu có cửa sổ xuất hiện, chọn nhóm thiết bị cần đồng bộ và bấm <b>Đồng ý</b>:</p>
+                            <img src="./images/8.4.png" className="w-100" />
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="employee-data-export">
+                        <h2>10.	Xuất dữ liệu nhân viên</h2>
+                        <div className="content-item" >
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
+                            <img src="./images/4.png" />
+                            <p>B2: Chọn phòng ban, chức vụ để lọc ra danh sách nhân viên muốn xuất file</p>
+                            <p className="">B3: Chọn Xuất file</p>
+                            <img src="./images/10.1.png" className="w-100" />
+                            <p>Cửa sổ sau xuất hiện:</p>
+                            <img src="./images/10.2.png" className="w-100" />
+                            <p>B4: Chọn thêm các tiêu đề cần thiết để xuất dữ liệu</p>
+                            <img src="./images/10.3.png" className="w-100" />
+                            <p>B5: Bấm xuất file để tải file (csv)</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="transfer-work">
+                        <h2>11.	Chuyển công tác</h2>
+                        <div className="content-item" >
+
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="health-declaration">
+                        <h2>12.	Khai báo y tế dành cho nhân viên</h2>
+                        <div className="content-item" >
+                            <p className="ml-4">B1: Chọn theo hình dưới và bấm Khai báo y tế</p>
+                            <img src="./images/12.1.png" />
+                            <p>B2: Tab mới sẽ xuất hiện</p>
+                            <img src="./images/12.2.png" className="w-100" />
+                            <p>B3: Điền thông tin bắt buộc và bấm <b>Lưu</b></p>
                         </div>
                     </div>
                 </section>

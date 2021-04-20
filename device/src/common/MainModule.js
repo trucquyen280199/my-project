@@ -10,43 +10,37 @@ class MainModule extends React.Component {
         this.state = {
             leftOpen: true,
             currentCommand: "/Dashboard",
-            menuList: [
-                {
-                    name: "core",
-                    linkTo: "/Dashboard",
-                    menuName: "Dashboard",
-                    isSingle: true
-                },
+            menuListCore:[
                 {
                     linkTo: "/User",
-                    menuName: "User",
-                    isSingle: true
-                },
-                {
-                    linkTo: "/UserGroup",
-                    menuName: " Group User",
+                    menuName: "Người dùng",
                     isSingle: true
                 },
                 {
                     linkTo: "/ImportFiles",
-                    menuName: "Import Files",
+                    menuName: "Nhập file",
                     isSingle: true
                 },
+                // {
+                //     linkTo: "/UserGroup",
+                //     menuName: " Nhóm người dùng",
+                //     isSingle: true
+                // },
                 {
-                    menuName: "Setting Core",
+                    menuName: "Cài đặt",
                     isSingle: false,
                     subList: [
                         {
                             linkTo: "/Module",
-                            menuName: "Module",
+                            menuName: "Mô-đun",
                         },
                         {
                             linkTo: "/CoreCategory",
-                            menuName: "Core Category",
+                            menuName: "Danh mục cốt lõi",
                         },
                         {
                             linkTo: "/Mail",
-                            menuName: "Mail",
+                            menuName: "Hộp thư",
                         },
                         {
                             linkTo: "/SMS",
@@ -54,29 +48,39 @@ class MainModule extends React.Component {
                         },
                     ]
                 },
+            ],
+            
+            menuListAccessControl: [
+                {
+                    linkTo: "/Dashboard",
+                    menuName: "Dashboard",
+                    isSingle: true
+                },
+                
+                
                 {
                     linkTo: "/Device",
-                    menuName: "Device",
+                    menuName: "Thiết bị",
                     isSingle: true
                 },
                 {
                     linkTo: "/Door",
-                    menuName: "Door",
+                    menuName: "Cửa",
                     isSingle: true
                 },
                 {
                     linkTo: "/Elevator",
-                    menuName: "Elevator",
+                    menuName: "Thang máy",
                     isSingle: true
                 },
                 {
                     linkTo: "/AccessControl",
-                    menuName: "Access Control",
+                    menuName: "Kiểm soát truy cập",
                     isSingle: true,
                 },
                 {
                     linkTo: "/Monitoring",
-                    menuName: "Monitoring",
+                    menuName: "Giám sát",
                     isSingle: true
                 },
                 {
@@ -85,73 +89,64 @@ class MainModule extends React.Component {
                     isSingle: true
                 },
                 {
-                    linkTo: "/Camera",
-                    menuName: "Camera",
-                    isSingle: true
-                },
-                {
-                    menuName: "Report",
+                    menuName: "Báo cáo",
                     isSingle: false,
                     subList: [
                         {
                             linkTo: "/ReportByDoor",
-                            menuName: "Report By Door",
+                            menuName: "Báo cáo cửa",
                         },
                         {
                             linkTo: "/ReportByElevator",
-                            menuName: "Report By Elevator",
+                            menuName: "Báo cáo thang máy",
                         },
                         {
                             linkTo: "/ReportByDevice",
-                            menuName: "Report By Device",
+                            menuName: "Báo cáo thiết bị",
                         },
                     ]
                 },
                 {
-                    menuName: "General Setting",
+                    menuName: "Cài đặt chung",
                     isSingle: false,
                     subList: [
                         {
                             linkTo: "/Schedule",
-                            menuName: "Schedule",
+                            menuName: "Lịch trình",
                         },
                         {
                             linkTo: "/Singnal",
-                            menuName: "Singnal",
+                            menuName: "Tín hiệu",
                         },
                         {
                             linkTo: "/Card",
-                            menuName: "Card",
+                            menuName: "Thẻ",
                         },
                         {
                             linkTo: "/GroupCard",
-                            menuName: "Group Card",
+                            menuName: "Nhóm thẻ",
                         },
                         {
                             linkTo: "/TriggerAction",
-                            menuName: "Trigger Action",
+                            menuName: "Kích hoạt hành động",
                         },
                         {
                             linkTo: "/ModuleConfig",
-                            menuName: "Module Config",
+                            menuName: "Cấu hình mô-đun",
                         },
                         {
                             linkTo: "/SystemConfig",
-                            menuName: "System Configuration",
+                            menuName: "Cấu hình hệ thống",
                         },
                         {
                             linkTo: "/WiegandFormat",
-                            menuName: "Wiegand Format",
-                        },
-                        {
-                            linkTo: "/Module",
-                            menuName: "Module",
+                            menuName: "Định dạng Wiegand",
                         },
                     ]
                 },
                 {
                     linkTo: "/AuditTrail",
-                    menuName: "Audit Trail",
+                    menuName: "Lịch sử",
                     isSingle: true
                 },
                 {
@@ -160,7 +155,7 @@ class MainModule extends React.Component {
                     subList: [
                         {
                             linkTo: "/IntrusionAlarm",
-                            menuName: "Intrusion Alarm",
+                            menuName: "Cảnh báo xâm nhập",
                         },
                         {
                             linkTo: "/IntrusionDoor",
@@ -169,8 +164,16 @@ class MainModule extends React.Component {
                     ]
                 },
                 {
+                    linkTo: "/Camera",
+                    menuName: "Camera",
+                    isSingle: true
+                },
+                
+            ],
+            menuListVisit: [
+                {
                     linkTo: "/Visitor",
-                    menuName: "Visitor",
+                    menuName: "Khách",
                     isSingle: true
                 },
             ],
@@ -217,7 +220,7 @@ class MainModule extends React.Component {
                                     </h3>
                                 </div>
                                 <div className='content p-0'>
-                                    <LeftMenu menuList={this.state.menuList} action={this.action}/>
+                                    <LeftMenu menuListCore={this.state.menuListCore} menuListAccessControl={this.state.menuListAccessControl} menuListVisit={this.state.menuListVisit}  action={this.action}/>
                                 </div>
                             {/* </div> */}
                         </div>

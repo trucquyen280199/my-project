@@ -11,7 +11,7 @@ function Singnal(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Singnal</h2>
+            <h2 className="text-center">TÍN HIỆU</h2>
                 <section>
                     <div >
                         <div className="content-item" >
@@ -57,18 +57,24 @@ function Singnal(props) {
                                     <tr>
                                         <td>1</td>
                                         <td>Tên</td>
-                                        <td>4</td>
-                                        <td>Thời gian mở (mili giây)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Số lượng lặp</td>
                                         <td>5</td>
                                         <td>Thời gian đóng (mili giây)</td>
                                     </tr>
                                     <tr>
+                                        <td>2</td>
+                                        <td>Số lượng lặp</td>
+                                        <td>6</td>
+                                        <td>Đóng cửa sổ</td>
+                                    </tr>
+                                    <tr>
                                         <td>3</td>
                                         <td>Thời gian trì hoãn</td>
+                                        <td>7</td>
+                                        <td>Đồng ý</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Thời gian mở (mili giây)</td>
                                         <td></td>
                                         <td></td>
                                     </tr>

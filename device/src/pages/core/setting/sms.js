@@ -8,7 +8,7 @@ function SMS(props) {
                         <a href="#configuration-mail">Cấu hình mail</a>
                     </li>
                     <li className="link">
-                        <a href="#compose">Soạn thư</a>
+                        <a href="#compose">Lịch sử</a>
                     </li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">

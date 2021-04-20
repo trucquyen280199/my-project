@@ -38,7 +38,7 @@ function ImportFiles(props) {
                         <h2>1.	Tải và mở file</h2>
                         <div className="content-item" >
                             <p>B1: Từ menu chọn <b>Trang chủ &gt; Người dùng &gt; Nhập file</b></p>
-                            <img src='./images/4.png' className="mb-3 w-25" />
+                            <img src='./images/import-files-1-1.png' className="mb-3 w-25" />
                             <p>Màn hình sau sẽ xuất hiện</p>
                             <img src='./images/import-files-1.png' className="w-100" />
                         </div>
@@ -46,7 +46,6 @@ function ImportFiles(props) {
                     <div id="download-files">
                         <h3 className="ml-4">1.a	Tải file</h3>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/import-files-download.png"  className="w-100" />
                             <p className="ml-4">B2: Bấm <b>Nút chọn file</b> và chọn file cần tải (có thể chọn nhiều file) hoặc kéo file cần tải vào vùng
                             <b> Danh sách file đang chọn</b>.
@@ -58,9 +57,8 @@ function ImportFiles(props) {
                     <div id="open-file">
                         <h3 className="ml-4">1.b	Mở file</h3>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Vào theo mục <b>Home &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/import-files-2.png" className="w-100" />
-                            <p className="ml-4">Bấm vào dòng của file cần chọn ở vùng <b>Files của bạn</b> file đó sẽ được đọc và hiển thị trên vùng
+                            <p className="ml-4">B2: Bấm vào dòng của file cần chọn ở vùng <b>Files của bạn</b> file đó sẽ được đọc và hiển thị trên vùng
                             <b> Dữ liệu xem trước</b>.
                             </p>
                             <img src="./images/import-files-open-2.png" className="w-100" />
@@ -71,8 +69,8 @@ function ImportFiles(props) {
                     <div id="sample-file-code">
                         <h2>2.	Xem file mẫu và mã code của các danh mục</h2>
                         <div className="content-item" >
-                            <p>B1: Từ menu chọn <b>Home &gt; Người dùng &gt; Nhập file</b></p>
-                            <img src='./images/4.png' className="mb-3 w-25" />
+                            <p>B1: Từ menu chọn <b>Trang chủ &gt; Người dùng &gt; Nhập file</b></p>
+                            <img src='./images/import-files-1-1.png' className="mb-3 w-25" />
                             <p>Màn hình sau sẽ xuất hiện</p>
                             <img src='./images/sample-file-code-1.png' className="w-100" />
                         </div>
@@ -81,7 +79,7 @@ function ImportFiles(props) {
                         <h3 className="ml-4">2.a	Tải file mẫu.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B2: Bấm vào danh mục cần tải file mẫu, hệ thống sẽ tự tải file.</p>
-                            <p className="ml-4 font-weight-bold">Lưu ý: Có một số danh mục chưa hỗ trợ.</p>
+                            <p className="ml-4 font-weight-bold font-italic">Lưu ý: Có một số danh mục chưa hỗ trợ.</p>
                         </div>
                     </div>
                     <div id="view-code">
@@ -107,24 +105,24 @@ function ImportFiles(props) {
                         <h3 className="ml-4">3.a	Từ file mẫu.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B1: Từ menu chọn <b>Home &gt; Người dùng &gt; Nhập file</b></p>
-                            <img src="./images/4.png" className="w-25" />
-                            <p className="ml-4 ">Màn hình sau sẽ xuất hiện</p>
+                            <img src="./images/import-files-1-1.png" className="w-25" />
+                            <p className="ml-4 my-3">Màn hình sau sẽ xuất hiện</p>
                             <img src="./images/import-files-sample-file.png" className="w-100" />
-                            <p className="ml-4">B2: Tải file mẫu ở mục <b>Người dùng</b>.</p>
+                            <p className="ml-4 my-3">B2: Tải file mẫu ở mục <b>Người dùng</b>.</p>
                             <img src="./images/import-files-sample-file-2.png" className="w-100" />
-                            <p className="ml-4">B3: Mở file vừa tải về bằng Excel, file có dạng như sau.</p>
+                            <p className="ml-4 my-3">B3: Mở file vừa tải về bằng Excel, file có dạng như sau.</p>
                             <img src="./images/import-files-sample-file-3.png" className="w-100" />
-                            <p className="ml-4">B4: Điều chỉnh thông tin cho phù hợp với các nhãn. </p>
+                            <p className="ml-4 mt-3">B4: Điều chỉnh thông tin cho phù hợp với các nhãn. </p>
                             <p className="ml-4">B5: Tải file lên. <a href="#download-files">Xem cách tải file</a>.</p>
-                            <p className="ml-4">B6: Mở file. <a href="#open-file">Xem cách mở file</a>.</p>
+                            <p className="ml-4 mb-3">B6: Mở file. <a href="#open-file">Xem cách mở file</a>.</p>
                             <img src="./images/import-files-sample-file-4.png" className="w-100" />
-                            <p className="ml-4">B7: Chọn nhập file dạng &minus;&gt; <b>Người dùng</b>.</p>
+                            <p className="ml-4 my-3">B7: Chọn nhập file dạng &minus;&gt; <b>Người dùng</b>.</p>
                             <img src="./images/import-files-sample-file-5.png" className="w-100" />
-                            <p className="ml-4">B8: Bấm nút <b>Nhập file</b>.</p>
+                            <p className="ml-4 my-3">B8: Bấm nút <b>Nhập file</b>.</p>
                             <img src="./images/import-files-sample-file-6.png" className="w-100" />
-                            <p className="ml-4">Cửa sổ sau sẽ xuất hiện.</p>
+                            <p className="ml-4 my-3">Cửa sổ sau sẽ xuất hiện.</p>
                             <img src="./images/import-files-sample-file-7.png" className="w-100" />
-                            <p className="ml-4">B9: Gắn các nhãn (khoá) cho phù hợp.</p>
+                            <p className="ml-4 mt-3">B9: Gắn các nhãn (khoá) cho phù hợp.</p>
                             <p className="ml-4">B10: Bấm <b>Nút import file</b> để tiến hành import nhân viên.</p>
                         </div>
                     </div>
@@ -132,15 +130,15 @@ function ImportFiles(props) {
                         <h3 className="ml-4">3.b	Từ file có sẵn.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B1: Tải file. <a href="#download-files"> Xem cách tải file</a>. </p>
-                            <p className="ml-4">B1: Tải file. <a href="#download-open-files"> Xem cách đọc file</a>. </p>
+                            <p className="ml-4 mb-3">B1: Tải file. <a href="#download-open-files"> Xem cách đọc file</a>. </p>
                             <img src="./images/import-files-available-1.png" className="w-100" />
-                            <p className="ml-4">B3: Chọn nhập file dạng &minus;&gt; <b>Người dùng</b>.</p>
+                            <p className="ml-4 my-3">B3: Chọn nhập file dạng &minus;&gt; <b>Người dùng</b>.</p>
                             <img src="./images/import-files-available-2.png" className="w-100" />
-                            <p className="ml-4">B4: Bấm nút <b>Nhập file</b>.</p>
+                            <p className="ml-4 my-3">B4: Bấm nút <b>Nhập file</b>.</p>
                             <img src="./images/import-files-available-3.png" className="w-100" />
-                            <p className="ml-4">Cửa sổ sau sẽ xuất hiên.</p>
+                            <p className="ml-4 my-3">Cửa sổ sau sẽ xuất hiên.</p>
                             <img src="./images/import-files-available-4.png" className="w-100" />
-                            <p className="ml-4">B5: Gắn các nhãn (khoá) cho phù hợp.</p>
+                            <p className="ml-4 mt-3">B5: Gắn các nhãn (khoá) cho phù hợp.</p>
                             <p className="ml-4">B6: Bấm <b>Nút import file </b>để tiến hành import nhân viên.</p>
                         </div>
                     </div>
@@ -164,7 +162,7 @@ function ImportFiles(props) {
                                     <li><b>nationalityCode</b>: mã code quốc tịch.</li>
                                 </ul>
                             </li>
-                            <li>Các mã code ở đâu ra? <a href="#sample-file-code"> Xem mã code của các danh mục</a>.</li>
+                            <li>Các mã code ở đâu ra? <a href="#sample-file-code" className=" font-italic"> <u>Xem mã code của các danh mục</u></a>.</li>
                             <li><b>Các nhãn (khoá) còn lại</b>:
                                 <ul className="type-dash">
                                     <li><b>userName</b>: tên tài khoản.</li>

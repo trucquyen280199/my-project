@@ -57,12 +57,12 @@ function CoreCategory(props) {
             </nav>
             <article className="contents" id="contents">
                 <section>
-                <h2 className="text-center">Core Category</h2>
+                <h2 className="text-center">HƯỚNG DẪN KHỞI TẠO CÁC DANH MỤC</h2>
                     <div id="group-users">
                         <h2>1.	Nhóm người dùng (phòng ban)</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
-                            <img src="./images/core-category-1.png" className="w-25 mb-3" /> 
+                            <img src="./images/core-category-1.png" className=" mb-3" /> 
                             <p>Màn hình chính</p>
                             <img src="./images/core-category-2.png" className="w-100 mb-3" />
                             <table className="table">
@@ -93,16 +93,20 @@ function CoreCategory(props) {
                             <p>Cửa sổ chính</p>
                             <img src="./images/core-category-4.png" className="w-100 mb-3" />
                             <p>
-                            B3: Chọn <b>phòng ban cha</b><br/>
-                            B4: Nhập <b>tên và mã</b> phòng ban <br/>
-                            B5: Bấm <b>đồng ý</b> để lưu thông tin
+                            B3: Chọn <b> phòng ban – công ty cha</b><br/>
+                            B4: Nhập <b>tên và mã</b><br/>
+                            B5: Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc.
                             </p>
+                            <img src="./images/core-category-a.png" className="w-100 mb-3" />
+                            <p>B6: Bấm <b>đồng ý</b> để lưu thông tin</p>
                             <p>
                             Lưu ý:<br/>
-                            <span className="ml-3">-	Nếu không chọn phòng ban cha thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span><br/>
+                            <span className="ml-3">-    Tố chức mẹ mặc định là tổ chức cao nhất</span><br/>
                             <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
+                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
+                            <span className="ml-3">-	Chỉ có thể tạo công ty nếu tổ chức mẹ là công ty</span>
                             </p>
+                            <img src="./images/core-category-a1.png" className="w-100 mb-3" />
                         </div>
                     </div>
                     <div id="add-specific-departments">
@@ -115,39 +119,44 @@ function CoreCategory(props) {
                             <img src="./images/core-category-6.png" className="w-100 mb-3" />
                             <p>
                             B3: Nhập <b>tên và mã</b> phòng ban <br/>
-                            B4: Bấm <b>đồng ý</b> để lưu thông tin
+                            B4: : Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc (hoặc cập nhật thành phòng ban).
                             </p>
+                            <img src="./images/core-category-6-1.png" className="w-100 mb-3" />
+                            <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
                             Lưu ý:
                             <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span>
-                            <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span><br/>
                             <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
+                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
+                            <span className="ml-3">-	Chỉ có thể tạo thành công ty nếu tổ chức mẹ là công ty</span>
                             </p>
+                            <img src="./images/core-category-6-2.png" className="w-100 mb-3" />
                         </div>
                     </div>
                     <div id="update-departments">
                         <h3 className="ml-4">1.c	Cập nhật phòng ban</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
-                            <p>B2: Tìm phòng ban cần cập nhật và bấm <b>câp nhật</b></p>
+                            <p>B2: Tìm phòng ban cần cập nhật và bấm <b>cập nhật</b></p>
                             <img src="./images/core-category-7.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
                             <img src="./images/core-category-8.png" className="w-100 mb-3" />
                             <p>
                             B3: Chọn <b>phòng ban cha</b>cần đổi<br/>
                             B4: Đổi thông tin <b>tên và mã</b> phòng ban <br/>
-                            B5: Bấm <b>đồng ý</b> để lưu thông tin
+                            B5: Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc.
                             </p>
+                            <img src="./images/core-category-8-1.png" className="w-100 mb-3" />
+                            <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
                                 Lưu ý:<br/>
-                                <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang cập nhật</span><br/>
-                                <span className="ml-3">-	Nếu bỏ chọn phòng ban cha hiện tại thì mặc định sẽ tạo phòng ban <b>cấp cao nhất</b></span><br/>
+                                <span className="ml-3">-    Tổ chức mẹ không thể là tổ chức đang cập nhật và con của tổ chức đang cập nhật</span><br/>
                                 <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
                                 <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
-                                <span className="ml-3">-	Nếu cập nhật phòng ban có cấp cao nhất thì sẽ không thể chọn phòng ban cha (vì mặc định nó là phòng ban cha)</span>
+                                <span className="ml-3">-	Nếu cập nhật phòng ban có cấp cao nhất thì sẽ không thể chọn phòng ban cha (vì mặc định nó là phòng ban cha)</span><br/>
+                                <span className="ml-3">- Chỉ có thể cập nhật thành công ty nếu tổ chức mẹ là công ty</span>
                             </p>
-                            <img src="./images/core-category-update-department.png" className="w-100 my-3 " />
+                            
                         </div>
                     </div>
                     <div id="delete-departments">
@@ -169,7 +178,7 @@ function CoreCategory(props) {
                     <div id="nationality-category">
                         <h2>2.	Danh mục quốc tịch</h2>
                         <div className="content-item" >
-                        <p>B1: Vào <b>Kiểm soát truy cập</b> &gt; <b>Cài đặt chung</b> &gt; <b>Quốc tịch</b></p>
+                        <p>B1: Vào <b>CORE</b> &gt; <b>Cài đặt</b> &gt; <b>Quốc tịch</b></p>
                             <img src="./images/core-category-11.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
                             <img src="./images/core-category-12.png" className="w-100 mb-3" />
@@ -206,7 +215,7 @@ function CoreCategory(props) {
                             <p>
                             Lưu ý:<br/>
                             <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
+                            <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -214,7 +223,7 @@ function CoreCategory(props) {
                         <h3 className="ml-4">2.b	Cập nhật danh mục quốc tịch</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
-                            <p>Tìm danh mục quốc gia cần cập nhật và <b>bấm đúp chuột</b> vào dòng đó</p>
+                            <p>B2: Tìm danh mục quốc gia cần cập nhật và <b>bấm đúp chuột</b> vào dòng đó</p>
                             <img src="./images/core-category-15.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
                             <img src="./images/core-category-16.png" className="w-100 mb-3" />
@@ -225,7 +234,7 @@ function CoreCategory(props) {
                             <p>
                             Lưu ý:<br/>
                             <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span>
+                            <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -243,7 +252,7 @@ function CoreCategory(props) {
                     <div id="category-province">
                         <h2>3.	Danh mục tỉnh thành</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Kiểm soát truy cập &gt; Cài đặt chung &gt; Tỉnh thành</b></p>
+                            <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Tỉnh thành</b></p>
                             <img src="./images/core-category-18.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
                             <img src="./images/core-category-19.png" className="w-100 mb-3" />
@@ -321,7 +330,7 @@ function CoreCategory(props) {
                     <div id="category-people">
                         <h2>4.	Danh mục dân tộc</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Kiểm soát truy cập &gt; Cài đặt chung &gt; Dân tộc</b></p>
+                            <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Dân tộc</b></p>
                             <img src="./images/core-category-25.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
                             <img src="./images/core-category-26.png" className="w-100 mb-3" />
@@ -429,7 +438,7 @@ function CoreCategory(props) {
                             <img src="./images/core-category-35.png" className="w-100 mb-3" />
                             <p>
                                 B3: Nhập <b>tên và mã </b>chức vụ<br/>
-                                B5: Bấm <b>đồng ý</b> để lưu thông tin
+                                B4: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
                             <p>
                             Lưu ý:<br/>
@@ -474,7 +483,7 @@ function CoreCategory(props) {
                     <div id="category-skill">
                         <h2>6.	Danh mục kỹ năng (chứng chỉ)</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Kiểm soát truy cập &gt; Cài đặt chung &gt; Kỹ năng</b></p>
+                            <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Kỹ năng</b></p>
                             <img src="./images/core-category-39.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
                             <img src="./images/core-category-40.png" className="w-100 mb-3" />
@@ -550,11 +559,9 @@ function CoreCategory(props) {
                         <h2>7.	Danh mục loại khách đăng ký</h2>
                         <h3 className="ml-4">7.a	Thêm/cập nhật danh mục loại khách đăng ký</h3>
                         <div className="content-item ml-5" >
-                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>Kiểm soát truy cập</b> &gt; <b>Cài đặt chung</b></p>
+                            <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>Khách</b> &gt; <b>Cài đặt </b> &gt; <b> Loại khách đăng ký </b></p>
                             <img src="./images/core-category-46.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Loại khách đăng ký</b><br/>
-                                Màn hình sau sẽ xuất hiện
-                            </p>
+                            <p>Màn hình sau sẽ xuất hiện</p>
                             <img src="./images/core-category-47.png" className="w-100 mb-3" />
                             <p>B2: Bấm nút <b>Thêm</b> để tạo mới hoặc <b>bấm đúp chuột</b> vào dòng để cập nhật loại khách tương ứng. </p>
                             <p>B3: Cửa sổ sau sẽ xuất hiện, điền vào hoặc chỉnh sửa các thông tin cần thiết.</p>
@@ -571,22 +578,18 @@ function CoreCategory(props) {
                                 <tbody>
                                     <tr>
                                         <td>Tên loại</td>
-                                        <td>Định nghĩa tên loại khách</td>
+                                        <td>-   Định nghĩa tên loại khách</td>
                                     </tr>
                                     <tr>
                                         <td>Mã loại</td>
-                                        <td>-	Là mã số từ 1 đến 99999 (tối đa 5 chữ số)<br/>
+                                        <td>-	Là mã chữ số<br/>
                                         -	Là duy nhất<br/>
                                         -	Chỉ hiển thị khi tạo mới
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Chứng chỉ</td>
-                                        <td>- Chưa cần thiết (đang phát triển)</td>
-                                    </tr>
-                                    <tr>
                                         <td>Tổng thời gian ở lại</td>
-                                        <td>- Số giờ tối đa mà loại khách này được phép ở trong công ty (giá trị hợp lệ từ 0 ~ 24)</td>
+                                        <td>- Số giờ tối đa mà loại khách này được phép ở trong công ty (giá trị hợp lệ từ 0 trở lên)</td>
                                     </tr>
                                 </tbody>
                             </table>
