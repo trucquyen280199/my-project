@@ -17,6 +17,10 @@
         max-height: calc(100vh - 60px);
         overflow-y: auto;
     }
+
+    .pageTest::-webkit-scrollbar {
+        display: none;
+    }
     .pageTest .title{
         font-weight: 700;
     }
