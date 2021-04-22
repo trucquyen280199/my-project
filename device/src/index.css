@@ -11,6 +11,9 @@ body, html {
 .btnClose{
     height: 30px;
 }
+h2.text-center{
+    font-weight: 600;
+}
 
 ul{
     list-style: none;
@@ -56,6 +59,9 @@ img.w-img{
 .titleMenu{
     position: relative;
     white-space: nowrap;
+}
+.inactive.titleMenu{
+    border-bottom: none !important;
 }
 .inactive.titleMenu::before{
     position: absolute;

@@ -11,7 +11,7 @@ function SystemConfiguration(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents" >  
-                <h2 className="text-center">Cấu hình hệ thống</h2> 
+                <h2 className="text-center">CẤU HÌNH HỆ THỐNG</h2> 
                 <section >
                     <img src="./images/SystemConfig-1.png" className="w-25"/>
                     <img src="./images/SystemConfig-2.png" className="w-100"/>

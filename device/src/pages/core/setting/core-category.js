@@ -4,6 +4,7 @@ function CoreCategory(props) {
     return(
         <div className="pages pageTest core-category d-flex align-items-start">
             <nav className="toc">
+                <div className="scroll-menu-main" >
                 <div className="menu-main" style={{position: "relative"}}>
                     <ul className="menu-main">
                         <li className="link"><a href="#group-users">Nhóm người dùng (phòng ban)</a></li>
@@ -53,7 +54,7 @@ function CoreCategory(props) {
                         <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
                     </svg>
                 </div>
-                
+                </div>
             </nav>
             <article className="contents" id="contents">
                 <section>

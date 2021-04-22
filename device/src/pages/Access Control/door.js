@@ -14,7 +14,7 @@ function Door(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-               <h2 className="text-center">Cửa</h2>
+               <h2 className="text-center">CỬA</h2>
                 <section>
                     <div id="screen-main">
                         <p className="font-italic font-weight-bold mb-3">Lưu ý: Cần phải thêm thiết bị trước khi thực hiện chức năng này.</p>

@@ -15,7 +15,7 @@ function Elevator(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-                <h2 className="text-center">Elevator</h2>
+                <h2 className="text-center">THANG MÁY</h2>
                 <section>
                     <div id="screen-main">
                         <p className="font-italic">Lưu ý: Cần phải thêm thiết bị trước khi thực hiện chức năng này.</p>

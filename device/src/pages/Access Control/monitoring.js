@@ -16,7 +16,7 @@ function Monitoring(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-            <h2 className="text-center">Giám sát</h2>
+            <h2 className="text-center">GIÁM SÁT</h2>
                 <p>Bạn có thể sử dụng menu <b>Giám sát</b> để xem danh sách các sự kiện kiểm soát ra vào, trạng thái thiết bị và cửa, trạng thái khu vực và lịch sử cảnh báo.
                    <br/> Bạn có thể xem và kiểm soát trạng thái của các cửa trong thời gian thực trong đồ họa nếu bạn thêm bản đồ đồ họa.
                 </p>

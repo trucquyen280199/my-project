@@ -12,7 +12,7 @@ function ReportByElevator(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Báo cáo thang máy</h2>
+            <h2 className="text-center">BÁO CÁO THANG MÁY</h2>
                 <section>
                     <div >
                         <div className="content-item" >

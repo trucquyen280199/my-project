@@ -12,7 +12,7 @@ function Camera(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-                <h2 className="text-center">Camera</h2>
+                <h2 className="text-center">CAMERA</h2>
                 <section>
                     <img src="./images/camera-1.png" />   
                     <img src="./images/camera-1-2.png" className="w-100 mb-3" />   

@@ -16,7 +16,7 @@ function Zone(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-            <h2 className="text-center">Zone</h2>
+            <h2 className="text-center">ZONE</h2>
                 <p>Trên trang <b>ZONE</b> , bạn có thể thêm tính năng chống trả về, báo cháy, khóa lịch và lập lịch vùng mở khóa cũng như định cấu hình cài đặt.</p>
                 <section>
                     <div id="anti-passback-zone">

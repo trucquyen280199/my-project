@@ -11,7 +11,7 @@ function ReportByDoor(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Báo cáo cửa</h2>
+            <h2 className="text-center">BÁO CÁO CỬA</h2>
                 <section>
                     <div>
                         <div className="content-item" >

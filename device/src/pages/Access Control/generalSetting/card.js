@@ -12,7 +12,7 @@ function Card(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents">
-            <h2 className="text-center">Card</h2>
+            <h2 className="text-center">THẺ</h2>
                 <section>
                     <div>
                         <div className="content-item" >

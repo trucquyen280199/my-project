@@ -175,7 +175,7 @@ div{
         min-width:30% !important
     }
 
-    #left.open .sidebar{width:100%}
+    /* #left.open .sidebar{width:100%} */
 
     .icon:focus .open .open{display:block}
 

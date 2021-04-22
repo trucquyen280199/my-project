@@ -32,9 +32,10 @@
         width: 24%;
         line-height: 1.6; 
     }
-    .toc div.menu-main{
-        overflow-y: auto;
-        max-height: calc(100vh - 70px);
+    
+    .toc .scroll-menu-main{
+        overflow-y: auto; 
+        height: calc(100vh - 70px);
         /* list-style-type: decimal!important; */
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none; 
@@ -48,7 +49,7 @@
         /* -ms-overflow-style: none;  /* IE and Edge */
         /* scrollbar-width: none;   */
     }
-    .toc div.menu-main::-webkit-scrollbar {
+    .toc div.scroll-menu-main::-webkit-scrollbar {
         display: none;
     }
     .toc li{

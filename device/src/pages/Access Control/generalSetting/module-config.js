@@ -11,7 +11,7 @@ function ModuleConfig(props) {
                 </svg>
             </nav>
             <article className="contents w-100" id="contents" >  
-                <h2 className="text-center">Cấu hình mô-đun</h2> 
+                <h2 className="text-center">CẤU HÌNH MÔ-ĐUN</h2> 
                 <section >
                     <div >
                         <div className="content-item" >

@@ -13,7 +13,7 @@ function AccessControl(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-                <h1 className="text-center">KIỂM SOÁT TRUY CẬP</h1>
+                <h2 className="text-center">KIỂM SOÁT TRUY CẬP</h2>
                 <p>Bạn có thể sử dụng menu <b>Kiểm soát truy cập</b> để tạo cấp độ truy cập bằng cách định cấu hình cửa và lịch truy cập
                     cũng như để định cấu hình nhóm truy cập bằng cách sử dụng cấp độ truy cập và thông tin nhóm người dùng.
                     Các nhóm truy cập đã cấu hình sau đó được sử dụng như các thành phần của kiểm soát truy cập.</p>

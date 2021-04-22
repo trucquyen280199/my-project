@@ -13,7 +13,7 @@ function Schedule(props) {
                 </div>
             </nav>
             <article className="contents w-100" id="contents" style={{width: "100vw"}}>
-                <h2 className="text-center">Lịch trình</h2>
+                <h2 className="text-center">LỊCH TRÌNH</h2>
                 <section>
                     <div >
                         <div className="content-item" >

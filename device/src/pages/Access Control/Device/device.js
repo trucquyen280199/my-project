@@ -4,6 +4,7 @@ function Device(props) {
     return(
         <div className="pages pageTest device d-flex align-items-start">
             <nav className="toc">
+                
                 <ul className="menu-main">
                     {/* <li className="link"><a href="#device">Device</a></li> */}
                     <li className="link"><a href="#basic-search">Tìm kếm cơ bản</a></li>
@@ -17,7 +18,7 @@ function Device(props) {
                 </svg>
             </nav>
             <article className="contents" id="contents">
-                <h1 className="text-center">THIẾT BỊ</h1>
+                <h2 className="text-center">THIẾT BỊ</h2>
                 <section>
                     <div id="device">
                         <div className="content-item" >

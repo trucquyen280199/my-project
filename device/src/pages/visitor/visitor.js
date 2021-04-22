@@ -5,6 +5,7 @@ function Visitor(props) {
     return(
         <div className="pages pageTest groupCard d-flex align-items-start">
             <nav className="toc">
+            <div className="scroll-menu-main" >
                 <div className="menu-main" style={{position: "relative"}}>
                 <ul  className="menu-main">
                     <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
@@ -15,8 +16,6 @@ function Visitor(props) {
                     <li className="link"><a href="#degistered-visitor-afar">Đăng ký khách (từ xa)</a></li>
                     <li className="link"><a href="#degistered-visitor-place">Đăng ký khách (đăng ký tại chỗ)</a></li>
                     <li className="link"><a href="#health-declaration">Khai báo y tế dành cho khách</a></li>
-
-
                     <li className="link"><a href="#view-list-visitor-pending">Xem danh sách khách chờ xử lý</a></li>
                     <li className="link"><a href="#approval-visitor">Phê duyệt khách</a></li>
                     <li className="link"><a href="#update-guest-information">Cập nhật thông tin của khách</a></li>
@@ -25,10 +24,8 @@ function Visitor(props) {
                     <li className="link"><a href="#degistered-fingerprint">Đăng ký mẫu vân tay cho khách</a></li>
                     <li className="link"><a href="#degistered-card">Đăng ký thẻ (hoặc xoá thẻ) cho khách</a></li>
                     <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>
-
                     <li className="link"><a href="#update-validity-period">Cập nhật thời gian hiệu lực</a></li>
                     <li className="link"><a href="#checkOut-settings">Thiết lập kiểm tra ra</a></li>
-
                     <li className="link"><a href="#visitor-list-expire">Xem danh sách khách hết hạn</a></li>
                     <li className="link"><a href="#view-report">Xem báo cáo</a></li>
                     <li className="link"><a href="#daily-visitor-statistics">Xem thống kê khách hàng ngày</a></li>
@@ -43,9 +40,10 @@ function Visitor(props) {
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
                 </svg>
                 </div>
+                </div>
             </nav>
             <article className="contents" id="contents">
-                <h2 className="text-center">Visitor</h2>
+                <h2 className="text-center">HƯỚNG DẪN SỬ DỤNG<br/> PHẦN MỀM QUẢN LÝ KHÁCH</h2>
                 <section>
                     <div id="definitions-and-updates">
                         <h2>1.	Định nghĩa và cập nhật loại khách</h2>
