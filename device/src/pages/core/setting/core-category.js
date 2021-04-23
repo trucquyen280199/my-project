@@ -1,5 +1,4 @@
 import React from "react";
-// import "../style.css";
 function CoreCategory(props) {
     return(
         <div className="pages pageTest core-category d-flex align-items-start">

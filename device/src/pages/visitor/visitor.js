@@ -5,41 +5,41 @@ function Visitor(props) {
     return(
         <div className="pages pageTest groupCard d-flex align-items-start">
             <nav className="toc">
-            <div className="scroll-menu-main" >
-                <div className="menu-main" style={{position: "relative"}}>
-                <ul  className="menu-main">
-                    <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
-                    <li className="link"><a href="#setting-card-list">Cài đặt danh sách thẻ dùng cho quản lý khách</a></li>
-                    <li className="link"><a href="#setting-people-list">Cài đặt danh sách nhân viên mà khách có thể gặp</a></li>
-                    <li className="link"><a href="#setting-device">Cài đặt thiết bị vào – ra</a></li>
-                    <li className="link"><a href="#guest-management-system">Cài đặt hệ thống quản lý khách</a></li>
-                    <li className="link"><a href="#degistered-visitor-afar">Đăng ký khách (từ xa)</a></li>
-                    <li className="link"><a href="#degistered-visitor-place">Đăng ký khách (đăng ký tại chỗ)</a></li>
-                    <li className="link"><a href="#health-declaration">Khai báo y tế dành cho khách</a></li>
-                    <li className="link"><a href="#view-list-visitor-pending">Xem danh sách khách chờ xử lý</a></li>
-                    <li className="link"><a href="#approval-visitor">Phê duyệt khách</a></li>
-                    <li className="link"><a href="#update-guest-information">Cập nhật thông tin của khách</a></li>
-                    <li className="link"><a href="#refuse-visitor">Từ chối khách</a></li>
-                    <li className="link"><a href="#list-visitor-acceptance">Xem danh sách khách chấp thuận</a></li>
-                    <li className="link"><a href="#degistered-fingerprint">Đăng ký mẫu vân tay cho khách</a></li>
-                    <li className="link"><a href="#degistered-card">Đăng ký thẻ (hoặc xoá thẻ) cho khách</a></li>
-                    <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>
-                    <li className="link"><a href="#update-validity-period">Cập nhật thời gian hiệu lực</a></li>
-                    <li className="link"><a href="#checkOut-settings">Thiết lập kiểm tra ra</a></li>
-                    <li className="link"><a href="#visitor-list-expire">Xem danh sách khách hết hạn</a></li>
-                    <li className="link"><a href="#view-report">Xem báo cáo</a></li>
-                    <li className="link"><a href="#daily-visitor-statistics">Xem thống kê khách hàng ngày</a></li>
-                    <li className="link"><a href="#monitoring-visitor">Giám sát khách</a>
-                        <ul>
-                            <li className="link"><a href="#adjust-device-type">Điều chỉnh loại thiết bị (ra - vào)</a></li>
-                            <li className="link"><a href="#adjust-diary">Điều khiển nhật ký ra – vào</a></li>
+                <div className="scroll-menu-main" >
+                    <div className="menu-main" style={{position: "relative"}}>
+                        <ul  className="menu-main">
+                            <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
+                            <li className="link"><a href="#setting-card-list">Cài đặt danh sách thẻ dùng cho quản lý khách</a></li>
+                            <li className="link"><a href="#setting-people-list">Cài đặt danh sách nhân viên mà khách có thể gặp</a></li>
+                            <li className="link"><a href="#setting-device">Cài đặt thiết bị vào – ra</a></li>
+                            <li className="link"><a href="#guest-management-system">Cài đặt hệ thống quản lý khách</a></li>
+                            <li className="link"><a href="#degistered-visitor-afar">Đăng ký khách (từ xa)</a></li>
+                            <li className="link"><a href="#degistered-visitor-place">Đăng ký khách (đăng ký tại chỗ)</a></li>
+                            <li className="link"><a href="#health-declaration">Khai báo y tế dành cho khách</a></li>
+                            <li className="link"><a href="#view-list-visitor-pending">Xem danh sách khách chờ xử lý</a></li>
+                            <li className="link"><a href="#approval-visitor">Phê duyệt khách</a></li>
+                            <li className="link"><a href="#update-guest-information">Cập nhật thông tin của khách</a></li>
+                            <li className="link"><a href="#refuse-visitor">Từ chối khách</a></li>
+                            <li className="link"><a href="#list-visitor-acceptance">Xem danh sách khách chấp thuận</a></li>
+                            <li className="link"><a href="#degistered-fingerprint">Đăng ký mẫu vân tay cho khách</a></li>
+                            <li className="link"><a href="#degistered-card">Đăng ký thẻ (hoặc xoá thẻ) cho khách</a></li>
+                            <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>
+                            <li className="link"><a href="#update-validity-period">Cập nhật thời gian hiệu lực</a></li>
+                            <li className="link"><a href="#checkOut-settings">Thiết lập kiểm tra ra</a></li>
+                            <li className="link"><a href="#visitor-list-expire">Xem danh sách khách hết hạn</a></li>
+                            <li className="link"><a href="#view-report">Xem báo cáo</a></li>
+                            <li className="link"><a href="#daily-visitor-statistics">Xem thống kê khách hàng ngày</a></li>
+                            <li className="link"><a href="#monitoring-visitor">Giám sát khách</a>
+                                <ul>
+                                    <li className="link"><a href="#adjust-device-type">Điều chỉnh loại thiết bị (ra - vào)</a></li>
+                                    <li className="link"><a href="#adjust-diary">Điều khiển nhật ký ra – vào</a></li>
+                                </ul>
+                            </li> 
                         </ul>
-                    </li> 
-                </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
-                </div>
+                        <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
+                        </svg>
+                    </div>
                 </div>
             </nav>
             <article className="contents" id="contents">
@@ -1077,7 +1077,7 @@ function Visitor(props) {
                     </div>
                 </section>
                 <section>
-                    <div id="monitoring-visitor">
+                    <div id="monitoring-visitor">t nnn
                         <h2>22.	Giám sát khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Giám sát khách</b>.</p>
