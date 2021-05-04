@@ -16,8 +16,8 @@ function ModuleConfig(props) {
                     <div >
                         <div className="content-item" >
                             {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
-                            <img src="./images/module-config-1.png" className="w-25" /> 
-                            <img src="./images/module-config-1-2.png" className="w-100" /> 
+                            <img alt="images" src="./images/module-config-1.png" className="w-25" /> 
+                            <img alt="images" src="./images/module-config-1-2.png" className="w-100" /> 
                             <p>Ghi chú:</p>
                             <table className="table ">
                                 <tbody>
@@ -41,7 +41,7 @@ function ModuleConfig(props) {
                         <h2>1. Cấu hình thiết bị cho module</h2>
                         <div className="content-item" >
                             {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
-                            <img src="./images/module-config-2.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/module-config-2.png" className="w-100 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

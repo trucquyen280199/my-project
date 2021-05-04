@@ -9,8 +9,8 @@ function IntrusionDoor(props) {
             </nav>
             <h2 className="text-center">CỬA XÂM NHẬP</h2>
             <div className="content-item" >
-                <img src="./images/intrusion-door-1.png" className="w-25" /> 
-                <img src="./images/intrusion-door-2.png" className="w-100" /> 
+                <img alt="images" src="./images/intrusion-door-1.png" className="w-25" /> 
+                <img alt="images" src="./images/intrusion-door-2.png" className="w-100" /> 
                 <p>Ghi chú:</p>
                 <table className="table table-list d-flex w-100 mt-3">
                     <tbody>
@@ -40,7 +40,7 @@ function IntrusionDoor(props) {
                 <div>
                     <h2>1. Thêm hoặc sửa cửa</h2>
                     <div className="content-item" >
-                        <img src="./images/intrusion-door-3.png" className="w-100" /> 
+                        <img alt="images" src="./images/intrusion-door-3.png" className="w-100" /> 
                         <p>Ghi chú:</p>
                         <table className="table table-list d-flex w-100 mt-3">
                             <tbody>

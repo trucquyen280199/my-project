@@ -17,8 +17,8 @@ function Schedule(props) {
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/schedule-1.png" className="w-25" />   
-                            <img src="./images/schedule-1-2.png" className="w-100 mb-3" />   
+                            <img alt="images" src="./images/schedule-1.png" className="w-25" />   
+                            <img alt="images" src="./images/schedule-1-2.png" className="w-100 mb-3" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -53,7 +53,7 @@ function Schedule(props) {
                     <div id="add-edit">
                         <h2>1.	Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <img src="./images/schedule-2.png" className="w-100 mb-3" />  
+                            <img alt="images" src="./images/schedule-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -84,7 +84,7 @@ function Schedule(props) {
                                 </tbody>
                             </table> 
                             <p>•	Giao diện sửa giá trị schelude</p>
-                            <img src="./images/schedule-3.png" className="w-100 my-3" />
+                            <img alt="images" src="./images/schedule-3.png" className="w-100 my-3" />
                             <p>Ghi chú:</p> 
                             <table className="table w-100 mt-3">
                                 <tbody>

@@ -9,8 +9,8 @@ function IntrusionAlarm(props) {
             </nav>
             <h2 className="text-center">CẢNH BÁO XÂM NHẬP</h2>
             <div className="content-item" >
-                <img src="./images/intrusion-alarm-1.png" className="w-25" /> 
-                <img src="./images/intrusion-alarm-2.png" className="w-100" /> 
+                <img alt="images" src="./images/intrusion-alarm-1.png" className="w-25" /> 
+                <img alt="images" src="./images/intrusion-alarm-2.png" className="w-100" /> 
                 <p>Ghi chú:</p>
                 <table className="table table-list d-flex w-100 mt-3">
                     <tbody>
@@ -45,7 +45,7 @@ function IntrusionAlarm(props) {
                 <p>▪<b className="ml-2">Hoạt động:</b> Thay đổi trạng thái của zone</p>
                 <p>▪<b className="ml-2">Không hoạt động:</b> Thay đổi trạng thái của zone</p>
                 <p className="mt-3">• Thêm hoặc sửa zone</p>
-                <img src="./images/intrusion-alarm-3.png" className="w-100" /> 
+                <img alt="images" src="./images/intrusion-alarm-3.png" className="w-100" /> 
                 <p>Ghi chú:</p>
                 <table>
                     <tbody>
@@ -89,11 +89,11 @@ function IntrusionAlarm(props) {
                                 chọn Loại arm.<br/>
                                 Có thể chọn <b>Thẻ</b> , <b>Chìa khóa</b> và <b>Thẻ</b> hoặc <b>Chìa khóa</b> cho <b>kiểu Đầu vào</b> . Chỉ có <b>Thẻ</b> làm loại đầu vào cho thiết
                                 bị không có màn hình LCD.
-                                <img src="./images/intrusion-alarm-4.png" className="w-75" />
+                                <img alt="images" src="./images/intrusion-alarm-4.png" className="w-75" />
                                 <p><b>Thêm arm và disarm bằng tín hiệu đầu vào</b></p>
                                 <p>Bấm <b>Thiết bị</b> để chọn thiết bị điều khiển vùng báo động xâm nhập. Nhấp vào <b>Port</b> và chọn một cổng đầu vào của thiết bị đã chọn.</p>
                                 <p>Chọn <b>Loại arm</b> và đặt loại công tắc và thời lượng tín hiệu</p>
-                                <img src="./images/intrusion-alarm-5.png" className="w-75" />
+                                <img alt="images" src="./images/intrusion-alarm-5.png" className="w-75" />
                                 <p>(Nó chỉ được kích hoạt khi <b>Cửa</b> được đặt từ <b>Cấu hình</b>)</p>
                             </td>
                         </tr>
@@ -103,7 +103,7 @@ function IntrusionAlarm(props) {
                                 <p><b>Cài đặt xâm nhập</b>: Bạn có thể đặt tín hiệu phát hiện xâm nhập. Khi bạn nhấp vào + Thêm và thiết lập như trong
                                 màn hình bên dưới, thiết bị sẽ nhận dạng phát hiện xâm nhập nếu cảm biến N / O kết nối với cổng đầu vào 0 của
                                 BioStation L2 gửi tín hiệu trong 100 (mili giây).</p>
-                                <img src="./images/intrusion-alarm-6.png" className="w-75" />
+                                <img alt="images" src="./images/intrusion-alarm-6.png" className="w-75" />
                                 <p>(Nó chỉ được kích hoạt khi <b>Cửa</b> được đặt từ <b>Cấu hình</b>)</p>
                             </td>
                         </tr>

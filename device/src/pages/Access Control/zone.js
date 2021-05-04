@@ -21,8 +21,8 @@ function Zone(props) {
                     <div id="anti-passback-zone">
                         <h2>1.	Anti-passback</h2>
                         <div className="content-item" >
-                            <img src='./images/anti-passback-zone.png' className="w-25" />
-                            <img src='./images/anti-passback-zone-1-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/anti-passback-zone.png' className="w-25" />
+                            <img alt="images" src='./images/anti-passback-zone-1-2.png' className="mb-3 w-100" />
                             <b>Ghi chú:</b>
                             <table className="table table-list ">
                                 <tbody>
@@ -59,7 +59,7 @@ function Zone(props) {
                                 <b className="ml-3">-	Không hoạt động</b>: Thay đổi trạng thái của zone<br/><br/>
                                 •	Thêm hoặc sửa zone
                             </p>
-                            <img src='./images/anti-passback-zone-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/anti-passback-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table">
                                 <tbody>
@@ -127,8 +127,8 @@ function Zone(props) {
                     <div id="fire-alarm-zone">
                         <h2>2.	Cảnh báo cháy</h2>
                         <div className="content-item" >
-                            <img src='./images/fire-alarm-zone-1.png' className="mb-3 w-25" />
-                            <img src='./images/fire-alarm-zone-1-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/fire-alarm-zone-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/fire-alarm-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -166,7 +166,7 @@ function Zone(props) {
                                 •	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/fire-alarm-zone-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/fire-alarm-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -225,8 +225,8 @@ function Zone(props) {
                     <div id="scheduled-lock-zone">
                         <h2>3.	Khóa theo lịch trình</h2>
                         <div className="content-item" >
-                            <img src='./images/scheduled-lock-zone-1.png' className="mb-3 w-25" />
-                            <img src='./images/scheduled-lock-zone-1-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/scheduled-lock-zone-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/scheduled-lock-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -264,7 +264,7 @@ function Zone(props) {
                                 •	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/scheduled-lock-zone-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/scheduled-lock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -313,8 +313,8 @@ function Zone(props) {
                     <div id="scheduled-unlock-zone">
                         <h2>4.	Scheduled Unlock Zone</h2>
                         <div className="content-item" >
-                            <img src='./images/scheduled-unlock-zone-1.png' className="mb-3 w-25" />
-                            <img src='./images/scheduled-unlock-zone-1-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/scheduled-unlock-zone-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/scheduled-unlock-zone-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -352,7 +352,7 @@ function Zone(props) {
                                 •	Thêm hoặc sửa zone
 
                             </p>
-                            <img src='./images/scheduled-unlock-zone-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/scheduled-unlock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -406,8 +406,8 @@ function Zone(props) {
                             ▪ Một cửa được đặt làm vùng khóa liên động không được đặt sang vùng khác không phải vùng báo cháy.<br/>
 
                             </p>
-                            <img src='./images/interlock-zone-1.png' className="mb-3 w-25" />
-                            <img src='./images/interlock-zone-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/interlock-zone-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/interlock-zone-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -446,7 +446,7 @@ function Zone(props) {
 
                             </p>
                             
-                            <img src='./images/interlock-zone-3.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/interlock-zone-3.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

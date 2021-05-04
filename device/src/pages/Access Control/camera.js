@@ -14,8 +14,8 @@ function Camera(props) {
             <article className="contents w-100" id="contents">
                 <h2 className="text-center">CAMERA</h2>
                 <section>
-                    <img src="./images/camera-1.png" />   
-                    <img src="./images/camera-1-2.png" className="w-100 mb-3" />   
+                    <img alt="images" src="./images/camera-1.png" />   
+                    <img alt="images" src="./images/camera-1-2.png" className="w-100 mb-3" />   
                     <table className="table table-list d-flex w-100 mt-3">
                         <tbody>
                             <tr>
@@ -53,7 +53,7 @@ function Camera(props) {
                     <div id="add-edit-camera">
                         <h2>1. Thêm hoặc sửa camera</h2>
                         <div className="content-item" >
-                            <img src="./images/camera-2.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/camera-2.png" className="w-100 mb-3" />
                             <p className="font-weight-bolid">Ghi chú:</p>  
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

@@ -17,8 +17,8 @@ function Module(props) {
                     <div>
                         <div className="content-item" >
                             {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
-                            <img src="./images/module-1.png" className=" mb-3" /> 
-                            <img src="./images/module-1-1.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/module-1.png" className=" mb-3" /> 
+                            <img alt="images" src="./images/module-1-1.png" className="w-100 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -48,7 +48,7 @@ function Module(props) {
                         <h2>1. Thêm hoặc sửa</h2>
                         <div className="content-item" >
                             {/* <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p> */}
-                            <img src="./images/module-2.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/module-2.png" className="w-100 mb-3" /> 
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

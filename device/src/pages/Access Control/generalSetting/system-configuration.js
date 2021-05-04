@@ -13,8 +13,8 @@ function SystemConfiguration(props) {
             <article className="contents w-100" id="contents" >  
                 <h2 className="text-center">CẤU HÌNH HỆ THỐNG</h2> 
                 <section >
-                    <img src="./images/SystemConfig-1.png" className="w-25"/>
-                    <img src="./images/SystemConfig-2.png" className="w-100"/>
+                    <img alt="images" src="./images/SystemConfig-1.png" className="w-25"/>
+                    <img alt="images" src="./images/SystemConfig-2.png" className="w-100"/>
                     <p>Ghi chú:</p>
                     <table className="table w-100 mt-3">
                         <tbody>

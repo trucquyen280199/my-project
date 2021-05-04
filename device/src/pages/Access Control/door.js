@@ -22,8 +22,8 @@ function Door(props) {
                             Bạn có thể sử dụng menu <b>Cửa</b> để thêm thông tin về cửa kết nối với thiết bị.<br />
                             Bạn có thể định cấu hình cài đặt chuyển tiếp, xác thực kép, chống trả về, bắt buộc mở và giữ cài đặt cảnh báo mở của thiết bị. Thông tin cửa sau đó được sử dụng như một thành phần của các cấp độ truy cập.
                         </p>
-                        <img src="./images/door-1.png" className="" />
-                        <img src="./images/door-1-2.png" className="w-100" />
+                        <img alt="images" src="./images/door-1.png" className="" />
+                        <img alt="images" src="./images/door-1-2.png" className="w-100" />
                         <p className="font-weight-bold">Ghi chú:</p>
                         <table className="table table-list d-flex w-100 mt-3">
                             <tbody>
@@ -55,7 +55,7 @@ function Door(props) {
                     <div id="add-edit-door">
                         <h2>1. Thêm hoặc sửa cửa</h2>
                         <div className="content-item">
-                            <img src="./images/door-2.png" className="w-100" />
+                            <img alt="images" src="./images/door-2.png" className="w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

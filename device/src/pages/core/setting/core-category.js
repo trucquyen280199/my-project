@@ -62,9 +62,9 @@ function CoreCategory(props) {
                         <h2>1.	Nhóm người dùng (phòng ban)</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
-                            <img src="./images/core-category-1.png" className=" mb-3" /> 
+                            <img alt="images" src="./images/core-category-1.png" className=" mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-2.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-2.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
                                     <tr>
@@ -89,15 +89,15 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Bấm <b>Thêm</b> tuỳ chỉnh</p>
-                            <img src="./images/core-category-3.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-3.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-4.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-4.png" className="w-100 mb-3" />
                             <p>
                             B3: Chọn <b> phòng ban – công ty cha</b><br/>
                             B4: Nhập <b>tên và mã</b><br/>
                             B5: Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc.
                             </p>
-                            <img src="./images/core-category-a.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-a.png" className="w-100 mb-3" />
                             <p>B6: Bấm <b>đồng ý</b> để lưu thông tin</p>
                             <p>
                             Lưu ý:<br/>
@@ -106,7 +106,7 @@ function CoreCategory(props) {
                             <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
                             <span className="ml-3">-	Chỉ có thể tạo công ty nếu tổ chức mẹ là công ty</span>
                             </p>
-                            <img src="./images/core-category-a1.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-a1.png" className="w-100 mb-3" />
                         </div>
                     </div>
                     <div id="add-specific-departments">
@@ -114,14 +114,14 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cha cần tạo và bấm <b>thêm</b></p>
-                            <img src="./images/core-category-5.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-5.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-6.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-6.png" className="w-100 mb-3" />
                             <p>
                             B3: Nhập <b>tên và mã</b> phòng ban <br/>
                             B4: : Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc (hoặc cập nhật thành phòng ban).
                             </p>
-                            <img src="./images/core-category-6-1.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-6-1.png" className="w-100 mb-3" />
                             <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
                             Lưu ý:<br/>
@@ -130,7 +130,7 @@ function CoreCategory(props) {
                             <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
                             <span className="ml-3">-	Chỉ có thể tạo thành công ty nếu tổ chức mẹ là công ty</span>
                             </p>
-                            <img src="./images/core-category-6-2.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-6-2.png" className="w-100 mb-3" />
                         </div>
                     </div>
                     <div id="update-departments">
@@ -138,15 +138,15 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cần cập nhật và bấm <b>cập nhật</b></p>
-                            <img src="./images/core-category-7.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-7.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-8.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-8.png" className="w-100 mb-3" />
                             <p>
                             B3: Chọn <b>phòng ban cha</b>cần đổi<br/>
                             B4: Đổi thông tin <b>tên và mã</b> phòng ban <br/>
                             B5: Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc.
                             </p>
-                            <img src="./images/core-category-8-1.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-8-1.png" className="w-100 mb-3" />
                             <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
                                 Lưu ý:<br/>
@@ -164,7 +164,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-10.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-10.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá</b> để hoàn thành</p>
                             <p className="font-italic">
                                 <b>Lưu ý</b>:<br/>
@@ -179,9 +179,9 @@ function CoreCategory(props) {
                         <h2>2.	Danh mục quốc tịch</h2>
                         <div className="content-item" >
                         <p>B1: Vào <b>CORE</b> &gt; <b>Cài đặt</b> &gt; <b>Quốc tịch</b></p>
-                            <img src="./images/core-category-11.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-11.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-12.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-12.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
                                     <tr>
@@ -205,9 +205,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>Thêm</b></p>
-                            <img src="./images/core-category-13.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-13.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-14.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-14.png" className="w-100 mb-3" />
                             <p>
                             B3: Nhập <b>tên và mã </b> quốc gia <br/>
                             B4: Bấm <b>đồng ý</b> để lưu thông tin
@@ -224,9 +224,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục quốc gia cần cập nhật và <b>bấm đúp chuột</b> vào dòng đó</p>
-                            <img src="./images/core-category-15.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-15.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-16.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-16.png" className="w-100 mb-3" />
                             <p>
                             B3: Cập nhật <b>tên và mã </b> quốc gia <br/>
                             B4: Bấm <b>đồng ý</b> để lưu thông tin
@@ -243,7 +243,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục quốc gia cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-17.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-17.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                         </div>
                     </div>
@@ -253,9 +253,9 @@ function CoreCategory(props) {
                         <h2>3.	Danh mục tỉnh thành</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Tỉnh thành</b></p>
-                            <img src="./images/core-category-18.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-18.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-19.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-19.png" className="w-100 mb-3" />
                             <table className="table" >
                                 <tbody>
                                     <tr>
@@ -279,9 +279,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
-                            <img src="./images/core-category-20.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-20.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-21.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-21.png" className="w-100 mb-3" />
                             <p>
                                 B3: Chọn <b>quốc gia</b><br/>
                                 B4: Nhập <b>tên và các mã</b> tỉnh thành <br/>
@@ -300,9 +300,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục tỉnh thành cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
-                            <img src="./images/core-category-22.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-22.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-23.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-23.png" className="w-100 mb-3" />
                             <p>
                                 B3: Cập nhật <b>quốc gia</b><br/>
                                 B4: Cập nhật <b>tên và các mã</b> tỉnh thành <br/>
@@ -321,7 +321,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục tỉnh thành cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-24.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-24.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                         </div>
                     </div>
@@ -331,9 +331,9 @@ function CoreCategory(props) {
                         <h2>4.	Danh mục dân tộc</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Dân tộc</b></p>
-                            <img src="./images/core-category-25.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-25.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-26.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-26.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                     <tr>
@@ -357,9 +357,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
-                            <img src="./images/core-category-27.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-27.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-28.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-28.png" className="w-100 mb-3" />
                             <p>
                                 B3: Nhập <b>tên và mã </b>dân tộc<br/>
                                 B4: Nhập các thông tin khác nếu cần thiết  <br/>
@@ -377,9 +377,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục dân tộc cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
-                            <img src="./images/core-category-29.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-29.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-30.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-30.png" className="w-100 mb-3" />
                             <p>
                                 B3: Cập nhật <b>tên và mã</b> dân tộc<br/>
                                 B4: Cập nhật các thông tin khác nếu cần thiết <br/>
@@ -397,7 +397,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục dân tộc cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-31.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-31.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                         </div>
                     </div>
@@ -407,9 +407,9 @@ function CoreCategory(props) {
                         <h2>5.	Danh mục chức vụ</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>Kiểm soát truy cập &gt; Cài đặt chung &gt; Chức vụ</b></p>
-                            <img src="./images/core-category-32.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-32.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-33.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-33.png" className="w-100 mb-3" />
                             <table className="table">
                                 <tbody>
                                     <tr>
@@ -433,9 +433,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
-                            <img src="./images/core-category-34.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-34.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-35.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-35.png" className="w-100 mb-3" />
                             <p>
                                 B3: Nhập <b>tên và mã </b>chức vụ<br/>
                                 B4: Bấm <b>đồng ý</b> để lưu thông tin
@@ -452,9 +452,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục chức vụ cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
-                            <img src="./images/core-category-36.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-36.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-37.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-37.png" className="w-100 mb-3" />
                             <p>
                                 B3: Cập nhật <b>tên và mã</b> chức vụ <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
@@ -471,7 +471,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục chức vụ cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-38.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-38.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                             <p>Lưu ý: <br/>
                                 <span className="ml-3">-	Danh mục chức vụ đang được dùng bởi nhân viên sẽ không thể xoá</span>
@@ -484,9 +484,9 @@ function CoreCategory(props) {
                         <h2>6.	Danh mục kỹ năng (chứng chỉ)</h2>
                         <div className="content-item" >
                             <p>B1: Vào <b>CORE &gt; Cài đặt &gt; Kỹ năng</b></p>
-                            <img src="./images/core-category-39.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-39.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
-                            <img src="./images/core-category-40.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-40.png" className="w-100 mb-3" />
                             <table className="table ">
                                 <tbody>
                                     <tr>
@@ -510,9 +510,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
-                            <img src="./images/core-category-41.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-41.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-42.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-42.png" className="w-100 mb-3" />
                             <p>
                                 B3: Nhập <b>tên và mã </b>kỹ năng<br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
@@ -529,9 +529,9 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục kỹ năng cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
-                            <img src="./images/core-category-43.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-43.png" className="w-100 mb-3" /> 
                             <p>Cửa sổ chính</p>
-                            <img src="./images/core-category-44.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-44.png" className="w-100 mb-3" />
                             <p>
                                 B3: Cập nhật <b>tên và mã</b> kỹ năng <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
@@ -548,7 +548,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục kỹ năng cần xoá và bấm nút <b>xoá</b></p>
-                            <img src="./images/core-category-45.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-45.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                             
                         </div>
@@ -560,12 +560,12 @@ function CoreCategory(props) {
                         <h3 className="ml-4">a.	Thêm/cập nhật danh mục loại khách đăng ký</h3>
                         <div className="content-item ml-5" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>Khách</b> &gt; <b>Cài đặt </b> &gt; <b> Loại khách đăng ký </b></p>
-                            <img src="./images/core-category-46.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/core-category-46.png" className="w-25 mb-3" /> 
                             <p>Màn hình sau sẽ xuất hiện</p>
-                            <img src="./images/core-category-47.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-47.png" className="w-100 mb-3" />
                             <p>B2: Bấm nút <b>Thêm</b> để tạo mới hoặc <b>bấm đúp chuột</b> vào dòng để cập nhật loại khách tương ứng. </p>
                             <p>B3: Cửa sổ sau sẽ xuất hiện, điền vào hoặc chỉnh sửa các thông tin cần thiết.</p>
-                            <img src="./images/core-category-48.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/core-category-48.png" className="w-100 mb-3" />
                             <p>B4: Bấm <b>Đồng ý</b> để cập nhật </p>
                             <p> Lưu ý:</p>
                             <table className="table">
@@ -600,7 +600,7 @@ function CoreCategory(props) {
                         <div className="content-item" >
                             <p>B1: <a href="#add-update-registered-guests">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục loại khách cần xoá và bấm <b>Xoá</b></p>
-                            <img src="./images/core-category-49.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/core-category-49.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
                         </div>
                     </div>

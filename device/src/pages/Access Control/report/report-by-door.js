@@ -15,8 +15,8 @@ function ReportByDoor(props) {
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/report-by-door-1.png" className="w-25" />   
-                            <img src="./images/report-by-door-1-2.png" className="w-100" />   
+                            <img alt="images" src="./images/report-by-door-1.png" className="w-25" />   
+                            <img alt="images" src="./images/report-by-door-1-2.png" className="w-100" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -58,7 +58,7 @@ function ReportByDoor(props) {
                     <div id="list-detail">
                         <h2>1. Danh sách chi tiết</h2>
                         <div className="content-item" >
-                            <img src="./images/report-by-door-2.png" className="w-100 mb-3" />  
+                            <img alt="images" src="./images/report-by-door-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

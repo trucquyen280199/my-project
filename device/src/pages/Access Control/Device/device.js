@@ -23,8 +23,8 @@ function Device(props) {
                     <div id="device">
                         <div className="content-item" >
                             <p>Bạn có thể sử dụng menu <b>Thiết bị</b> để thêm, xóa hoặc chỉnh sửa các thiết bị đã đăng ký, tìm nạp thông tin người dùng đã đăng ký trong thiết bị vào máy chủ.</p>
-                            <img src='./images/device-1.png' className="" />
-                            <img src='./images/device-1-2.png' className="mb-3 w-100" />
+                            <img src='./images/device-1.png' className="w-25" alt="images" />
+                            <img src='./images/device-1-2.png' className="mb-3 w-100" alt="images" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -85,7 +85,7 @@ function Device(props) {
                     <div id="basic-search">
                         <h2>1.	Tìm kếm cơ bản</h2>
                         <div className="content-item" >
-                            <img src="./images/device-2.png" className="mb-3 w-100" />
+                            <img src="./images/device-2.png" className="mb-3 w-100" alt="images" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -122,7 +122,7 @@ function Device(props) {
                     <div id="advanced-search">
                         <h2>2.	Tìm kiếm nâng cao</h2>
                         <div className="content-item" >
-                            <img src="./images/device-3.png" className="mb-3 w-100" />
+                            <img src="./images/device-3.png" className="mb-3 w-100" alt="images" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -165,7 +165,7 @@ function Device(props) {
                     <div id="details-and-configuration">
                         <h2>3.	Xem chi tiết và cấu hình thông tin của thiết bị</h2>
                         <div className="content-item" >
-                            <img src="./images/device-4.png" className="mb-3 w-100" />
+                            <img src="./images/device-4.png" className="mb-3 w-100" alt="images" />
                             <p className="ml-4">
                             Restore default<br />
                              <span className="ml-4">-	<b>All</b>: Khôi phục tất cả mặc định cấu hình của thiết bị.</span><br />
@@ -183,8 +183,8 @@ function Device(props) {
                         <h2>4.	Thiết bị đang chờ</h2>
                         <div className="content-item" >
                             <p className="ml-4">Các thiết bị được cấu hình kết nối thiết bị đến server, nếu chưa kết nối sẽ được quản lý trong trang này</p>
-                            <img src="./images/device-5.png" className="mb-3 w-25" />
-                            <img src="./images/device-6.png" className="mb-3 w-100" />
+                            <img src="./images/device-5.png" className="mb-3 w-25" alt="images" />
+                            <img src="./images/device-6.png" className="mb-3 w-100" alt="images" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -216,8 +216,8 @@ function Device(props) {
                         <h2>5.	Nhóm thiết bị</h2>
                         <div className="content-item" >
                             <p className="ml-4">Các thiết bị được cấu hình kết nối thiết bị đến server, nếu chưa kết nối sẽ được quản lý trong trang này</p>
-                            <img src="./images/device-7.png" className="mb-3 w-25" />
-                            <img src="./images/device-8.png" className="mb-3 w-100" />
+                            <img src="./images/device-7.png" className="mb-3 w-25" alt="images" />
+                            <img src="./images/device-8.png" className="mb-3 w-100" alt="images" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

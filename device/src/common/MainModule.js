@@ -21,11 +21,6 @@ class MainModule extends React.Component {
                     menuName: "Nhập file",
                     isSingle: true
                 },
-                // {
-                //     linkTo: "/UserGroup",
-                //     menuName: " Nhóm người dùng",
-                //     isSingle: true
-                // },
                 {
                     menuName: "Cài đặt",
                     isSingle: false,

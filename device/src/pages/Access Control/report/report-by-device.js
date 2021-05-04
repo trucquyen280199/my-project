@@ -11,8 +11,8 @@ function ReportByDevice(props) {
                 </div>
             </nav>
             <h2 className="text-center">BÁO CÁO THIẾT BỊ</h2>
-            <img src="./images/report-by-device-1.png" className="w-25" /><br/>   
-            <img src="./images/report-by-device-1-2.png" className="w-100" /><br/>   
+            <img alt="images" src="./images/report-by-device-1.png" className="w-25" /><br/>   
+            <img alt="images" src="./images/report-by-device-1-2.png" className="w-100" /><br/>   
             <table className="table mt-3" >
                 <tbody>
                     <tr>

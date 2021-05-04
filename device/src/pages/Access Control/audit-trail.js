@@ -9,8 +9,8 @@ function AuditTrail(props) {
             </nav>
             <h2 className="text-center">LỊCH SỬ HỆ THỐNG</h2>
             <div className="content-item" >
-                <img src="./images/audit-trail-1.png" className="w-25" /> 
-                <img src="./images/audit-trail-1-2.png" className="w-100" /> 
+                <img alt="images" src="./images/audit-trail-1.png" className="w-25" /> 
+                <img alt="images" src="./images/audit-trail-1-2.png" className="w-100" /> 
                 <p>Ghi chú:</p>
                 <table className="table table-list d-flex w-100 mt-3">
                     <tbody>

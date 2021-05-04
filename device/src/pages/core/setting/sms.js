@@ -21,8 +21,8 @@ function SMS(props) {
                     <div id="configuration-mail">
                         <h2>1.	Cấu hình mail</h2>
                         <div className="content-item" >
-                            <img src='./images/sms/sms-1.png' className="mb-3 w-25" />
-                            <img src='./images/sms/sms-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/sms/sms-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/sms/sms-2.png' className="mb-3 w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -55,7 +55,7 @@ function SMS(props) {
                         <h2>2.	Lịch sử</h2>
                         <div className="content-item" >
                             <p>Danh sách mô tả thông tin gửi sms: ngày gửi, điện thoại nhận, nội dung, trạng thái, mô tả.</p>
-                            <img src='./images/sms/sms-3.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/sms/sms-3.png' className="mb-3 w-100" />
                         </div>
                     </div>
                 </section>

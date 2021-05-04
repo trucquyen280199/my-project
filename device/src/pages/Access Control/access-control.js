@@ -21,8 +21,8 @@ function AccessControl(props) {
                     <div id="access-group">
                         <h2>1.	Nhóm truy cập</h2>
                         <div className="content-item" >
-                            <img src="./images/access-group-1.png" className="w-25"/>
-                            <img src="./images/access-group-1-2.png" className="w-100" />
+                            <img alt="images" src="./images/access-group-1.png" className="w-25"/>
+                            <img alt="images" src="./images/access-group-1-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -53,7 +53,7 @@ function AccessControl(props) {
                                 </tbody>
                             </table>
                             <b>* Nhập file: </b>
-                            <img src="./images/access-group-import-file.png" className="w-100" />
+                            <img alt="images" src="./images/access-group-import-file.png" className="w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -74,7 +74,7 @@ function AccessControl(props) {
                             <p> Sau khi chọn nhóm, bạn có thể thực hiện các thao tác sau:</p>
                             <p className="ml-3"><b>Xóa</b> : Xóa nhóm đã chọn khỏi danh sách.</p>
                             <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa nhóm truy cập</p>
-                            <img src="./images/access-group-2.png" className="w-100" />
+                            <img alt="images" src="./images/access-group-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -117,8 +117,8 @@ function AccessControl(props) {
                     <div id="access-level">
                         <h2>2. Cấp độ truy cập</h2>
                         <div className="content-item">
-                            <img src="./images/access-level-1.png" className="w-25" />
-                            <img src="./images/access-level-1-2.png" className="w-100" />
+                            <img alt="images" src="./images/access-level-1.png" className="w-25" />
+                            <img alt="images" src="./images/access-level-1-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -144,7 +144,7 @@ function AccessControl(props) {
                             </table>
                             
                             <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa cấp độ truy cập</p>
-                            <img src="./images/access-level-2.png" />
+                            <img alt="images" src="./images/access-level-2.png" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -181,8 +181,8 @@ function AccessControl(props) {
                     <div id="floor-level">
                         <h2>3. Cấp độ tầng</h2>
                         <div className="content-item">
-                            <img src="./images/floor-level-1.png" />
-                            <img src="./images/floor-level-1-2.png" className="w-100" />
+                            <img alt="images" src="./images/floor-level-1.png" />
+                            <img alt="images" src="./images/floor-level-1-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -207,7 +207,7 @@ function AccessControl(props) {
                                 </tbody>
                             </table>
                             <p className="d-flex align-items-center"><span className="mr-2" style={{fontSize: "7px"}}>&#9899;</span> Thêm hoặc sửa cấp độ tầng</p>
-                            <img src="./images/floor-level-2.png" className="w-100" />
+                            <img alt="images" src="./images/floor-level-2.png" className="w-100" />
                             <p className="font-weight-bold ml-4">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

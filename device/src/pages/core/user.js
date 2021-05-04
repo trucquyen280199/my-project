@@ -45,9 +45,9 @@ function User(props) {
                         <h2>1. Giải thích các màn hình</h2>
                         <h3 className=" ml-4">a. Màn hình chính</h3>
                         <div className="content-item" >
-                            <img src='./images/manhinhchinh1.png' className="w-100 mb-3" />
+                            <img alt="images" src='./images/manhinhchinh1.png' className="w-100 mb-3" />
                             <p>Bộ lọc và các nút</p>
-                            <img src='./images/manhinhchinh2.png' className="w-100" />
+                            <img alt="images" src='./images/manhinhchinh2.png' className="w-100" />
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -75,7 +75,7 @@ function User(props) {
                     <div id="screen-update">
                         <h3 className="ml-4">b. Màn hình của mẫu thêm/cập nhật nhân viên</h3>
                         <div className="content-item" >
-                            <img src='./images/3.png' className="w-100" />
+                            <img alt="images" src='./images/3.png' className="w-100" />
                             <table className="table mt-3">
                                 <tbody>
                                     <tr>
@@ -130,9 +130,9 @@ function User(props) {
                         <h2>2.	Thêm nhân viên mới</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png"/>
+                            <img alt="images" src="./images/4.png"/>
                             <p className="ml-4">B2: Bấm nút Thêm</p>
-                            <img src="./images/5.png" className="w-100" />
+                            <img alt="images" src="./images/5.png" className="w-100" />
                             <p className="ml-4">B3: <a href="#screen-update">Ở cửa sổ mới</a>, điền các thông tin bắc buộc và thông tin cần thiết </p>
                             <p className="ml-4">B4: Bấm nút Lưu để lưu thông tin nhân viên</p>
                         </div>
@@ -143,9 +143,9 @@ function User(props) {
                         <h2>3.	Cập nhật nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p className="ml-4">B2: Bấm đúp chuột vào dòng nhân viên cần cập nhật</p>
-                            <img src="./images/5-1.png" className="w-100" />
+                            <img alt="images" src="./images/5-1.png" className="w-100" />
                             <p className="ml-4">B3:  <a href="#screen-update">Ở cửa sổ mới</a>, điền các thông tin bắc buộc và thông tin cần thiết </p>
                             <p className="ml-4">B4: Bấm nút <b>Lưu</b> để lưu thông tin nhân viên</p>
                         </div>
@@ -157,20 +157,20 @@ function User(props) {
                         <div className="content-item" >
                             <p className="ml-4" style={{fontWeight: "700"}}><span>Lưu ý:</span> chỉ có thể đăng ký chứng chỉ sau khi đã thêm nhân viên</p>
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Bấm đúp chuột vào dòng nhân viên cần đăng ký</p>
-                            <img src="./images/8.png" className="w-100" />
+                            <img alt="images" src="./images/8.png" className="w-100" />
                             <p className="">B3: <a href="#screen-update">Ở cửa sổ mới</a>, tìm đến mục Chứng chỉ</p>
-                            <img src="./images/9.png" className="w-100" />
+                            <img alt="images" src="./images/9.png" className="w-100" />
                         </div>
                     </div>
                     <div id="fingerprint-registration">
                         <h3 className="ml-4">a.	Đăng ký vân tay</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Vân tay</p>
-                            <img src="./images/4.1.png" className="w-100" />
+                            <img alt="images" src="./images/4.1.png" className="w-100" />
                             <p className="ml-4">Cửa sổ sau sẽ xuất hiện</p>
-                            <img src="./images/4.2.png" className="w-100" />
+                            <img alt="images" src="./images/4.2.png" className="w-100" />
                             <p className="ml-4">B5: Chọn thiết bị và Chất lượng</p>
                             <p className="ml-4">B6: Bấm thêm hoặc chọn vân tay cần cập nhật </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
@@ -182,9 +182,9 @@ function User(props) {
                         <h3 className="ml-4 mt-3">b.	Đăng ký khuôn mặt</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Vân tay</p>
-                            <img src="./images/4.3.png" className="w-100" />
+                            <img alt="images" src="./images/4.3.png" className="w-100" />
                             <p className="ml-4">Cửa sổ sau sẽ xuất hiện</p>
-                            <img src="./images/4.4.png" className="w-100" />
+                            <img alt="images" src="./images/4.4.png" className="w-100" />
                             <p className="ml-4">B5: Chọn thiết bị và biến thể tư thế khuôn mặt </p>
                             <p className="ml-4">B6: Bấm thêm hoặc chọn khuôn mặt cần cập nhật  </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
@@ -196,9 +196,9 @@ function User(props) {
                         <h3 className="ml-4">c.	Đăng ký Visual face</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Visual face</p>
-                            <img src="./images/4.5.png" className="w-100" />
+                            <img alt="images" src="./images/4.5.png" className="w-100" />
                             <p className="ml-4">Cửa sổ sau sẽ xuất hiện</p>
-                            <img src="./images/4.6.png" className="w-100" />
+                            <img alt="images" src="./images/4.6.png" className="w-100" />
                             <p className="ml-4">B5: Chọn thiết bị</p>
                             <p className="ml-4">B6: Bấm thêm, tải lên hoặc chọn Visual face cần cập nhật </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
@@ -210,9 +210,9 @@ function User(props) {
                         <h3 className="ml-4">d.	Đăng ký thẻ</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Thẻ</p>
-                            <img src="./images/4.7.png" className="w-100" />
+                            <img alt="images" src="./images/4.7.png" className="w-100" />
                             <p className="ml-4">Cửa sổ sau sẽ xuất hiện</p>
-                            <img src="./images/4.8.png" className="w-100" />
+                            <img alt="images" src="./images/4.8.png" className="w-100" />
                             <p className="ml-4">B5: Chọn loại thẻ (hiện tại chỉ hỗ trợ CSN) </p>
                             <p className="ml-4">B6: Chọn thiết bị</p>
                             <p className="ml-4">B7: Nhập mã thẻ để đọc thẻ hoặc thêm từ thẻ có sẵn (nút dấu cộng) </p>
@@ -227,22 +227,22 @@ function User(props) {
                         <div className="content-item" >
                             <p className="my-3 ml-2"><i> <b>Lưu ý</b>: chỉ có thể huỷ hợp đồng nếu nhân viên có thông tin về hợp đồng (Ngày ký hợp đồng, thời hạn hợp đồng, ...)</i></p>
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Bấm đúp chuột vào dòng nhân viên cần huỷ hợp đồng</p>
-                            <img src="./images/5-2.png" className="w-100" />
+                            <img alt="images" src="./images/5-2.png" className="w-100" />
                             <p className="">B3: <a href="#screen-update">Ở cửa sổ mới</a>, tìm đến mục Thông tin hợp đồng</p>
-                            <img src="./images/5.1.png" className="w-100" />
+                            <img alt="images" src="./images/5.1.png" className="w-100" />
                             <p className="">B4: Bấm nút Kết thúc hợp đồng Cửa sổ sau sẽ xuất hiện</p>
-                            <img src="./images/5.2.png" className="w-100" />
+                            <img alt="images" src="./images/5.2.png" className="w-100" />
                             <p>B5: Chọn ngày kết thúc hợp đồng và nhập lý do kết thúc </p>
                             <p>B6: Chọn Kết thúc hợp đồng</p>
                             <p>B7: Bấm Lưu để cập nhật thông tin </p>
                             <p className="mt-3">Trường hợp cần khôi phục hợp đồng</p>
-                            <img src="./images/5.3.png" className="w-100" />
+                            <img alt="images" src="./images/5.3.png" className="w-100" />
                             <p>
                                 Thực hiện tương tự từ B1 &minus;&gt; B3<br/><br /> B4: Bấm nút Cập nhật <br /><br />Cửa sổ sau sẽ xuất hiện
                             </p>
-                            <img src="./images/5.4.png" className="w-100" />
+                            <img alt="images" src="./images/5.4.png" className="w-100" />
                             <p>B5: Bấm khôi phục hợp đồng</p>
                             <p>B6: Bấm lưu để cập nhật thông tin</p>
                         </div>
@@ -253,10 +253,10 @@ function User(props) {
                         <h2>6.	Xoá (ẩn) nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn nhân viên </p>
                             <p className="">B3: Bấm nút <b>Vô hiệu hóa</b></p>
-                            <img src="./images/6.1.png" className="w-100" />
+                            <img alt="images" src="./images/6.1.png" className="w-100" />
                         </div>
                     </div>
                 </section>
@@ -265,12 +265,12 @@ function User(props) {
                         <h2>7.	Kích hoạt lại nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
-                            <img src="./images/7.1.png" className="w-100" />
+                            <img alt="images" src="./images/7.1.png" className="w-100" />
                             <p className="">B3: Chọn nhân viên</p>
                             <p className="">B4: Bấm nút Kích hoạt lại</p>
-                            <img src="./images/7.4.png" className="w-100" />
+                            <img alt="images" src="./images/7.4.png" className="w-100" />
                         </div>
                     </div>
                 </section>
@@ -279,12 +279,12 @@ function User(props) {
                         <h2>8.	Xóa nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
-                            <img src="./images/del-user-1.png" className="w-100" />
+                            <img alt="images" src="./images/del-user-1.png" className="w-100" />
                             <p className="">B3: Chọn nhân viên</p>
                             <p className="">B4: Bấm nút Xóa</p>
-                            <img src="./images/del-user-2.png" className="w-100" />
+                            <img alt="images" src="./images/del-user-2.png" className="w-100" />
                             <p>
                             Sau khi xoá, danh sách này sẽ không xuất hiện. 
                             </p>
@@ -296,12 +296,12 @@ function User(props) {
                         <h2>9.	Đồng bộ đến thiết bị</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn nhân viên</p>
                             <p className="">B3: Bấm nút Đồng bộ đến thiết bị</p>
-                            <img src="./images/8.3.png" className="w-100" />
+                            <img alt="images" src="./images/8.3.png" className="w-100" />
                             <p>B4: Nếu có cửa sổ xuất hiện, chọn nhóm thiết bị cần đồng bộ và bấm <b>Đồng ý</b>:</p>
-                            <img src="./images/8.4.png" className="w-100" />
+                            <img alt="images" src="./images/8.4.png" className="w-100" />
                         </div>
                     </div>
                 </section>
@@ -311,14 +311,14 @@ function User(props) {
                         <h2>10.	Xuất dữ liệu nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
-                            <img src="./images/4.png" />
+                            <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn phòng ban, chức vụ để lọc ra danh sách nhân viên muốn xuất file</p>
                             <p className="">B3: Chọn Xuất file</p>
-                            <img src="./images/10.1.png" className="w-100" />
+                            <img alt="images" src="./images/10.1.png" className="w-100" />
                             <p>Cửa sổ sau xuất hiện:</p>
-                            <img src="./images/10.2.png" className="w-100" />
+                            <img alt="images" src="./images/10.2.png" className="w-100" />
                             <p>B4: Chọn thêm các tiêu đề cần thiết để xuất dữ liệu</p>
-                            <img src="./images/10.3.png" className="w-100" />
+                            <img alt="images" src="./images/10.3.png" className="w-100" />
                             <p>B5: Bấm xuất file để tải file (csv)</p>
                         </div>
                     </div>
@@ -336,9 +336,9 @@ function User(props) {
                         <h2>12.	Khai báo y tế dành cho nhân viên</h2>
                         <div className="content-item" >
                             <p className="ml-4">B1: Chọn theo hình dưới và bấm Khai báo y tế</p>
-                            <img src="./images/12.1.png" />
+                            <img alt="images" src="./images/12.1.png" />
                             <p>B2: Tab mới sẽ xuất hiện</p>
-                            <img src="./images/12.2.png" className="w-100" />
+                            <img alt="images" src="./images/12.2.png" className="w-100" />
                             <p>B3: Điền thông tin bắt buộc và bấm <b>Lưu</b></p>
                         </div>
                     </div>

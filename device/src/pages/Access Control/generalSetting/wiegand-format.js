@@ -17,8 +17,8 @@ function WiegandFormat(props) {
                 <section>
                     <div >
                         <div className="content-item" >
-                            <img src="./images/wiegand-format-1.png" className="w-25 mb-3" />   
-                            <img src="./images/wiegand-format-2.png" className="w-100 mb-3" />   
+                            <img alt="images" src="./images/wiegand-format-1.png" className="w-25 mb-3" />   
+                            <img alt="images" src="./images/wiegand-format-2.png" className="w-100 mb-3" />   
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -42,7 +42,7 @@ function WiegandFormat(props) {
                     <div id="add-edit">
                         <h2>1.	 Xem hoặc sửa dữ liệu format</h2>
                         <div className="content-item" >
-                            <img src="./images/wiegand-format-3.png" className="w-100 mb-3" />  
+                            <img alt="images" src="./images/wiegand-format-3.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

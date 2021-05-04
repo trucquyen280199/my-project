@@ -13,6 +13,7 @@ class Content extends React.Component {
         this.setState.currentCommand = command;
         this.setState({currentCommand: command});
     }
+
     slide (){
         var toc = document.querySelector( '.toc' );
         var tocPath = document.querySelector( '.toc-marker path' );
@@ -139,6 +140,7 @@ class Content extends React.Component {
         }
     }
 
+    
     componentDidMount() {
         this.action("/Dashboard");
     }
@@ -149,7 +151,7 @@ class Content extends React.Component {
                 {
                     this.props.listComponent
                         .filter(item => item.path === this.state.currentCommand)
-                        .map((item, index) => <div key={index} onLoad={this.slide}>
+                        .map((item, index) => <div key={index} onLoad={this.slide}  >
                             {React.cloneElement(
                                 item.view, {"command": this.props.command}
                             )}

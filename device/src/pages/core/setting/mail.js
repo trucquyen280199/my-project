@@ -24,8 +24,8 @@ function Mail(props) {
                     <div id="configuration-mail">
                         <h2>1.	Cấu hình mail</h2>
                         <div className="content-item" >
-                            <img src='./images/mail/mail-1.png' className="mb-3 w-25" />
-                            <img src='./images/mail/mail-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/mail/mail-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/mail/mail-2.png' className="mb-3 w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -68,8 +68,8 @@ function Mail(props) {
                     <div id="compose">
                         <h2>2.	Soạn thư</h2>
                         <div className="content-item" >
-                            <img src='./images/mail/mail-3.png' className="mb-3 w-25" />
-                            <img src='./images/mail/mail-4.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/mail/mail-3.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/mail/mail-4.png' className="mb-3 w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -112,8 +112,8 @@ function Mail(props) {
                     <div id="sent-messages">
                         <h2>3.	Thư đã gửi</h2>
                         <div className="content-item" >
-                            <img src='./images/mail/mail-5.png' className="mb-3 w-25" />
-                            <img src='./images/mail/mail-6.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/mail/mail-5.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/mail/mail-6.png' className="mb-3 w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

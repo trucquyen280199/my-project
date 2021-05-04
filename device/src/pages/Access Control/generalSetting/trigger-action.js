@@ -15,8 +15,8 @@ function TriggerAction(props) {
                 <section>
                     <div>
                         <div className="content-item" >
-                            <img src="./images/trigger-action-1.png" className="w-25 mb-3" /> 
-                            <img src="./images/trigger-action-1-2.png" className="w-100 mb-3" /> 
+                            <img alt="images" src="./images/trigger-action-1.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/trigger-action-1-2.png" className="w-100 mb-3" /> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -50,7 +50,7 @@ function TriggerAction(props) {
                     <div id="add-edit">
                         <h2>1. Thêm hoặc sửa</h2>
                         <div className="content-item" >
-                            <img src="./images/trigger-action-2.png" className="w-100 mb-3" />  
+                            <img alt="images" src="./images/trigger-action-2.png" className="w-100 mb-3" />  
                             <p>Ghi chú:</p> 
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -80,7 +80,7 @@ function TriggerAction(props) {
                                     </tr>
                                 </tbody>
                             </table>
-                            <img src="./images/trigger-action-3.png" className="w-100" />
+                            <img alt="images" src="./images/trigger-action-3.png" className="w-100" />
                             <p>Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

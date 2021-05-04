@@ -24,8 +24,8 @@ function Monitoring(props) {
                     <div id="log-list">
                         <h2>1.	Danh sách nhật ký</h2>
                         <div className="content-item" >
-                            <img src='./images/log-list-1.png' className="mb-3 w-25" />
-                            <img src='./images/log-list-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/log-list-1.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/log-list-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -50,8 +50,8 @@ function Monitoring(props) {
                     <div id="log-real-time">
                         <h2>2.	Nhật ký thời gian thực</h2>
                         <div className="content-item" >
-                            <img src='./images/log-real-time.png' className="mb-3 w-25" />
-                            <img src='./images/log-real-time-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/log-real-time.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/log-real-time-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table " >
                                 <tbody>
@@ -76,8 +76,8 @@ function Monitoring(props) {
                     <div id="door-status">
                         <h2>3.	Trạng thái cửa</h2>
                         <div className="content-item" >
-                            <img src='./images/door-status.png' className="mb-3 w-25" />
-                            <img src='./images/door-status-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/door-status.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/door-status-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -122,8 +122,8 @@ function Monitoring(props) {
                     <div id="elevator-status">
                         <h2>4.	Trạng thái thang máy</h2>
                         <div className="content-item" >
-                            <img src='./images/elevator-status.png' className="mb-3 w-25" />
-                            <img src='./images/elevator-status-1-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/elevator-status.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/elevator-status-1-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -160,8 +160,8 @@ function Monitoring(props) {
                     <div id="zone-status">
                         <h2>5. Trạng thái Zone</h2>
                         <div className="content-item" >
-                            <img src='./images/zone-status.png' className="mb-3 w-25" />
-                            <img src='./images/zone-status-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/zone-status.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/zone-status-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -196,8 +196,8 @@ function Monitoring(props) {
                     <div id="graphic-view">
                         <h2>6.	Bản đồ</h2>
                         <div className="content-item" >
-                            <img src='./images/graphic-view.png' className="mb-3 w-25" />
-                            <img src='./images/graphic-view-2.png' className="mb-3 w-100" />
+                            <img alt="images" src='./images/graphic-view.png' className="mb-3 w-25" />
+                            <img alt="images" src='./images/graphic-view-2.png' className="mb-3 w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

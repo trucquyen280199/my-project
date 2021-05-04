@@ -40,7 +40,6 @@ p{
     margin-bottom: 0;
 }
 img{
-    /* margin-left: 60px; */
     display: flex;
     margin: 10px auto;
 }
@@ -55,6 +54,9 @@ img.w-img{
     background: rgb(240 242 244 / 68%);
     padding-top: 6px ;
     padding-bottom: 6px ;
+}
+.titleMenu:first-child{
+    border-top: none;
 }
 .titleMenu{
     position: relative;

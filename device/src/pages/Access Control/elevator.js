@@ -22,8 +22,8 @@ function Elevator(props) {
                         <p>
                         Bạn có thể cấu hình thang máy để kiểm soát các tầng bằng thiết bị kiểm soát ra vào và OM-120 bằng cách sử dụng menu elevator.
                         </p>
-                        <img src="./images/elevator-1-1.png" className="" />
-                        <img src="./images/elevator-1-2.png" className="w-100" />
+                        <img alt="images" src="./images/elevator-1-1.png" className="" />
+                        <img alt="images" src="./images/elevator-1-2.png" className="w-100" />
                         <p className="font-weight-bold">Ghi chú:</p>
                         <table className="table table-list d-flex w-100 mt-3">
                             <tbody>
@@ -55,7 +55,7 @@ function Elevator(props) {
                     <div id="add-edit-elevator">
                         <h2>1. Thêm hoặc sửa thang máy</h2>
                         <div className="content-item">
-                            <img src="./images/elevator-2.png" className="w-100" />
+                            <img alt="images" src="./images/elevator-2.png" className="w-100" />
                             <p className="font-weight-bold">Ghi chú:</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>

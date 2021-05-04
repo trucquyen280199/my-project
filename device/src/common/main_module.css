@@ -87,7 +87,7 @@ div{
 
     #left.open,#right.open{
         transition:0.4s;
-        width: 200px;
+        width: 184px;
     }
 
     #left .sidebar,#right .sidebar{
