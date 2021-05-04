@@ -44,18 +44,18 @@ function ImportFiles(props) {
                         </div>
                     </div>
                     <div id="download-files">
-                        <h3 className="ml-4">1.a	Tải file</h3>
+                        <h3 className="ml-4">a.	Tải file</h3>
                         <div className="content-item" >
                             <img src="./images/import-files-download.png"  className="w-100" />
                             <p className="ml-4">B2: Bấm <b>Nút chọn file</b> và chọn file cần tải (có thể chọn nhiều file) hoặc kéo file cần tải vào vùng
                             <b> Danh sách file đang chọn</b>.
                             </p>
-                            <p className="ml-4">B3: Bấm <span>Nút tải (lưu) file</span> để lưu file.</p>
-                            <p className="ml-4 font-weight-bold">Lưu ý: Chỉ hỗ trợ tải file .csv.</p>
+                            <p className="ml-4">B3: Bấm <b>Nút tải (lưu) file</b> để lưu file.</p>
+                            <p className="my-2"><i> <b>Lưu ý</b>: Chỉ hỗ trợ tải file .csv.</i></p>
                         </div>
                     </div>
                     <div id="open-file">
-                        <h3 className="ml-4">1.b	Mở file</h3>
+                        <h3 className="ml-4">b.	Mở file</h3>
                         <div className="content-item" >
                             <img src="./images/import-files-2.png" className="w-100" />
                             <p className="ml-4">B2: Bấm vào dòng của file cần chọn ở vùng <b>Files của bạn</b> file đó sẽ được đọc và hiển thị trên vùng
@@ -76,14 +76,14 @@ function ImportFiles(props) {
                         </div>
                     </div>
                     <div id="download-sample-file">
-                        <h3 className="ml-4">2.a	Tải file mẫu.</h3>
+                        <h3 className="ml-4">a.	Tải file mẫu.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B2: Bấm vào danh mục cần tải file mẫu, hệ thống sẽ tự tải file.</p>
-                            <p className="ml-4 font-weight-bold font-italic">Lưu ý: Có một số danh mục chưa hỗ trợ.</p>
+                            <p className="my-2"><i> <b>Lưu ý</b>: Có một số danh mục chưa hỗ trợ.</i></p>
                         </div>
                     </div>
                     <div id="view-code">
-                        <h3 className="ml-4">2.b	Xem mã code của các danh mục.</h3>
+                        <h3 className="ml-4">b.	Xem mã code của các danh mục.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B2: Bấm vào danh mục cần xem mã code. Cửa sổ sau sẽ xuất hiện.</p>
                             <img src="./images/import-files-view-code-1.png" className="w-100" />
@@ -102,7 +102,7 @@ function ImportFiles(props) {
                         </div>
                     </div>
                     <div id="from-sample-file">
-                        <h3 className="ml-4">3.a	Từ file mẫu.</h3>
+                        <h3 className="ml-4">a.	Từ file mẫu.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B1: Từ menu chọn <b>Home &gt; Người dùng &gt; Nhập file</b></p>
                             <img src="./images/import-files-1-1.png" className="w-25" />
@@ -127,7 +127,7 @@ function ImportFiles(props) {
                         </div>
                     </div>
                     <div id="from-available-file">
-                        <h3 className="ml-4">3.b	Từ file có sẵn.</h3>
+                        <h3 className="ml-4">b.	Từ file có sẵn.</h3>
                         <div className="content-item" >
                             <p className="ml-4">B1: Tải file. <a href="#download-files"> Xem cách tải file</a>. </p>
                             <p className="ml-4 mb-3">B1: Tải file. <a href="#download-open-files"> Xem cách đọc file</a>. </p>
@@ -185,8 +185,8 @@ function ImportFiles(props) {
                             <li>Lưu ý:
                                 <ul className="type-dash">
                                     <li>Phải <b>gắn đủ các nhãn (khoá) bắt buộc</b> thì mới có thể import nhân viên.</li>
-                                    <li>Sau khi đã import xong, nếu <b>tất cả các dòng thông tin</b> của file <b>đều lưu thành công</b>
-                                    thì file đó sẽ <b>tự động xoá</b>. Nếu có dòng thông tin thất bại sẽ hiện pop-up sau (file cũ
+                                    <li>Sau khi đã import xong, nếu <b>tất cả các dòng thông tin</b> của file <b>đều lưu thành công </b>
+                                     thì file đó sẽ <b>tự động xoá</b>. Nếu có dòng thông tin thất bại sẽ hiện pop-up sau (file cũ
                                     không bị xoá). Tải file để xem chi tiết các dòng bị thất bại.
                                     <img src="../images/import-files-note.png" />
                                     </li>

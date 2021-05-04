@@ -6,7 +6,6 @@ import MainModule from './common/MainModule';
 import Loading from "./common/Loading";
 
 import User from './pages/core/user';
-import UserGroup from './pages/core/user-group';
 import ImportFiles from './pages/core/importFiles';
 import Module from './pages/core/setting/module';
 import CoreCategory from './pages/core/setting/core-category';
@@ -52,7 +51,6 @@ function App() {
         
         {view: <Dashboard showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Dashboard"},
         {view: <User  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/User"},
-        {view: <UserGroup  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/UserGroup"},
         {view: <ImportFiles  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ImportFiles"},
         {view: <Module showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Module"},
         {view: <CoreCategory showLoading={showLoading} hideLoading={hideLoading}/>, path: "/CoreCategory"},

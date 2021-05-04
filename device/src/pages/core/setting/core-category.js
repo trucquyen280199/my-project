@@ -85,7 +85,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-custom-departments">
-                        <h3 className="ml-4">1.a Thêm phòng ban tuỳ chỉnh</h3>
+                        <h3 className="ml-4">a. Thêm phòng ban tuỳ chỉnh</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Bấm <b>Thêm</b> tuỳ chỉnh</p>
@@ -110,7 +110,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-specific-departments">
-                        <h3 className="ml-4">1.b	Thêm phòng ban cụ thể</h3>
+                        <h3 className="ml-4">b.	Thêm phòng ban cụ thể</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cha cần tạo và bấm <b>thêm</b></p>
@@ -124,8 +124,8 @@ function CoreCategory(props) {
                             <img src="./images/core-category-6-1.png" className="w-100 mb-3" />
                             <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
-                            Lưu ý:
-                            <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span>
+                            Lưu ý:<br/>
+                            <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span><br/>
                             <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
                             <span className="ml-3">-	Chỉ có thể tạo thành công ty nếu tổ chức mẹ là công ty</span>
@@ -134,7 +134,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-departments">
-                        <h3 className="ml-4">1.c	Cập nhật phòng ban</h3>
+                        <h3 className="ml-4">c.	Cập nhật phòng ban</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cần cập nhật và bấm <b>cập nhật</b></p>
@@ -160,7 +160,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-departments">
-                        <h3 className="ml-4">1.d	Xoá phòng ban</h3>
+                        <h3 className="ml-4">d.	Xoá phòng ban</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#group-users">Xem tại đây</a></p>
                             <p>B2: Tìm phòng ban cần xoá và bấm nút <b>xoá</b></p>
@@ -201,7 +201,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-nationality-category">
-                        <h3 className="ml-4">2.a	Thêm danh mục quốc tịch</h3>
+                        <h3 className="ml-4">a.	Thêm danh mục quốc tịch</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>Thêm</b></p>
@@ -220,7 +220,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-nationality-category">
-                        <h3 className="ml-4">2.b	Cập nhật danh mục quốc tịch</h3>
+                        <h3 className="ml-4">b.	Cập nhật danh mục quốc tịch</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục quốc gia cần cập nhật và <b>bấm đúp chuột</b> vào dòng đó</p>
@@ -239,7 +239,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-nationality-category">
-                        <h3 className="ml-4">2.c	Xoá danh mục quốc tịch</h3>
+                        <h3 className="ml-4">c.	Xoá danh mục quốc tịch</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#nationality-category">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục quốc gia cần xoá và bấm nút <b>xoá</b></p>
@@ -275,7 +275,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-category-province">
-                        <h3 className="ml-4">3.a Thêm danh mục tỉnh thành</h3>
+                        <h3 className="ml-4">a. Thêm danh mục tỉnh thành</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
@@ -296,7 +296,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-category-province">
-                        <h3 className="ml-4">3.b	Cập nhật danh mục tỉnh thành</h3>
+                        <h3 className="ml-4">b.	Cập nhật danh mục tỉnh thành</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục tỉnh thành cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
@@ -317,7 +317,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-category-province">
-                        <h3 className="ml-4">3.c	Xoá danh mục tỉnh thành</h3>
+                        <h3 className="ml-4">c.	Xoá danh mục tỉnh thành</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-province">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục tỉnh thành cần xoá và bấm nút <b>xoá</b></p>
@@ -353,7 +353,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-category-people">
-                        <h3 className="ml-4">4.a	Thêm danh mục dân tộc</h3>
+                        <h3 className="ml-4">a.	Thêm danh mục dân tộc</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
@@ -373,7 +373,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-category-people">
-                        <h3 className="ml-4">4.b	Cập nhật danh mục dân tộc</h3>
+                        <h3 className="ml-4">b.	Cập nhật danh mục dân tộc</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục dân tộc cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
@@ -393,7 +393,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-category-people">
-                        <h3 className="ml-4">4.c	Xoá danh mục dân tộc</h3>
+                        <h3 className="ml-4">c.	Xoá danh mục dân tộc</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-people">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục dân tộc cần xoá và bấm nút <b>xoá</b></p>
@@ -429,7 +429,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-category-position">
-                        <h3 className="ml-4">5.a	Thêm danh mục dân tộc</h3>
+                        <h3 className="ml-4">a.	Thêm danh mục dân tộc</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
@@ -448,7 +448,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-category-position">
-                        <h3 className="ml-4">5.b	Cập nhật danh mục chức vụ</h3>
+                        <h3 className="ml-4">b.	Cập nhật danh mục chức vụ</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục chức vụ cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
@@ -467,7 +467,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-category-position">
-                        <h3 className="ml-4">5.c	Xoá danh mục chức vụ</h3>
+                        <h3 className="ml-4">c.	Xoá danh mục chức vụ</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-position">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục chức vụ cần xoá và bấm nút <b>xoá</b></p>
@@ -506,7 +506,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="add-category-skill">
-                        <h3 className="ml-4">6.a	Thêm danh mục kỹ năng</h3>
+                        <h3 className="ml-4">a.	Thêm danh mục kỹ năng</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Bấm nút <b>thêm</b></p>
@@ -525,7 +525,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="update-category-skill">
-                        <h3 className="ml-4">6.b	Cập nhật danh mục kỹ năng</h3>
+                        <h3 className="ml-4">b.	Cập nhật danh mục kỹ năng</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Tìm danh mục kỹ năng cần cập nhật và <b>bấm đúp chuột </b>vào dòng đó</p>
@@ -544,7 +544,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-category-skill">
-                        <h3 className="ml-4">6.c	Xoá danh mục kỹ năng</h3>
+                        <h3 className="ml-4">c.	Xoá danh mục kỹ năng</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#category-skill">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục kỹ năng cần xoá và bấm nút <b>xoá</b></p>
@@ -557,7 +557,7 @@ function CoreCategory(props) {
                 <section>
                     <div id="add-update-registered-guests">
                         <h2>7.	Danh mục loại khách đăng ký</h2>
-                        <h3 className="ml-4">7.a	Thêm/cập nhật danh mục loại khách đăng ký</h3>
+                        <h3 className="ml-4">a.	Thêm/cập nhật danh mục loại khách đăng ký</h3>
                         <div className="content-item ml-5" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>Khách</b> &gt; <b>Cài đặt </b> &gt; <b> Loại khách đăng ký </b></p>
                             <img src="./images/core-category-46.png" className="w-25 mb-3" /> 
@@ -596,7 +596,7 @@ function CoreCategory(props) {
                         </div>
                     </div>
                     <div id="delete-registered-guests">
-                        <h3 className="ml-4">7.b	Xoá danh mục loại khách đăng ký</h3>
+                        <h3 className="ml-4">b.	Xoá danh mục loại khách đăng ký</h3>
                         <div className="content-item" >
                             <p>B1: <a href="#add-update-registered-guests">Xem tại đây</a></p>
                             <p>B2: Chọn danh mục loại khách cần xoá và bấm <b>Xoá</b></p>

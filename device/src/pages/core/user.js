@@ -43,7 +43,7 @@ function User(props) {
                 <section>
                     <div id="screen-main">
                         <h2>1. Giải thích các màn hình</h2>
-                        <h3 className=" ml-4">1.a Màn hình chính</h3>
+                        <h3 className=" ml-4">a. Màn hình chính</h3>
                         <div className="content-item" >
                             <img src='./images/manhinhchinh1.png' className="w-100 mb-3" />
                             <p>Bộ lọc và các nút</p>
@@ -73,7 +73,7 @@ function User(props) {
                         </div>
                     </div>
                     <div id="screen-update">
-                        <h3 className="ml-4">1.b Màn hình của mẫu thêm/cập nhật nhân viên</h3>
+                        <h3 className="ml-4">b. Màn hình của mẫu thêm/cập nhật nhân viên</h3>
                         <div className="content-item" >
                             <img src='./images/3.png' className="w-100" />
                             <table className="table mt-3">
@@ -165,7 +165,7 @@ function User(props) {
                         </div>
                     </div>
                     <div id="fingerprint-registration">
-                        <h3 className="ml-4">4.a	Đăng ký vân tay</h3>
+                        <h3 className="ml-4">a.	Đăng ký vân tay</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Vân tay</p>
                             <img src="./images/4.1.png" className="w-100" />
@@ -174,12 +174,12 @@ function User(props) {
                             <p className="ml-4">B5: Chọn thiết bị và Chất lượng</p>
                             <p className="ml-4">B6: Bấm thêm hoặc chọn vân tay cần cập nhật </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
-                            <p className="ml-4">B8: Bấm đồng ý để lưu thông tin</p>
-                            <p style={{fontWeight: "700"}}>Lưu ý: có thể xoá vân tay bằng cách chọn vân tay cần xoá &gt; Bấm xoá</p>
+                            <p className="ml-4 mb-3">B8: Bấm đồng ý để lưu thông tin</p>
+                            <p><i> <b>Lưu ý</b>: có thể xoá vân tay bằng cách chọn vân tay cần xoá &gt; Bấm xoá</i></p>
                         </div>
                     </div>
                     <div id="face-registration">
-                        <h3 className="ml-4">4.b	Đăng ký khuôn mặt</h3>
+                        <h3 className="ml-4 mt-3">b.	Đăng ký khuôn mặt</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Vân tay</p>
                             <img src="./images/4.3.png" className="w-100" />
@@ -189,11 +189,11 @@ function User(props) {
                             <p className="ml-4">B6: Bấm thêm hoặc chọn khuôn mặt cần cập nhật  </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
                             <p className="ml-4">B8: Bấm đồng ý để lưu thông tin</p>
-                            <p style={{fontWeight: "700"}}>Lưu ý: có thể xoá khuôn mặt bằng cách chọn khuôn mặt cần xoá &gt; Bấm xoá</p>
+                            <p className="my-3"><i> <b>Lưu ý</b>: có thể xoá khuôn mặt bằng cách chọn khuôn mặt cần xoá &gt; Bấm xoá</i></p>
                         </div>
                     </div>
                     <div id="visual-face-registration">
-                        <h3 className="ml-4">4.c	Đăng ký Visual face</h3>
+                        <h3 className="ml-4">c.	Đăng ký Visual face</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Visual face</p>
                             <img src="./images/4.5.png" className="w-100" />
@@ -203,11 +203,11 @@ function User(props) {
                             <p className="ml-4">B6: Bấm thêm, tải lên hoặc chọn Visual face cần cập nhật </p>
                             <p className="ml-4">B7: Bấm quét để tiến hành lấy mẫu</p>
                             <p className="ml-4">B8: Bấm đồng ý để lưu thông tin</p>
-                            <p style={{fontWeight: "700"}}>Lưu ý: có thể xoá Visual face bằng cách chọn Visual face cần xoá &gt; Bấm xoá</p>
+                            <p className="my-3"><i> <b>Lưu ý</b>: có thể xoá Visual face bằng cách chọn Visual face cần xoá &gt; Bấm xoá</i></p>
                         </div>
                     </div>
                     <div id="card-registration">
-                        <h3 className="ml-4">4.c	Đăng ký thẻ</h3>
+                        <h3 className="ml-4">d.	Đăng ký thẻ</h3>
                         <div className="content-item" >
                             <p className="ml-4">B4: Chọn nút Thẻ</p>
                             <img src="./images/4.7.png" className="w-100" />
@@ -217,7 +217,7 @@ function User(props) {
                             <p className="ml-4">B6: Chọn thiết bị</p>
                             <p className="ml-4">B7: Nhập mã thẻ để đọc thẻ hoặc thêm từ thẻ có sẵn (nút dấu cộng) </p>
                             <p className="ml-4">B8: Bấm đồng ý để lưu thông tin</p>
-                            <p style={{fontWeight: "700"}}>Lưu ý: có thể xoá thẻ bằng cách bấm nút xoá ở cuối dòng</p>
+                            <p className="mt-3"><i> <b>Lưu ý</b>: có thể xoá thẻ bằng cách bấm nút xoá ở cuối dòng</i></p>
                         </div>
                     </div>
                 </section>
@@ -225,7 +225,7 @@ function User(props) {
                     <div id="end-of-contract">
                         <h2>5.	Kết thúc hợp đồng</h2>
                         <div className="content-item" >
-                            <p className="ml-4" style={{fontWeight: "700"}}>Lưu ý: chỉ có thể huỷ hợp đồng nếu nhân viên có thông tin về hợp đồng (Ngày ký hợp đồng, thời hạn hợp đồng, ...)</p>
+                            <p className="my-3 ml-2"><i> <b>Lưu ý</b>: chỉ có thể huỷ hợp đồng nếu nhân viên có thông tin về hợp đồng (Ngày ký hợp đồng, thời hạn hợp đồng, ...)</i></p>
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img src="./images/4.png" />
                             <p>B2: Bấm đúp chuột vào dòng nhân viên cần huỷ hợp đồng</p>
@@ -237,10 +237,10 @@ function User(props) {
                             <p>B5: Chọn ngày kết thúc hợp đồng và nhập lý do kết thúc </p>
                             <p>B6: Chọn Kết thúc hợp đồng</p>
                             <p>B7: Bấm Lưu để cập nhật thông tin </p>
-                            <p>Trường hợp cần khôi phục hợp đồng</p>
+                            <p className="mt-3">Trường hợp cần khôi phục hợp đồng</p>
                             <img src="./images/5.3.png" className="w-100" />
                             <p>
-                                Thực hiện tương tự từ B1 &minus;&gt; B3<br/> B4: Bấm nút Cập nhật <br />Cửa sổ sau sẽ xuất hiện
+                                Thực hiện tương tự từ B1 &minus;&gt; B3<br/><br /> B4: Bấm nút Cập nhật <br /><br />Cửa sổ sau sẽ xuất hiện
                             </p>
                             <img src="./images/5.4.png" className="w-100" />
                             <p>B5: Bấm khôi phục hợp đồng</p>

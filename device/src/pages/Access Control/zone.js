@@ -8,7 +8,6 @@ function Zone(props) {
                     <li className="link"><a href="#fire-alarm-zone">Cảnh báo cháy</a></li>
                     <li className="link"><a href="#scheduled-lock-zone">Khóa theo lịch trình</a></li>
                     <li className="link"><a href="#scheduled-unlock-zone">Mở khóa theo lịch trình</a></li>
-                    {/* <li className="link"><a href="#intrusion-alarm-zone">Intrusion Alarm Zone</a></li> */}
                     <li className="link"><a href="#interlock-zone">Khóa liên động</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">

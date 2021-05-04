@@ -48,7 +48,7 @@ class LeftMenu extends React.Component {
                     {this.state.openCore ?
                         this.props.menuListCore.map((item, index) => {
                             if (item.isSingle) {
-                                return <MenuItem key={index} linkTo={item.linkTo}
+                                return <MenuItem key={index} linkTo={item.linkTo} 
                                                 menuName={item.menuName} action={this.action}
                                                 currentAction={this.state.currentCommand}/>
                             } else {
@@ -73,6 +73,7 @@ class LeftMenu extends React.Component {
                     :null
                 }
                 <div className="titleMenu p-0">
+
                     {    
                         this.props.menuListVisit.map((item, index) => {
                             if (item.isSingle) {

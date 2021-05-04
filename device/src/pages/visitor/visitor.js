@@ -1,5 +1,4 @@
 import React from "react";
-// import "../Access Control/style.css";
 
 function Visitor(props) {
     return(
@@ -237,19 +236,19 @@ function Visitor(props) {
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Chọn hình ảnh (<a href=""> giao diện upload</a>)</td>
+                                        <td>Chọn hình ảnh (<a href="#interfaceUpload"> giao diện upload</a>)</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Chọn hình ảnh cmnd/cccd mặt trước (<a href="">giao diện upload</a>)</td>
+                                        <td>Chọn hình ảnh cmnd/cccd mặt trước (<a href="#interfaceUpload">giao diện upload</a>)</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Chọn hình ảnh cmnd/cccd mặt sau (<a href="">giao diện upload</a>)</td>
+                                        <td>Chọn hình ảnh cmnd/cccd mặt sau (<a href="#interfaceUpload">giao diện upload</a>)</td>
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Giao diên upload</p>
+                            <p id="interfaceUpload">Giao diên upload</p>
                             <p className="ml-3">- USB:</p>
                             <img src="./images/upload-interface.png" className="w-100 mb-3" />
                             <p>Danh sách thiết bị chụp ảnh của máy tính / điện thoại đang truy cập<br/>
@@ -286,12 +285,12 @@ function Visitor(props) {
                             <p className="ml-5">o Chọn thiết bị Face trong danh sách thiết bị.</p>
                             <p className="ml-5">o Bấm nút <b>Lấy mẫu</b>, sau khi thiết bị chụp xong sẽ hiển thị hinh ở mục hình ảnh.</p>
                             <p className="ml-5">o Bấm nút <b>Lưu</b> khi thực hiện xong.</p>
-                            <p className="ml-3">Lấy thông qua <b>thiết bị USB</b>: (giao diện upload)</p>
-                            <p className="ml-3">Lấy thông qua upload file: (giao diện upload)</p>
+                            <p className="ml-3">Lấy thông qua <b>thiết bị USB</b>: (<a href="#interfaceUpload"> giao diện upload</a>)</p>
+                            <p className="ml-3">Lấy thông qua upload file: (<a href="#interfaceUpload">giao diện upload</a>)</p>
                             <p className="my-3">B4: Chụp hình ảnh <b>CMND/CCCD</b> tương tự như trên</p>
                             <p>B5: Nếu có mục khai báo y tế<br/>
-                            Bấm nút Khai báo y tế<br/>
-                            (<a href=""> Xem hướng dẫn khai báo y tế</a>)</p>
+                            Bấm nút Khai báo y tế
+                            (<a href="#health-declaration"> Xem hướng dẫn khai báo y tế</a>)</p>
                             <p>B7: Bấm nút <b>Đăng ký</b> để hoàn thành.<br/>
                                 Nếu cần kiểm tra nhiệt độ của khách, bấm nút <b>Nhiệt độ</b> ở góc phải trên.</p>
                             <img src="./images/visitor-18.png" className="w-100 mb-3" />
@@ -470,7 +469,7 @@ function Visitor(props) {
                             - Nhiệt độ
                             </p>
                             <p>Điều chỉnh các thông tin</p>
-                            <p className="mt-3">B4: Bấm nút Lưu để lưu thông tin mới.</p>
+                            <p className="mt-3">B4: Bấm nút <b>Lưu</b> để lưu thông tin mới.</p>
                         </div>
                     </div>
                 </section>
@@ -503,7 +502,7 @@ function Visitor(props) {
                                 </tbody>
                             </table>
                             <p>Chọn danh sách khách cần từ chối.</p>
-                            <p>
+                            <p className="mt-3">
                                 B3: Bấm nút <b>Xoá (4)</b> nếu chỉ từ chối 1 khách đó, hoặc bấm nút <b>Xoá (1)</b> nếu danh sách nhiều hơn 1.<br/>
                                 B4: Sau đó có cửa sổ xuất hiện, nhập <b>lý do</b> từ chối (nếu cần thiết).
                             </p>
@@ -676,7 +675,7 @@ function Visitor(props) {
                                 </tbody>
                             </table>
                             <p>Chọn mẫu vân tay cần cập nhật ở <b>vùng (5)</b> hoặc bấm nút <b>Thêm (4)</b> để tạo mẫu mới.</p>
-                            <p>
+                            <p className="mt-3">
                                 B4: Chọn thiết bị thực hiện lấy mẫu.<br/>
                                 B5: Bấm nút <b>Quét (6)</b> để lấy mẫu, hình ảnh mẫu vân tay mới sau khi quét thành công sẽ hiện thỉ ở <b>vùng (9)</b>.<br/>
                                 B6: Sau khi hoàn tất lấy mẫu mới, huỷ mẫu cũ, ... bấm nút <b>Đồng ý (8)</b> để cập nhật.<br/><br/>
@@ -720,7 +719,7 @@ function Visitor(props) {
                                 </tr>
                                 </tbody>
                             </table>
-                            <p>Chọn thẻ đăng ký cho khách.</p>
+                            <p>Chọn thẻ đăng ký cho khách.</p><br/>
                             <p>
                             B4: Bấm nút <b>Lưu</b> để lưu thông tin cập nhật.<br/><br/>
                             Trường hợp xoá thẻ cho khách, bấm nút <b>Xoá thẻ</b> và xác nhận xoá.
@@ -813,7 +812,7 @@ function Visitor(props) {
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận hoặc Danh sách hết hạn</b>.</p>
                             <img src="./images/checkOut-settings-1.png" className="w-25 mb-3" /> 
-                            <p>B2: Chọn danh sách khách =&gt; Bấm nút Thiết lập kiểm tra ra ở trên cùng hoặc chọn Thiết lập kiểm tra ra ở từng khách</p>
+                            <p>B2: Chọn danh sách khách =&gt; Bấm nút <b>Thiết lập kiểm tra ra</b> ở trên cùng hoặc chọn <b>Thiết lập kiểm tra ra</b> ở từng khách</p>
                             <img src="./images/checkOut-settings-2.png" className="w-100 mb-3" />
                             <p>B3: Nếu khách chưa check-in =&gt; Thông báo: “Chưa có kiểm tra ra”<br/>
                             Nếu lần cuối kiểm tra là loại <b>vào</b>:
@@ -829,9 +828,6 @@ function Visitor(props) {
                         </div>
                     </div>
                 </section>
-
-
-
                 <section>
                     <div id="visitor-list-expire">
                         <h2>19.	Xem danh sách khách hết hạn</h2>
@@ -1077,7 +1073,7 @@ function Visitor(props) {
                     </div>
                 </section>
                 <section>
-                    <div id="monitoring-visitor">t nnn
+                    <div id="monitoring-visitor">
                         <h2>22.	Giám sát khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Giám sát khách</b>.</p>
@@ -1170,7 +1166,7 @@ function Visitor(props) {
                             <img src="./images/visitor-45.png" className="w-100 mb-3" /> 
                             <p className="text-center font-italic">Hình 1 Thiết bị (với ID là 543614266) được gán 2 chức năng Ra - Vào</p>
                             <img src="./images/visitor-46.png" className="w-100 mb-3" />
-                            <p className="text-center font-italic">Hình 2 Thiết bị (với ID là 241617276) chỉ được gán 1 chức năng (Vào)</p>
+                            <p className="text-center font-italic mb-3">Hình 2 Thiết bị (với ID là 241617276) chỉ được gán 1 chức năng (Vào)</p>
                             <p>B1: Tuỳ vào tình hình thực tế, chọn <b>Vào</b>Vào hoặc <b>Ra</b> để xác định loại kiểm tra. <br/>
                                 B2: Sau khi chọn loại vào – ra.
                             </p>
