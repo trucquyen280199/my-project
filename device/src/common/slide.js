@@ -5,9 +5,6 @@ const Slides  = () => {
 	var tocPath = document.querySelector( '.toc-marker path' );
 	var slide = document.querySelector( '.pageTest' );
 	var tocItems;
-
-	// Factor of screen size that the element must cross
-	// before it's considered visible
 	var TOP_MARGIN = 0.1,
 		BOTTOM_MARGIN = 0.2;
 
@@ -25,7 +22,6 @@ const Slides  = () => {
 
 		tocItems = [].slice.call( toc.querySelectorAll( '.link' ) );
 
-		// Cache element references and measurements
 		tocItems = tocItems.map( function( item ) {
 			var anchor = item.querySelector( 'a' );
 			var target = document.getElementById( anchor.getAttribute( 'href' ).slice( 1 ) );
@@ -37,7 +33,6 @@ const Slides  = () => {
 			};
 		} );
 
-		// Remove missing targets
 		tocItems = tocItems.filter( function( item ) {
 			return !!item.target;
 		} );
@@ -56,13 +51,11 @@ const Slides  = () => {
 				item.pathStart = 0;
 			}
 			else {
-				// Draw an additional line when there's a change in
-				// indent levels
+				
 				if( pathIndent !== x ) path.push( 'L', pathIndent, y );
 
 				path.push( 'L', x, y );
 
-				// Set the current path so that we can measure it
 				tocPath.setAttribute( 'd', path.join( ' ' ) );
 				item.pathStart = tocPath.getTotalLength() || 0;
 
@@ -109,8 +102,6 @@ const Slides  = () => {
 
 		} );
 
-		// Specify the visible path or hide the path altogether
-		// if there are no visible items
 		if( visibleItems > 0 && pathStart < pathEnd ) {
 			if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
 				tocPath.setAttribute( 'stroke-dashoffset', '1' );

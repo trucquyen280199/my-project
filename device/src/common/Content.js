@@ -20,8 +20,6 @@ class Content extends React.Component {
         var slide = document.querySelector( '.pageTest' );
         var tocItems;
 
-        // Factor of screen size that the element must cross
-        // before it's considered visible
         var TOP_MARGIN = 0.1,
             BOTTOM_MARGIN = 0.2;
 
@@ -38,7 +36,6 @@ class Content extends React.Component {
 
             tocItems = [].slice.call( toc.querySelectorAll( '.link' ) );
 
-            // Cache element references and measurements
             tocItems = tocItems.map( function( item ) {
                 var anchor = item.querySelector( 'a' );
                 var target = document.getElementById( anchor.getAttribute( 'href' ).slice( 1 ) );
@@ -50,7 +47,6 @@ class Content extends React.Component {
                 };
             } );
 
-            // Remove missing targets
             tocItems = tocItems.filter( function( item ) {
                 return !!item.target;
             } );
@@ -69,13 +65,10 @@ class Content extends React.Component {
                     item.pathStart = 0;
                 }
                 else {
-                    // Draw an additional line when there's a change in
-                    // indent levels
                     if( pathIndent !== x ) path.push( 'L', pathIndent, y );
 
                     path.push( 'L', x, y );
 
-                    // Set the current path so that we can measure it
                     tocPath.setAttribute( 'd', path.join( ' ' ) );
                     item.pathStart = tocPath.getTotalLength() || 0;
 
@@ -122,8 +115,6 @@ class Content extends React.Component {
 
             } );
 
-            // Specify the visible path or hide the path altogether
-            // if there are no visible items
             if( visibleItems > 0 && pathStart < pathEnd ) {
                 if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
                     tocPath.setAttribute( 'stroke-dashoffset', '1' );
@@ -140,10 +131,10 @@ class Content extends React.Component {
         }
     }
 
-    
     componentDidMount() {
         this.action("/Dashboard");
     }
+    
 
     render() {
         return (
@@ -151,7 +142,7 @@ class Content extends React.Component {
                 {
                     this.props.listComponent
                         .filter(item => item.path === this.state.currentCommand)
-                        .map((item, index) => <div key={index} onLoad={this.slide}  >
+                        .map((item, index) => <div key={index} onLoad={this.slide} >
                             {React.cloneElement(
                                 item.view, {"command": this.props.command}
                             )}

@@ -35,6 +35,7 @@ class LeftMenu extends React.Component {
         this.props.action(command);
         this.setState({currentCommand: command});
     }
+    
     componentDidMount() {
         this.setState({currentCommand: "/modules"});
     }

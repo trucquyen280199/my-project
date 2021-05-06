@@ -7,9 +7,11 @@ class Loading extends React.Component{
             isShow:false
         }
     }
+
     showLoading(isShow){
         this.setState({isShow:isShow})
     }
+    
     render() {
         let display = this.state.isShow?"flex":"none"
         return(

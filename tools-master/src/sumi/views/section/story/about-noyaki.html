@@ -1,0 +1,175 @@
+<section class="about-noyaki">
+    <div class="slider-feature">
+        <div class="cursor2">
+            <div class="cursor__circle"></div>
+        </div>
+        <div class="next-slider" id="nxt"  cursor2-class="arrow"></div>
+        <ul class="s">
+            
+            <li class="item">
+                <img src="./assets/images/thumb/story-slide-1.jpg.webp" />
+                <div class="content">
+                    <p class="label">About Fil</p>
+                    <div class="content-txt">
+                        <p class="title">Millennium Meadow</p>
+                        <div>
+                            <p class="txt">
+                                The "millennial grassland" spreads over the gentle hills. 
+                                It is a trajectory where livestock and agriculture coexist with nature, and it is also a landscape that symbolizes the connection between nature and people. 
+                                People living in Aso have used a technique called "open burning" to maintain this beautiful grassland for over a thousand years.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <img src="./assets/images/thumb/story-slide-2.jpg.webp" />
+                <div class="content">
+                    <p class="label">About Fil</p>
+                    <div class="content-txt">
+                        <p class="title">Business and livelihood</p>
+                        <div class="scroll-text">
+                            <p class="txt">
+                                If the grasslands are left untouched, the environment will change due to the effects of pests and alien species and the bushing of grasslands, resulting in a decline in biodiversity. 
+                                In addition, open burning helps the buds of flowers and plays a role in waking up a small life waiting for spring from sleep. 
+                                By having both nature's activities and people's livelihoods, a rich landscape is maintained.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <img src="./assets/images/thumb/story-slide-3.jpg.webp" />
+                <div class="content">
+                    <p class="label">About Fil</p>
+                    <div class="content-txt">
+                        <p class="title">Deep and strong connection</p>
+                        <p class="txt">
+                            Even in Minamioguni, where FIL is based, "open burning" is held every year, and the staff also participates. 
+                            Think about the coexistence of nature and people, and experience the culture of maintaining the landscape appropriately. 
+                            In addition, by fostering deep connections with the people who live in the area, we would like to preserve this beautiful landscape where many lives live until the distant future.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="dots"></div>
+    </div>
+</section>
+<script>
+    $(function(){
+
+        var cursor = $('.cursor2');
+        var cursorCircle = cursor.find('.cursor__circle');
+        var mouse = { x: -100, y: -100 };
+        var pos = { x: 0, y: 0 }; 
+        var speed = 0.1; 
+
+        function updateCoordinates(e) {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        }
+
+        window.addEventListener('mousemove', updateCoordinates);
+
+
+        function getAngle(diffX, diffY) {
+            return Math.atan2(diffY, diffX) * 180 / Math.PI;
+        }
+
+        function getSqueeze(diffX, diffY) {
+            var distance = Math.sqrt(
+                Math.pow(diffX, 2) + Math.pow(diffY, 2)
+            );
+            var maxSqueeze = 0.15;
+            var accelerator = 1000;
+            return Math.min(distance / accelerator, maxSqueeze);
+        }
+
+
+        function updateCursor(){
+            var diffX = Math.round(mouse.x - pos.x);
+            var diffY = Math.round(mouse.y - pos.y);
+        
+            pos.x += diffX * speed;
+            pos.y += diffY * speed;
+        
+            var angle = getAngle(diffX, diffY);
+            var squeeze = getSqueeze(diffX, diffY);
+            
+            var scale = 'scale(' + (1 + squeeze) + ', ' + (1 - squeeze) +')';
+            var rotate = 'rotate(' + angle +'deg)';
+            $(cursor).css({
+                    "transform": "translate3d(" + pos.x + "px," + pos.y  + "px, 0)"
+                });
+            $(cursorCircle).css({
+                "transform" : rotate + scale
+            })
+            // $(cursor).style.transform = 'translate3d(' + pos.x + 'px ,' + pos.y + 'px, 0)';
+
+            //  = translate ;
+            // cursorCircle.style.transform = rotate + scale;
+        };
+
+        function loop() {
+            updateCursor();
+            requestAnimationFrame(loop);
+        }
+
+        requestAnimationFrame(loop);
+        var cursorModifiers = document.querySelectorAll('[cursor2-class]');
+
+        cursorModifiers.forEach(curosrModifier => {
+            curosrModifier.addEventListener('mouseenter', function() {
+                var className = this.getAttribute('cursor2-class');
+                $(cursor).addClass(className);
+            });
+            
+            curosrModifier.addEventListener('mouseleave', function() {
+                var className = this.getAttribute('cursor2-class');
+                $(cursor).removeClass(className);
+            });
+        });
+
+
+	    var $slider = $('.slider-feature'),
+		 	$s = $slider.find(".s"),
+			$sliderLi = $s.find(".item"),
+			count = $sliderLi.length,
+			$dots = $slider.find(".dots"),
+            $nxt = $slider.find("#nxt");
+            // Make the first slider active
+            $sliderLi.first().addClass("active");
+            // Count and add nav dots
+            $sliderLi.each(function(){
+                $dots.append("<li/>");
+            });	
+            $dots.find("li").first().addClass("active");
+            // Change slider on dot click
+            $dots.find("li").click(function(){
+                var $this = $(this);
+                var i = $this.index();
+                next(i);	
+            });
+            $nxt.click(function(){
+                move_to_next();
+            });
+            function move_to_next(){
+                var i;
+                if($s.find("li").last().hasClass("active"))
+                    i=0;
+                else
+                    i= $s.find("li.active").next().index();
+                next(i);
+            }
+            
+            // Next Engine	
+            function next(i){
+                $dots.find("li.active").removeClass("active");
+                $dots.find("li").eq(i).addClass("active");
+                $s.find("li.active").removeClass("active");
+                $sliderLi.eq(i).addClass("active");
+            }	
+        });
+</script>

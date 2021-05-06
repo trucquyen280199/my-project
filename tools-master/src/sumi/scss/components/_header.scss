@@ -66,7 +66,7 @@ header{
     border-radius: 50%;
     margin-top: 10vh;
     cursor: pointer;
-    transition: transform .65s cubic-bezier(.215,.61,.355,1) 0s,background .65s cubic-bezier(.39,.575,.565,1) 0s,border .65s cubic-bezier(.39,.575,.565,1) 0s,-webkit-transform .65s cubic-bezier(.215,.61,.355,1) 0s;
+    transition: width 0.65s, height 0.65s ,transform .65s cubic-bezier(.215,.61,.355,1) 0s,background .65s cubic-bezier(.39,.575,.565,1) 0s,border .65s cubic-bezier(.39,.575,.565,1) 0s,-webkit-transform .65s cubic-bezier(.215,.61,.355,1) 0s;
     &:hover{
         width: 60px;
         height: 60px;

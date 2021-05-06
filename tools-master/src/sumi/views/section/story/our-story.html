@@ -1,0 +1,35 @@
+<section class="our-story bg-static">
+    <div class="bg-move">Fulfilling Life</div>
+    <div class="d-flex flex-wrap">
+        <div class="content-image col-md-6 px-0">
+            <img src="./assets/images/thumb/story-intro.jpg.webp" alt="">
+        </div>
+        <div class="content-text col-md-6">
+            <div class="d-flex justify-content-between">
+                <div class="content">
+                    <p class="theme">"Fulfilling Life"</p>
+                    <p class="sub-theme">What is a "full life"</p>
+                    <p class="text">
+                        Based on the concept of "Fulfilling life", FIL manufactures products that capture the nature and landscape of Aso and Minamioguni, culture and values, and the deep and strong connection between nature and people as important materials. 
+                        Through our products, we will ask society to think about the essential affluence of "what is a full life" and spread the importance of living in a satoyama that coexists with nature to the world.
+                    </p>
+                </div>
+                <div class="title">
+                    <p>Our story</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(window).on("load resize scroll", function() {
+        $(".bg-static").each(function() {
+            var windowTop = $(window).scrollTop();
+            var elementTop = $(this).offset().top;
+            var leftPosition = windowTop - elementTop;
+            $(this)
+                .find(".bg-move")
+                .css({ left:leftPosition });
+        });
+    });
+</script>

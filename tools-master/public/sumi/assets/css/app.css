@@ -4971,6 +4971,437 @@ header .header-inner .header-nav ul li a {
   margin-top: -223px;
 }
 
+.header-story {
+  height: 100vh;
+  width: 100vw;
+  background: url("../../assets/images/thumb/story-hero.jpg.webp");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-shadow: 0 51px 38px -22px #1a1a1a inset, 0 -98px 47px -22px #1a1a1a inset;
+  box-shadow: 0 51px 38px -22px #1a1a1a inset, 0 -98px 47px -22px #1a1a1a inset;
+}
+
+.header-story .title {
+  font-size: 77px;
+  font-weight: 200;
+  white-space: nowrap;
+}
+
+.header-story .content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  padding: 0 5rem;
+}
+
+.header-story .content .line {
+  width: 60px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin-right: 15px;
+  -webkit-transform-origin: 0 50% 0;
+  -ms-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.header-story .content .text {
+  font-size: 17px;
+}
+
+.header-story .scroll {
+  height: 100px;
+}
+
+.header-story .scroll .t {
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 17px;
+}
+
+.header-story .scroll .t:hover .c {
+  bottom: 0;
+}
+
+.header-story .scroll .t .b {
+  position: relative;
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-story .scroll .t .c {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  color: #fff;
+  border: 1px solid blue;
+  z-index: 99;
+}
+
+.header-story .scroll .t .c:hover {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.our-story {
+  padding: 100px 0 100px 10vw;
+  height: 100vh;
+  position: relative;
+}
+
+.our-story .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  white-space: nowrap;
+  width: auto;
+  font-size: 300px;
+  font-weight: 400;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #a9aaac;
+}
+
+.our-story .content-image img {
+  position: relative;
+  width: 18vw;
+  max-width: 320px;
+  pointer-events: auto;
+  margin: auto;
+}
+
+.our-story .content-text {
+  background: black;
+  height: 100vh;
+  margin-top: -30vh;
+  padding: 20vh 0 10vh 10vw;
+}
+
+.our-story .content-text .d-flex .content {
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+  max-width: 360px;
+  pointer-events: auto;
+}
+
+.our-story .content-text .d-flex .content .theme {
+  font-size: 50px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.our-story .content-text .d-flex .content .sub-theme {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.our-story .content-text .d-flex .content .text {
+  font-size: 14px;
+}
+
+.our-story .content-text .d-flex .title {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  color: #686868;
+  margin-top: 8vh;
+}
+
+.our-story .content-text .d-flex .title p {
+  font-size: 16px;
+}
+
+.about-noyaki {
+  height: 100%;
+  margin-bottom: 20vh;
+}
+
+.about-noyaki .next-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 40;
+  pointer-events: all;
+}
+
+.about-noyaki .slider-feature {
+  position: relative;
+  cursor: pointer;
+}
+
+.about-noyaki .slider-feature .label {
+  font-size: 14px;
+  color: #868686;
+  margin-bottom: 1em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.about-noyaki .slider-feature .cursor2 {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  top: -15px;
+  pointer-events: none;
+}
+
+.about-noyaki .slider-feature .cursor2 .cursor__circle {
+  width: 10px;
+  height: 10px;
+  margin-top: -50%;
+  margin-left: -50%;
+  border-radius: 50%;
+  -webkit-transition: opacity 2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 1s cubic-bezier(0.25, 1, 0.5, 1), width 1s cubic-bezier(0.25, 1, 0.5, 1), height 1s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 2s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 1s cubic-bezier(0.25, 1, 0.5, 1), width 1s cubic-bezier(0.25, 1, 0.5, 1), height 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.about-noyaki .slider-feature .cursor2.arrow .cursor__circle {
+  width: 110px;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about-noyaki .slider-feature .cursor2.arrow::after {
+  content: "Next";
+  position: absolute;
+  font-size: 14px;
+  left: -50%;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.about-noyaki .slider-feature .cursor2.subtle .cursor__circle {
+  opacity: 0.5;
+}
+
+.about-noyaki .slider-feature .cursor2.overlay .cursor__circle {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(227, 222, 193, 0.08);
+  border-color: transparent;
+}
+
+.about-noyaki .slider-feature .next {
+  border: 1px solid red;
+  z-index: 999;
+  height: 100px;
+  width: 100px;
+  background: #868686;
+}
+
+.about-noyaki .s {
+  height: 100vh;
+  list-style: none;
+  width: 100%;
+  margin: 60px 0;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.about-noyaki .s li.item {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 0;
+  text-align: center;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.about-noyaki .s li.item.active {
+  display: block;
+  top: unset;
+  left: unset;
+  right: unset;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-noyaki .s li.item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about-noyaki .s li.item .content {
+  z-index: 90;
+  height: 455px;
+  opacity: 10;
+  position: absolute;
+  right: 10vw;
+  bottom: -70px;
+  width: calc(26.66667vw - 23.5px);
+  max-width: 360px;
+  cursor: default;
+  background: white;
+  padding: 20px 35px 70px;
+}
+
+.about-noyaki .s li.item .content .content-txt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  z-index: auto;
+}
+
+.about-noyaki .s li.item .content .title {
+  -webkit-transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
+  transition: transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s, opacity 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s, visibility 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s, -webkit-transform 0.65s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.16 !important;
+  vertical-align: baseline;
+  text-align: left !important;
+  font-weight: 200;
+  width: 100%;
+  color: #111;
+}
+
+.about-noyaki .s li.item .content .scroll-text {
+  max-height: 270px;
+  padding-bottom: 3rem;
+  pointer-events: all;
+  overflow-y: auto;
+}
+
+.about-noyaki .s li.item .content .txt {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.015em;
+  text-align: left;
+  color: #444;
+}
+
+.about-noyaki .dots {
+  list-style: none;
+  padding: 0 35px;
+  margin: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  right: 10vw;
+  z-index: 12;
+  bottom: -50px;
+  width: calc(26.66667vw - 23.5px);
+  max-width: 360px;
+}
+
+.about-noyaki .dots li {
+  width: 5px;
+  height: 5px;
+  margin-right: 20px;
+  background: silver;
+  display: inline-block;
+  border-radius: 75px;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: transform 0.35s cubic-bezier(0.26, 1, 0.48, 1) 0.35s, background 0.35s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.35s cubic-bezier(0.26, 1, 0.48, 1) 0.35s;
+}
+
+.about-noyaki .dots li:hover {
+  background: black;
+}
+
+.about-noyaki .dots li:last-child {
+  margin-right: 0;
+}
+
+.about-noyaki .dots li.active {
+  width: 11px;
+  height: 11px;
+  background-color: transparent;
+  border: 1px solid #444;
+  transition: transform 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s, -webkit-transform 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+
 .products-list .cursor {
   position: fixed;
   z-index: 99;

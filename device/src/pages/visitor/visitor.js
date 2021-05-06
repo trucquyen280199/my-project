@@ -765,8 +765,8 @@ function Visitor(props) {
                             <img alt="images" src="./images/synchronize-authorization-1.png" className="w-100 mb-3" />
 
                             <p>B3: Chọn danh sách khách cần đồng bộ.<br/>
-                                B4: Bấm nút <b>Đồng bộ các uỷ quyền (5)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút
-                                <b>Đồng bộ các uỷ quyền (1)</b> nếu danh sách nhiều hơn 1.<br/>
+                                B4: Bấm nút <b>Đồng bộ các uỷ quyền (5)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút 
+                                <b> Đồng bộ các uỷ quyền (1)</b> nếu danh sách nhiều hơn 1.<br/>
                                 Các <b>mẫu vân tay, thẻ</b> và <b>khuôn mặt</b> của khách sẽ được <b>đồng bộ</b> đến các <b>nhóm truy cập được chọn</b>.
                             </p>
                         </div>
