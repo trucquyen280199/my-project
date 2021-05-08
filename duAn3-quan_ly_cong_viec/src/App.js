@@ -4,20 +4,51 @@ import TaskForm from './component/taskForm';
 import TaskControl from './component/Control';
 import TaskList from './component/TaskList';
 
-function App(props) {
-    let [taskList, setTaskList] = useState([]);
-    let [states, setStates] = useState({
-        isDisplayForm : false,
-        keyword : '',
-        filterName : '',
-        filterStatus : '-1',
-        itemEditing : null,
-        sortBy : 'name',
-        sortValue : 1
-    })
+class App extends Component {
+ 
+    constructor(props){
+        super(props);
+        this.state={
+            tasks: [],
+            isDisplayForm : false,
+            itemEditing : null,
+            filter: {
+                name: '',
+                status:  -1
+            },
+            keyword : '',
+            sortBy: 'name',
+            sortValue: 1,
+        };
+    }
 
-    const findIndex = (id) =>{
-        var tasks = taskList;
+    componentDidMount() {
+        if(localStorage && localStorage.getItem('tasks')){
+            var tasks = JSON.parse(localStorage.getItem('tasks'));
+            this.setState({
+                tasks : tasks
+            });
+        }
+    }
+
+    hideAddItem(){
+        this.setState({
+            isDisplayForm: false
+        });
+    }
+
+    showAddItem = () =>{
+        this.setState({
+            isDisplayForm: true
+        });
+    }
+
+    s4() {
+        return  Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+    }
+
+    findIndex = (id) =>{
+        var { tasks } = this.state;
         var result = -1;
         tasks.forEach((task, index) => {
             if(task.id === id){
@@ -27,155 +58,195 @@ function App(props) {
         return result;
     }
 
-    function componentDidMount() {
-        if(localStorage && localStorage.getItem('tasks')){
-            var tasks = JSON.parse(localStorage.getItem('tasks'));
-            setTaskList(tasks)
-        }
+    createID() {
+        return this.s4() + this.s4();
     }
 
-    function hideAddItem(){
-        setStates({
-            isDisplayForm: false
-        });
-    }
-
-    const showAddItem = () =>{
-        setStates({
-            isDisplayForm: true
-        });
-    }
-
-    function s4() {
-        return  Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-    }
-
-    function createID() {
-        return s4() + s4();
-    }
-
-    const onSubmit = (data) => {
-        var tasks = taskList;
-        data.id = createID();
+    onSubmit = (data) => {
+        var tasks = this.state.tasks;
+        data.id = this.createID();
         tasks.push(data);
-        setTaskList(tasks);
+        this.setState({tasks: tasks})
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
-    const onUpdateStatus = (id) => { 
-        var tasks = taskList;
-        var index = findIndex(id);
+    onUpdateStatus = (id) => { 
+        var tasks = this.state.tasks;
+        var index = this.findIndex(id);
         tasks[index].status = !tasks[index].status;
-        setTaskList(tasks);
-        // props.onUpdateStatus(props.task.id);
+        this.setState({
+            tasks : tasks
+        })
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
     
-    const onDeleteTask = (id) => {
-        var tasks = taskList;
-        var index = findIndex(id);
+    onDeleteTask = (id) => {
+        var tasks = this.state.tasks;
+        var index = this.findIndex(id);
         tasks.splice(index, 1);
-        setTaskList(tasks);
+        this.setState({tasks: tasks})
         localStorage.setItem('tasks', JSON.stringify(tasks));
-        onExitForm();
+        this.onExitForm();
     }
 
-    const onSearch = (keyword) => {
-        setStates({
+    onSearch = (keyword) => {
+        this.setState({
             keyword : keyword
         });
     }
 
-    const onFilter = (filterName, filterStatus) => {
-        setStates({
-            filterName : filterName,
-            filterStatus : filterStatus
+    onFilter = (filterName, filterStatus) => {
+        filterStatus = parseInt(filterStatus, 10);
+        this.setState({
+            filter: {
+                name: filterName.toLowerCase(),
+                status: filterStatus
+            }
         });
     }
 
-    const onSelectedItem = (item) => {
-        setStates({
+    onSelectedItem = (item) => {
+        this.setState({
             itemEditing : item,
             isDisplayForm : true
         })
     }
 
-    const onSort = (sortBy, sortValue) => {
-        setStates({
-            sortBy : sortBy,
-            sortValue : sortValue
+    onSort = (sortBy, sortValue) => {
+        this.setState({
+            sortBy: sortBy,
+            sortValue: sortValue
         })
     }
 
-    const onToggleForm = () => {
-        if(states.itemEditing !== null){
-            setStates({
+    onToggleForm = () => {
+        if(this.state.itemEditing !== null){
+            this.setState({
                 itemEditing : null
             });
         }else{
-            setStates({
-                isDisplayForm : !states.isDisplayForm
+            this.setState({
+                isDisplayForm : !this.state.isDisplayForm
             });
         }
     }
 
-    const onExitForm = () =>{
-        setStates({
+    onExitForm = () =>{
+        this.setState({
             isDisplayForm : false,
             itemEditing : null
         });
     }
     
-    const onSave = (data) => {
-        var tasks = taskList;
+    onSave = (data) => {
+        var tasks = this.state.tasks;
         data.status = data.status === 'true' ? true : false;
         if(data.id === ''){
-            data.id = createID();
+            data.id = this.createID();
             tasks.push(data);
         }else{
-            var index = findIndex(data.id);
+            var index = this.findIndex(data.id);
             tasks[index] = data;
         }
-        setTaskList(tasks);
+        this.setState({tasks: tasks})
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
-    return (
-        <div className="App">
-            <div className="container"> 
-                <div className="text-center"> 
-                    <h1>Quản Lý Công Việc</h1> 
-                </div> 
-                <div className="row border py-3"> 
-                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
-                        { states.isDisplayForm ? <TaskForm onSave={onSave}
-                                hideAddItem={ hideAddItem } 
-                                onSubmit={ onSubmit } 
-                                onExitForm={onExitForm}
-                                
-                                /> : ''} 
+    render(){
+        var {
+            tasks,
+            isDisplayForm,
+            keyword, 
+            filter,
+            itemEditing,
+            sortBy,
+            sortValue,
+
+        } = this.state;
+
+        if(filter){
+            if(filter.name){
+                tasks = tasks.filter((task)=>{
+                    return task.name.toLowerCase().indexOf(filter.name) !== -1;
+                });
+            }
+            // if(filter.status){
+                tasks = tasks.filter((task)=>{
+                    if(filter.status === -1){
+                        return task;
+                    } else{
+                        return task.status === (filter.status === 1 ? true : false)
+                    }
+                });
+            // }
+        }
+
+        if(keyword){
+            tasks = tasks.filter((task)=>{
+                return task.name.toLowerCase().indexOf(keyword) !== -1;
+            })
+        }
+
+        if(sortBy === 'name'){
+            tasks.sort((a, b)=>{
+                if(a.name > b.name){
+                    return sortValue;
+                } else if(a.name < b.name){
+                    return -sortValue;
+                } else{
+                    return 0;
+                }
+            })
+        } else {
+            tasks.sort((a, b)=>{
+                if(a.status > b.status){
+                    return -sortValue;
+                } else if(a.status < b.status){
+                    return sortValue;
+                } else{
+                    return 0;
+                }
+            })
+        }
+
+        var elmForm = isDisplayForm === true ? <TaskForm
+                                                    onSave={ this.onSave }
+                                                    onExitForm={ this.onExitForm }
+                                                    itemEditing={ itemEditing }
+                                                    /> : '';
+        return (
+            <div className="App">
+                <div className="container"> 
+                    <div className="text-center"> 
+                        <h1>Quản Lý Công Việc</h1> 
                     </div> 
-                    <div className={ states.isDisplayForm ? "col-8 text-left": "col-12 text-left" }> 
-                        <button type="button" className="btn btn-primary" onClick={ onToggleForm } > 
-                            + Thêm Công Việc 
-                        </button> 
-                        <TaskControl
-                            onSearch={onSearch}
-                            onSort={onSort}
-                            sortBy={states.sortBy}
-                            sortValue={states.sortValue}
-                        />
-                        <TaskList tasks={taskList}
-                            onUpdateStatus={ onUpdateStatus }
-                            onDeleteTask={ onDeleteTask }
-                            filterName={states.filterName}
-                            filterStatus={states.filterStatus}
-                            onFilter={onFilter}
-                            onSelectedItem={onSelectedItem} /> 
+                    <div className="row border py-3"> 
+                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                            { elmForm } 
+                        </div> 
+                        <div className={ this.state.isDisplayForm ? "col-8 text-left": "col-12 text-left" }> 
+                            <button type="button" className="btn btn-primary" onClick={ this.onToggleForm } > 
+                                + Thêm Công Việc 
+                            </button> 
+                            <TaskControl
+                                onSearch={ this.onSearch }
+                                onSort={ this.onSort }
+                                sortBy={ sortBy }
+                                sortValue={ sortValue }
+                            />
+                            <TaskList tasks={ tasks }
+                                onUpdateStatus={ this.onUpdateStatus }
+                                onDeleteTask={ this.onDeleteTask }
+                                // filterName={ filterName }
+                                // filterStatus={ filterStatus }
+                                onFilter={ this.onFilter }
+                                onSelectedItem={ this.onSelectedItem } /> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
+    
 }
 export default App;

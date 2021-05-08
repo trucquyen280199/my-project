@@ -3419,7 +3419,7 @@ header .header-inner .header-nav ul li a {
   border-radius: 50%;
   margin-top: 10vh;
   cursor: pointer;
-  transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, background 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, border 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  transition: width 0.65s, height 0.65s, transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, background 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, border 0.65s cubic-bezier(0.39, 0.575, 0.565, 1) 0s, -webkit-transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
 .g-menu-btn:hover {

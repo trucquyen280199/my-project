@@ -30,3 +30,11 @@ ul li{
 table thead th{
     text-align: center;
 }
+.sort-selected::after{
+    content: "✔";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin:  0 0 0 10px;
+    color: rgb(42, 189, 13);
+}

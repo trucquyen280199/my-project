@@ -1,46 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function TaskItem(props) {
+class TaskItem extends Component{
 
-    function showStatusElement(){
+    showStatusElement(){
         return (
             <span
-                className={ props.task.status ? 'label label-danger' : 'label label-info' } 
-                onClick={ onUpdateStatus }
-            >{ props.task.status === true ? 'Kích Hoạt' : 'Ẩn' }</span>
+                className={ this.props.task.status ? 'text-danger' : 'text-info' } 
+                onClick={ this.onUpdateStatus }
+            >{ this.props.task.status === true ? 'Kích Hoạt' : 'Ẩn' }</span>
         );
     }
 
-    const onUpdateStatus = () => {
-        props.onUpdateStatus(props.task.id);
+    onUpdateStatus = () => {
+        this.props.onUpdateStatus(this.props.task.id);
     }
 
-    const onDeleteItem = () => {
-        props.onDeleteTask(props.task.id);
+    onDeleteItem = () => {
+        this.props.onDeleteTask(this.props.task.id);
     }
 
-    const onSelectedItem = () => {
-        props.onSelectedItem(props.task);
+    onSelectedItem = () => {
+        this.props.onSelectedItem(this.props.task);
     }
-
-    return (
-        <tr>
-            <td>{props.index}</td>
-            <td>{props.task.name }</td>
-            <td className="text-center">
-                { showStatusElement() }
-            </td>
-            <td className="text-center">
-                <button type="button" className="btn btn-warning" onClick={ onSelectedItem} >
-                    Sửa
-                </button>
-                &nbsp;
-                <button type="button" className="btn btn-danger" onClick={onDeleteItem}>
-                    Xóa
-                </button>
-            </td>
-        </tr>
-    );
+    render(){
+        return (
+            <tr>
+                <td>{this.props.index}</td>
+                <td>{this.props.task.name }</td>
+                <td className="text-center">
+                    { this.showStatusElement() }
+                </td>
+                <td className="text-center">
+                    <button type="button" className="btn btn-warning" onClick={ this.onSelectedItem} >
+                        Sửa
+                    </button>
+                    &nbsp;
+                    <button type="button" className="btn btn-danger" onClick={ this.onDeleteItem}>
+                        Xóa
+                    </button>
+                </td>
+            </tr>
+        );
+    }
 }
 
 export default TaskItem;
