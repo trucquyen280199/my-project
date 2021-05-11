@@ -5,16 +5,15 @@ function ListOfStaffTimekeep(props) {
         <div className="pages pageTest importFiles d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-guide-image">Hình ảnh hướng dẫn tạo</a></li>
+                    <li className="link"><a href="#create-guide-image">Hình ảnh hướng dẫn</a></li>
                     <li className="link"><a href="#add-list-staff">Thêm danh nhân viên chấm công</a> </li>
-                    <li className="link"> <a href="#Delete-list-staff">Xóa danh sách nhân viên chấm công</a> </li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
                 </svg>
             </nav>
             <article className="contents" id="contents">
-                <h2 className="text-center">Tạo danh sách nhân viên chấm công</h2>
+                <h2 className="text-center">DANH SÁCH NHÂN VIÊN CHẤM CÔNG</h2>
                 <section>
                     <div id="create-guide-image">
                         <h2>1.	Hình ảnh hướng dẫn tạo</h2>
@@ -24,15 +23,7 @@ function ListOfStaffTimekeep(props) {
                             <table className="table">
                                 <tr>
                                     <td>1</td>
-                                    <td>Thêm</td>
-                                    <td>3</td>
-                                    <td>Xóa nhân viên</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Chọn nhân viên</td>
-                                    <td>4</td>
-                                    <td>Tìm kiếm theo mã nhân viên hoặc họ và tên</td>
+                                    <td>Nhập và chọn để tìm </td>
                                 </tr>
                             </table>
                         </div>
@@ -44,11 +35,10 @@ function ListOfStaffTimekeep(props) {
                         <div className="content-item" >
                             <ul className="list">
                                 <li> 
-                                    <p><span className="icon">&#10146;</span> Bạn nhấn vào nút <b>Thêm (1)</b> bên trên màn hình ( Hình 02 ) &minus;&#10095; xuất hiện hình (Hình 03) bên dưới</p>
-                                    <img src='./images/list-of-staff-timekeep-2.png' className="mb-3 w-75" />  
-                                    <p className="text-center">Hình 03</p> 
+                                    <p><span className="icon">&#10146;</span> Bạn nhập và chọn vào ô 1 bên trên màn hình ( Hình 02 ) &minus;&#10095; Nhấn tìm enter để tìm thông tin</p>
+                                    
                                 </li>
-                                <li><span className="icon">&#10146;</span> Số 8 là danh sách nhân viên.</li>
+                                {/* <li><span className="icon">&#10146;</span> Số 8 là danh sách nhân viên.</li>
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 1 theo hình vẽ (Hình 03) bên trên màn hình &minus;&#10095; để thực hiện thao tác lọc
                                 bỏ những nhân viên đã được tạo trước ra khỏi danh sách nhân viên.
                                 </li>
@@ -77,12 +67,12 @@ function ListOfStaffTimekeep(props) {
                                 <li>
                                 <span className="icon">&#10146;</span> Bạn nhấn vào số 7 theo hình vẽ (Hình 03) bên trên màn hình &minus;&#10095; để thực hiện thao tác
                                 thoát khỏi màn hình thêm
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section>
+                {/* <section>
                     <div id="Delete-list-staff">
                         <h2>3.	Xóa danh sách nhân viên chấm công</h2>
                         <div className="content-item" >
@@ -102,7 +92,7 @@ function ListOfStaffTimekeep(props) {
                             </ul>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </article>
         </div>
     )

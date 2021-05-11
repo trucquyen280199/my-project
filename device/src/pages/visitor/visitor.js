@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import $ from 'jquery';
 
-function Visitor(props) {
+class Visitor extends Component {
+    
+    render(){
+
+    
     return(
         <div className="pages pageTest groupCard d-flex align-items-start">
             <nav className="toc">
                 <div className="scroll-menu-main" >
                     <div className="menu-main" style={{position: "relative"}}>
                         <ul  className="menu-main">
-                            <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
+                            <li><Link to={{pathname: '/Visitor', hash: '#setting-card-list'}}>Question 1</Link></li>
+                            {/* <li className="link"><Link onClick={this.handleScroll.bind(this, 'definitions-and-updates')}>Định nghĩa và cập nhật loại khách</Link></li> */}
                             <li className="link"><a href="#setting-card-list">Cài đặt danh sách thẻ dùng cho quản lý khách</a></li>
                             <li className="link"><a href="#setting-people-list">Cài đặt danh sách nhân viên mà khách có thể gặp</a></li>
                             <li className="link"><a href="#setting-device">Cài đặt thiết bị vào – ra</a></li>
@@ -35,9 +42,9 @@ function Visitor(props) {
                                 </ul>
                             </li> 
                         </ul>
-                        <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                        {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                             <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                        </svg>
+                        </svg> */}
                     </div>
                 </div>
             </nav>
@@ -1181,5 +1188,6 @@ function Visitor(props) {
             </article>
         </div>
     )
+}
 }
 export default Visitor;

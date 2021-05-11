@@ -5,9 +5,9 @@ function ReportByDevice(props) {
         <div className="pages pageTest p-3">
             <nav className="toc d-none">
                 <div className="menu-main" style={{position: "relative"}}>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
+                </svg> */}
                 </div>
             </nav>
             <h2 className="text-center">BÁO CÁO THIẾT BỊ</h2>

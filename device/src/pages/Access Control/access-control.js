@@ -8,9 +8,9 @@ function AccessControl(props) {
                     <li className="link"><a href="#access-level">Cấp độ truy cập</a></li>
                     <li className="link"><a href="#floor-level">Cấp độ tầng</a></li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
+                </svg> */}
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">KIỂM SOÁT TRUY CẬP</h2>

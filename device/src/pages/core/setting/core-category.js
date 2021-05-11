@@ -49,9 +49,9 @@ function CoreCategory(props) {
                             <li className="link"><a href="#delete-registered-guests">Xoá danh mục loại khách đăng ký</a></li>
                         </ul>
                     </ul>
-                    <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                         <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                    </svg>
+                    </svg> */}
                 </div>
                 </div>
             </nav>

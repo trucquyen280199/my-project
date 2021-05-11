@@ -3,9 +3,9 @@ function AuditTrail(props) {
     return(
         <div className="pageTest" style={{overflowY: "scroll",height: "calc(100vh - 48px)"}}>
             <nav className="toc">
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+                {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
+                </svg> */}
             </nav>
             <h2 className="text-center">LỊCH SỬ HỆ THỐNG</h2>
             <div className="content-item" >

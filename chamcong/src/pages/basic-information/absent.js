@@ -48,7 +48,7 @@ function Absent(props) {
                             <ul className="list">
                                 <li> 
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 06) bên trên &minus;&#10095; hiện thị</p>
-                                    <img src='./images/absent-2.png' className="mb-3 w-25" />  
+                                    <img src='./images/absent-2.png' className="mb-3" />  
                                     <p className="text-center">Hình 07</p> 
                                     <table className="table table-list d-flex w-100 mt-3">
                                         <tbody>
@@ -94,7 +94,7 @@ function Absent(props) {
                             <ul className="list">
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 2 theo hình bên trên (Hình 06) để sửa thông tin như hình bên dưới
                                     (Hình 08)
-                                    <img src='./images/absent-3.png' className="mb-3 w-25" />  
+                                    <img src='./images/absent-3.png' className="mb-3" />  
                                     <p className="text-center">Hình 08</p> 
                                 </li>
                                 <li>

@@ -27,7 +27,7 @@
         font-weight: 700;
     }
     .toc li.active > a {
-        color: #333;
+        color: rgb(51, 51, 51);
         font-weight: 500;
     }
     .toc {
@@ -72,7 +72,7 @@
         transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
     }
     .toc li.visible {
-        color: #111;
+        color: rgb(17, 17, 17);
     }
     .toc li.visible > a {
     color: #111;
