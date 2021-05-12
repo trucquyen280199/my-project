@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import $ from 'jquery';
 
 class Visitor extends Component {
     
@@ -13,25 +12,35 @@ class Visitor extends Component {
                 <div className="scroll-menu-main" >
                     <div className="menu-main" style={{position: "relative"}}>
                         <ul  className="menu-main">
-                            <li><Link to={{pathname: '/Visitor', hash: '#setting-card-list'}}>Question 1</Link></li>
-                            {/* <li className="link"><Link onClick={this.handleScroll.bind(this, 'definitions-and-updates')}>Định nghĩa và cập nhật loại khách</Link></li> */}
+                            <li className="link"><a href="#definitions-and-updates">Định nghĩa và cập nhật loại khách</a></li>
                             <li className="link"><a href="#setting-card-list">Cài đặt danh sách thẻ dùng cho quản lý khách</a></li>
                             <li className="link"><a href="#setting-people-list">Cài đặt danh sách nhân viên mà khách có thể gặp</a></li>
-                            <li className="link"><a href="#setting-device">Cài đặt thiết bị vào – ra</a></li>
+                            <li className="link"><a href="#setting-device">Cài đặt thiết bị</a></li>
                             <li className="link"><a href="#guest-management-system">Cài đặt hệ thống quản lý khách</a></li>
                             <li className="link"><a href="#degistered-visitor-afar">Đăng ký khách (từ xa)</a></li>
                             <li className="link"><a href="#degistered-visitor-place">Đăng ký khách (đăng ký tại chỗ)</a></li>
+                            <li className="link"><a href="#register-customers-groups">Đăng ký khách theo đoàn</a></li>
                             <li className="link"><a href="#health-declaration">Khai báo y tế dành cho khách</a></li>
                             <li className="link"><a href="#view-list-visitor-pending">Xem danh sách khách chờ xử lý</a></li>
                             <li className="link"><a href="#approval-visitor">Phê duyệt khách</a></li>
+                            <li className="link"><a href="#send-QR-code">Gửi mã QR để xác nhận ở tiếp tân</a></li>
+                            <li className="link"><a href="#information-screen">Màn hình thông tin nhân viên – khách</a></li>
+                                <ul>
+                                    <li className="link"><a href="#add-screen">Thêm màn hình</a></li>
+                                    <li className="link"><a href="#update-screen">Cập nhật màn hình</a></li>
+                                    <li className="link"><a href="#delete-screen">Xóa màn hình</a></li>
+                                    <li className="link"><a href="#customer-approval-screen">Phê duyệt khách tại màn hình có thiết bị tiếp tân</a></li>
+                                </ul>
                             <li className="link"><a href="#update-guest-information">Cập nhật thông tin của khách</a></li>
                             <li className="link"><a href="#refuse-visitor">Từ chối khách</a></li>
                             <li className="link"><a href="#list-visitor-acceptance">Xem danh sách khách chấp thuận</a></li>
                             <li className="link"><a href="#degistered-fingerprint">Đăng ký mẫu vân tay cho khách</a></li>
                             <li className="link"><a href="#degistered-card">Đăng ký thẻ (hoặc xoá thẻ) cho khách</a></li>
-                            <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>
+                            <li className="link"><a href="#up-del-QR">Cập nhật / Xoá mã QR cho khách</a></li>
+                            <li className="link"><a href="#synchronize-authorization">Đồng bộ các uỷ quyền cho khách</a></li>	
                             <li className="link"><a href="#update-validity-period">Cập nhật thời gian hiệu lực</a></li>
                             <li className="link"><a href="#checkOut-settings">Thiết lập kiểm tra ra</a></li>
+                            <li className="link"><a href="#hidden-guests">Ẩn khách</a></li>
                             <li className="link"><a href="#visitor-list-expire">Xem danh sách khách hết hạn</a></li>
                             <li className="link"><a href="#view-report">Xem báo cáo</a></li>
                             <li className="link"><a href="#daily-visitor-statistics">Xem thống kê khách hàng ngày</a></li>
@@ -42,9 +51,6 @@ class Visitor extends Component {
                                 </ul>
                             </li> 
                         </ul>
-                        {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                        </svg> */}
                     </div>
                 </div>
             </nav>
@@ -54,12 +60,11 @@ class Visitor extends Component {
                     <div id="definitions-and-updates">
                         <h2>1.	Định nghĩa và cập nhật loại khách</h2>
                         <div className="content-item" >
-                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>Khách &gt; Cài đặt.</b></p>
-                            <img alt="images" src="./images/visitor-1.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Loại khách đăng ký</b>.</p>
-                            <p>B2: Màn hình sau sẽ xuất hiện.</p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tới mục <b>Khách &gt; Cài đặt &gt; Loại khách đăng ký.</b></p>
+                            <img alt="images" src="./images/visitor-1.png" className=" mb-3" /> 
+                            <p>Màn hình sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/visitor-2.png" className="w-100 mb-3" />
-                            <p>Bấm nút <b>Thêm</b> để tạo mới hoặc <b>bấm đúp chuột vào dòng</b> để cập nhật loại khách tương ứng.</p>
+                            <p>B2: Bấm nút <b>Thêm</b> để tạo mới hoặc <b>bấm đúp chuột vào dòng</b> để cập nhật loại khách tương ứng.</p>
                             <p>B3: Cửa sổ sau sẽ xuất hiện, điền vào hoặc chỉnh sửa các thông tin cần thiết.</p>
                             <img alt="images" src="./images/visitor-3.png" className="w-100 mb-3" />
                             <table className="table ">
@@ -94,13 +99,11 @@ class Visitor extends Component {
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH  &gt; Cài đặt.</b></p>
                             <img alt="images" src="./images/visitor-4.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Cài đặt thẻ</b>.</p>
-                            <p>B2: Trang sau sẽ xuất hiện.</p>
+                            <p>Trang sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/visitor-5.png" className="w-100 mb-3" />
-                            <p>B3: Chọn hoặc bỏ chọn thẻ. </p>
-                            <p>B4: Bấm nút <b>Lưu</b> để cập nhật. </p>
-                            <p>Lưu ý:</p>
-                            <p>
+                            <p>B2: Chọn hoặc bỏ chọn thẻ. </p>
+                            <p>B3: Bấm nút <b>Lưu</b> để cập nhật. </p>
+                            <p className="font-italic my-4"><b></b>Lưu ý:<br />
                                 <span className="ml-3">-	<b>Trạng thái</b>: Nếu thẻ đang được sử dụng bởi khách hoặc nhân viên thì sẽ hiển thị
                                 <b>mã trên thiết bị của họ</b>. Còn lại là thẻ chưa được sử dụng.</span><br/>
                                 <span className="ml-3">-	<b>Ô tìm kiếm</b>: tìm kiếm theo <b>Mã thẻ</b> hoặc <b>Tên thẻ</b>.</span><br/>
@@ -131,15 +134,14 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="setting-device">
-                        <h2>4.	Cài đặt thiết bị vào – ra</h2>
+                        <h2>4.	Cài đặt thiết bị</h2>
                         <div className="content-item" >
-                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt</b>.</p>
-                            <img alt="images" src="./images/visitor-4.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Cài đặt thiết bị vào ra</b>.</p>
-                            <p>B2: Trang sau sẽ xuất hiện:</p>
+                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt</b> &gt; <b>Cài đặt thiết bị vào ra</b>.</p>
+                            <img alt="images" src="./images/visitor-4.png" className=" mb-3" /> 
+                            <p> Trang sau sẽ xuất hiện:</p>
                             <img alt="images" src="./images/visit-setting-device-1.png" className="w-100 mb-3" />
-                            <p>B3:  Cấu hình thiết bị ra – vào.</p>
-                            <p>B4: Bấm nút Lưu để cập nhật.</p>
+                            <p>B2: Cấu hình thiết bị ra – vào – tiếp tân (nếu được cấp thiết bị danh cho khách sẽ hiển thị ở đây)..</p>
+                            <p>B3: Bấm nút <b>Lưu</b> để cập nhật.</p>
                         </div>
                     </div>
                 </section>
@@ -147,9 +149,8 @@ class Visitor extends Component {
                     <div id="guest-management-system">
                         <h2>5.	Cài đặt hệ thống quản lý khách</h2>
                         <div className="content-item" >
-                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt</b>.</p>
-                            <img alt="images" src="./images/visitor-4.png" className="w-25 mb-3" /> 
-                            <p>Sau đó chọn <b>Cài đặt hệ thống</b>.</p>
+                            <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Cài đặt &gt; Cài đặt hệ thống</b>.</p>
+                            <img alt="images" src="./images/visitor-4.png" className=" mb-3" /> 
                             <p>B2: Trang sau sẽ xuất hiện:</p>
                             <img alt="images" src="./images/guest-management-system-1.png" className="w-100 mb-3" />
                             <table className="table">
@@ -171,13 +172,18 @@ class Visitor extends Component {
                                     </tr>
                                     <tr>
                                         <td>4</td>
+                                        <td>Tự động tạo mã QR khi phê duyệt</td>
+                                        <td>Tự động tạo mã QR, đồng bộ đến nhóm truy cập được chọn và gửi mail cho khách được phê duyệt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
                                         <td>Điều khoản dịch vụ</td>
                                         <td>Điều khoản, các quy định sẽ hiển thị ở trang đăng ký khách</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <p>B3: Điều chỉnh.</p>
-                            <p>B4: Bấm lưu để cập nhật.</p>
+                            <p>B4: Bấm <b>Lưu</b> để cập nhật.</p>
                         </div>
                     </div>
                 </section>
@@ -201,7 +207,7 @@ class Visitor extends Component {
                             </p>
                             <img alt="images" src="./images/visitor-10.png" className="w-100 mb-3" />
                             <p>B3: Mẫu đăng ký sau sẽ xuất hiện.</p>
-                            <img alt="images" src="./images/degistered-visitor-afar-1.png" className="w-100 mb-3" />
+                            <img alt="images" src="./images/degistered-visitor-afar-3.png" className="w-100 mb-3" />
                             <p>Mục bên trái</p>
 
                             <table className="table table-list d-flex w-100 ">
@@ -264,10 +270,10 @@ class Visitor extends Component {
                             <img alt="images" src="./images/upload-interface-2.png" className="w-100 mb-3" />
                             <p>Bấm vào khung để upload hình ảnh</p>
                             <p>Điền các thông tin bắt buộc.<br/>
-                                Nếu muốn gặp nhân viên nào đó, hoặc chọn nút phía dưới Người gặp để cập nhật.<br/>
+                                Nếu muốn gặp nhân viên nào đó, hoặc chọn nút phía dưới <b>Người gặp</b> để cập nhật.<br/>
                                 Cửa sổ sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/upload-interface-3.png" className="w-100 mb-3" />
-                            <p>Chọn nhân viên cần gặp và bấm <b>Nút lưu</b> để cập nhật.</p>
+                            <p>Chọn nhân viên cần gặp và bấm nút <b>Lưu</b> để cập nhật.</p>
                             <p className="mt-3">B4: Nếu có mục khai báo y tế<br/>
                                 Bấm nút Khai báo y tế<br/>
                                 (<a href="#health-declaration">Xem hướng dẫn khai báo y tế</a>)</p>
@@ -281,7 +287,7 @@ class Visitor extends Component {
                         <h2>7.	Đăng ký khách (đăng ký tại chỗ)</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Đăng ký khách &gt; Đăng ký (từ xa)</b>.</p>
-                            <img alt="images" src="./images/remote-registration-1.png" className="w-25 mb-3" />
+                            <img alt="images" src="./images/remote-registration-1.png" className="mb-3" />
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/visitor-14.png" className="w-100 mb-3" />
                             <p>Điền các <b>thông tin bắt buộc</b>.</p>
@@ -292,8 +298,8 @@ class Visitor extends Component {
                             <p className="ml-5">o Chọn thiết bị Face trong danh sách thiết bị.</p>
                             <p className="ml-5">o Bấm nút <b>Lấy mẫu</b>, sau khi thiết bị chụp xong sẽ hiển thị hinh ở mục hình ảnh.</p>
                             <p className="ml-5">o Bấm nút <b>Lưu</b> khi thực hiện xong.</p>
-                            <p className="ml-3">Lấy thông qua <b>thiết bị USB</b>: (<a href="#interfaceUpload"> giao diện upload</a>)</p>
-                            <p className="ml-3">Lấy thông qua upload file: (<a href="#interfaceUpload">giao diện upload</a>)</p>
+                            <p className="ml-3">- Lấy thông qua <b>thiết bị USB</b>: (<a href="#interfaceUpload"> giao diện upload</a>)</p>
+                            <p className="ml-3">- Lấy thông qua upload file: (<a href="#interfaceUpload">giao diện upload</a>)</p>
                             <p className="my-3">B4: Chụp hình ảnh <b>CMND/CCCD</b> tương tự như trên</p>
                             <p>B5: Nếu có mục khai báo y tế<br/>
                             Bấm nút Khai báo y tế
@@ -301,27 +307,44 @@ class Visitor extends Component {
                             <p>B7: Bấm nút <b>Đăng ký</b> để hoàn thành.<br/>
                                 Nếu cần kiểm tra nhiệt độ của khách, bấm nút <b>Nhiệt độ</b> ở góc phải trên.</p>
                             <img alt="images" src="./images/visitor-18.png" className="w-100 mb-3" />
-                            <p>Chọn thiết bị và bấm Quét để đo nhiệt độ, hoặc bấm Cập nhật nhiệt độ để điều chỉnh thủ công</p>
+                            <p>Chọn thiết bị và bấm <b>Quét</b> để đo nhiệt độ, hoặc bấm Cập nhật nhiệt độ để điều chỉnh thủ công</p>
                             
                         </div>
                     </div>
                 </section>
                 <section>
+                    <div id="register-customers-groups">
+                        <h2>8.	Đăng ký khách theo đoàn</h2>
+                        <div className="content-item" >
+                            <p>B1:  Tại biếu mẫu đăng ký, tìm đến <b>Loại khách đăng ký</b> &gt; Chọn <b>Đoàn du lịch</b>.</p>
+                            <img alt="images" src="./images/register-customers-groups-1.png" className=" mb-3" />
+                            <p>B2: Bấm nút dấu cộng. Cửa sổ sau xuất hiện:</p>
+                            <img alt="images" src="./images/register-customers-groups-2.png" className="w-100 mb-3" />
+                            <p className="my-3">B3: Nhập tên đoàn du lịch.</p>
+                            <p>B4: Bấm Ví dụ để tải file mẫu về và điền thông tin khách theo đoàn<br/>
+                            Bấm nhập file để tải file thông tin khách đoàn theo mẫu. Hoặc bấm nút Thêm để thêm 
+                            trực tiếp.<br/><br/>
+                            B5: Điều chỉnh thông tin của khách trong đoàn.<br/>
+                            B6: Bấm đồng ý để lưu thông tin</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
                     <div id="health-declaration">
-                        <h2>8.	Khai báo y tế dành cho khách</h2>
+                        <h2>9.	Khai báo y tế dành cho khách</h2>
                         <div className="content-item" >
                             <p>B1: Nếu ở biểu mẫu đăng ký có nút Khai báo y tế. Bấm vào.</p>
                             <img alt="images" src="./images/health-declaration-1.png" className="w-100 mb-3" />
                             <p>B2: Biểu mẫu sau sẽ xuất hiện:</p>
                             <img alt="images" src="./images/health-declaration-2.png" className="w-100 mb-3" />
                             <p>Điền các thông tin bắt buộc.</p>
-                            <p>B3: Bấm lưu để cập nhật khai báo y tế.</p>
+                            <p>B3: Bấm <b>Lưu</b> để cập nhật khai báo y tế.</p>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="view-list-visitor-pending">
-                        <h2>9.	Xem danh sách khách chờ xử lý</h2>
+                        <h2>10.	Xem danh sách khách chờ xử lý</h2>
                         <div className="content-item" >
                             <p>B1: : Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
                             <img alt="images" src="./images/waiting-list-for-processing-1.png" className="mb-3" /> 
@@ -384,8 +407,8 @@ class Visitor extends Component {
                                         <td>
                                             Từ trái sang phải:<br/>
                                             <p className="ml-3">
-                                                1. Nút cập nhật thông tin khách
-                                                2. Nút phê duyệt khách
+                                                1. Nút cập nhật thông tin khách<br/>
+                                                2. Nút phê duyệt khách<br/>
                                                 3. Nút từ chối khách
                                             </p>
                                         </td>
@@ -397,7 +420,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="approval-visitor">
-                        <h2>10.	Phê duyệt khách</h2>
+                        <h2>11.	Phê duyệt khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
                             <img alt="images" src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
@@ -427,7 +450,6 @@ class Visitor extends Component {
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>Chọn <b>thiết bị Face</b> muốn áp dụng.</p>
                             <p>
                             B3: Chọn danh sách khách cần phê duyệt.<br/>
                             B4: Bấm nút <b>Phê duyệt (5)</b> nếu chỉ phê duyệt 1 khách đó, hoặc bấm nút <b>Phê duyệt (2)</b>nếu danh sách nhiều hơn 1.<br/>
@@ -460,8 +482,86 @@ class Visitor extends Component {
                     </div>
                 </section>
                 <section>
+                    <div id="send-QR-code">
+                        <h2>12.	Gửi mã QR để xác nhận ở tiếp tân</h2>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
+                            <img alt="images" src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
+                            <p>Màn hình sau sẽ xuất hiện:</p>
+
+                            <img alt="images" src="./images/send-QR-code-1.png" className="w-100 mb-3" /> 
+                            <p>B2: Chọn khách.<br/>
+                            B3: Bấm nút Gửi mã QR.
+                            </p>
+                            <img alt="images" src="./images/send-QR-code-2.png" className="w-100 mb-3" /> 
+                            <p>Cửa sổ sau xuất hiện:</p>
+                            <img alt="images" src="./images/send-QR-code-3.jpg" className="w-100 mb-3" /> 
+                            <p className="ml-3">
+                            B4: Nhập số phút thêm bớt so với thời gian bắt đầu gặp để làm mốc và số phút hiệu lực của mã QR.<br/>
+                            B5: Bấm gửi để hoàn thành.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="information-screen">
+                        <h3>13.	Màn hình thông tin nhân viên – khách</h3>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Màn hình thông tin nhân viên / khách.</b>.</p>
+                             
+                            <p>Màn hình sau sẽ xuất hiện:</p>
+                            <img alt="images" src="./images/information-screen-1.jpg" className="mb-3" />
+                            
+                        </div>
+                    </div>
+                    <div id="add-screen">
+                        <h3>a.	Thêm màn hình</h3>
+                        <div className="content-item" >
+                            <p>
+                            B2: Nhập tên màn hình.<br/>
+                            B3: Chọn thiết bị (khi có sự kiện từ thiết bị sẽ hiển thị lên màn hình).<br/>
+                            B4: Bấm <b>Thêm</b> để lưu
+                            </p>
+                        </div>
+                    </div>
+                    <div id="update-screen">
+                        <h2>b.	Cập nhật màn hình</h2>
+                        <div className="content-item" >
+                            <p>B2: Ở màn hình cần cập nhật, bấm nút hình bút chì</p>
+                            <img alt="images" src="./images/update-screen-1.jpg" className="w-100 mb-3" /> 
+                            <p>B3: Chỉnh sửa các thông tin</p>
+                            <img alt="images" src="./images/update-screen-2.jpg" className="w-100 mb-3" /> 
+                            <p>B4: Bấm Sửa để cập nhật</p>
+                        </div>
+                    </div>
+                    <div id="delete-screen">
+                        <h2>c. Xoá màn hình</h2>
+                        <div className="content-item" >
+                            <p>B2: Ở màn hình cần cập nhật, bấm nút hình thùng rác</p>
+                            <img alt="images" src="./images/delete-screen-1.jpg" className="w-100 mb-3" /> 
+                            <p>B3: Xác nhận để xoá</p>
+                            
+                        </div>
+                    </div>
+                    <div id="customer-approval-screen">
+                        <h2>d. Phê duyệt khách tại màn hình có thiết bị tiếp tân</h2>
+                        <div className="content-item" >
+                            <p>B2: Khi khách đến và quét mã QR ở thiết bị tiếp tân sẽ hiện thị như sau:</p>
+                            <img alt="images" src="./images/customer-approval-screen-1.jpg" className="w-100 mb-3" /> 
+                            <p>Click vào khu vực được khoanh<br/>
+                                Cửa sổ chi tiết sẽ hiện ra: </p>
+                            <img alt="images" src="./images/customer-approval-screen-2.jpg" className="mb-3" /> 
+                            <p>
+                            B3: Bấm nút Phê duyệt<br/>
+                            B4: Thực hiện tương tự bước <a href="#approval-visitor" >phê duyệt còn lại</a>.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section>
                     <div id="update-guest-information">
-                        <h2>11.	Cập nhật thông tin của khách</h2>
+                        <h2>14.	Cập nhật thông tin của khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
                             <img alt="images" src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
@@ -482,10 +582,10 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="refuse-visitor">
-                        <h2>12.	Từ chối khách</h2>
+                        <h2>15.	Từ chối khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chờ</b>.</p>
-                            <img alt="images" src="./images/visitor-13.png" className="w-25 mb-3" /> 
+                            <img alt="images" src="./images/waiting-list-for-processing-1.png" className="w-25 mb-3" /> 
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/visitor-24.png" className="w-100 mb-3" />
                             <table className="table ">
@@ -520,7 +620,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="list-visitor-acceptance">
-                        <h2>13.	Xem danh sách khách chấp thuận</h2>
+                        <h2>16.	Xem danh sách khách chấp thuận</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
                             <img alt="images" src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
@@ -633,7 +733,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="degistered-fingerprint">
-                        <h2>14.	Đăng ký mẫu vân tay cho khách</h2>
+                        <h2>17.	Đăng ký mẫu vân tay cho khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
                             <img alt="images" src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
@@ -696,7 +796,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="degistered-card">
-                        <h2>15.	Đăng ký thẻ (hoặc xoá thẻ) cho khách</h2>
+                        <h2>18.	Đăng ký thẻ (hoặc xoá thẻ) cho khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
                             <img alt="images" src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" /> 
@@ -736,11 +836,30 @@ class Visitor extends Component {
                     </div>
                 </section>
                 <section>
-                    <div id="synchronize-authorization">
-                        <h2>16.	Đồng bộ các uỷ quyền cho khách</h2>
+                    <div id="up-del-QR">
+                        <h2>19.	Cập nhật / Xoá mã QR cho khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
                             <img alt="images" src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" />  
+                            <p>B2: Chọn Mã QR ở khách cần thao tác</p>
+                            <img alt="images" src="./images/up-del-QR-1.jpg" className="w-100 mb-3" />
+                            
+                            <p>Cửa sổ sau sẽ xuất hiện (nếu hiển thị hình ảnh nếu có mã QR):</p>
+                            <img alt="images" src="./images/up-del-QR-2.jpg" className=" mb-3" />
+
+                            <p>B3: Bấm <b>Cập nhật</b> để xoá (nếu có) mã QR cũ và tạo mã QR mới (tự động đồng bộ đến nhóm truy cập đã lưu của khách đang chọn)<br/>
+                                Hoặc bấm <b>Xoá</b> để xoá mã QR và vô hiệu hoá trên các nhóm truy cập của khách và máy tiếp tân.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="synchronize-authorization">
+                        <h2>20.	Đồng bộ các uỷ quyền cho khách</h2>
+                        <div className="content-item" >
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
+                            <img alt="images" src="./images/list-visitor-acceptance-1.png" className=" mb-3" />  
                             <p>B2: Màn hình sau sẽ xuất hiện.</p>
                             <img alt="images" src="./images/visitor-34.png" className="w-100 mb-3" />
                             
@@ -781,7 +900,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="update-validity-period">
-                        <h2>17.	Cập nhật thời gian hiệu lực</h2>
+                        <h2>21.	Cập nhật thời gian hiệu lực</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận</b>.</p>
                             <img alt="images" src="./images/list-visitor-acceptance-1.png" className="w-25 mb-3" />  
@@ -815,7 +934,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="checkOut-settings">
-                        <h2>18.	Thiết lập kiểm tra ra</h2>
+                        <h2>22.	Thiết lập kiểm tra ra</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách chấp thuận hoặc Danh sách hết hạn</b>.</p>
                             <img alt="images" src="./images/checkOut-settings-1.png" className="w-25 mb-3" /> 
@@ -828,16 +947,29 @@ class Visitor extends Component {
                             <p>Nếu lần cuối kiểm tra là khác <b>vào/ra</b>:</p>
                             <img alt="images" src="./images/checkOut-settings-4.png" className="w-100 mb-3" />
                             <p>B4: Nhập lý do và thời gian (nếu có)<br/>
-                                B5: Bấm lưu để cập nhật</p>
+                                B5: Bấm <b>Lưu</b> để cập nhật</p>
                             <p className="mt-3">Nếu có bảng sau xuất hiện sau khi bấm lưu là danh sách lỗi khi thiết lập kiểm tra ra:</p>
                             <img alt="images" src="./images/checkOut-settings-5.png" className="w-100 mb-3" />
-                            <p>Lưu ý: Thiết lập kiểm tra ra sẽ xoá thẻ của khách (nếu có).</p>
+                            <p className="font-italic my-3"><b>Lưu ý</b>: Thiết lập kiểm tra ra sẽ xoá thẻ của khách (nếu có).</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="hidden-guests">
+                        <h2>23.	Ẩn khách</h2>
+                        <div className="content-item" >
+                            <p>Khi ẩn khách, sẽ xoá hết các thông tin khuôn mặt, vân tay, ... và đồng bộ đến nhóm truy cập.</p>
+                            <p>B1: Ở mục menu bên trái màn hình. Cuộn menu xuống tời mục <b>KHÁCH &gt; Danh sách khách &gt; Danh sách hết hạn</b>.</p>
+                            <img alt="images" src="./images/hidden-guests-1.jpg" className=" mb-3" /> 
+                            <p>B2: Bấm nút thùng rác ở dòng dữ liệu khách muốn ẩn hoặc chọn theo danh sách và bấm nút <b>Ẩn</b></p>
+                            <img alt="images" src="./images/hidden-guests-2.jpg" className="w-100 mb-3" />
+                            <p>B3: Xác nhận xoá để hoàn thành.</p>
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="visitor-list-expire">
-                        <h2>19.	Xem danh sách khách hết hạn</h2>
+                        <h2>24.	Xem danh sách khách hết hạn</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Khách &gt; Danh sách hết hạn</b>.</p>
                             <img alt="images" src="./images/visitor-list-expire-1.png" className="w-25 mb-3" />
@@ -931,7 +1063,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="view-report">
-                        <h2>20.	Xem báo cáo</h2>
+                        <h2>25.	Xem báo cáo</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Báo cáo</b>.</p>
                             <img alt="images" src="./images/visitor-37.png" className="w-25 mb-3" /> 
@@ -1024,7 +1156,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="daily-visitor-statistics">
-                        <h2>21.	Xem thống kê khách hàng ngày</h2>
+                        <h2>26.	Xem thống kê khách hàng ngày</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Thống kê khách</b>.</p>
                             <img alt="images" src="./images/visitor-40.png" className="w-25 mb-3" /> 
@@ -1081,7 +1213,7 @@ class Visitor extends Component {
                 </section>
                 <section>
                     <div id="monitoring-visitor">
-                        <h2>22.	Giám sát khách</h2>
+                        <h2>27.	Giám sát khách</h2>
                         <div className="content-item" >
                             <p>B1: Ở mục menu bên trái màn hình. Vào mục <b>KHÁCH &gt; Giám sát khách</b>.</p>
                             <img alt="images" src="./images/visitor-42.png" className="w-25 mb-3" /> 
@@ -1179,8 +1311,8 @@ class Visitor extends Component {
                             </p>
                             <img alt="images" src="./images/visitor-47.png" className="w-100 mb-3" />
                             <p>Nếu có sai sót trong quá trình xác định loại kiểm tra, có thể bấm vào nút <b>Sửa sai</b> để đổi lại loại kiểm tra (từ <b>Vào</b> thành <b>Ra</b> và ngược lại).</p>
-                            <p><b>Lưu ý</b>:<br/>
-                                <span className="ml-3">-	Chỉ có thể <b>điều chỉnh</b> nhật ký <b>gần nhất</b> đối với từng người, các nhật ký đã trôi qua sẽ <b>không thể</b> chỉnh sửa.</span>
+                            <p className="my-4"><b>Lưu ý</b>:<br/>
+                                <span className="ml-3 font-italic">-	Chỉ có thể <b>điều chỉnh</b> nhật ký <b>gần nhất</b> đối với từng người, các nhật ký đã trôi qua sẽ <b>không thể</b> chỉnh sửa.</span>
                             </p>
                         </div>
                     </div>

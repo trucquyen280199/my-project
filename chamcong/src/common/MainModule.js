@@ -27,7 +27,7 @@ class MainModule extends React.Component {
                     subList: [
                         {
                             linkTo: "/ListOfStaffTimekeep",
-                            menuName: "List Of Staff Timekeep",
+                            menuName: "List Of Staff",
                         },
                         {
                             linkTo: "/Absent",

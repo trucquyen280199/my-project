@@ -17,6 +17,11 @@ class MainModule extends React.Component {
                     isSingle: true
                 },
                 {
+                    linkTo: "/Permission",
+                    menuName: "Phân quyền",
+                    isSingle: true
+                },
+                {
                     linkTo: "/ImportFiles",
                     menuName: "Nhập file",
                     isSingle: true

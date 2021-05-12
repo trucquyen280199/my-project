@@ -61,7 +61,7 @@ function CoreCategory(props) {
                     <div id="group-users">
                         <h2>1.	Nhóm người dùng (phòng ban)</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Trang chủ &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
+                            <p>B1: Vào <b>Core &gt; Người dùng &gt; Nhóm người dùng (NGD)</b></p>
                             <img alt="images" src="./images/core-category-1.png" className=" mb-3" /> 
                             <p>Màn hình chính</p>
                             <img alt="images" src="./images/core-category-2.png" className="w-100 mb-3" />
@@ -99,12 +99,12 @@ function CoreCategory(props) {
                             </p>
                             <img alt="images" src="./images/core-category-a.png" className="w-100 mb-3" />
                             <p>B6: Bấm <b>đồng ý</b> để lưu thông tin</p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-    Tố chức mẹ mặc định là tổ chức cao nhất</span><br/>
-                            <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
-                            <span className="ml-3">-	Chỉ có thể tạo công ty nếu tổ chức mẹ là công ty</span>
+                            <p className="mt-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <i><span className="ml-3">-    Tố chức mẹ mặc định là tổ chức cao nhất</span><br/>
+                                <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
+                                <span className="ml-3">-	Chỉ có thể tạo công ty nếu tổ chức mẹ là công ty</span></i>
                             </p>
                             <img alt="images" src="./images/core-category-a1.png" className="w-100 mb-3" />
                         </div>
@@ -124,11 +124,11 @@ function CoreCategory(props) {
                             <img alt="images" src="./images/core-category-6-1.png" className="w-100 mb-3" />
                             <p>B6: Bấm đồng ý để lưu thông tin</p>
                             <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span><br/>
-                            <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
-                            <span className="ml-3">-	Chỉ có thể tạo thành công ty nếu tổ chức mẹ là công ty</span>
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <i><span className="ml-3">-	Vẫn có thể đổi phòng ban cha, khi đó phòng ban này sẽ là phòng ban cha của phòng ban đang tạo</span><br/>
+                                <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
+                                <span className="ml-3">-	Chỉ có thể tạo thành công ty nếu tổ chức mẹ là công ty</span></i>
                             </p>
                             <img alt="images" src="./images/core-category-6-2.png" className="w-100 mb-3" />
                         </div>
@@ -142,19 +142,19 @@ function CoreCategory(props) {
                             <p>Cửa sổ chính</p>
                             <img alt="images" src="./images/core-category-8.png" className="w-100 mb-3" />
                             <p>
-                            B3: Chọn <b>phòng ban cha</b>cần đổi<br/>
+                            B3: Chọn <b>phòng ban cha</b> cần đổi<br/>
                             B4: Đổi thông tin <b>tên và mã</b> phòng ban <br/>
                             B5: Nếu chọn Là công ty. Nhập thêm thông tin công ty bắt buộc.
                             </p>
                             <img alt="images" src="./images/core-category-8-1.png" className="w-100 mb-3" />
                             <p>B6: Bấm đồng ý để lưu thông tin</p>
-                            <p>
-                                Lưu ý:<br/>
-                                <span className="ml-3">-    Tổ chức mẹ không thể là tổ chức đang cập nhật và con của tổ chức đang cập nhật</span><br/>
+                            <p className="mt-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <i><span className="ml-3">-    Tổ chức mẹ không thể là tổ chức đang cập nhật và con của tổ chức đang cập nhật</span><br/>
                                 <span className="ml-3">-	Tên và mã phòng ban <b>bắt buộc</b></span><br/>
                                 <span className="ml-3">-	Mã phòng ban <b>duy nhất</b></span><br/>
                                 <span className="ml-3">-	Nếu cập nhật phòng ban có cấp cao nhất thì sẽ không thể chọn phòng ban cha (vì mặc định nó là phòng ban cha)</span><br/>
-                                <span className="ml-3">- Chỉ có thể cập nhật thành công ty nếu tổ chức mẹ là công ty</span>
+                                <span className="ml-3">- Chỉ có thể cập nhật thành công ty nếu tổ chức mẹ là công ty</span></i>
                             </p>
                             
                         </div>
@@ -166,8 +166,8 @@ function CoreCategory(props) {
                             <p>B2: Tìm phòng ban cần xoá và bấm nút <b>xoá</b></p>
                             <img alt="images" src="./images/core-category-10.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá</b> để hoàn thành</p>
-                            <p className="font-italic">
-                                <b>Lưu ý</b>:<br/>
+                            <p className="font-italic mt-4">
+                                <b><i>Lưu ý</i>:</b><br/>
                                 <span className="ml-3">-	Phòng ban đã có nhân viên thì không thể xoá</span><br/>
                                 <span className="ml-3">-	Xoá phòng ban sẽ mặc định xoá toàn bộ phòng ban con</span>
                             </p>
@@ -212,10 +212,10 @@ function CoreCategory(props) {
                             B3: Nhập <b>tên và mã </b> quốc gia <br/>
                             B4: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
+                            <p className="font-italic mt-4">
+                                <b><i>Lưu ý</i>:</b><br/>   
+                                <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -231,10 +231,10 @@ function CoreCategory(props) {
                             B3: Cập nhật <b>tên và mã </b> quốc gia <br/>
                             B4: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
+                            <p className="font-italic mt-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Tên và mã</b> quốc giá <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã quốc gia duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -287,11 +287,11 @@ function CoreCategory(props) {
                                 B4: Nhập <b>tên và các mã</b> tỉnh thành <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
-                            <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
+                            <p  className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
+                                <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -308,11 +308,11 @@ function CoreCategory(props) {
                                 B4: Cập nhật <b>tên và các mã</b> tỉnh thành <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
-                            <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
+                            <p  className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Quốc gia, tên và các mã</b> tỉnh thành <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã số tỉnh thành</b> là số và tối đa 3 chữ số (1-&gt;999), <b>duy nhất</b></span><br/>
+                                <span className="ml-3">-	<b>Mã tỉnh thành</b> là mã của tỉnh thành, <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -365,10 +365,10 @@ function CoreCategory(props) {
                                 B4: Nhập các thông tin khác nếu cần thiết  <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> dân tộc <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
+                            <p  className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Tên và mã</b> dân tộc <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -385,10 +385,10 @@ function CoreCategory(props) {
                                 B4: Cập nhật các thông tin khác nếu cần thiết <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã </b> dân tộc <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
+                            <p className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Tên và mã </b> dân tộc <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã dân tộc</b> là <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -406,7 +406,7 @@ function CoreCategory(props) {
                     <div id="category-position">
                         <h2>5.	Danh mục chức vụ</h2>
                         <div className="content-item" >
-                            <p>B1: Vào <b>Kiểm soát truy cập &gt; Cài đặt chung &gt; Chức vụ</b></p>
+                            <p>B1: Vào <b>Core &gt; Cài đặt &gt; Chức vụ</b></p>
                             <img alt="images" src="./images/core-category-32.png" className="w-25 mb-3" /> 
                             <p>Màn hình chính</p>
                             <img alt="images" src="./images/core-category-33.png" className="w-100 mb-3" />
@@ -440,10 +440,10 @@ function CoreCategory(props) {
                                 B3: Nhập <b>tên và mã </b>chức vụ<br/>
                                 B4: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã</b> chức vụ  <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã chức vụ </b> là <b>duy nhất</b></span>
+                            <p className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Tên và mã</b> chức vụ  <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã chức vụ </b> là <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -459,8 +459,8 @@ function CoreCategory(props) {
                                 B3: Cập nhật <b>tên và mã</b> chức vụ <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
+                            <p className="font-italic my-4">
+                            <b><i>Lưu ý</i>:</b><br/>
                             <span className="ml-3">-	<b>Tên và mã </b> chức vụ <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã chức vụ </b> là <b>duy nhất</b></span>
                             </p>
@@ -473,7 +473,7 @@ function CoreCategory(props) {
                             <p>B2: Chọn danh mục chức vụ cần xoá và bấm nút <b>xoá</b></p>
                             <img alt="images" src="./images/core-category-38.png" className="w-100 mb-3" /> 
                             <p>B3: <b>Xác nhận xoá </b> để hoàn thành</p>
-                            <p>Lưu ý: <br/>
+                            <p className="font-italic mt-4"><b><i>Lưu ý</i>:</b><br/>
                                 <span className="ml-3">-	Danh mục chức vụ đang được dùng bởi nhân viên sẽ không thể xoá</span>
                             </p>
                         </div>
@@ -517,8 +517,8 @@ function CoreCategory(props) {
                                 B3: Nhập <b>tên và mã </b>kỹ năng<br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
+                            <p className="font-italic my-4">
+                            <b><i>Lưu ý</i>:</b><br/>
                             <span className="ml-3">-	<b>Tên và mã</b> kỹ năng  <b>bắt buộc</b></span><br/>
                             <span className="ml-3">-	<b>Mã kỹ năng </b> là <b>duy nhất</b></span>
                             </p>
@@ -536,10 +536,10 @@ function CoreCategory(props) {
                                 B3: Cập nhật <b>tên và mã</b> kỹ năng <br/>
                                 B5: Bấm <b>đồng ý</b> để lưu thông tin
                             </p>
-                            <p>
-                            Lưu ý:<br/>
-                            <span className="ml-3">-	<b>Tên và mã </b> kỹ năng <b>bắt buộc</b></span><br/>
-                            <span className="ml-3">-	<b>Mã kỹ năng </b> là <b>duy nhất</b></span>
+                            <p className="font-italic my-4">
+                                <b><i>Lưu ý</i>:</b><br/>
+                                <span className="ml-3">-	<b>Tên và mã </b> kỹ năng <b>bắt buộc</b></span><br/>
+                                <span className="ml-3">-	<b>Mã kỹ năng </b> là <b>duy nhất</b></span>
                             </p>
                         </div>
                     </div>
@@ -567,7 +567,7 @@ function CoreCategory(props) {
                             <p>B3: Cửa sổ sau sẽ xuất hiện, điền vào hoặc chỉnh sửa các thông tin cần thiết.</p>
                             <img alt="images" src="./images/core-category-48.png" className="w-100 mb-3" />
                             <p>B4: Bấm <b>Đồng ý</b> để cập nhật </p>
-                            <p> Lưu ý:</p>
+                            <b className="mt-4"><i>Lưu ý</i>:</b><br/>
                             <table className="table">
                                 <thead>
                                     <tr>

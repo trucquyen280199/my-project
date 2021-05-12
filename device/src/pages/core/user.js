@@ -1,8 +1,6 @@
 import React from "react";
-// import "./style.css";
 
 function User(props) {
-
     return(
         <div className="pages d-flex align-items-start pageTest" >
             <nav className="toc">
@@ -29,9 +27,9 @@ function User(props) {
                     <li className="link"><a href="#re-activate-personnel">Kích hoạt lại nhân viên</a></li>
                     <li className="link"><a href="#del-user">Xóa nhân viên</a></li>
                     <li className="link"><a href="#sync-to-device">Đồng bộ đến thiết bị</a></li>
-
                     <li className="link"><a href="#employee-data-export">Xuất dữ liệu nhân viên</a></li>
                     <li className="link"><a href="#transfer-work">Chuyển công tác</a></li>
+                    <li className="link"><a href="#view-transfer-work">Xem danh sách chuyển công tác</a></li>
                     <li className="link"><a href="#health-declaration">Khai báo y tế dành cho nhân viên</a></li>
                 </ul>
                 {/* <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -181,7 +179,7 @@ function User(props) {
                     <div id="face-registration">
                         <h3 className="ml-4 mt-3">b.	Đăng ký khuôn mặt</h3>
                         <div className="content-item" >
-                            <p className="ml-4">B4: Chọn nút Vân tay</p>
+                            <p className="ml-4">B4: Chọn nút Khuôn mặt</p>
                             <img alt="images" src="./images/4.3.png" className="w-100" />
                             <p className="ml-4">Cửa sổ sau sẽ xuất hiện</p>
                             <img alt="images" src="./images/4.4.png" className="w-100" />
@@ -232,7 +230,7 @@ function User(props) {
                             <img alt="images" src="./images/5-2.png" className="w-100" />
                             <p className="">B3: <a href="#screen-update">Ở cửa sổ mới</a>, tìm đến mục Thông tin hợp đồng</p>
                             <img alt="images" src="./images/5.1.png" className="w-100" />
-                            <p className="">B4: Bấm nút Kết thúc hợp đồng Cửa sổ sau sẽ xuất hiện</p>
+                            <p className="">B4: Bấm nút Kết thúc hợp đồng<br /> Cửa sổ sau sẽ xuất hiện</p>
                             <img alt="images" src="./images/5.2.png" className="w-100" />
                             <p>B5: Chọn ngày kết thúc hợp đồng và nhập lý do kết thúc </p>
                             <p>B6: Chọn Kết thúc hợp đồng</p>
@@ -266,10 +264,10 @@ function User(props) {
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img alt="images" src="./images/4.png" />
-                            <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
+                            <p>B2: Chọn <b>Danh sách bị vô hiệu hóa</b></p>
                             <img alt="images" src="./images/7.1.png" className="w-100" />
                             <p className="">B3: Chọn nhân viên</p>
-                            <p className="">B4: Bấm nút Kích hoạt lại</p>
+                            <p className="">B4: Bấm nút <b>Kích hoạt lại</b></p>
                             <img alt="images" src="./images/7.4.png" className="w-100" />
                         </div>
                     </div>
@@ -280,10 +278,10 @@ function User(props) {
                         <div className="content-item" >
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img alt="images" src="./images/4.png" />
-                            <p>B2: Chọn Danh sách bị vô hiệu hóa</p>
+                            <p>B2: Chọn <b>Danh sách bị vô hiệu hóa</b></p>
                             <img alt="images" src="./images/del-user-1.png" className="w-100" />
                             <p className="">B3: Chọn nhân viên</p>
-                            <p className="">B4: Bấm nút Xóa</p>
+                            <p className="">B4: Bấm nút <b>Xóa</b></p>
                             <img alt="images" src="./images/del-user-2.png" className="w-100" />
                             <p>
                             Sau khi xoá, danh sách này sẽ không xuất hiện. 
@@ -298,7 +296,7 @@ function User(props) {
                             <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Người dùng &gt; Danh sách</b></p>
                             <img alt="images" src="./images/4.png" />
                             <p>B2: Chọn nhân viên</p>
-                            <p className="">B3: Bấm nút Đồng bộ đến thiết bị</p>
+                            <p className="">B3: Bấm nút <b>Đồng bộ đến thiết bị</b></p>
                             <img alt="images" src="./images/8.3.png" className="w-100" />
                             <p>B4: Nếu có cửa sổ xuất hiện, chọn nhóm thiết bị cần đồng bộ và bấm <b>Đồng ý</b>:</p>
                             <img alt="images" src="./images/8.4.png" className="w-100" />
@@ -327,19 +325,41 @@ function User(props) {
                     <div id="transfer-work">
                         <h2>11.	Chuyển công tác</h2>
                         <div className="content-item" >
-
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Chuyển công tác</b></p>
+                            <img alt="images" src="./images/transfer-work/1.png"  />
+                            <img alt="images" src="./images/transfer-work/2.png" className="w-100" />
+                            <p>
+                                B2: Chọn tab Tạo chuyển công tác.<br/>
+                                B3: Chọn danh sách nhân viên cần chuyển công tác.<br/>
+                                B4: Bấm nút Thêm. Cửa sổ sau sẽ xuất hiện:
+                            </p>
+                            <img alt="images" src="./images/transfer-work/3.png" className="w-100" />
+                            <p>B5: Chọn phòng ban, chức vụ mới và thời hạn áp dụng chuyển công tác<br/>
+                            B6: Bấm Xác nhận để lưu thông tin</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="view-transfer-work">
+                        <h2>12.	Xem danh sách chuyển công tác</h2>
+                        <div className="content-item" >
+                            <p className="ml-4">B1: Vào theo mục <b>CORE &gt; Chuyển công tác</b>.</p>
+                            <img alt="images" src="./images/transfer-work/view-transfer-work-1.jpg"  />
+                            <img alt="images" src="./images/transfer-work/2.png" className="w-100" />
+                            <p>B3: Tìm kiếm, chọn ngáy áp dụng chuyển công tác để xem danh sách.</p>
+                            
                         </div>
                     </div>
                 </section>
                 <section>
                     <div id="health-declaration">
-                        <h2>12.	Khai báo y tế dành cho nhân viên</h2>
+                        <h2>13.	Khai báo y tế dành cho nhân viên</h2>
                         <div className="content-item" >
-                            <p className="ml-4">B1: Chọn theo hình dưới và bấm Khai báo y tế</p>
+                            <p className="ml-4">B1: Chọn theo hình dưới và bấm <b>Khai báo y tế</b>.</p>
                             <img alt="images" src="./images/12.1.png" />
-                            <p>B2: Tab mới sẽ xuất hiện</p>
+                            <p>B2: Tab mới sẽ xuất hiện.</p>
                             <img alt="images" src="./images/12.2.png" className="w-100" />
-                            <p>B3: Điền thông tin bắt buộc và bấm <b>Lưu</b></p>
+                            <p>B3: Điền thông tin bắt buộc và bấm <b>Lưu</b>.</p>
                         </div>
                     </div>
                 </section>

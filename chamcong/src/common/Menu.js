@@ -27,7 +27,7 @@ class Menu extends React.Component {
 
         var classCss = "button_menu"
         let url_active = this.props.currentAction
-        var className = this.state.isOpen ? "button_parent_open" : "button_parent"
+        var className = this.state.isOpen ? "links button_parent_open" : "links button_parent"
 
         return (
             <React.Fragment>

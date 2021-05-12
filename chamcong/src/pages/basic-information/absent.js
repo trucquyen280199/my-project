@@ -20,7 +20,7 @@ function Absent(props) {
                     <div id="guide-image">
                         <h2>1.	Hình hướng dẫn tạo các kiểu vắng</h2>
                         <div className="content-item" >
-                            <img src='./images/absent-1.png' className="mb-3 w-75" />
+                            <img src='./images/absent/1.png' className="mb-3 w-75" />
                             <p className="text-center">Hình 06</p>
                             <table className="table table-list d-flex w-100 mt-3">
                                 <tbody>
@@ -48,7 +48,7 @@ function Absent(props) {
                             <ul className="list">
                                 <li> 
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 06) bên trên &minus;&#10095; hiện thị</p>
-                                    <img src='./images/absent-2.png' className="mb-3" />  
+                                    <img src='./images/absent/absent-2.png' className="mb-3" />  
                                     <p className="text-center">Hình 07</p> 
                                     <table className="table table-list d-flex w-100 mt-3">
                                         <tbody>
@@ -94,7 +94,7 @@ function Absent(props) {
                             <ul className="list">
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 2 theo hình bên trên (Hình 06) để sửa thông tin như hình bên dưới
                                     (Hình 08)
-                                    <img src='./images/absent-3.png' className="mb-3" />  
+                                    <img src='./images/absent/absent-3.png' className="mb-3" />  
                                     <p className="text-center">Hình 08</p> 
                                 </li>
                                 <li>
@@ -111,7 +111,7 @@ function Absent(props) {
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 3 theo hình bên trên (Hình 06) để thức hiện thao tác xóa kiểu văng
                                 không cần thiết trong danh mục</li>
                                 <li><span className="icon">&#10146; </span> Màn hình xuất hiện thông báo như hình bên dưới (Hình 09)
-                                    <img src='./images/absent-4.png' className="mb-3 w-75" />  
+                                    <img src='./images/absent/absent-4.png' className="mb-3 w-75" />  
                                     <p className="text-center">Hình 09</p> 
                                     <p className="ml-4">
                                     &#10004; Bạn nhấn nút <b>Xóa</b> ( Hình 09 ) để xóa thông tin vừa được chọn<br />

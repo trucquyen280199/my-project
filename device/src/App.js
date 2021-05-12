@@ -34,6 +34,8 @@ import SystemConfig from "./pages/Access Control/generalSetting/system-configura
 import WiegandFormat from "./pages/Access Control/generalSetting/wiegand-format";
 import IntrusionAlarm from "./pages/Access Control/intrusion-alarm/intrusion-alarm";
 import IntrusionDoor from "./pages/Access Control/intrusion-alarm/intrusion-door";
+
+import Permission from './pages/core/permission';
 import './pages/style.css';
 
 function App() {
@@ -45,12 +47,11 @@ function App() {
     const hideLoading = () => {
         loadingRef.current.showLoading(false)
     }
-    
 
     const listComponent = [
-        
         {view: <Dashboard showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Dashboard"},
-        {view: <User  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/User"},
+        
+        {view: <User showLoading={showLoading} hideLoading={hideLoading}/>, path: "/User"},
         {view: <ImportFiles  showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ImportFiles"},
         {view: <Module showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Module"},
         {view: <CoreCategory showLoading={showLoading} hideLoading={hideLoading}/>, path: "/CoreCategory"},
@@ -78,6 +79,7 @@ function App() {
         {view: <WiegandFormat showLoading={showLoading} hideLoading={hideLoading}/>, path: "/WiegandFormat"},
         {view: <IntrusionAlarm showLoading={showLoading} hideLoading={hideLoading}/>, path: "/IntrusionAlarm"},
         {view: <IntrusionDoor showLoading={showLoading} hideLoading={hideLoading}/>, path: "/IntrusionDoor"},
+        {view: <Permission showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Permission"},
     ];
 
     const system = () => {
