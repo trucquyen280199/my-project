@@ -50,7 +50,7 @@ function OverCoefficient(props) {
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 10) bên trên &minus;&#10095;  hiện thị hình</p>
                                     <img src='./images/overtimeCoefficient/OverCoefficient-2.png' className="mb-3" />  
                                     <p className="text-center">Hình 11</p> 
-                                    <table className="table d-flex w-100 mt-3">
+                                    <table className="tables mt-3">
                                         <tbody>
                                         <tr>
                                             <td>1</td>

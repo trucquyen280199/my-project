@@ -20,9 +20,9 @@ function Absent(props) {
                     <div id="guide-image">
                         <h2>1.	Hình hướng dẫn tạo các kiểu vắng</h2>
                         <div className="content-item" >
-                            <img src='./images/absent/1.png' className="mb-3 w-75" />
+                            <img src='./images/absent/1.png' className="mb-3 w-100" />
                             <p className="text-center">Hình 06</p>
-                            <table className="table table-list d-flex w-100 mt-3">
+                            <table className="tables table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
@@ -48,9 +48,9 @@ function Absent(props) {
                             <ul className="list">
                                 <li> 
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 06) bên trên &minus;&#10095; hiện thị</p>
-                                    <img src='./images/absent/absent-2.png' className="mb-3" />  
+                                    <img src='./images/absent/absent-2.png' className=" mb-3" />  
                                     <p className="text-center">Hình 07</p> 
-                                    <table className="table table-list d-flex w-100 mt-3">
+                                    <table className="tables table-list d-flex w-100 mt-3">
                                         <tbody>
                                         <tr>
                                             <td>1</td>

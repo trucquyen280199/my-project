@@ -1,25 +1,18 @@
-.links{
-    font-size: 14px;
-    font-weight: 500;
-    padding-left: 20px;
-    border: 1px solid #dee2e6;
-    background: rgb(240 242 244 / 68%);
-    padding-top: 6px;
-    padding-bottom: 6px;
+
+.button_parent {
+    white-space: nowrap;
+    background-color: transparent;
+    border: none;
     color: #000 !important;
+    padding: 6px 10px 6px 20px;
     text-align: left;
     text-decoration: none;
     display: block;
+    font-size: 14px;
     cursor: pointer;
     position: relative;
-}
-
-.button_parent {
-    
-}
-
-.button_parent_open {
-   
+    transition: display 1s;
+    /* border-top: 1px solid #454545; */
 }
 .button_parent::before{
     position: absolute;
@@ -38,12 +31,17 @@
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease;
 }
-
-
-.links:first-child{
-    border-top: none !important;
+.button_parent_open {
+    /* background-color: #00aacc; */
+    color: #000 !important;
+    padding: 6px 10px 6px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
 }
-
 .button_parent_open::after{
     position: absolute;
     right: 10px;
@@ -63,8 +61,9 @@
     transition: transform .3s ease, -webkit-transform .3s ease;
 }
 .button_sub {
+    white-space: nowrap;
     color: #000;
-    padding: 10px 10px 10px 30px;
+    padding: 6px 10px 6px 30px;
     text-align: left;
     text-decoration: none;
     display: block;
@@ -72,8 +71,8 @@
     cursor: pointer;
 }
 .sub_menu_item .button_menu_open{
-    padding: 10px 10px 10px 30px;
-    background-color: rgba(81, 81, 81, 0.5);
+    padding: 6px 10px 6px 30px;
+    /* background-color: rgba(81, 81, 81, 0.5); */
 }
 
 .button_sub:hover {
@@ -94,4 +93,5 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 5px;
+
 }

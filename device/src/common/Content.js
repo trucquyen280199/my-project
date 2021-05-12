@@ -132,7 +132,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-        this.action("/User");
+        this.action("/CoreCategory");
     }
     
 
