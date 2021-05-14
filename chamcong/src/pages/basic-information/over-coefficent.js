@@ -20,9 +20,9 @@ function OverCoefficient(props) {
                     <div id="guide-over-coefficient">
                         <h2>1.	Hình hướng dẫn tạo hệ số tăng ca</h2>
                         <div className="content-item" >
-                            <img src='./images/overtimeCoefficient/OverCoefficient-1.png' className="mb-3 w-75" />
+                            <img src='./images/overtimeCoefficient/OverCoefficient-1.png' className="mb-3" />
                             <p className="text-center">Hình 10</p>
-                            <table className="table table-list d-flex w-100 mt-3">
+                            <table className="tables table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
@@ -50,7 +50,7 @@ function OverCoefficient(props) {
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 10) bên trên &minus;&#10095;  hiện thị hình</p>
                                     <img src='./images/overtimeCoefficient/OverCoefficient-2.png' className="mb-3" />  
                                     <p className="text-center">Hình 11</p> 
-                                    <table className="tables mt-3">
+                                    <table className="tables col-12 col-md-9 mt-3">
                                         <tbody>
                                         <tr>
                                             <td>1</td>
@@ -81,7 +81,7 @@ function OverCoefficient(props) {
                             <ul className="list">
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào ô số 2 theo hình bên trên (Hình 10) &minus;&#10095; để sửa thông tin như hình bên dưới
                                     (Hình 12)
-                                    <img src='./images/overtimeCoefficient/OverCoefficient-3.png' className="mb-3 w-25" />  
+                                    <img src='./images/overtimeCoefficient/OverCoefficient-3.png' className="mb-3 w-50" />  
                                         <p className="text-center">Hình 12</p> 
                                 </li>
                                 <li>
@@ -98,7 +98,7 @@ function OverCoefficient(props) {
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 3 theo hình bên trên (Hình 10) để thức hiện thao tác xóa hệ số không
                                     cần thiết trong danh mục</li>
                                 <li><span className="icon">&#10146; </span> Màn hình xuất hiện thông báo như hình bên dưới (Hình 13)
-                                    <img src='./images/overtimeCoefficient/OverCoefficient-4.png' className="mb-3 w-75" />  
+                                    <img src='./images/overtimeCoefficient/OverCoefficient-4.png' className="mb-3" />  
                                     <p className="text-center">Hình 13</p> 
                                     <p className="ml-4">
                                     &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 13 ) để xóa thông tin vừa được chọn<br />

@@ -130,7 +130,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-        this.action("/OverCoefficient");
+        this.action("/AbsentPlanTime");
     }
 
     render() {

@@ -12,95 +12,87 @@ class MainModule extends React.Component {
             currentCommand: "/modules",
             menuList: [
                 {
-                    menuName: "Home",
+                    menuName: "Trang chủ",
                     isSingle: false,
                     subList: [
                         {
                             linkTo: "/Chart",
-                            menuName: "Chart",
+                            menuName: "Biểu đồ",
                         },
                     ]
                 },
                 {
-                    menuName: "Basic Information",
+                    menuName: "Thông tin cơ bản",
                     isSingle: false,
                     subList: [
                         {
                             linkTo: "/ListOfStaffTimekeep",
-                            menuName: "List Of Staff",
+                            menuName: "Danh sách nhân viên chấm công",
                         },
                         {
                             linkTo: "/Absent",
-                            menuName: "Absent",
+                            menuName: "Khai báo các kiểu vắng",
                         },
                         {
                             linkTo: "/OverCoefficient",
-                            menuName: "Over Coefficient",
+                            menuName: "Khai báo hệ số tăng ca",
                         },
                         {
                             linkTo: "/DeclareHolidays",
-                            menuName: "Declare Holidays ",
+                            menuName: "Khai báo các ngày lễ ",
                         },
                         {
                             linkTo: "/DeviceInOut",
-                            menuName: "Device In Out ",
+                            menuName: "Khai báo thiết bị ra vào",
                         },
-                        // {
-                        //     linkTo: "/ShiftGroup",
-                        //     menuName: "Shift Group ",
-                        // },
-                        // {
-                        //     linkTo: "/Shift",
-                        //     menuName: "Shift ",
-                        // },
-                        // {
-                        //     linkTo: "/Schedule",
-                        //     menuName: "Schedule",
-                        // },
+                        {
+                            linkTo: "/ShiftGroup",
+                            menuName: "Khai báo nhóm ca ",
+                        },
+                        {
+                            linkTo: "/Shift",
+                            menuName: "Khai báo ca ",
+                        },
+                        {
+                            linkTo: "/Schedule",
+                            menuName: "Khai báo lịch trình",
+                        },
                         // {
                         //     linkTo: "/SettingMethod",
                         //     menuName: "Setting Method",
                         // },
                     ]
                 },
-                // {
-                //     menuName: "Work plan",
-                //     isSingle: false,
-                //     subList: [
-                //         {
-                //             linkTo: "/ShiftStaff",
-                //             menuName: "Shift Staff",
-                //         },
-                //         {
-                //             linkTo: "/PlanShiftStaff",
-                //             menuName: "Plan Shift Staff",
-                //         },
-                //         {
-                //             linkTo: "/OvertimePlan",
-                //             menuName: "Overtime plan",
-                //         },
-                //         {
-                //             linkTo: "/PlanOffsetWork",
-                //             menuName: "Plan Offset Work",
-                //         },
-                //         {
-                //             linkTo: "/TriggerAction",
-                //             menuName: "Trigger Action",
-                //         },
-                //         {
-                //             linkTo: "/CoreCategory",
-                //             menuName: "Core Category",
-                //         },
-                //         {
-                //             linkTo: "/Module",
-                //             menuName: "Module",
-                //         },
-                //         {
-                //             linkTo: "/ModuleConfig",
-                //             menuName: "Module Config",
-                //         },
-                //     ]
-                // },
+                {
+                    menuName: "Kế hoạch làm việc",
+                    isSingle: false,
+                    subList: [
+                        {
+                            linkTo: "/ShiftStaff",
+                            menuName: "Xếp ca nhân viên",
+                        },
+                        {
+                            linkTo: "/ShiftPlan",
+                            menuName: "Khai báo kế hoạch đi ca",
+                        },
+                        {
+                            linkTo: "/Overtime",
+                            menuName: "Khai báo kế hoạch tăng ca nhân viên",
+                        },
+                        {
+                            linkTo: "/OffsetWork",
+                            menuName: "Khai báo kế hoạch làm bù",
+                        },
+                        {
+                            linkTo: "/AbsentPlan",
+                            menuName: "Kế hoạch nghĩ phép dài hạn",
+                        },
+                        {
+                            linkTo: "/AbsentPlanTime",
+                            menuName: "Kế hoạch nghĩ phép ngắn hạn",
+                        },
+                    ]
+                },
             ],
 
         }

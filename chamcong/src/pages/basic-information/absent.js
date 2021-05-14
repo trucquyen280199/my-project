@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style.css";
 function Absent(props) {
     return(
         <div className="pages pageTest d-flex align-items-start">

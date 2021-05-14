@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style.css";
 function ListOfStaffTimekeep(props) {
     return(
         <div className="pages pageTest importFiles d-flex align-items-start">

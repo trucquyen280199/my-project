@@ -1,5 +1,4 @@
 import React from "react";
-import "../../style.css";
 function DeviceInOut(props) {
     return(
         <div className="pages pageTest d-flex align-items-start">
@@ -22,19 +21,25 @@ function DeviceInOut(props) {
                         <div className="content-item" >
                             <img src='./images/device-in-out-1.png' className="mb-0 w-75" />
                             <p className="text-center">Hình 17</p>
-                            <table className="table table-list d-flex w-100 mt-3">
+                            <table className="tables table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
                                         <td>1</td>
                                         <td>Thêm</td>
-                                        <td>3</td>
-                                        <td>Xóa</td>
+                                        <td>4</td>
+                                        <td>Danh sách các thiết bị ra vào</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Sửa</td>
-                                        <td>4</td>
-                                        <td>Danh sách các thiết bị ra vào</td>
+                                        <td>5</td>
+                                        <td>Thiết lập sự kiện châm công</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Xóa</td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -48,7 +53,7 @@ function DeviceInOut(props) {
                             <ul className="list">
                                 <li> 
                                     <p><span className="icon">&#10146;</span> Nhấn vào nút 1 (Hình 17) bên trên &minus;&#10095;  hiện thị hình</p>
-                                    <img src='./images/device-in-out-2.png' className="mb-0 w-75" />  
+                                    <img src='./images/device-in-out-2.png' className="mb-0 w-50" />  
                                     <p className="text-center">Hình 18</p> 
                                 </li>
                                 <li><span className="icon">&#10146;</span> Bạn chọn vào ô số 1 để chọn thiết bị và chọn vào ô số 2 để chọn cổng ra, vào &minus;&#10095; nhấn
@@ -65,7 +70,7 @@ nút số 3 theo hình bên trên (Hình 18) &minus;&#10095; Để thực hiện
                             <ul className="list">
                                 <li>
                                     <span className="icon">&#10146;</span> Bạn nhấn vào ô số 2 theo hình bên trên (Hình 17) &minus;&#10095; để sửa thông tin như hình bên dưới (Hình 19)
-                                    <img src='./images/device-in-out-3.png' className="mb-0 w-75" />  
+                                    <img src='./images/device-in-out-3.png' className="mb-0 w-50" />  
                                     <p className="text-center">Hình 19</p> 
                                 </li>
                                 <li>
@@ -84,11 +89,29 @@ nút số 3 theo hình bên trên (Hình 18) &minus;&#10095; Để thực hiện
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 3 theo hình bên trên (Hình 17) để thức hiện thao tác xóa thiết bị vào &minus;&#10095; ra không cần thiết trong danh mục</li>
                                 <li>
                                     <span className="icon">&#10146; </span> Màn hình xuất hiện thông báo như hình bên dưới (Hình 20)
-                                    <img src='./images/device-in-out-4.png' className="mb-0 w-75" />  
+                                    <img src='./images/device-in-out-4.png' className="mb-0 w-50" />  
                                     <p className="text-center">Hình 16</p> 
                                     <p className="ml-4">
                                     &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 16 ) để xóa thông tin vừa được chọn<br />
                                     &#10004; Bạn nhấn nút <b>Thoát</b> ( Hình 16 ) để bỏ qua không thực hiện thao tác xóa</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="delete-device">
+                        <h2>5.	Thiết lập sự kiện châm công</h2>
+                        <div className="content-item" >
+                            <ul className="list">
+                                <li><span className="icon">&#10146;</span> Bạn nhấn vào số 5 theo hình bên trên (Hình 21) để thức hiện thao tác thiết lập sự kiện</li>
+                                <li>
+                                    <span className="icon">&#10146; </span> Màn hình xuất hiện thông báo như hình bên dưới (Hình 21)
+                                    <img src='./images/device-in-out-5.png' className="mb-0 w-50" />  
+                                    <p className="text-center">Hình 16</p> 
+                                    <p className="ml-4">
+                                    &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 16 ) để xóa thông tin vừa được chọn<br />
+                                    &#10004; Bạn nhấn nút số 1 ( Hình 21 ) để thực hiện thao tác lưu sự kiện</p>
                                 </li>
                             </ul>
                         </div>

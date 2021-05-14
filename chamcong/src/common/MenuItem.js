@@ -23,9 +23,9 @@ class MenuItem extends React.Component {
     }
 
     render() {
-        var classCss = "button_menu"
+        var classCss = "button_menu links"
         if (this.props.currentAction === this.props.linkTo) {
-            classCss = "button_menu_open"
+            classCss = "button_menu_open links"
         }
         return (
             <React.Fragment>
