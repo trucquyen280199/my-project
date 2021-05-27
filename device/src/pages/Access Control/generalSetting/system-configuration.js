@@ -16,19 +16,25 @@ function SystemConfiguration(props) {
                     <img alt="images" src="./images/SystemConfig-1.png" className="w-25"/>
                     <img alt="images" src="./images/SystemConfig-2.png" className="w-100"/>
                     <p>Ghi chú:</p>
-                    <table className="table w-100 mt-3">
+                    <table className="tables table-list d-flex w-100 mt-3">
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>Lưu cấu hình</td>
+                                <td>4</td>
+                                <td>Đồng bộ tất cả thiết bị</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Tự động đồng bộ đến thiết bị</td>
+                                <td>Reload</td>
+                                <td>5</td>
+                                <td>Sử dụng camera face</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Reload</td>
+                                <td>Tự động đồng bộ đến thiết bị</td>
+                                <td>6</td>
+                                <td>Sử dụng cảnh báo camera</td>
                             </tr>
                         </tbody>
                     </table>

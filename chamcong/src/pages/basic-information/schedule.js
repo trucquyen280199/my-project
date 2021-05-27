@@ -17,7 +17,7 @@ function Schedule(props) {
                 <h2 className="text-center">Khai báo lịch trình</h2>
                 <section>
                     <div id="create-schedule">
-                        <h2>1.	Hình hướng dẫn tạo ca</h2>
+                        <h2>1.	Hình hướng dẫn tạo lịch trình</h2>
                         <div className="content-item" >
                             <img src='./images/schedule-1.png' className="mb-0 w-100" />
                             <p className="text-center">Hình 1</p>

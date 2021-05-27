@@ -20,7 +20,7 @@ function ShiftGroup(props) {
                         <h2>1.	Hình hướng dẫn tạo nhóm ca</h2>
                         <div className="content-item" >
                             <img src='./images/shift-group-1.png' className="mb-0 w-100" />
-                            <p className="text-center">Hình 17</p>
+                            <p className="text-center">Hình 10</p>
                             <table className="tables table-list d-flex w-100 mt-3">
                                 <tbody>
                                     <tr>
@@ -80,7 +80,7 @@ function ShiftGroup(props) {
                             <ul className="list">
                                 <li>
                                     <span className="icon">&#10146;</span> Bạn nhấn vào ô số 2 theo hình bên trên (Hình 10)  &minus;&#10095;  để sửa thông tin như hình bên dưới(Hình 12)
-                                    <img src='./imagesshift-group-3.png' className="mb-0 w-50" />  
+                                    <img src='./images/shift-group-3.png' className="mb-0 w-50" />  
                                     <p className="text-center">Hình 12</p> 
                                 </li>
                                 <li>

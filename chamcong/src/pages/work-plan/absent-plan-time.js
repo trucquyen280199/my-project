@@ -5,10 +5,10 @@ function AbsentPlanTime(props) {
             <nav className="toc">
                 <ul className="menu-main">
                     <li className="link"><a href="#create-absentPlan">Hình hướng dẫn tạo kế hoạch nghỉ phép</a></li>
-                    <li className="link"><a href="#add-absentPlan">Thêm kế hoạch nghỉ phép</a> </li>
-                    <li className="link"> <a href="#edit-absentPlan">Sửa kế hoạch nghỉ phép</a> </li>
-                    <li className="link"> <a href="#delete-absentPlan">Xóa kế hoạch nghỉ phép</a> </li>
-                    <li className="link"> <a href="#approval">Phê duyệt</a> </li>
+                    <li className="link"><a href="#add-absentPlan">Thêm kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#edit-absentPlan">Sửa kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#delete-absentPlan">Xóa kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#approval">Phê duyệt</a></li>
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -117,8 +117,8 @@ function AbsentPlanTime(props) {
                                     <img src='./images/absentPlan-4.png' className="mb-0 w-50 " /> 
                                     <p className="text-center">Hình 4</p>  
                                     <p className="ml-4">
-                                    &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 3 ) để xóa thông tin vừa được chọn<br />
-                                    &#10004; Bạn nhấn nút <b>Thoát</b> ( Hình 3 ) để bỏ qua không thực hiện thao tác xóa</p>
+                                    &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 4 ) để xóa thông tin vừa được chọn<br />
+                                    &#10004; Bạn nhấn nút <b>Thoát</b> ( Hình 4 ) để bỏ qua không thực hiện thao tác xóa</p>
                                 </li>
                             </ul>
                         </div>

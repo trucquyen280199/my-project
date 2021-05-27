@@ -116,8 +116,8 @@ function ShiftPlan(props) {
                                     <img src='./images/shiftPlan-4.png' className="mb-0 w-100 " /> 
                                     <p className="text-center">Hình 4</p>  
                                     <p className="ml-4">
-                                    &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 3 ) để xóa thông tin vừa được chọn<br />
-                                    &#10004; Bạn nhấn nút <b>Thoát</b> ( Hình 3 ) để bỏ qua không thực hiện thao tác xóa</p>
+                                    &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 4 ) để xóa thông tin vừa được chọn<br />
+                                    &#10004; Bạn nhấn nút <b>Thoát</b> ( Hình 4 ) để bỏ qua không thực hiện thao tác xóa</p>
                                 </li>
                                 
                             </ul>

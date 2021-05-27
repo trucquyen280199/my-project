@@ -34,7 +34,7 @@ class Content extends React.Component {
         drawPath();
         function drawPath() {
 
-            tocItems = [].slice.call( toc.querySelectorAll( '.link' ) );
+            tocItems = [].slice.call( toc.querySelectorAll( '.link' ) );    
 
             tocItems = tocItems.map( function( item ) {
                 var anchor = item.querySelector( 'a' );

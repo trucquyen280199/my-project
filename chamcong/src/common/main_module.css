@@ -76,22 +76,22 @@ div{
     #main .header .title{
         transition:left var(--secs),right var(--secs)
     }
-
+/* 
     #main .header .title.left-closed{
         left:var(--header-height);
-    }
+    } */
 
     #main .header .title.right-closed{
         right:var(--header-height);
     }
 
-    #left.open,#right.open{
+    #left.open, #right.open{
         transition:0.4s;
-        width: 268px;
+        width: 235px;
     }
 
-    #left .sidebar,#right .sidebar{
-        width: 268px
+    #left .sidebar, #right .sidebar{
+        width: 235px
     }
 }
 

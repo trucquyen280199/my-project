@@ -73,23 +73,23 @@ class MainModule extends React.Component {
                         },
                         {
                             linkTo: "/ShiftPlan",
-                            menuName: "Khai báo kế hoạch đi ca",
+                            menuName: "Kế hoạch ca nhân viên",
                         },
                         {
                             linkTo: "/Overtime",
-                            menuName: "Khai báo kế hoạch tăng ca nhân viên",
+                            menuName: "Kế hoạch tăng ca ",
                         },
                         {
                             linkTo: "/OffsetWork",
-                            menuName: "Khai báo kế hoạch làm bù",
+                            menuName: "Kế hoạch làm bù",
                         },
                         {
                             linkTo: "/AbsentPlan",
-                            menuName: "Kế hoạch nghĩ phép dài hạn",
+                            menuName: "Kế hoạch nghỉ phép dài hạn",
                         },
                         {
                             linkTo: "/AbsentPlanTime",
-                            menuName: "Kế hoạch nghĩ phép ngắn hạn",
+                            menuName: "Kế hoạch nghỉ phép ngắn hạn",
                         },
                     ]
                 },

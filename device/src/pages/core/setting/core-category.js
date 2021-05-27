@@ -582,11 +582,13 @@ function CoreCategory(props) {
                                     </tr>
                                     <tr>
                                         <td>Mã loại</td>
-                                        <td>-	Là mã chữ số<br/>
-                                        -	Là duy nhất<br/>
-                                        -	Chỉ hiển thị khi tạo mới
+                                        <td>
+                                            -	Là mã chữ số<br/>
+                                            -	Là duy nhất<br/>
+                                            -	Chỉ hiển thị khi tạo mới
                                         </td>
-                                    </tr>
+                                    </tr>đi làm r nè
+                                    
                                     <tr>
                                         <td>Tổng thời gian ở lại</td>
                                         <td>- Số giờ tối đa mà loại khách này được phép ở trong công ty (giá trị hợp lệ từ 0 trở lên)</td>

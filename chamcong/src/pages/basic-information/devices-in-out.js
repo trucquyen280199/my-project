@@ -8,6 +8,8 @@ function DeviceInOut(props) {
                     <li className="link"><a href="#add-device">Thêm thiết bị ra vào</a> </li>
                     <li className="link"> <a href="#edit-device">Sửa thiết bị ra vào</a> </li>
                     <li className="link"> <a href="#delete-device">Xóa thiết bị ra vào</a> </li>
+                    <li className="link"> <a href="#event-setup">Thiết lập sự kiện chấm công</a> </li>
+                    
                 </ul>
                 <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
                     <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
@@ -100,16 +102,16 @@ nút số 3 theo hình bên trên (Hình 18) &minus;&#10095; Để thực hiện
                     </div>
                 </section>
                 <section>
-                    <div id="delete-device">
-                        <h2>5.	Thiết lập sự kiện châm công</h2>
+                    <div id="event-setup">
+                        <h2>5.	Thiết lập sự kiện chấm công</h2>
                         <div className="content-item" >
                             <ul className="list">
                                 <li><span className="icon">&#10146;</span> Bạn nhấn vào số 5 theo hình bên trên (Hình 21) để thức hiện thao tác thiết lập sự kiện</li>
                                 <li>
                                     <span className="icon">&#10146; </span> Màn hình xuất hiện thông báo như hình bên dưới (Hình 21)
-                                    <img src='./images/device-in-out-5.png' className="mb-0 w-50" />  
+                                    <img src='./images/device-in-out-5.png' className="mb-0 mt-3 w-50" />  
                                     <p className="text-center">Hình 16</p> 
-                                    <p className="ml-4">
+                                    <p className="ml-4 mt-3">
                                     &#10004; Bạn nhấn nút <b> Đồng ý</b> ( Hình 16 ) để xóa thông tin vừa được chọn<br />
                                     &#10004; Bạn nhấn nút số 1 ( Hình 21 ) để thực hiện thao tác lưu sự kiện</p>
                                 </li>
