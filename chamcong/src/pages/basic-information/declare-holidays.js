@@ -4,14 +4,11 @@ function DeclareHolidays(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#guide-holidays">Hình hướng dẫn khai báo các ngày lễ</a></li>
-                    <li className="link"><a href="#add-holidays">Thêm ngày lễ</a> </li>
-                    <li className="link"><a href="#edit-holidays">Sửa ngày lễ</a> </li>
-                    <li className="link"><a href="#delete-holidays">Xóa ngày lễ</a> </li>
+                    <li className="link"><a href="#guide-holidays" title="Hình hướng dẫn khai báo các ngày lễ">Hình hướng dẫn khai báo các ngày lễ</a></li>
+                    <li className="link"><a href="#add-holidays" title="Thêm ngày lễ">Thêm ngày lễ</a> </li>
+                    <li className="link"><a href="#edit-holidays" title="Sửa ngày lễ">Sửa ngày lễ</a> </li>
+                    <li className="link"><a href="#delete-holidays" title="Xóa ngày lễ">Xóa ngày lễ</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo các ngày lễ</h2>

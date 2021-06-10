@@ -4,14 +4,11 @@ function Schedule(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-schedule">Hình hướng dẫn tạo lịch trình</a></li>
-                    <li className="link"><a href="#add-schedule">Thêm lịch trình</a> </li>
-                    <li className="link"> <a href="#edit-schedule">Sửa lịch trình</a> </li>
-                    <li className="link"> <a href="#delete-schedule">Xóa lịch trình</a> </li>
+                    <li className="link"><a href="#create-schedule" title="Hình hướng dẫn tạo lịch trình">Hình hướng dẫn tạo lịch trình</a></li>
+                    <li className="link"><a href="#add-schedule" title="Thêm lịch trình">Thêm lịch trình</a> </li>
+                    <li className="link"><a href="#edit-schedule" title="Sửa lịch trình">Sửa lịch trình</a> </li>
+                    <li className="link"><a href="#delete-schedule" title="Xóa lịch trình">Xóa lịch trình</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo lịch trình</h2>

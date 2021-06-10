@@ -4,15 +4,12 @@ function Overtime(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-overtime">Hình hướng dẫn tạo kế hoạch tăng ca</a></li>
-                    <li className="link"><a href="#add-overtime">Thêm kế hoạch tăng ca</a> </li>
-                    <li className="link"> <a href="#edit-overtime">Sửa kế hoạch tăng ca</a> </li>
-                    <li className="link"> <a href="#delete-overtime">Xóa kế hoạch tăng ca</a> </li>
-                    <li className="link"> <a href="#approval">Phê duyệt</a> </li>
+                    <li className="link"><a href="#create-overtime" title="Hình hướng dẫn tạo kế hoạch tăng ca">Hình hướng dẫn tạo kế hoạch tăng ca</a></li>
+                    <li className="link"><a href="#add-overtime" title="Thêm kế hoạch tăng ca">Thêm kế hoạch tăng ca</a> </li>
+                    <li className="link"><a href="#edit-overtime" title="Sửa kế hoạch tăng ca">Sửa kế hoạch tăng ca</a> </li>
+                    <li className="link"><a href="#delete-overtime" title="Xóa kế hoạch tăng ca">Xóa kế hoạch tăng ca</a> </li>
+                    <li className="link"><a href="#approval" title="Phê duyệt">Phê duyệt</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">KHAI BÁO KẾ HOẠCH TĂNG CA NHÂN VIÊN</h2>

@@ -1,8 +1,9 @@
 .button_menu {
+    white-space: nowrap;
     background-color: transparent;
     border: none;
-    color: #000 !important;
-    padding: 10px 10px 10px 10px;
+    color: rgba(0,0,0,.85);
+    padding: 6px 10px 6px 6px;
     text-align: left;
     text-decoration: none;
     display: block;
@@ -11,15 +12,19 @@
     border-radius: 0px;
 }
 .button_menu_open {
-    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+    padding: 6px 10px 6px 6px;
     text-align: left;
     text-decoration: none;
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    /* font-weight: 600; */
     cursor: pointer;
-    color: #000 !important;
+    color: #1890ff !important;
+    background-color: #e6f7ff;
+    position: relative;
+    border-right: 2px solid #1890ff;
 }
 .button_menu:hover {
-    color: #000 !important;
+    color: #1890ff !important;
 }

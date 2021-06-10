@@ -62,10 +62,10 @@ class App extends Component {
     onSave = (data) => {
         var tasks = this.state.tasks;
         data.status = data.status === 'true' ? true : false;
-        if( data.id === '' ){
+        if(data.id === ''){
             data.id = this.guid();
             tasks.push(data);
-        } else{
+        }else{
             var index = this.findIndex(data.id);
             tasks[index] = data;
         }
@@ -133,6 +133,8 @@ class App extends Component {
     }
 
     render() {
+       
+
         var {
             tasks,
             isDisplayForm,

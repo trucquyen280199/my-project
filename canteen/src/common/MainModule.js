@@ -11,98 +11,118 @@ class MainModule extends React.Component {
             leftOpen: true,
             currentCommand: "/modules",
             menuList: [
+                
                 {
-                    menuName: "Home",
+                    linkTo: "/OvertimeTheMainMeal",
+                    menuName: "Đặt suất ăn chính",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/OrderOvertimeMeal",
+                    menuName: "Đặt suất ăn tăng ca",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/ManageMealVouchers",
+                    menuName: "Quản lý phiếu ăn",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/ManageOrderHistory",
+                    menuName: "Quản lý lịch sử đặt món",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/MealStatistics",
+                    menuName: "Thống kê suất ăn",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/ManageExtraMeal",
+                    menuName: "Quản lý suất ăn thêm",
+                    isSingle: true,
+                },
+                {
+                    menuName: "Quản lý thực phẩm",
                     isSingle: false,
                     subList: [
                         {
-                            linkTo: "/Chart",
-                            menuName: "Chart",
+                            linkTo: "/ManageDishes",
+                            menuName: "Quản lý món ăn",
+                        },
+                        {
+                            linkTo: "/MenuManagement",
+                            menuName: "Quản lý thực đơn",
+                        },  
+                    ]
+                },
+                {
+                    menuName: "Báo cáo",
+                    isSingle: false,
+                    subList: [
+                        {
+                            linkTo: "/FoodReport",
+                            menuName: "Báo cáo món ăn",
+                        },
+                        {
+                            linkTo: "/EmployeeReport",
+                            menuName: "Báo cáo nhân viên",
+                        },
+                        {
+                            linkTo: "/ExtraMealReport",
+                            menuName: "Báo cáo suất ăn thêm",
+                        },
+                        {
+                            linkTo: "/MealVoucherReport",
+                            menuName: "Báo cáo phiếu ăn (suất ăn)",
+                        }
+                    ]
+                },
+                {
+                    linkTo: "/ManageOvertimeMenu",
+                    menuName: "Quản lý combo thực đơn tăng ca",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/OvertimeRegulation",
+                    menuName: "Quản lý quy định tăng ca",
+                    isSingle: true,
+                },
+                {
+                    linkTo: "/FoodGroupSettings",
+                    menuName: "Cài đặt nhóm ăn cho người dùng",
+                    isSingle: true,
+                },
+                {
+                    menuName: "Cài đặt",
+                    isSingle: false,
+                    subList: [
+                        {
+                            linkTo: "/DefUpMealShift",
+                            menuName: "Định nghĩa và cập nhật ca ăn",
+                        },
+                        {
+                            linkTo: "/DeviceSettings",
+                            menuName: "Cài đặt thiết bị",
+                        },
+                        {
+                            linkTo: "/DefUpGroupEating",
+                            menuName: "Định nghĩa và cập nhật nhóm ăn",
                         },
                     ]
                 },
                 {
-                    menuName: "Basic Information",
-                    isSingle: false,
-                    subList: [
-                        {
-                            linkTo: "/ListOfStaffTimekeep",
-                            menuName: "List Of Staff Timekeep",
-                        },
-                        {
-                            linkTo: "/Absent",
-                            menuName: "Absent",
-                        },
-                        {
-                            linkTo: "/OverCoefficient",
-                            menuName: "Over Coefficient",
-                        },
-                        {
-                            linkTo: "/DeclareHolidays",
-                            menuName: "Declare Holidays ",
-                        },
-                        {
-                            linkTo: "/DeviceInOut",
-                            menuName: "Device In Out ",
-                        },
-                        // {
-                        //     linkTo: "/ShiftGroup",
-                        //     menuName: "Shift Group ",
-                        // },
-                        // {
-                        //     linkTo: "/Shift",
-                        //     menuName: "Shift ",
-                        // },
-                        // {
-                        //     linkTo: "/Schedule",
-                        //     menuName: "Schedule",
-                        // },
-                        // {
-                        //     linkTo: "/SettingMethod",
-                        //     menuName: "Setting Method",
-                        // },
-                    ]
+                    linkTo: "/ManageCurrentMealShift",
+                    menuName: "Quản lý ca ăn hiện tại",
+                    isSingle: true,
                 },
-                // {
-                //     menuName: "Work plan",
-                //     isSingle: false,
-                //     subList: [
-                //         {
-                //             linkTo: "/ShiftStaff",
-                //             menuName: "Shift Staff",
-                //         },
-                //         {
-                //             linkTo: "/PlanShiftStaff",
-                //             menuName: "Plan Shift Staff",
-                //         },
-                //         {
-                //             linkTo: "/OvertimePlan",
-                //             menuName: "Overtime plan",
-                //         },
-                //         {
-                //             linkTo: "/PlanOffsetWork",
-                //             menuName: "Plan Offset Work",
-                //         },
-                //         {
-                //             linkTo: "/TriggerAction",
-                //             menuName: "Trigger Action",
-                //         },
-                //         {
-                //             linkTo: "/CoreCategory",
-                //             menuName: "Core Category",
-                //         },
-                //         {
-                //             linkTo: "/Module",
-                //             menuName: "Module",
-                //         },
-                //         {
-                //             linkTo: "/ModuleConfig",
-                //             menuName: "Module Config",
-                //         },
-                //     ]
-                // },
+                {
+                    linkTo: "/ReceiveMeal",
+                    menuName: "Nhận suất ăn",
+                    isSingle: true,
+                },
             ],
-
+            
         }
         this.command = this.command.bind(this);
         this.action = this.action.bind(this);
@@ -157,7 +177,7 @@ class MainModule extends React.Component {
                             </h3>
                         </div>
                         <div className='content body-content'>
-                            <Content ref={this.contentRef} listComponent={this.props.listComponent} currentCommand={this.state.currentCommand}
+                            <Content menuList={this.state.menuList} ref={this.contentRef} listComponent={this.props.listComponent} currentCommand={this.state.currentCommand}
                                      showLoading={this.props.showLoading} hideLoading={this.props.hideLoading} command={this.command}/>
                         </div>
                     </div>

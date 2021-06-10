@@ -32,7 +32,7 @@ class TaskItem extends Component {
                     { this.showStatusElement() }
                 </td>
                 <td className="text-center">
-                    <button type="button" classNaTme="btn btn-warning" onClick={ this.onSelectedItem }>
+                    <button type="button" className="btn btn-warning" onClick={ this.onSelectedItem }>
                         <span className="fa fa-pencil mr-5"></span>Sửa
                     </button>
                     &nbsp;

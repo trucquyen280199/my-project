@@ -4,16 +4,13 @@ function DeviceInOut(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#guide-device">Hình hướng dẫn khai báo thiết bị ra vào</a></li>
-                    <li className="link"><a href="#add-device">Thêm thiết bị ra vào</a> </li>
-                    <li className="link"> <a href="#edit-device">Sửa thiết bị ra vào</a> </li>
-                    <li className="link"> <a href="#delete-device">Xóa thiết bị ra vào</a> </li>
-                    <li className="link"> <a href="#event-setup">Thiết lập sự kiện chấm công</a> </li>
+                    <li className="link"><a href="#guide-device" title="Hình hướng dẫn khai báo thiết bị ra vào">Hình hướng dẫn khai báo thiết bị ra vào</a></li>
+                    <li className="link"><a href="#add-device" title="Thêm thiết bị ra vào">Thêm thiết bị ra vào</a> </li>
+                    <li className="link"><a href="#edit-device" title="Sửa thiết bị ra vào">Sửa thiết bị ra vào</a> </li>
+                    <li className="link"><a href="#delete-device" title="Xóa thiết bị ra vào">Xóa thiết bị ra vào</a> </li>
+                    <li className="link"><a href="#event-setup" title="Thiết lập sự kiện chấm công">Thiết lập sự kiện chấm công</a> </li>
                     
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo các thiết bị ra vào</h2>

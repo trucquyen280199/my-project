@@ -1,14 +1,12 @@
 .links{
     margin-top: -1px;
-    border-width: 1px 1px 1px 1px;
+    /* border-width: 1px 1px 1px 1px;
     border-color: #dee2e6;
-    border-style: solid ;
-    background-color: rgb(240 242 244 / 68%);
+    border-style: solid ; */
+    /* background-color: rgb(240 242 244 / 68%); */
 }
 .button_parent {
     white-space: nowrap;
-    /* border: none; */
-   
     color: #000 !important;
     padding: 6px 10px 6px 6px;
     text-align: left;
@@ -38,7 +36,7 @@
     transition: transform .3s ease, -webkit-transform .3s ease;
 }
 .button_parent_open {
-    color: #000 !important;
+    color: #1890ff !important;
     padding: 6px 10px 6px 6px;
     text-align: left;
     text-decoration: none;
@@ -46,6 +44,7 @@
     font-size: 14px;
     cursor: pointer;
     position: relative;
+    /* font-weight: 600; */
 }
 .button_parent_open::after{
     position: absolute;
@@ -68,20 +67,19 @@
 .button_sub {
     white-space: nowrap;
     color: #000;
-    padding: 6px 10px 6px 20px;
+    padding: 6px 10px 6px 24px;
     text-align: left;
     text-decoration: none;
     display: block;
     font-size: 14px;
     cursor: pointer;
 }
-.sub_menu_item .button_menu_open{
-    padding: 6px 10px 6px 20px;
-    /* background-color: rgba(81, 81, 81, 0.5); */
+.button_sub:hover{
+    color: #1890ff !important;
 }
-
-.button_sub:hover {
-    color: #000 !important;
+.sub_menu_item .button_menu_open{
+    padding: 6px 10px 6px 24px;
+    /* background-color: rgba(81, 81, 81, 0.5); */
 }
 
 .button_parent:hover {

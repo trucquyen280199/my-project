@@ -4,15 +4,12 @@ function AbsentPlanTime(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-absentPlan">Hình hướng dẫn tạo kế hoạch nghỉ phép</a></li>
-                    <li className="link"><a href="#add-absentPlan">Thêm kế hoạch nghỉ phép</a></li>
-                    <li className="link"><a href="#edit-absentPlan">Sửa kế hoạch nghỉ phép</a></li>
-                    <li className="link"><a href="#delete-absentPlan">Xóa kế hoạch nghỉ phép</a></li>
-                    <li className="link"><a href="#approval">Phê duyệt</a></li>
+                    <li className="link"><a href="#create-absentPlan" title="Hình hướng dẫn tạo kế hoạch nghỉ phép">Hình hướng dẫn tạo kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#add-absentPlan" title="Thêm kế hoạch nghỉ phép">Thêm kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#edit-absentPlan" title="Sửa kế hoạch nghỉ phép">Sửa kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#delete-absentPlan" title="Xóa kế hoạch nghỉ phép">Xóa kế hoạch nghỉ phép</a></li>
+                    <li className="link"><a href="#approval" title="Phê duyệt">Phê duyệt</a></li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">KHAI BÁO KẾ HOẠCH NGHỈ PHÉP</h2>

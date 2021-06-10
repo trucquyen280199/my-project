@@ -5,16 +5,35 @@ import PublicRoute from './base/PublicRoute';
 import MainModule from './common/MainModule';
 import Loading from "./common/Loading";
 
-import Chart from './pages/home/chart';
-import ListOfStaffTimekeep from './pages/basic-information/list-of-staff-timekeep';
-import Absent from './pages/basic-information/absent';
-import OverCoefficient from './pages/basic-information/over-coefficent';
-import DeclareHolidays from './pages/basic-information/declare-holidays';
-import DeviceInOut from './pages/basic-information/devices-in-out';
+import DefUpMealShift from './pages/setting/Definition-update-meal-shift';
+import DefUpGroupEating from './pages/setting/Definition-update-group-eating';
+import DeviceSettings from "./pages/setting/Device-settings";
+import FoodGroupSettings from "./pages/Food-group-settings";
+import ManageDishes from "./pages/food-management/Manage-dishes";
+import MenuManagement from "./pages/food-management/Menu-management";
+import ManageOvertimeMenu from "./pages/Manage-overtime-menu";
+import OvertimeRegulation from "./pages/Overtime-regulation-management";
+import OvertimeTheMainMeal from "./pages/Overtime-the-main-meal";
+import OrderOvertimeMeal from "./pages/Order-overtime-meal";
+import ManageMealVouchers from "./pages/Manage-meal-vouchers";
+import ManageOrderHistory from "./pages/Manage-order-history";
+import MealStatistics from "./pages/Meal-statistics";
+import ManageExtraMeal from "./pages/Manage-extra-meals";
+import ReceiveMeal from "./pages/Receive-meal";
+import ManageCurrentMealShift from "./pages/Manage-current-meal-shift";
+import MealVoucherReport from "./pages/report/Meal-voucher-report";
+import ExtraMealReport from "./pages/report/Extra-meal-report";
+import FoodReport from "./pages/report/Food-report";
+import EmployeeReport from "./pages/report/Employee-reports";
+
+
+import './style.css';
 
 
 
-function App() {
+function App(props) {
+
+    const menuList = props.menuList;
     const loadingRef = React.createRef()
 
     const showLoading = () => {
@@ -26,17 +45,31 @@ function App() {
     
 
     const listComponent = [
-        {view: <Chart showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Chart"},
-        {view: <ListOfStaffTimekeep showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ListOfStaffTimekeep"},
-        {view: <Absent showLoading={showLoading} hideLoading={hideLoading}/>, path: "/Absent"},
-        {view: <OverCoefficient showLoading={showLoading} hideLoading={hideLoading}/>, path: "/OverCoefficient"},
-        {view: <DeclareHolidays showLoading={showLoading} hideLoading={hideLoading}/>, path: "/DeclareHolidays"},
-        {view: <DeviceInOut showLoading={showLoading} hideLoading={hideLoading}/>, path: "/DeviceInOut"},
+        {view: <DefUpMealShift showLoading={showLoading} hideLoading={hideLoading}/>, path: "/DefUpMealShift"},
+        {view: <DefUpGroupEating showLoading={showLoading} hideLoading={hideLoading}/>, path: "/DefUpGroupEating"},
+        {view: <DeviceSettings showLoading={showLoading} hideLoading={hideLoading}/>, path: "/DeviceSettings"},
+        {view: <FoodGroupSettings showLoading={showLoading} hideLoading={hideLoading}/>, path: "/FoodGroupSettings"},
+        {view: <ManageDishes showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageDishes"},
+        {view: <MenuManagement showLoading={showLoading} hideLoading={hideLoading}/>, path: "/MenuManagement"},
+        {view: <ManageOvertimeMenu showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageOvertimeMenu"},
+        {view: <OvertimeRegulation showLoading={showLoading} hideLoading={hideLoading}/>, path: "/OvertimeRegulation"},
+        {view: <OvertimeTheMainMeal showLoading={showLoading} hideLoading={hideLoading}/>, path: "/OvertimeTheMainMeal"},
+        {view: <OrderOvertimeMeal showLoading={showLoading} hideLoading={hideLoading}/>, path: "/OrderOvertimeMeal"},
+        {view: <ManageMealVouchers showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageMealVouchers"},
+        {view: <ManageOrderHistory showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageOrderHistory"},
+        {view: <MealStatistics showLoading={showLoading} hideLoading={hideLoading}/>, path: "/MealStatistics"},
+        {view: <ManageExtraMeal showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageExtraMeal"},
+        {view: <ReceiveMeal showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ReceiveMeal"},
+        {view: <ManageCurrentMealShift showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ManageCurrentMealShift"},
+        {view: <MealVoucherReport showLoading={showLoading} hideLoading={hideLoading}/>, path: "/MealVoucherReport"},
+        {view: <ExtraMealReport showLoading={showLoading} hideLoading={hideLoading}/>, path: "/ExtraMealReport"},
+        {view: <FoodReport showLoading={showLoading} hideLoading={hideLoading}/>, path: "/FoodReport"},
+        {view: <EmployeeReport showLoading={showLoading} hideLoading={hideLoading}/>, path: "/EmployeeReport"},
     ];
 
     const system = () => {
         return (
-            <MainModule showLoading={showLoading} hideLoading={hideLoading} listComponent={listComponent}/>
+            <MainModule showLoading={showLoading} hideLoading={hideLoading} listComponent={listComponent} />
         );
     }
 

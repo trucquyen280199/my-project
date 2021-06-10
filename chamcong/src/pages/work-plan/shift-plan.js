@@ -4,14 +4,11 @@ function ShiftPlan(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-shiftPlan">Hình hướng dẫn tạo kế hoạch đi ca</a></li>
-                    <li className="link"><a href="#add-shiftPlan">Thêm kế hoạch đi ca</a> </li>
-                    <li className="link"> <a href="#edit-shiftPlan">Sửa kế hoạch đi ca</a> </li>
-                    <li className="link"> <a href="#delete-shiftPlan">Xóa kế hoạch đi ca</a> </li>
+                    <li className="link"><a href="#create-shiftPlan" title="Hình hướng dẫn tạo kế hoạch đi ca">Hình hướng dẫn tạo kế hoạch đi ca</a></li>
+                    <li className="link"><a href="#add-shiftPlan" title="Thêm kế hoạch đi ca">Thêm kế hoạch đi ca</a> </li>
+                    <li className="link"> <a href="#edit-shiftPlan" title="Sửa kế hoạch đi ca">Sửa kế hoạch đi ca</a> </li>
+                    <li className="link"> <a href="#delete-shiftPlan" title="Xóa kế hoạch đi ca">Xóa kế hoạch đi ca</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo kế hoạch đi ca</h2>

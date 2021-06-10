@@ -6,9 +6,15 @@
     padding: 0 !important;
     overflow:  hidden !important;
 }
+.contents section{
+    color: rgba(0,0,0,.85);
+    line-height: 2;
+    font-size: 14px;
+}
 .contents section h2{
-    font-size: 18pt;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
     margin-top: 30px;
 }
 .contents section h3{
@@ -36,7 +42,7 @@
     position: sticky;
     top: 0;
     padding: 1em 1em 1em 0;
-    width: 24%;
+    width: 250px;
     line-height: 1.6; 
 }
 
@@ -60,24 +66,37 @@
     display: none;
 }
 .toc li{
-    color: #aaa;
+    border-left: 2px solid transparent;
+    color: rgba(0,0,0,.85); 
+    transition: border-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+
+}
+.toc li:hover, .toc li a:hover{
+    color: #1890ff;
 }
 .toc ul ul {
     padding-left: 1em;
     list-style-type:lower-alpha !important; 
 }
 .toc li a {
+    width: 200px;
     font-size: 13px;
-    color: #aaa;
+    color: rgba(0,0,0,.85);
+    overflow: hidden;
+    display: block;
     text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     -webkit-transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); 
 }
 .toc li.visible {
-    color: rgb(17, 17, 17);
+    color: #1890ff;
+    border-left: 2px solid #1890ff;
+    transition: border-color 0.2s;
 }
 .toc li.visible > a {
-color: #111;
+color: #1890ff;
 -webkit-transform: translate(5px);
     -ms-transform: translate(5px);
         transform: translate(5px); 
@@ -89,32 +108,38 @@ color: #111;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; }
-    .toc-marker path {
+    z-index: -1; 
+}
+.toc-marker path {
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease; 
 }
 
 .contents {
-    width: 80%;
-    /* flex: 1 1; */
+    width: calc(100% - 250px);
     padding: 1em;
-    font-family: 'Frank Ruhl Libre', sans-serif; }
-    .contents img {
-    max-width: 100%; }
-    .contents .code-block {
+    font-family: 'Frank Ruhl Libre', sans-serif; 
+}
+.contents img {
+    max-width: 100%; 
+}
+.contents .code-block {
     white-space: pre;
     overflow: auto;
-    max-width: 100%; }
-    .contents .code-block code {
-        display: block;
-        background-color: #f9f9f9;
-        padding: 10px; }
-    .contents .code-inline {
+    max-width: 100%; 
+}
+.contents .code-block code {
+    display: block;
     background-color: #f9f9f9;
-    padding: 4px; }
-    .contents h2,h3 {
-    padding-top: 1em; }
+    padding: 10px; 
+}
+.contents .code-inline {
+    background-color: #f9f9f9;
+    padding: 4px; 
+}
+.contents h2,h3 {
+    padding-top: 1em; 
+}
     /* .contents h2 {
     margin-top: 1.2em; } */
 
@@ -122,6 +147,9 @@ color: #111;
     body {
     font-size: 14px; } }
 @media (max-width: 768px){
+    .contents {
+        width: 100%;
+    }
     .toc{
         display: none;
     }

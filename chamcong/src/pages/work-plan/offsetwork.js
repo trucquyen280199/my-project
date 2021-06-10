@@ -4,14 +4,11 @@ function OffsetWork(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-offsetwork">Hình hướng dẫn tạo kế hoạch làm bù</a></li>
-                    <li className="link"><a href="#add-offsetwork">Thêm kế hoạch làm bù</a> </li>
-                    <li className="link"> <a href="#edit-offsetwork">Sửa kế hoạch làm bù</a> </li>
-                    <li className="link"> <a href="#delete-offsetwork">Xóa kế hoạch làm bù</a> </li>
+                    <li className="link"><a href="#create-offsetwork" title="Hình hướng dẫn tạo kế hoạch làm bù">Hình hướng dẫn tạo kế hoạch làm bù</a></li>
+                    <li className="link"><a href="#add-offsetwork" title="Thêm kế hoạch làm bù">Thêm kế hoạch làm bù</a> </li>
+                    <li className="link"> <a href="#edit-offsetwork" title="Sửa kế hoạch làm bù">Sửa kế hoạch làm bù</a> </li>
+                    <li className="link"> <a href="#delete-offsetwork" title="Xóa kế hoạch làm bù">Xóa kế hoạch làm bù</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">KHAI BÁO KẾ HOẠCH LÀM BÙ</h2>

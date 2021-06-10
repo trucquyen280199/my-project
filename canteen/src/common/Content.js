@@ -4,7 +4,8 @@ class Content extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentCommand: "/"
+            currentCommand: "/",
+            menuList: this.props.menuList
         }
         this.action = this.action.bind(this);
     }
@@ -15,7 +16,7 @@ class Content extends React.Component {
     }
     slide (){
         var toc = document.querySelector( '.toc' );
-        var tocPath = document.querySelector( '.toc-marker path' );
+        // var tocPath = document.querySelector( '.toc-marker path' );
         var slide = document.querySelector( '.pageTest' );
         var tocItems;
 
@@ -75,20 +76,20 @@ class Content extends React.Component {
                     path.push( 'L', x, y );
 
                     // Set the current path so that we can measure it
-                    tocPath.setAttribute( 'd', path.join( ' ' ) );
-                    item.pathStart = tocPath.getTotalLength() || 0;
+                    // tocPath.setAttribute( 'd', path.join( ' ' ) );
+                    // item.pathStart = tocPath.getTotalLength() || 0;
 
                     path.push( 'L', x, y + height );
                 }
 
                 pathIndent = x;
 
-                tocPath.setAttribute( 'd', path.join( ' ' ) );
-                item.pathEnd = tocPath.getTotalLength();
+                // tocPath.setAttribute( 'd', path.join( ' ' ) );
+                // item.pathEnd = tocPath.getTotalLength();
 
             } );
 
-            pathLength = tocPath.getTotalLength();
+            // pathLength = tocPath.getTotalLength();
 
             sync();
 
@@ -123,16 +124,16 @@ class Content extends React.Component {
 
             // Specify the visible path or hide the path altogether
             // if there are no visible items
-            if( visibleItems > 0 && pathStart < pathEnd ) {
-                if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
-                    tocPath.setAttribute( 'stroke-dashoffset', '1' );
-                    tocPath.setAttribute( 'stroke-dasharray', '1, '+ pathStart +', '+ ( pathEnd - pathStart ) +', ' + pathLength );
-                    tocPath.setAttribute( 'opacity', 1 );
-                }
-            }
-            else {
-                tocPath.setAttribute( 'opacity', 0 );
-            }
+            // if( visibleItems > 0 && pathStart < pathEnd ) {
+            //     if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
+            //         tocPath.setAttribute( 'stroke-dashoffset', '1' );
+            //         tocPath.setAttribute( 'stroke-dasharray', '1, '+ pathStart +', '+ ( pathEnd - pathStart ) +', ' + pathLength );
+            //         tocPath.setAttribute( 'opacity', 1 );
+            //     }
+            // }
+            // else {
+            //     tocPath.setAttribute( 'opacity', 0 );
+            // }
 
             lastPathStart = pathStart;
             lastPathEnd = pathEnd;
@@ -140,7 +141,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-        this.action("/DeviceInOut");
+        this.action("/DeviceSettings");
     }
 
     render() {

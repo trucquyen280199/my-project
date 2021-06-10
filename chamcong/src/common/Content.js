@@ -16,7 +16,7 @@ class Content extends React.Component {
     
     slide (){
         var toc = document.querySelector( '.toc' );
-        var tocPath = document.querySelector( '.toc-marker path' );
+        // var tocPath = document.querySelector( '.toc-marker path' );
         var slide = document.querySelector( '.pageTest' );
         var tocItems;
         var TOP_MARGIN = 0.1,
@@ -67,20 +67,20 @@ class Content extends React.Component {
 
                     path.push( 'L', x, y );
 
-                    tocPath.setAttribute( 'd', path.join( ' ' ) );
-                    item.pathStart = tocPath.getTotalLength() || 0;
+                    // tocPath.setAttribute( 'd', path.join( ' ' ) );
+                    // item.pathStart = tocPath.getTotalLength() || 0;
 
                     path.push( 'L', x, y + height );
                 }
 
                 pathIndent = x;
 
-                tocPath.setAttribute( 'd', path.join( ' ' ) );
-                item.pathEnd = tocPath.getTotalLength();
+                // tocPath.setAttribute( 'd', path.join( ' ' ) );
+                // item.pathEnd = tocPath.getTotalLength();
 
             } );
 
-            pathLength = tocPath.getTotalLength();
+            // pathLength = tocPath.getTotalLength();
 
             sync();
 
@@ -113,16 +113,16 @@ class Content extends React.Component {
 
             } );
 
-            if( visibleItems > 0 && pathStart < pathEnd ) {
-                if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
-                    tocPath.setAttribute( 'stroke-dashoffset', '1' );
-                    tocPath.setAttribute( 'stroke-dasharray', '1, '+ pathStart +', '+ ( pathEnd - pathStart ) +', ' + pathLength );
-                    tocPath.setAttribute( 'opacity', 1 );
-                }
-            }
-            else {
-                tocPath.setAttribute( 'opacity', 0 );
-            }
+            // if( visibleItems > 0 && pathStart < pathEnd ) {
+            //     if( pathStart !== lastPathStart || pathEnd !== lastPathEnd ) {
+            //         tocPath.setAttribute( 'stroke-dashoffset', '1' );
+            //         tocPath.setAttribute( 'stroke-dasharray', '1, '+ pathStart +', '+ ( pathEnd - pathStart ) +', ' + pathLength );
+            //         tocPath.setAttribute( 'opacity', 1 );
+            //     }
+            // }
+            // else {
+            //     tocPath.setAttribute( 'opacity', 0 );
+            // }
 
             lastPathStart = pathStart;
             lastPathEnd = pathEnd;

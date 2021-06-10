@@ -4,14 +4,11 @@ function ShiftGroup(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-shiftGroup">Hình hướng dẫn tạo nhóm ca</a></li>
-                    <li className="link"><a href="#add-shiftGroup">Thêm nhóm ca</a> </li>
-                    <li className="link"> <a href="#edit-shiftGroup">Sửa nhóm ca</a> </li>
-                    <li className="link"> <a href="#delete-shiftGroup">Xóa nhóm ca</a> </li>
+                    <li className="link"><a href="#create-shiftGroup" title="Hình hướng dẫn tạo nhóm ca">Hình hướng dẫn tạo nhóm ca</a></li>
+                    <li className="link"><a href="#add-shiftGroup" title="Thêm nhóm ca">Thêm nhóm ca</a> </li>
+                    <li className="link"> <a href="#edit-shiftGroup" title="Sửa nhóm ca">Sửa nhóm ca</a> </li>
+                    <li className="link"> <a href="#delete-shiftGroup" title="Xóa nhóm ca">Xóa nhóm ca</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo nhóm ca</h2>

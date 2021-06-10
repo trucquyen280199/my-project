@@ -4,14 +4,11 @@ function ShiftStaff(props) {
         <div className="pages pageTest d-flex align-items-start">
             <nav className="toc">
                 <ul className="menu-main">
-                    <li className="link"><a href="#create-shifts">Hình hướng dẫn tạo xếp ca</a></li>
-                    <li className="link"><a href="#add-shifts">Thêm xếp ca</a> </li>
-                    <li className="link"> <a href="#edit-shifts">Sửa xếp ca</a> </li>
-                    <li className="link"> <a href="#delete-shifts">Xóa xếp ca</a> </li>
+                    <li className="link"><a href="#create-shifts" title="Hình hướng dẫn tạo xếp ca">Hình hướng dẫn tạo xếp ca</a></li>
+                    <li className="link"><a href="#add-shifts" title="Thêm xếp ca">Thêm xếp ca</a> </li>
+                    <li className="link"> <a href="#edit-shifts" title="Sửa xếp ca">Sửa xếp ca</a> </li>
+                    <li className="link"> <a href="#delete-shifts" title="Xóa xếp ca">Xóa xếp ca</a> </li>
                 </ul>
-                <svg className="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke="#444" strokeWidth="3" fill="transparent" strokeDasharray="0, 0, 0, 1000" strokeLinecap="round" strokeLinejoin="round" transform="translate(-0.5, -0.5)" />
-                </svg>
             </nav>
             <article className="contents" id="contents">
                 <h2 className="text-center">Khai báo xếp ca nhân viên</h2>
