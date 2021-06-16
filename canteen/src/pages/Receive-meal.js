@@ -30,7 +30,8 @@ function ReceiveMeal(){
                         <h2>1.  Quy định sử dụng chức năng nhận suất ăn</h2>
                         <div className="content-item" >
                             <ul>
-                                <li> 	Kết nối Thiết bị để người dùng nhận suất ăn, khi bạn kết nối thành công thì sẽ xuất hiện như hình bên dưới
+                                <li> 	Kết nối Thiết bị để người dùng nhận suất ăn, khi bạn kết nối thành công thì sẽ
+                                     xuất hiện như hình bên dưới
                                     <img src='./images/receiveMeal/5.png' className="mb-3" />
                                     <img src='./images/receiveMeal/6.png' className="mb-3" />
                                 </li>
@@ -56,7 +57,8 @@ function ReceiveMeal(){
                                     <img src='./images/receiveMeal/11.png' className="mb-3" />
                                     <img src='./images/receiveMeal/12.png' className="mb-3" />
                                 </li>
-                                <li> 	Người dùng 4 nhận suất ăn (Đây là người dùng chưa đặt món). Nên thông báo cho người dùng chưa đăng ký phần ăn, và căn tin sẽ không hiện món mới
+                                <li> 	Người dùng 4 nhận suất ăn (Đây là người dùng chưa đặt món). 
+                                    Nên thông báo cho người dùng chưa đăng ký phần ăn, và căn tin sẽ không hiện món mới
                                     <img src='./images/receiveMeal/13.png' className="mb-3" />
                                     <img src='./images/receiveMeal/14.png' className="mb-3" />
                                 </li>

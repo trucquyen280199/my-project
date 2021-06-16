@@ -26,7 +26,7 @@ function FoodGroupSettings(){
                         <h2>1.	Thêm, cập nhật nhóm ăn cho người dùng</h2>
                         <div className="content-item" >
                             <ul>
-                                <li> 	Bước 1: Chọn những người dùng bạn muốn thêm Nhóm ăn (hoặc có thể chọn tất cả để thao tác nhanh), nếu muốn bỏ chọn đồng loạt, không cần phải chọn từng người mà hãy dùng cục tẩy (như hình bên dưới). Sau đó bấm vào nút Cập nhật nhóm ăn
+                                <li> 	Bước 1: Chọn những người dùng bạn muốn thêm <a href="#" >Nhóm ăn</a>  (hoặc có thể chọn tất cả để thao tác nhanh), nếu muốn bỏ chọn đồng loạt, không cần phải chọn từng người mà hãy dùng cục tẩy (như hình bên dưới). Sau đó bấm vào nút Cập nhật nhóm ăn
                                     <img src='./images/foodGroupSettings/3.png' className="mb-3" />
                                 </li>
                                 <li> 	Bước 2: Chọn nhóm ăn cho người dùng đã chọn
