@@ -26,10 +26,10 @@ function OrderOvertimeMeal(){
                         <h2>1.  Quy định đặt suất ăn tăng ca</h2>
                         <div className="content-item" >
                             <ul>
-                                <li>1.	Chỉ được đặt suất ăn tăng ca khi đủ điều kiện trong Quy định tăng ca</li>
-                                <li>2.	Chỉ được đặt suất ăn tuần hiện tại và tuần sau</li>
-                                <li>3.	Khi đã đăng ký nghỉ phép, hệ thống sẽ không cho đăng ký suất ăn trong ngày nghỉ phép đó</li>
-                                <li>4.	Người dùng phải nằm trong một Nhóm ăn thì mới có thể đăng ký suất ăn</li>
+                                <li>1.	Chỉ được đặt suất ăn tăng ca khi đủ điều kiện trong Quy định tăng ca.</li>
+                                <li>2.	Chỉ được đặt suất ăn tuần hiện tại và tuần sau.</li>
+                                <li>3.	Khi đã đăng ký nghỉ phép, hệ thống sẽ không cho đăng ký suất ăn trong ngày nghỉ phép đó.</li>
+                                <li>4.	Người dùng phải nằm trong một Nhóm ăn thì mới có thể đăng ký suất ăn.</li>
                             </ul>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ function OrderOvertimeMeal(){
                         <h2>2.	Cách đặt suất ăn tăng ca</h2>
                         <div className="content-item" >
                             <ul>
-                                <li> 	Bước 1: Đăng ký tăng ca (phải được phê duyệt) để đủ điều kiện đặt suất ăn tăng ca</li>
+                                <li> 	Bước 1: Đăng ký tăng ca (phải được phê duyệt) để đủ điều kiện đặt suất ăn tăng ca.</li>
                                 <li> 	Bước 2: Chọn tuần mong muốn đặt suất ăn
                                     <img src='./images/orderOvertimeMeal/3.png' className="mb-3" />
                                 </li>
@@ -49,14 +49,14 @@ function OrderOvertimeMeal(){
                                 <li> 	Bước 4: Chọn ca ăn
                                     <img src='./images/orderOvertimeMeal/5.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 5: Chọn tìm kiếm, để lấy ra Thực đơn ứng với ngày và ca ăn cụ thể </li>
+                                <li> 	Bước 5: Chọn tìm kiếm, để lấy ra Thực đơn ứng với ngày và ca ăn cụ thể. </li>
                                 <li> 	Bước 6: Khi đăng đăng ký đủ điều kiện, chúng ta sẽ thấy giao diện đặt món tăng ca như hình bên dưới (nó sẽ hiện ra tất cả combo món ăn mà người dùng đủ điều kiện).
                                     <img src='./images/orderOvertimeMeal/6.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 7: Chọn vào nút Thêm để thêm combo
+                                <li> 	Bước 7: Chọn vào nút <b>Thêm</b> để thêm combo
                                     <img src='./images/orderOvertimeMeal/7.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 8: Chọn nút Lưu để cập nhật đăng ký suất ăn tăng ca
+                                <li> 	Bước 8: Chọn nút <b>Lưu</b> để cập nhật đăng ký suất ăn tăng ca
                                     <img src='./images/orderOvertimeMeal/4.png' className="mb-3" />
                                 </li>
                                 <li> 	Bước 9: Khi hiện ra thông báo xác nhận, ta bấm đồng ý

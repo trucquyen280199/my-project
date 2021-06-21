@@ -27,8 +27,8 @@ class Content extends React.Component {
 
         var pathLength;
 
-        var lastPathStart,
-            lastPathEnd;
+        // var lastPathStart,
+        //     lastPathEnd;
 
             slide.addEventListener( 'resize', drawPath, false );
             slide.addEventListener( 'scroll', sync, false );
@@ -102,7 +102,7 @@ class Content extends React.Component {
             var pathStart = pathLength,
                 pathEnd = 0;
 
-            var visibleItems = 0;
+            // var visibleItems = 0;
 
             tocItems.forEach( function( item ) {
 
@@ -112,7 +112,7 @@ class Content extends React.Component {
                     pathStart = Math.min( item.pathStart, pathStart );
                     pathEnd = Math.max( item.pathEnd, pathEnd );
 
-                    visibleItems += 1;
+                    // visibleItems += 1;
 
                     item.listItem.classList.add( 'visible' );
                 }
@@ -135,13 +135,13 @@ class Content extends React.Component {
             //     tocPath.setAttribute( 'opacity', 0 );
             // }
 
-            lastPathStart = pathStart;
-            lastPathEnd = pathEnd;
+            // lastPathStart = pathStart;
+            // lastPathEnd = pathEnd;
         }
     }
 
     componentDidMount() {
-        this.action("/DeviceSettings");
+        this.action("/OvertimeTheMainMeal");
     }
 
     render() {

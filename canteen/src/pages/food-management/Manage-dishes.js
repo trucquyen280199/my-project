@@ -30,9 +30,9 @@ function ManageDishes(){
                             <img src='./images/manageDishes/3.png' className="mb-3" />
                             <p><b style={{fontSize: "24px"}}>&#8902;</b> Sau khi chọn, chúng ta sẽ thấy một màn hình thêm mới món ăn xuất hiện</p>
                             <img src='./images/manageDishes/4.png' className="mb-3" />
-                            <p><b style={{fontSize: "24px"}}>&#8902;</b> Giờ chúng ta sẽ cùng tạo ra một món ăn mới</p>
+                            <p><b style={{fontSize: "24px"}}>&#8902;</b> Giờ chúng ta sẽ cùng tạo ra một món ăn mới.</p>
                             <ul>
-                                <li> 	Bước 1: Nhập tất cả thông tin tên món ăn, giá, hình ảnh món ăn, chọn loại món ăn</li>
+                                <li> 	Bước 1: Nhập tất cả thông tin tên món ăn, giá, hình ảnh món ăn, chọn loại món ăn.</li>
                                 <li> 	Bước 2: Bấm vào nút lưu
                                     <img src='./images/manageDishes/5.png' className="mb-3" />
                                 </li>

@@ -17,7 +17,7 @@ function ManageMealVouchers(){
                         <div className="content-item" >
                             <p><b style={{fontSize: "24px"}}>&#8902;</b> Ở menu bên trái màn hình, chọn mục <b>Quản lý phiếu ăn</b></p>
                             <img src='./images/manageMealVouchers/1.png' className="mb-3" />
-                            <p><b style={{fontSize: "24px"}}>&#8902;</b> Sau khi chọn, chúng ta sẽ thấy một màn hình quản lý <b>Quản lý phiếu ăn</b> xuất hiện với các tính năng: Xem các phiếu ăn đã đăng ký theo ngày, xem chi tiết phiếu ăn(Thông tin món ăn, tổng tiền, thời gian đặt, đã ăn hay chưa...), đánh giá món ăn, chuyển phiếu ăn cho người dùng khác</p>
+                            <p><b style={{fontSize: "24px"}}>&#8902;</b> Sau khi chọn, chúng ta sẽ thấy một màn hình quản lý <b>Quản lý phiếu ăn</b> xuất hiện với các tính năng: Xem các phiếu ăn đã đăng ký theo ngày, xem chi tiết phiếu ăn(Thông tin món ăn, tổng tiền, thời gian đặt, đã ăn hay chưa...), đánh giá món ăn, chuyển phiếu ăn cho người dùng khác.</p>
                             <img src='./images/manageMealVouchers/2.png' className="mb-3" />
                         </div>
                     </div>
@@ -60,22 +60,23 @@ function ManageMealVouchers(){
                         <h2>3.	Chuyển phiếu ăn</h2>
                         <div className="content-item" >
                             <ul>
-                                <li> 	Bước 1: Bấm vào nút Chuyển phiếu ăn
+                                <li> 	Bước 1: Bấm vào nút <b>Chuyển phiếu ăn</b>
                                     <img src='./images/manageMealVouchers/8.png' className="mb-3" />
                                 </li>
                                 <li> 	Bước 2: Tìm kiếm người dùng được nhận phiếu ăn
                                     <img src='./images/manageMealVouchers/9.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 3: Chọn người dùng được nhận phiếu ăn và điền ghi chú (không bắt buộc). Sau đó bấm lưu để chuyển phiếu ăn
+                                <li> 	Bước 3: Chọn người dùng được nhận phiếu ăn và điền ghi chú (không bắt buộc). 
+                                    Sau đó bấm <b>Lưu</b> để chuyển phiếu ăn
                                     <img src='./images/manageMealVouchers/10.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 4: Khi hiện ra thông báo xác nhận, ta bấm đồng ý
+                                <li> 	Bước 4: Khi hiện ra thông báo xác nhận, ta bấm <b>Đồng ý</b>
                                     <img src='./images/manageMealVouchers/11.png' className="mb-3" />
                                 </li>
                                 <li> 	Bước 5: Phiếu ăn bạn cho đang trong giai đoạn chờ người nhận đồng ý (Nếu người nhận chưa đồng ý bạn có thể xuống căn tin ăn hoặc chọn Hủy chuyển phiếu ăn)
                                     <img src='./images/manageMealVouchers/12.png' className="mb-3" />
                                 </li>
-                                <li> 	Bước 6: Người nhận có quyền từ chối hoặc đồng ý nhận phiếu ăn, ở đây chúng ta sẽ đồng ý thử nhé. Chọn Phê duyệt
+                                <li> 	Bước 6: Người nhận có quyền từ chối hoặc đồng ý nhận phiếu ăn, ở đây chúng ta sẽ đồng ý thử nhé. Chọn <b>Phê duyệt</b>
                                     <img src='./images/manageMealVouchers/13.png' className="mb-3" />
                                 </li>
                                 <li> 	Bước 7: Khi hiện ra thông báo xác nhận, ta bấm đồng ý
